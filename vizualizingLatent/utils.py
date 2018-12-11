@@ -13,3 +13,8 @@ def parse_data(training_data,TESTING_RATIO):
     test_x = torch.from_numpy(test_x).type(torch.FloatTensor)
 
     return train_x, test_x
+
+
+def tensor_to_numpy(array):
+
+    return array.cpu().data.numpy()
