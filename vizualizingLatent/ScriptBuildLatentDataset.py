@@ -16,8 +16,8 @@ encoder = Encoder().to(device)
 decoder = Decoder(beat=48).to(device)
 vae = VAE(encoder, decoder).to(device)
 
-vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt",map_location='cpu'))
-
+# vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt",map_location='cpu'))
+vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt",map_location='cpu'))
 
 
 data = np.load(dataset_path+'dataset_fill.npz')
@@ -107,7 +107,7 @@ print(global_tensor.shape,"global tensor shape")
 global_labels=global_labels[1:]
 global_tensor=global_tensor[1:,:,:]
 
-# np.savez('./../data/latentDataset.npz',X=global_tensor,y=global_labels)
+# np.savez('./../data/latentDataset_fixed_std.npz',X=global_tensor,y=global_labels)
 
 # for i in range(16):
 #     print(xs[i].shape,ys[i].shape)
