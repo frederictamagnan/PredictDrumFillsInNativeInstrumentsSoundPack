@@ -1,0 +1,2971 @@
+2018-12-12 11:51:58,438 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,438 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,441 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,441 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,445 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,445 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,447 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,448 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,450 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,450 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,453 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,453 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,455 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,455 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,457 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,458 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,459 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,460 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,461 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,462 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#867
+2018-12-12 11:51:58,464 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,464 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:51:58,482 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,484 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,484 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#868
+2018-12-12 11:51:58,486 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,486 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#868
+2018-12-12 11:51:58,506 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,526 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,546 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,570 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,592 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,615 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,639 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,662 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,683 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,703 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,723 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,743 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,764 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,788 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,810 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,833 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,855 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,878 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,898 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,918 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,920 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,921 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#888
+2018-12-12 11:51:58,923 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,923 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#888
+2018-12-12 11:51:58,925 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,925 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#888
+2018-12-12 11:51:58,927 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,928 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#888
+2018-12-12 11:51:58,930 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:58,930 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#888
+2018-12-12 11:51:58,950 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,970 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:58,990 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,019 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,043 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,069 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,091 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,113 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,133 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,153 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,173 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,193 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,218 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,241 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,264 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,288 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,311 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,331 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,352 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,373 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,375 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:59,375 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:51:59,393 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,395 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:59,395 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#909
+2018-12-12 11:51:59,397 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:59,397 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:51:59,418 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,423 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:59,423 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:51:59,444 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,446 :: DEBUG :: try to crop or pad
+2018-12-12 11:51:59,447 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:51:59,468 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,493 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,516 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,536 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,556 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,577 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,597 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,617 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,643 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,666 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,691 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,713 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,735 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,755 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,776 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,797 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,819 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,844 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,869 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,895 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,919 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,940 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,960 :: DEBUG :: new track encoded stacked
+2018-12-12 11:51:59,981 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,002 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,022 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,050 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,073 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,097 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,119 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,141 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,163 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,183 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,203 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,224 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,252 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,276 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,300 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,323 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,344 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,365 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,386 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,407 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,428 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,449 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,474 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,500 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,524 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,549 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,573 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,593 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,614 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,635 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,656 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,677 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,703 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,728 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,753 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,776 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,797 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,821 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,823 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:00,828 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:00,846 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,847 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:00,847 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:00,866 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,867 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:00,867 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:00,891 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,894 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:00,894 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:00,932 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,935 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:00,935 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:00,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:00,980 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,001 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,021 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,041 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,061 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,064 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#982
+2018-12-12 11:52:01,083 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,108 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,130 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,153 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,155 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#986
+2018-12-12 11:52:01,177 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,200 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,220 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,239 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,259 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,279 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,299 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,322 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,348 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,373 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,398 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,421 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,440 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,460 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,480 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,500 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,520 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,544 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,566 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,588 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,610 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,633 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,653 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,673 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,692 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,712 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,732 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,753 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,778 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,780 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,780 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,801 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,804 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,804 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,824 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,826 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,826 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,846 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,848 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,848 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,867 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,868 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,868 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,887 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,888 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,888 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,906 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,908 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,908 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,926 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,927 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,927 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,946 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,947 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,947 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,970 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,971 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,971 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:01,996 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:01,997 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:01,997 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,019 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,020 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,020 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,040 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,042 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,042 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,063 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,064 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,064 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,083 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,084 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,084 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,102 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,121 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,140 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,160 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,182 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,204 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,226 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,250 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,252 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1037
+2018-12-12 11:52:02,253 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1037
+2018-12-12 11:52:02,275 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,296 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,317 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,337 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,356 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,357 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1042
+2018-12-12 11:52:02,376 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,401 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,402 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1044
+2018-12-12 11:52:02,427 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,450 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,451 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,451 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,472 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,474 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,474 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,496 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,498 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,498 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,517 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,518 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,518 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,536 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,537 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:02,537 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:02,556 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,576 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,595 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,619 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,641 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,665 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,688 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,712 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,732 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,752 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,753 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1060
+2018-12-12 11:52:02,773 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,793 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,816 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,840 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,864 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,890 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,915 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,938 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,977 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:02,998 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,018 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,038 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,063 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,087 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,109 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,132 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,155 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,158 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1078
+2018-12-12 11:52:03,178 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,198 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,218 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,239 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,241 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1082
+2018-12-12 11:52:03,261 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,288 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,312 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,335 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,358 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,381 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,401 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,420 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,440 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,460 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,480 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,505 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,531 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,555 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,579 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,601 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,621 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,641 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,661 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,681 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,701 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,726 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,751 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,774 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,799 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,821 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,841 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,861 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,881 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,901 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,921 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,946 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,973 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:03,997 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,019 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,042 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,062 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,082 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,102 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,122 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,142 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,166 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,189 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,213 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,260 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,279 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,299 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,321 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,340 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,360 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,384 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,408 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,435 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,456 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,479 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,500 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,519 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,538 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,558 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,578 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,602 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,625 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,648 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,670 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,692 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,713 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,733 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,753 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,773 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,793 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,822 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,851 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,873 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,898 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,920 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,940 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,960 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:04,979 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,000 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,019 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,044 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,068 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,090 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,113 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,136 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,156 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,177 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,197 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,217 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,238 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,264 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,288 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,311 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,334 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,357 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,380 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,400 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,420 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,440 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,460 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,488 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,512 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,538 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,560 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,582 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,584 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,584 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,602 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,603 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,603 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,622 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,623 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,623 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,642 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,643 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,643 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,662 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,663 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,663 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,682 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,683 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,683 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,705 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,707 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,707 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,728 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,730 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,731 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,752 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,754 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,754 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,776 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,778 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:05,779 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:05,800 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,822 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,842 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,862 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,883 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,903 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,928 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,953 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:05,978 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,000 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,022 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,042 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,063 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,083 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,103 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,123 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,147 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,172 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,195 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,218 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,241 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,242 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,242 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,261 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,262 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,262 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,281 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,282 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,283 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,301 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,303 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,303 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,324 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,325 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,325 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,344 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,345 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,345 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,367 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,368 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,368 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,392 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,393 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,393 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,418 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,419 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,419 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,441 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,442 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:06,442 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:06,463 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,484 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,504 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,524 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,544 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,565 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,589 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,614 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,637 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,661 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,684 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,705 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,725 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,746 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,766 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,787 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,812 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,837 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,859 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,884 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,908 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,928 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,948 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,968 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:06,988 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,008 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,034 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,058 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,080 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,104 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,127 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,147 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,167 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,187 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,207 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,227 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,251 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,274 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,298 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,321 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,344 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,346 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:07,346 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:07,365 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,366 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:07,366 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:07,385 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,386 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:07,386 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:07,405 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,406 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:07,407 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:07,425 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,427 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:07,427 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:07,445 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,470 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,497 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,521 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,544 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,567 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,587 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,607 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,627 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,648 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,668 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,693 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,716 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,739 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,764 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,786 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,807 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,829 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,849 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,869 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,890 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,915 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,941 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,965 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:07,989 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,012 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,033 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,053 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,074 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,094 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,115 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,142 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,164 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,189 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,212 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,232 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,253 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,273 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,294 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,314 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,340 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,363 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,389 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,413 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,436 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,457 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,477 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,498 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,518 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,539 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,567 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,595 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,621 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,644 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,665 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,685 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,706 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,726 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,749 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,774 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,799 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,821 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,843 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,863 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,884 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,905 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,925 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,946 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,970 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:08,996 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,020 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,043 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,066 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,086 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,107 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,127 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,148 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,168 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,193 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,217 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,239 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,264 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,288 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,308 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,330 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,351 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,372 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,393 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,421 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,446 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,471 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,494 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,515 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,535 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,556 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,577 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,597 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,624 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,648 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,672 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,695 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,715 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,736 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,756 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,777 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,798 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,825 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,849 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,874 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,899 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,922 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,943 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,964 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:09,984 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,005 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,029 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,056 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,081 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,105 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,128 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,149 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,169 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,191 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,211 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,232 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,259 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,283 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,307 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,330 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,350 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,371 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,392 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,412 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,432 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,460 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,486 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,511 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,535 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,556 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,577 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,598 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,619 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,639 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,660 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,685 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,708 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,731 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,756 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,779 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,800 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,823 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,845 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,865 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,887 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,914 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,939 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,964 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:10,987 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,008 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,029 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,050 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,070 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,091 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,117 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,139 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,163 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,186 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,207 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,228 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,249 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,269 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,290 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,318 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,343 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,367 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,393 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,416 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,437 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,458 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,478 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,499 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,500 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,500 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,519 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,521 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,522 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,547 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,548 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,548 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,571 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,572 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,572 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,595 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,596 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,596 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,618 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,619 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,619 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,640 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,641 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,642 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,661 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,662 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,662 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,682 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,683 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,683 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,703 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,704 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:11,704 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:11,723 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,748 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,774 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,798 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,824 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,845 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,866 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,887 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,908 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,931 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,954 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:11,981 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,004 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,027 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,048 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,069 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,090 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,112 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,132 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,159 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,183 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,207 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,230 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,251 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,272 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,293 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,314 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,338 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,365 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,391 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,417 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,440 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,461 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,483 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,504 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,525 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,550 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,573 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,597 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,620 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,643 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,664 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,685 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,707 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,728 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,749 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,778 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,802 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,827 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,850 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,872 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,893 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,914 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,936 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:12,985 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,012 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,035 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,058 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,080 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,101 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,102 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,102 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,122 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,123 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,123 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,143 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,144 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,144 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,164 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,167 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,168 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,191 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,192 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,192 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,215 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,217 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,217 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,240 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,241 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,242 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,264 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,267 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,267 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,287 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,288 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,288 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,308 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,309 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,309 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,330 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,332 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,332 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,351 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,352 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,352 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,374 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,375 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,376 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,402 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,403 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,403 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,429 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,431 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:13,431 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:13,453 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,477 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,499 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,520 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,541 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,562 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,587 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,611 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,637 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,661 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,686 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,707 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,729 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,749 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,771 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,792 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,819 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,843 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,868 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,892 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,915 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,936 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:13,979 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,005 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,030 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,054 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,079 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,102 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,123 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,145 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,166 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,187 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,209 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,259 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,284 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,307 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,330 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,351 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,373 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,374 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:14,374 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:14,394 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,395 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:14,395 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:14,415 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,417 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:14,417 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:14,442 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,443 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:14,443 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:14,468 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,471 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:14,471 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:14,493 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,518 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,540 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,561 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,583 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,604 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,630 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,653 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,679 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,703 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,729 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,751 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,772 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,793 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,815 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,842 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,864 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,891 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,915 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,940 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,961 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:14,982 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,004 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,025 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,046 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,074 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,100 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,126 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,150 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,171 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,192 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,213 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,260 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,285 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,309 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,332 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,356 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,377 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,399 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,420 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,441 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,462 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,490 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,515 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,541 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,565 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,587 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,608 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,630 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,652 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,677 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,701 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,726 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,750 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,775 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,796 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,818 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,842 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,863 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,887 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,910 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,938 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,961 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:15,985 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,006 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,028 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,050 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,072 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,096 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,120 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,145 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,169 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,193 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,214 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,257 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,278 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,300 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,325 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,351 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,374 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,399 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,422 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,443 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,465 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,486 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,513 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,537 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,562 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,586 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,610 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,631 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,652 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,674 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,695 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,718 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,744 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,769 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,794 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,818 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,819 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:16,819 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:16,841 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,842 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:16,843 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:16,863 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,864 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:16,864 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:16,884 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,885 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:16,885 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:16,906 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,907 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:16,907 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:16,932 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,959 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:16,986 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,011 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,035 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,056 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,078 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,099 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,121 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,147 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,169 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,193 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,217 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,240 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,262 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,284 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,305 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,327 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,350 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,377 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,403 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,430 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,453 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,475 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,497 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,519 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,541 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,566 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,593 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,618 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,641 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,665 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,686 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,708 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,729 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,751 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,773 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,800 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,823 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,848 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,872 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,873 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:17,873 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:17,893 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,895 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:17,895 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:17,915 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,916 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:17,916 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:17,936 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,938 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:17,938 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:17,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:17,959 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:17,959 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:17,979 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,008 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,036 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,060 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,085 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,107 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,129 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,151 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,173 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,198 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,224 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,248 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,272 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,296 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,318 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,342 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,364 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,386 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,411 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,437 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,464 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,487 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,511 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,533 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,555 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,577 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,599 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,624 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,648 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,673 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,697 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,722 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,744 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,766 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,788 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,810 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,835 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,860 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,888 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,912 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,938 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,959 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:18,981 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,003 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,024 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,050 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,073 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,100 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,125 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,148 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,170 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,191 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,213 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,258 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,285 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,310 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,334 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,357 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,380 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,403 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,404 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:19,404 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:19,428 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,429 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:19,429 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:19,452 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,453 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:19,453 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:19,480 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,481 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:19,481 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:19,508 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,510 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:19,511 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:19,536 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,560 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,584 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,607 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,630 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,653 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,676 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,703 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,729 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,757 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,782 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,805 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,827 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,849 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,871 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,896 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,922 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,950 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,976 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:19,998 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,022 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,023 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:20,023 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:20,044 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,045 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:20,045 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:20,066 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,067 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:20,067 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:20,088 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,089 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:20,089 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:20,110 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,111 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:20,111 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:20,135 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,159 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,185 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,210 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,257 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,279 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,301 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,323 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,349 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,374 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,402 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,426 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,452 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,474 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,496 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,518 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,540 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,566 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,593 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,618 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,641 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,665 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,688 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,710 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,731 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,754 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,780 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,804 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,831 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,855 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,880 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,904 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,928 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,950 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,973 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:20,999 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,024 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,050 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,073 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,096 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,118 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,140 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,162 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,184 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,206 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,233 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,262 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,286 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,309 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,331 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,353 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,375 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,399 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,429 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,454 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,480 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,482 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1879
+2018-12-12 11:52:21,505 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,550 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,572 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,594 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,615 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,641 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,665 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,691 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,715 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,739 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,762 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,784 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,805 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,834 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,875 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,905 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,930 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,954 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,976 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:21,998 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,020 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,042 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,064 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,090 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,114 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,140 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,164 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,188 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,211 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,233 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,255 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,277 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,303 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,329 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,355 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,379 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,407 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,429 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,451 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,473 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,495 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,522 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,549 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,575 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,599 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,623 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,645 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,667 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,689 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,711 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,737 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,763 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,788 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,812 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,836 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,859 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,881 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,906 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,931 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:22,983 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,010 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,011 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,011 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,035 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,036 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,036 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,057 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,058 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,058 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,079 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,080 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,080 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,101 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,102 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,102 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,123 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,124 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,124 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,145 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,146 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,146 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,171 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,172 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,172 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,195 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,196 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,196 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,220 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,221 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,221 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,245 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,246 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,246 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,272 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,273 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,273 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,294 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,295 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,295 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,316 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,317 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,317 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,338 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,339 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:23,339 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:23,360 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,391 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,423 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,450 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,475 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,498 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,520 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,543 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,565 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,587 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,614 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,640 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,665 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,690 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,713 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,735 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,757 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,780 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,802 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,828 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,854 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,883 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,909 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,934 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,956 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:23,979 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,002 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,024 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,053 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,078 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,104 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,128 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,151 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,152 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1989
+2018-12-12 11:52:24,174 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,197 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,220 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,242 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,269 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,270 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#1994
+2018-12-12 11:52:24,299 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,300 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,300 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,324 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,325 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,325 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,350 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,351 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,351 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,374 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,375 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,375 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,399 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,400 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,400 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,424 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,446 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,468 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,495 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,522 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,547 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,573 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,595 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,618 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,640 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,663 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,685 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,711 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,713 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2012
+2018-12-12 11:52:24,739 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,765 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,791 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,814 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,836 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,838 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2017
+2018-12-12 11:52:24,860 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,861 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,861 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,883 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,884 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,884 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,908 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,909 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,910 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,938 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,939 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,939 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,966 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:24,966 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:24,967 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:24,991 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,018 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,044 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,067 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,089 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,112 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,135 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,162 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,188 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,214 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,239 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,263 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,285 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,308 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,330 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,353 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,379 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,408 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,434 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,460 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,483 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,506 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,551 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,573 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,600 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,627 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,638 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2049
+2018-12-12 11:52:25,663 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,687 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,710 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,733 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,742 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2053
+2018-12-12 11:52:25,765 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,787 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,814 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,839 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,866 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,867 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2058
+2018-12-12 11:52:25,895 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,920 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,943 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,965 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,988 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:25,989 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2063
+2018-12-12 11:52:26,011 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,040 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,066 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,092 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,118 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,142 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,164 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,187 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,188 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2071
+2018-12-12 11:52:26,210 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,233 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,260 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,286 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,288 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2075
+2018-12-12 11:52:26,313 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,339 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,340 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:26,340 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:26,363 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,364 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:26,364 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:26,386 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,387 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:26,387 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:26,411 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,413 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:26,414 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:26,436 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,437 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:26,437 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:26,458 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,486 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,513 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,539 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,564 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,587 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,610 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,633 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,655 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,678 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,704 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,732 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,759 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,786 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,809 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,832 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,855 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,878 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,904 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,934 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,961 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:26,986 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,011 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,034 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,057 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,080 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,102 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,125 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,152 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,179 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,203 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,228 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,252 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,275 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,297 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,320 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,343 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,369 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,399 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,429 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,454 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,455 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,455 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,477 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,478 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,479 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,500 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,501 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,502 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,523 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,524 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,524 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,546 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,547 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,548 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,569 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,570 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,570 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,598 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,599 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,599 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,626 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,628 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,628 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,653 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,654 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,654 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,679 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,680 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:27,680 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:27,702 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,725 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,748 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,771 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,794 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,822 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,849 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,875 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,903 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,929 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,952 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,975 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:27,998 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,020 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,047 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,075 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,102 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,127 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,150 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,173 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,196 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,197 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:28,197 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:28,219 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,219 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:28,220 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:28,241 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,242 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:28,242 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:28,269 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,270 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:28,270 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:28,298 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,299 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:28,299 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:28,326 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,351 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,375 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,399 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,426 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,449 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,472 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,503 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,529 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,555 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,582 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,605 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,629 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,652 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,675 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,703 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,729 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,755 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,781 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,804 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,827 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,850 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,874 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,904 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,932 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,957 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:28,983 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,006 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,029 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,052 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,075 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,104 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,130 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,156 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,182 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,205 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,229 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,252 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,275 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,299 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,327 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,328 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:29,328 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:29,355 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,356 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:29,356 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:29,382 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,383 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:29,384 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:29,408 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,409 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:29,410 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:29,433 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,434 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:29,434 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:29,456 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,479 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,503 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,526 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,555 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,582 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,611 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,638 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,662 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,685 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,709 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,732 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,756 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,787 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,814 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,839 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,864 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,888 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,914 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,940 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,967 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:29,995 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,022 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,046 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,072 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,095 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,118 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,142 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,165 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,195 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,221 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,248 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,274 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,299 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,323 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,346 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,370 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,393 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,424 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,453 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,480 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,506 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,529 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,553 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,576 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,600 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,623 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,652 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,678 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,705 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,730 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,754 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,778 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,801 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,825 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,855 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,881 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,909 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,936 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,960 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:30,983 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,007 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,031 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,061 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,089 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,114 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,139 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,163 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,187 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,210 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,264 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,291 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,316 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,342 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,366 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,390 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,416 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,444 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,474 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,501 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,503 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,503 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,525 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,526 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,526 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,551 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,552 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,552 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,574 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,575 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,575 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,597 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,598 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,599 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,621 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,622 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,622 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,644 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,646 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,646 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,674 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,675 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,675 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,700 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,701 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,702 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,728 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,729 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:31,729 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:31,755 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,779 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,802 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,826 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,850 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,874 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,906 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,936 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,962 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:31,988 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,012 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,036 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,060 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,087 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,113 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,141 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,167 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,193 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,217 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,241 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,265 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,289 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,319 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,345 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,371 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,398 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,426 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,450 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,474 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,500 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,555 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,579 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,605 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,629 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,653 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,677 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,701 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,731 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,758 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,786 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,813 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,837 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,861 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,885 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,914 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,943 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,971 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:32,996 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,022 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,046 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,070 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,094 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,118 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,148 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,176 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,201 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,228 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,254 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,278 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,303 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,304 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,304 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,330 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,331 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,331 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,356 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,358 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,359 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,385 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,386 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,386 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,414 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,416 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,416 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,438 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,439 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,439 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,462 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,463 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,463 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,485 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,487 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,487 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,509 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,510 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,510 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,532 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,534 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:33,534 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:33,564 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,592 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,619 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,646 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,670 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,694 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,717 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,744 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,771 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,801 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,828 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,854 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,878 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,902 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,930 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:33,986 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,013 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,039 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,063 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,087 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,111 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,136 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,161 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,190 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,217 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,243 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,269 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,293 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,317 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,341 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,365 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,397 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,428 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,455 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,480 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,504 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,552 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,579 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,608 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,634 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,662 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,687 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,711 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,735 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,759 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,785 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,814 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,843 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,869 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,896 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,925 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,949 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:34,973 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,001 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,030 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,057 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,084 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,108 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,133 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,157 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,181 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,207 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,235 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,264 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,289 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,316 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,340 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,364 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,389 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,417 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,448 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,477 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,504 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,552 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,576 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,601 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,628 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,655 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,656 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,656 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,683 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,684 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,684 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,708 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,709 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,709 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,734 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,735 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,735 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,758 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,759 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,759 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,782 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,783 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,783 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,806 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,807 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,807 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,829 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,831 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,831 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,857 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,859 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,859 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,886 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,887 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,887 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,916 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,917 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,917 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,943 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,944 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,944 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,967 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,968 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,968 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:35,991 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:35,992 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:35,992 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:36,015 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,016 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:36,016 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:36,039 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,067 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,095 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,125 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,154 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,179 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,203 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,227 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,252 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,280 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,311 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,339 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,365 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,390 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,417 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,444 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,468 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,496 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,524 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,553 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,580 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,581 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:36,581 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:36,604 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,605 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:36,605 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:36,628 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,629 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:36,629 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:36,652 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,653 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:36,653 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:36,676 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,677 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:36,678 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:36,700 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,730 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,759 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,787 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,815 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,839 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,864 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,888 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,917 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,947 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:36,976 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,003 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,027 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,052 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,076 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,100 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,127 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,155 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,184 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,211 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,236 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,238 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:37,238 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:37,261 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,262 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:37,262 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:37,285 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,286 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:37,286 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:37,309 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,310 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:37,310 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:37,335 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,338 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:37,338 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:37,364 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,395 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,426 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,453 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,477 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,502 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,527 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,556 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,585 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,613 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,640 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,666 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,690 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,714 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,739 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,768 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,796 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,826 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,852 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,877 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,902 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,933 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,957 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:37,986 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,015 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,043 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,069 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,094 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,118 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,143 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,167 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,194 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,222 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,248 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,274 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,301 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,326 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,351 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,376 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,402 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,432 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,462 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,490 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,515 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,540 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,564 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,589 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,619 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,648 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,676 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,703 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,728 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,753 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,778 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,802 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,831 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,858 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,887 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,916 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,940 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,965 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,966 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:38,967 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:38,989 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:38,991 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:38,991 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:39,014 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,015 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:39,015 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:39,042 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,043 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:39,043 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:39,069 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,072 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:39,072 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:39,098 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,126 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,153 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,178 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,202 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,227 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,255 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,285 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,312 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,342 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,369 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,394 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,421 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,448 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,477 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,507 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,534 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,561 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,586 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,611 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,636 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,660 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,688 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,716 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,744 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,771 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,797 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,822 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,846 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,871 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,898 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,929 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,961 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:39,990 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,017 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,044 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,069 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,094 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,123 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,151 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,178 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,206 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,230 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,255 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,280 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,304 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,333 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,361 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,391 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,422 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,446 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,471 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,496 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,521 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,550 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,579 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,605 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,632 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,658 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,682 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,707 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,731 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,757 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,788 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,817 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,844 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,870 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,896 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,924 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,951 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:40,981 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,011 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,039 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,066 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,091 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,116 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,142 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,166 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,195 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,224 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,251 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,280 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,304 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,329 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,353 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,378 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,406 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,436 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,464 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,492 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,517 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,541 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,566 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,590 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,618 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,646 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,674 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,702 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,726 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,751 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,776 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,777 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:41,777 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:41,800 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,801 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:41,801 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:41,827 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,830 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:41,830 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:41,856 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,858 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:41,858 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:41,886 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,887 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:41,887 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:41,917 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,942 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,966 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:41,991 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,016 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,045 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,074 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,102 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,132 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,157 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,182 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,207 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,231 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,260 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,288 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,316 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,343 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,368 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,393 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,420 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,447 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,475 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,505 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,532 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,559 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,584 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,609 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,634 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,658 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,687 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,714 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,742 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,770 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,796 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,821 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,846 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,871 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,899 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,928 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,987 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:42,988 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:42,988 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,011 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,013 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,013 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,036 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,037 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,037 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,060 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,061 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,062 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,085 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,086 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,086 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,113 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,114 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,114 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,140 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,142 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,142 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,169 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,170 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,170 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,196 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,197 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,198 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,223 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,224 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,225 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,248 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,249 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,249 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,273 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,274 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,274 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,298 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,299 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,299 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,326 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,327 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,327 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,355 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,356 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,356 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,383 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,384 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,384 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,414 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,415 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,415 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,441 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,442 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,442 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,467 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,468 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,468 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,492 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,494 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:43,494 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:43,519 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,548 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,583 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,612 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,640 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,665 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,690 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,715 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,740 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,769 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,799 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,827 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,853 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,878 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,904 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,933 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,958 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:43,987 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,016 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,044 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,071 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,096 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,120 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,145 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,170 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,197 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,225 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,256 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,284 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,310 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,335 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,360 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,385 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,415 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,446 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,475 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,502 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,553 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,578 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,603 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,632 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,661 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,690 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,717 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,742 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,767 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,793 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,818 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,847 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,877 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,905 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,937 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,961 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:44,987 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,012 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,037 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,066 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,096 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,125 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,152 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,153 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:45,153 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:45,177 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,178 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:45,178 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:45,202 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,203 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:45,203 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2799
+2018-12-12 11:52:45,204 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:45,204 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2799
+2018-12-12 11:52:45,205 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:45,205 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2799
+2018-12-12 11:52:45,230 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,255 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,285 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,315 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,344 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,371 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,398 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,425 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,453 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,478 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,507 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,537 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,566 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,593 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,618 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,644 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,669 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,694 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,724 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,753 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,782 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,810 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,835 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,860 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,886 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,911 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,943 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:45,974 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,002 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,029 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,055 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,080 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,105 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,130 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,159 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,188 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,216 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,244 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,270 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,295 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,321 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,346 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,375 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,407 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,437 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,464 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,490 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,515 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,540 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,565 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,595 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,625 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,654 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,681 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,706 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,732 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,757 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,782 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,811 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,841 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,869 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,898 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,928 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,954 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:46,979 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,004 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,035 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,065 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,092 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,120 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,145 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,170 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,195 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,220 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,249 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,279 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,308 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,336 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,361 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,387 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,388 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,388 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,412 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,413 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,413 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,442 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,443 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,443 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,472 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,474 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,474 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,504 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,505 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,505 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,533 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,534 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,534 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,564 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,565 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,565 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,589 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,590 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,590 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,614 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,616 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,616 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,640 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,641 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,641 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2888
+2018-12-12 11:52:47,642 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,642 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,666 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,667 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,667 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,697 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,698 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,698 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,725 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,726 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,726 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:47,754 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,755 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:47,755 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#2892
+2018-12-12 11:52:47,784 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,809 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,835 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,861 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,887 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,917 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,948 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:47,979 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,008 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,034 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,060 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,085 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,111 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,143 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,171 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,201 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,229 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,255 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,280 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,306 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,331 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,361 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,392 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,423 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,451 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,477 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,503 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,553 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,582 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,613 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,642 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,670 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,696 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,721 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,747 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,773 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,802 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,832 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,861 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,891 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,917 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,947 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,973 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:48,998 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,032 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,062 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,089 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,117 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,142 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,168 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,193 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,219 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,249 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,279 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,309 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,336 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,362 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,388 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,413 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,414 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:49,415 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:49,443 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,444 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:49,445 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:49,475 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,476 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:49,476 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:49,505 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,506 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:49,506 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:49,534 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,535 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:49,535 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:49,563 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,588 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,614 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,641 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,666 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,695 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,724 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,757 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,786 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,813 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,839 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,865 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,893 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,925 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,954 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:49,983 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,014 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,040 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,066 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,092 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,119 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,149 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,177 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,205 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,233 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,260 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,286 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,314 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,340 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,369 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,395 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,430 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,473 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,503 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,534 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,564 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,594 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,622 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,653 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,681 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,707 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,733 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,759 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,787 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,819 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,846 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,878 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,909 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,936 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,965 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:50,994 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,020 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,048 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,074 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,106 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,132 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,162 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,204 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,259 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,309 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,340 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,341 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:51,341 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:51,373 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,377 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:51,377 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:51,421 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,424 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:51,424 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:51,468 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,469 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:51,469 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:51,504 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,508 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:51,508 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:51,539 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,541 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#3022
+2018-12-12 11:52:51,542 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#3022
+2018-12-12 11:52:51,574 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,575 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#3023
+2018-12-12 11:52:51,604 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,605 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#3024
+2018-12-12 11:52:51,606 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#3024
+2018-12-12 11:52:51,632 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,658 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,687 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,728 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,731 :: DEBUG :: --FAILED TO LOAD THE MIDI FILE ERROR#3028
+2018-12-12 11:52:51,780 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,817 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,853 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,888 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,915 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,953 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:51,985 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,025 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,059 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,095 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,130 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,162 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,194 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,225 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,259 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,290 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,320 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,353 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,384 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,412 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,444 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,484 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,518 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,561 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,596 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,631 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,658 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,686 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,687 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:52,687 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:52,714 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,715 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:52,715 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:52,749 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,751 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:52,751 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:52,776 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,777 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:52,778 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:52,808 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,809 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:52,809 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:52,835 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,864 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,893 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,926 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,953 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:52,988 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,030 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,063 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,093 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,128 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,158 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,187 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,226 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,257 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,302 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,334 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,362 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,400 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,430 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,462 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,499 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,528 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,559 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,605 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,644 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,675 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,705 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,740 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,766 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,793 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,826 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,865 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,893 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,923 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,959 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:53,986 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,018 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,047 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,078 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,112 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,139 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,140 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:54,140 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:54,167 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,168 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:54,169 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:54,196 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,197 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:54,197 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:54,224 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,225 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:54,225 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:54,262 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,266 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:54,266 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:54,308 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,345 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,374 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,413 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,458 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,511 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,553 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,584 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,615 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,644 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,691 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,728 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,769 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,814 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,849 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,878 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,906 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,936 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,968 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:54,998 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,027 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,066 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,104 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,154 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,202 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,237 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,272 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,305 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,350 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,382 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,426 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,469 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,509 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,555 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,599 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,646 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,683 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,710 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,739 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,768 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,795 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,826 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,856 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,888 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,917 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,945 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:55,973 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,003 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,033 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,062 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,091 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,123 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,150 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,176 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,204 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,234 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,266 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,297 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,325 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,351 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,378 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,409 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,436 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,467 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,493 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,524 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,551 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,578 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,604 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,634 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,664 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,692 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,718 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,749 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,775 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,801 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,827 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,853 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,880 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,912 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,939 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,940 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:56,940 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:56,966 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,967 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:56,967 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:56,992 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:56,993 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:56,993 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,022 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,023 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:57,023 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,050 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,051 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:57,051 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,076 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,103 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,132 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,168 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,201 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,228 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,258 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,284 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,311 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,337 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,367 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,394 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,422 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,451 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,494 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,524 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,554 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,586 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,616 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,645 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,673 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,675 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:57,675 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,702 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,704 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:57,704 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,733 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,734 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:57,734 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,765 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,766 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:57,766 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,796 :: DEBUG :: new track encoded stacked
+2018-12-12 11:52:57,797 :: DEBUG :: try to crop or pad
+2018-12-12 11:52:57,797 :: DEBUG :: crop or pad finished and shape (96, 128)
+2018-12-12 11:52:57,833 :: DEBUG :: new track encoded stacked

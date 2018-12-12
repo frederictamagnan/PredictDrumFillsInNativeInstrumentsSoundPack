@@ -4,31 +4,33 @@ import pypianoroll
 from pypianoroll import Multitrack, Track
 import torch.utils.data as Data
 from matplotlib import pyplot as plt
-from models.vae_rnn import *
+# from models.vae_rnn import *
 from utils import parse_data
 from DrumsDataset import DrumsDataset
 from utils import tensor_to_numpy
-
+from models.vae_rnn_2z import *
 dataset_path='./../data/'
 
-
+model3='vae_L1E-02_beta2E+01_beat48_loss4E+01_tanh_gru32_e20_b256_hd16-2_20181212_105409.pt'
 encoder = Encoder().to(device)
 decoder = Decoder(beat=48).to(device)
 vae = VAE(encoder, decoder).to(device)
 
 # vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt",map_location='cpu'))
-vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt",map_location='cpu'))
+# vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt",map_location='cpu'))
+vae.load_state_dict(torch.load("./../models/"+model3,map_location="cpu"))
 
 
 data = np.load(dataset_path+'dataset_fill.npz')
 X=data['X']
 y=data['y']
 
-w=y[:,1,:]
+print(y.shape,"y shape")
+# w=y[:,1,:]
 
-print(w.shape)
+# print(w.shape)
 # print(w[:300])
-index_fills=np.where(w[:,0]==1)
+# index_fills=np.where(w[:,0]==1)
 
 # train_x_reduced=X[index_fills[0],:,:]
 
@@ -66,8 +68,8 @@ test_loader = Data.DataLoader(
     num_workers=1,
 )
 
-
-global_tensor=np.zeros((1,32,2))
+#warning
+global_tensor=np.zeros((1,2,2))
 global_labels=np.zeros((1))
 
 for batch_i, (data,index) in enumerate(train_loader):
@@ -89,7 +91,7 @@ for batch_i, (data,index) in enumerate(train_loader):
 
         latent_tensor=np.stack((latent_mu,latent_std),axis=2)
 
-        labels=np.take(y,indexes)
+        labels=np.take(y[:,1,:],indexes)
         global_labels=np.concatenate((global_labels,labels))
 
         global_tensor=np.concatenate((global_tensor,latent_tensor))
@@ -107,9 +109,8 @@ print(global_tensor.shape,"global tensor shape")
 global_labels=global_labels[1:]
 global_tensor=global_tensor[1:,:,:]
 
-# np.savez('./../data/latentDataset_fixed_std.npz',X=global_tensor,y=global_labels)
 
-# for i in range(16):
-#     print(xs[i].shape,ys[i].shape)
-#     plt.scatter(xs[i], ys[i], s=0.1, alpha=1.0)
-#     plt.show()
+print(global_labels.sum())
+
+np.savez('./../data/latentDataset2_2z.npz',X=global_tensor,y=global_labels)
+
