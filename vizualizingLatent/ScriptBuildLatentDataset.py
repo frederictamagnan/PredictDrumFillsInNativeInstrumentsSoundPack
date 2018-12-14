@@ -109,8 +109,7 @@ print(global_tensor.shape,"global tensor shape")
 global_labels=global_labels[1:]
 global_tensor=global_tensor[1:,:,:]
 
-
 print(global_labels.sum())
 
-np.savez('./../data/latentDataset2_2z.npz',X=global_tensor,y=global_labels)
+np.savez('./../data/latentDataset_fills_without_genre_2z.npz',X=global_tensor,y=global_labels)
 

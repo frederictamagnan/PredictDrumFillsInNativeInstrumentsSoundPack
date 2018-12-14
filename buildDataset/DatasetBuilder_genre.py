@@ -149,7 +149,7 @@ class DatasetBuilder:
 datasetBuilder=DatasetBuilder()
 # datasetBuilder.folders_to_clean_numpy()
 
-X,y=datasetBuilder.load_dataset(filepath=newdir+'dataset_genres.npz')
+# X,y=datasetBuilder.load_dataset(filepath=newdir+'dataset_genres.npz')
 #
 print(X.shape)
 print(y.shape)

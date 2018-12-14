@@ -2,16 +2,16 @@ import numpy as np
 from sklearn.manifold import TSNE
 from matplotlib import pyplot as plt
 
-data=np.load('./../data/latentDataset2.npz')
+data=np.load('./../data/latentDataset_fills_without_genre_2z.npz')
 
 
 
-X_mu=data['X'][:500,:,0]
-X_std=data['X'][:500,:,1]
+X_mu=data['X'][500:1000,:,0]
+X_std=data['X'][500:1000,:,1]
 
 
 
-y=data['y'][:500]
+y=data['y'][500:1000]
 
 
 #test
@@ -42,24 +42,22 @@ colors = 'r', 'g'
 
 
 
-tsne = TSNE(n_components=2, random_state=0)
-X_mu_2d = tsne.fit_transform(X_mu)
-X_std_2d=tsne.fit_transform(X_std)
+# tsne = TSNE(n_components=2, random_state=0)
+# X_mu_2d = tsne.fit_transform(X_mu)
+# X_std_2d=tsne.fit_transform(X_std)
 
 # print(X_mu_2d.shape,"shape")
 
 
+# for i, c, label in zip(target_ids, colors,target_names ):
+#     plt.scatter(X_mu[y == i, 0], X_mu[y == i, 1], c=c, label=label)
+# plt.legend()
+# plt.show()
+# print(X_mu_2d[y==1,0].shape)
+
+
 for i, c, label in zip(target_ids, colors,target_names ):
-    plt.scatter(X_mu[y == i, 0], X_mu[y == i, 1], c=c, label=label)
+    plt.scatter(X_mu[y == i,0], X_mu[y == i,1], c=c, label=label)
 plt.legend()
 plt.show()
-print(X_mu_2d[y==0,0].shape)
-
-# for j in range(0,32):
-#     for w in range(j+1,32):
-#
-#         for i, c, label in zip(target_ids, colors,target_names ):
-#             plt.scatter(X_std[y == i,j], X_std[y == i,w], c=c, label=label)
-#         plt.legend()
-#         plt.show()
 
