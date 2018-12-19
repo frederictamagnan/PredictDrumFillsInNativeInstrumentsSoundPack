@@ -60,7 +60,8 @@ class DatasetBuilder:
         beat_resolution=True
 
         X=np.zeros((1,96,9))
-        y=np.zeros((1,2,1))
+        y_fills=np.zeros((1,2,1))
+        y_genre=np.zeros((1,12,1))
         i=0
         error=0
         for subdir,dirs, files in os.walk(self.rootdir):
@@ -75,19 +76,24 @@ class DatasetBuilder:
 
                     if "Fill" in subdir:
                         multi = self.crop_or_pad_fill(multi)
-                        fill=1
+                        label_fills=np.array([[0],[1]])
 
                     else:
                         multi=self.crop_groove(multi)
-                        fill=0
+                        label_fills = np.array([[1], [0]])
 
-                    label=self.return_label_genre(subdir,fill)
+                    label_genre=self.return_label_genre(subdir)
+
 
                     encoded = self.drum_encoding.multitrack_to_encoded_pianoroll(multi)
                     encoded = encoded.reshape(1, encoded.shape[0], encoded.shape[1])
-                    label=label.reshape(1,label.shape[0],label.shape[1])
+                    label_genre=label_genre.reshape(1,label_genre.shape[0],label_genre.shape[1])
+                    label_fills=label_fills.reshape(1,label_fills.shape[0],label_fills.shape[1])
+
                     X=np.concatenate((X,encoded))
-                    y=np.concatenate((y,label))
+                    y_fills=np.concatenate((y_fills,label_fills))
+                    y_genre=np.concatenate((y_genre,label_genre))
+
                     i+=1
                     logger.debug("new track encoded stacked")
 
@@ -96,9 +102,11 @@ class DatasetBuilder:
                     error+=1
 
         X=X[1:,:,:]
-        y=y[1:,:]
+        y_genre=y_genre[1:,:]
+        y_fills = y_fills[1:, :]
 
-        # np.savez(newdir+'dataset_genres_fill.npz',X=X,y=y)
+
+        np.savez(newdir+'dataset_genre_one_hot_17_12.npz',X=X,y_genre=y_genre,y_fills=y_fills)
         print("errors count : ",error)
         print(i)
         print("fill different less",filldifferent2,"mre",filldifferent1)
@@ -134,12 +142,16 @@ class DatasetBuilder:
         return multi
 
 
-    def return_label_genre(self,subdir,fill):
+    def return_label_genre(self,subdir):
+
+        label_genre=np.zeros((12,1))
 
         for i,elt in enumerate(self.list_genre):
 
             if elt in subdir:
-                return np.array([[i],[fill]])
+                label_genre[i,0]=1
+                print("RETURN LABEL")
+                return label_genre
 
         raise "Error finding genre"
 

@@ -39,7 +39,7 @@ class MultiDrumOneHotEncoding():
                                       for pitch in pitches)
 
     def encode_drum(self, pitches_in):
-        nonzero = np.where(pitches_in == 1)[0] +24
+        nonzero = np.where(pitches_in == 1)[0]
         ret = np.zeros(len(self._drum_type_pitches))
         for reduced, pitches in self._drum_map.items():
             for p in pitches:
