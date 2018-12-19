@@ -221,6 +221,9 @@ class DatasetBuilder:
         raise "Error finding genre"
 
 
+    def count_use_cymbals(self,multi):
+
+
 
 
 
