@@ -48,6 +48,18 @@ class MultiDrumOneHotEncoding():
                     break
         return ret
 
+    def encode_drum_velocity(self, pitches_in):
+        nonzero = np.where(pitches_in >0)[0]
+        ret = np.zeros(len(self._drum_type_pitches))
+        for reduced, pitches in self._drum_map.items():
+            for p in pitches:
+                if p in nonzero:
+                    ret[reduced] = pitches_in[p]
+                    break
+        return ret
+
+
+
     def multitrack_to_encoded_pianoroll(self, multitrack):
 
         pianoroll=multitrack.tracks[0].pianoroll
@@ -61,6 +73,18 @@ class MultiDrumOneHotEncoding():
 
         return ret
 
+    def multitrack_to_encoded_pianoroll_velocity(self, multitrack):
+
+        pianoroll=multitrack.tracks[0].pianoroll
+        ret=np.zeros((pianoroll.shape[0],len(self._drum_type_pitches)))
+
+        for i, elt in enumerate(pianoroll):
+
+            encoded_elt=self.encode_drum_velocity(elt)
+
+            ret[i,:]=encoded_elt
+
+        return ret
 
 
 

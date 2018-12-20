@@ -4,7 +4,7 @@ from sklearn.feature_selection import chi2
 from matplotlib import pyplot as plt
 from sklearn.feature_selection import SelectKBest
 import sys
-data=np.load('./../data/latentDataset_genre_fill.npz')
+data=np.load('./../data/latentDataset_genre_fill_batchsize.npz')
 
 
 
@@ -36,14 +36,14 @@ for j,elt in enumerate(style):
     print(elt)
     y=y_raw[y_raw[:,0,0]==j,1,0]
     print(y[y==0].shape[0],y[y==1].shape[0])
-    X_std=X_std_raw[y_raw[:,0,0]==j]
+    X_mu=X_mu_raw[y_raw[:,0,0]==j]
 
-    X_std=X_std[0:500]
+    X_mu=X_mu[0:500]
     y=y[0:500]
 
     tsne = TSNE(n_components=2, random_state=0)
-    X_std_2d = tsne.fit_transform(X_std)
-    print(X_std_2d.shape)
+    X_mu_2d = tsne.fit_transform(X_mu)
+    print(X_mu_2d.shape)
     # X_std_2d = SelectKBest(chi2, k=2).fit_transform(X_mu+0.5, y)
 
 
@@ -53,7 +53,7 @@ for j,elt in enumerate(style):
 
 
     for i, c, label in zip(target_ids, colors,target_names):
-        plt.scatter(X_std_2d[y== i, 0], X_std_2d[y == i, 1], c=c, label=label)
+        plt.scatter(X_mu_2d[y== i, 0], X_mu_2d[y == i, 1], c=c, label=label)
         plt.title(elt)
     plt.legend()
     plt.show()

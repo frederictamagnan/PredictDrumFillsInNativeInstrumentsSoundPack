@@ -7,8 +7,8 @@ import time
 from pathlib import Path
 TIME = time.strftime("%Y%m%d_%H%M%S")
 import sys
-ROOTDIR="/home/ftamagna/Documents/_AcademiaSinica/dataset/oddgrooves/ODDGROOVES_FILL_PACK/OddGrooves Fill Pack General MIDI"
-# ROOTDIR="/home/ftamagna/Documents/_AcademiaSinica/dataset//NI_Drum_Studio_Midi_encoded/MIDI Files"
+# ROOTDIR="/home/ftamagna/Documents/_AcademiaSinica/dataset/oddgrooves/ODDGROOVES_FILL_PACK/OddGrooves Fill Pack General MIDI"
+ROOTDIR="/home/ftamagna/Documents/_AcademiaSinica/dataset//NI_Drum_Studio_Midi_encoded/MIDI Files"
 
 
 newdir="/home/ftamagna/Documents/_AcademiaSinica/dataset/TotalFills/"
@@ -69,6 +69,9 @@ class DatasetBuilder:
         y_fills=np.zeros((1,2,1))
         y_genre=np.zeros((1,12,1))
         y_bpm=np.zeros((1,1))
+        y_used=np.zeros((1,9,1))
+        y_offbeat=np.zeros((1,1))
+        y_velocity=np.zeros((1,36))
 
         y_dataset=np.zeros((1,2,1))
         i=0
@@ -129,11 +132,13 @@ class DatasetBuilder:
 
 
                         encoded = self.drum_encoding.multitrack_to_encoded_pianoroll(multi)
+                        encoded_velocity=self.drum_encoding.multitrack_to_encoded_pianoroll_velocity(multi)
+
+                        label_velocity=self.compute_velocity_data(encoded_velocity)
                         #compute some extra data on encoded
-
-
-
-
+                        label_used=self.channels_used(encoded)
+                        offbeat=self.count_offbeats(encoded)
+                        label_offbeat = np.full(shape=(1, 1), fill_value=offbeat)
 
                         encoded = encoded.reshape(1, encoded.shape[0], encoded.shape[1])
 
@@ -141,14 +146,17 @@ class DatasetBuilder:
                         label_genre=label_genre.reshape(1,label_genre.shape[0],label_genre.shape[1])
                         label_fills=label_fills.reshape(1,label_fills.shape[0],label_fills.shape[1])
                         label_dataset=label_dataset.reshape(1,label_dataset.shape[0],label_dataset.shape[1])
+                        label_used=label_used.reshape(1,label_used.shape[0],1)
+                        label_velocity=label_velocity.reshape(1,label_velocity.shape[0])
 
                         X=np.concatenate((X,encoded))
                         y_fills=np.concatenate((y_fills,label_fills))
                         y_genre=np.concatenate((y_genre,label_genre))
                         y_bpm=np.concatenate((y_bpm,label_bpm))
                         y_dataset=np.concatenate((y_dataset,label_dataset))
-
-
+                        y_used=np.concatenate((y_used,label_used))
+                        y_offbeat=np.concatenate((y_offbeat,label_offbeat))
+                        y_velocity=np.concatenate((y_velocity,label_velocity))
                         logger.debug("new track encoded stacked")
                         list_multi.pop(0)
                         list_filepath.append(filepath)
@@ -160,14 +168,20 @@ class DatasetBuilder:
                     logger.debug("--FAILED TO LOAD THE MIDI FILE because index error ERROR#"+str(error))
                     error+=1
 
+                except:
+                    logger.debug("another error")
+
         X=X[1:,:,:]
         y_genre=y_genre[1:,:]
         y_fills = y_fills[1:,:]
         y_bpm=y_bpm[1:,:]
         y_dataset=y_dataset[1:,:]
+        y_used=y_used[1:,:]
+        y_offbeat=y_offbeat[1:,]
+        y_velocity=y_velocity[1:,]
 
 
-        np.savez(newdir+'dataset_odd_'+TIME+'.npz',X=X,y_genre=y_genre,y_fills=y_fills,y_bpm=y_bpm,y_dataset=y_dataset)
+        np.savez(newdir+'dataset_part_total_'+TIME+'.npz',X=X,y_genre=y_genre,y_fills=y_fills,y_bpm=y_bpm,y_dataset=y_dataset,y_used=y_used,y_velocity=y_velocity,y_offbeat=y_offbeat)
         print("errors count : ",error)
         print(i,"nb loop")
         print("fill different less",filldifferent2,"mre",filldifferent1)
@@ -221,7 +235,34 @@ class DatasetBuilder:
         raise "Error finding genre"
 
 
-    def count_use_cymbals(self,multi):
+    def channels_used(self,encoded):
+        used=np.max(encoded,axis=0)
+        print(used)
+        return used
+
+    def count_offbeats(self,encoded):
+
+        sum_axis=np.sum(encoded,axis=1)
+        sum_offbeat=sum_axis[::3].sum()
+        return sum_offbeat
+
+
+    def get_downbeat(self,multi):
+        return multi.count_downbeat()
+
+    def compute_velocity_data(self,encoded_velocity):
+
+        min_axis=np.min(encoded_velocity,axis=0)
+        # print(min_axis.shape,"min shape")
+        max_axis=np.max(encoded_velocity,axis=0)
+        std_axis=np.std(encoded_velocity,axis=0)
+        mean_axis=np.std(encoded_velocity,axis=0)
+
+        label_array=np.stack([min_axis,max_axis,std_axis,mean_axis],axis=0).reshape(-1)
+        # print(label_array.shape,"LABEL ARRAY SHAPE")
+
+        return np.stack(label_array)
+
 
 
 

@@ -8,17 +8,19 @@ from matplotlib import pyplot as plt
 from utils import parse_data
 from DrumsDataset import DrumsDataset
 from utils import tensor_to_numpy
-from models.vae_rnn_2z import *
+from models.vae_rnn_batch_size import *
 dataset_path='./../data/'
 
+
+BATCH_SIZE=50
 model3='vae_L1E-02_beta2E+01_beat48_loss4E+01_tanh_gru32_e20_b256_hd16-2_20181212_105409.pt'
-encoder = Encoder().to(device)
-decoder = Decoder(beat=48).to(device)
+encoder = Encoder(batch_size=BATCH_SIZE).to(device)
+decoder = Decoder(beat=48,batch_size=BATCH_SIZE).to(device)
 vae = VAE(encoder, decoder).to(device)
 
-# vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt",map_location='cpu'))
+vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt",map_location='cpu'))
 # vae.load_state_dict(torch.load("./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt",map_location='cpu'))
-vae.load_state_dict(torch.load("./../models/"+model3,map_location="cpu"))
+# vae.load_state_dict(torch.load("./../models/"+model3,map_location="cpu"))
 
 
 data = np.load(dataset_path+'dataset_fill.npz')
@@ -69,7 +71,7 @@ test_loader = Data.DataLoader(
 )
 
 #warning
-global_tensor=np.zeros((1,2,2))
+global_tensor=np.zeros((1,32,2))
 global_labels=np.zeros((1))
 
 for batch_i, (data,index) in enumerate(train_loader):
@@ -111,5 +113,5 @@ global_tensor=global_tensor[1:,:,:]
 
 print(global_labels.sum())
 
-# np.savez('./../data/latentDataset_fills_without_genre_2z.npz',X=global_tensor,y=global_labels)
+np.savez('./../data/latentDataset_fills_1920.npz',X=global_tensor,y=global_labels)
 

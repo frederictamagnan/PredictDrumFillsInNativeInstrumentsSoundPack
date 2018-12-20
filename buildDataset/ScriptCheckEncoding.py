@@ -46,7 +46,7 @@ class MultiDrumOneHotEncoding():
                                       for pitch in pitches)
 
     def encode_drum(self, pitches_in):
-        nonzero = np.where(pitches_in == 1)[0] + 24
+        nonzero = np.where(pitches_in == 1)[0]
         ret = np.zeros(len(self._drum_type_pitches))
         for reduced, pitches in _drum_map.items():
             for p in pitches:
@@ -73,6 +73,9 @@ def checkDrumEmpty(track):
 
 
 data = np.load(newdir+'dataset_odd_encoded_-24.npz')
+# data = np.load(newdir+'dataset_odd.npz')
+data = np.load(newdir+'dataset_NI_encoded_-24.npz')
+
 train_x_phr_np=data['X']
 print(train_x_phr_np.shape)
 check = [checkDrumEmpty(train_x_phr_np[i]) for i in range(train_x_phr_np.shape[0])]
@@ -98,10 +101,10 @@ train_x_drum_clean_reduced = np.zeros((
     len(DEFAULT_DRUM_TYPE_PITCHES),
 ))
 
-for bar_i, bar in enumerate(train_x_drum_clean):
-    print('converting...{}/{}'.format(bar_i + 1, train_x_drum_clean.shape[0]), end="\r")
-    for beat_i, beat in enumerate(bar):
-        train_x_drum_clean_reduced[bar_i][beat_i] = drum_encoding.encode_drum(beat)
+# for bar_i, bar in enumerate(train_x_drum_clean):
+#     print('converting...{}/{}'.format(bar_i + 1, train_x_drum_clean.shape[0]), end="\r")
+#     for beat_i, beat in enumerate(bar):
+#         train_x_drum_clean_reduced[bar_i][beat_i] = drum_encoding.encode_drum(beat)
 
 print()
 print(train_x_drum_clean_reduced.shape)
