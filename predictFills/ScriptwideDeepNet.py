@@ -10,7 +10,14 @@ from utils import tensor_to_numpy
 from sklearn.model_selection import train_test_split
 from torch.utils.data.dataset import random_split
 from sklearn.metrics import confusion_matrix
-data_raw=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/TotalFills/total.npz')
+import json
+data_raw=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/TotalFills/dataset_part_total_NI_1920.npz')
+filepath2='/home/ftamagna/Documents/_AcademiaSinica/dataset/TotalFills/data21.json'
+
+torch.manual_seed(0)
+with open(filepath2) as data_file:
+    subdir=json.load(data_file)
+
 data_raw=dict(data_raw)
 BATCH_SIZE=100
 N_EPOCHS=100
@@ -26,7 +33,12 @@ LR = 0.001
 
 
 
-dataset=WideDeepDataset(data_raw)
+dataset=WideDeepDataset(data_raw,subdir=subdir)
+# dataset.listen(1)
+
+
+
+
 
 ratio=0.8
 train_length= int(len(dataset)* ratio)
@@ -91,7 +103,7 @@ with torch.no_grad():
         X_d = Variable(X_deep).float()
         y = Variable(target).float()
         y_pred = widedeepnet(X_w, X_d)
-        y_pred_cat = (y_pred > 0.65).squeeze(1).float()
+        y_pred_cat = (y_pred > 0.8).squeeze(1).float()
 
         y_pred_total.append(tensor_to_numpy(y_pred_cat).astype(int))
         y_true_total.append(tensor_to_numpy(y).astype(int))

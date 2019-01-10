@@ -5,6 +5,7 @@ from pypianoroll import Multitrack,Track
 import pypianoroll as ppr
 import time
 from pathlib import Path
+import json
 TIME = time.strftime("%Y%m%d_%H%M%S")
 import sys
 # ROOTDIR="/home/ftamagna/Documents/_AcademiaSinica/dataset/oddgrooves/ODDGROOVES_FILL_PACK/OddGrooves Fill Pack General MIDI"
@@ -64,7 +65,7 @@ class DatasetBuilder:
         filldifferent1=0
         filldifferent2=0
         beat_resolution=True
-
+        list_subdir=[]
         X=np.zeros((1,96,9))
         y_fills=np.zeros((1,2,1))
         y_genre=np.zeros((1,12,1))
@@ -160,6 +161,7 @@ class DatasetBuilder:
                         logger.debug("new track encoded stacked")
                         list_multi.pop(0)
                         list_filepath.append(filepath)
+                        list_subdir.append(filepath)
 
 
 
@@ -182,6 +184,11 @@ class DatasetBuilder:
 
 
         np.savez(newdir+'dataset_part_total_'+TIME+'.npz',X=X,y_genre=y_genre,y_fills=y_fills,y_bpm=y_bpm,y_dataset=y_dataset,y_used=y_used,y_velocity=y_velocity,y_offbeat=y_offbeat)
+
+        with open(newdir + 'data'+TIME+'.json', 'w') as outfile:
+            json.dump(list_subdir, outfile)
+
+
         print("errors count : ",error)
         print(i,"nb loop")
         print("fill different less",filldifferent2,"mre",filldifferent1)

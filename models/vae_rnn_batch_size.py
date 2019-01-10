@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 '''
 Constants
 '''
-BATCH_SIZE = 256
+BATCH_SIZE = 128
 NUM_FEATURES = 9 # original: 128, trimmed: 47 (34 - 81)
 SEQ_LEN = 96
 BEAT = 48
@@ -51,7 +51,7 @@ else:
 
 class Encoder(torch.nn.Module):
 
-    def __init__(self,batch_size=256):
+    def __init__(self,batch_size=BATCH_SIZE):
         super(Encoder, self).__init__()
         self.gru = torch.nn.GRU(
             input_size=NUM_FEATURES,
@@ -69,6 +69,7 @@ class Encoder(torch.nn.Module):
             LINEAR_HIDDEN_SIZE[0])
         self.bn1 = torch.nn.BatchNorm1d(LINEAR_HIDDEN_SIZE[0])
         self.batch_size=batch_size
+        print('self batch size',batch_size)
 
     def forward(self, x):
         # print(type(x))
@@ -87,7 +88,7 @@ class Encoder(torch.nn.Module):
 
 class Decoder(torch.nn.Module):
 
-    def __init__(self, beat=BEAT,batch_size=256):
+    def __init__(self, beat=BEAT,batch_size=BATCH_SIZE):
         super(Decoder, self).__init__()
         self.beat = beat
 
@@ -139,7 +140,7 @@ class Decoder(torch.nn.Module):
 class VAE(torch.nn.Module):
 
 
-    def __init__(self, encoder, decoder,batch_size=256):
+    def __init__(self, encoder, decoder,batch_size=BATCH_SIZE):
         super(VAE, self).__init__()
         self.encoder= encoder
         self.decoder = decoder
