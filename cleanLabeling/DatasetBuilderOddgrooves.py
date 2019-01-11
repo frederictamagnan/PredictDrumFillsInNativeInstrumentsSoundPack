@@ -5,8 +5,7 @@ import time
 from pathlib import Path
 import json
 import sys
-ROOTDIR2="/home/ftamagna/Documents/_AcademiaSinica/dataset/oddgrooves/ODDGROOVES_FILL_PACK/OddGrooves Fill Pack General MIDI"
-ROOTDIR="/home/ftamagna/Documents/_AcademiaSinica/dataset//NI_Drum_Studio_Midi_encoded/MIDI Files"
+
 
 
 newdir="/home/ftamagna/Documents/_AcademiaSinica/dataset/TrainingData/RawFiles/"
@@ -52,7 +51,7 @@ class DatasetBuilder:
 
 
 
-    def folders_to_clean_numpy(self):
+    def folders_to_clean_numpy(self,name):
         TIME = time.strftime("%Y%m%d_%H%M%S")
 
         list_filepath=[]
@@ -87,10 +86,10 @@ class DatasetBuilder:
             # if i > 2:
             #     break
 
+        X=X[1:]
+        np.savez(newdir+name+'_raw.npz',X=X)
 
-        np.savez(newdir+'raw_concatenation_'+TIME+'.npz',X=X)
-
-        with open(newdir + 'data'+TIME+'.json', 'w') as outfile:
+        with open(newdir +name+'_filepath.json', 'w') as outfile:
             json.dump(list_filepath, outfile)
 
 
@@ -146,10 +145,13 @@ def statistics(filepath):
 
 if __name__ == '__main__':
 
-    # datasetBuilder=DatasetBuilder(ROOTDIR)
-    # datasetBuilder.folders_to_clean_numpy()
-    datasetBuilder = DatasetBuilder(ROOTDIR2)
-    datasetBuilder.folders_to_clean_numpy()
+    ROOTDIR = "/home/ftamagna/Documents/_AcademiaSinica/dataset//NI_Drum_Studio_Midi_encoded/MIDI Files"
+    ROOTDIR2 = "/home/ftamagna/Documents/_AcademiaSinica/dataset/oddgrooves/ODDGROOVES_FILL_PACK/OddGrooves Fill Pack General MIDI"
+
+    datasetBuilder=DatasetBuilder(ROOTDIR)
+    datasetBuilder.folders_to_clean_numpy('NI')
+    datasetBuilder2 = DatasetBuilder(ROOTDIR2)
+    datasetBuilder2.folders_to_clean_numpy('OG')
 
 
 

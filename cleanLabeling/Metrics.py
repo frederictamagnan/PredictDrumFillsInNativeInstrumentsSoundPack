@@ -36,6 +36,9 @@ class Metrics:
         self.metrics['offbeat_notes'] = self.offbeat_notes()
         self.metrics['velocity_metrics'] = self.velocity_metrics()
 
+        for key in self.metrics.keys():
+            self.metrics[key]=self.metrics[key].reshape((self.metrics[key].shape[0],-1))
+
 
         if remove_blank_lines:
             for key in self.metrics.keys():
@@ -123,7 +126,7 @@ class Metrics:
 
 
     def save_metrics(self,filepath,name):
-        np.savez(filepath+'_'+name+'metrics_training.npz',**self.metrics)
+        np.savez(filepath+name+'_metrics_training.npz',**self.metrics)
 
 if __name__=='__main__':
     lol=np.zeros((8000,96,128))

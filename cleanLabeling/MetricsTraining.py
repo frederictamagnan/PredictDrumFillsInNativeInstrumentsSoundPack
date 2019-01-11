@@ -24,6 +24,7 @@ class MetricsTraining(Metrics):
         self.metrics['dataset'] = np.zeros((1, 2, 1))
 
         for filepath in self.list_filepath:
+            print("lol")
             # Process the fills label
             if "Fill" in filepath or "OddGrooves" in filepath:
                 label_fills = np.array([[0], [1]])
@@ -70,6 +71,14 @@ class MetricsTraining(Metrics):
             self.metrics['bpm'] = np.concatenate((self.metrics['bpm'], label_bpm))
             self.metrics['dataset'] = np.concatenate((self.metrics['dataset'] , label_dataset))
 
+        list_special_label=['fills',"genre","bpm","dataset"]
+        for key in list_special_label:
+            self.metrics[key]=np.delete(self.metrics[key], 0, 0)
+            if key!='fills':
+                self.metrics[key] = self.metrics[key].reshape((self.metrics[key].shape[0], -1))
+
+
+
 
     def return_label_genre(self,subdir):
 
@@ -85,7 +94,8 @@ class MetricsTraining(Metrics):
         raise "Error finding genre"
 
     def save_metrics(self,filepath,name):
-        with open(filepath +'_'+name +'list_filepath' + '.json', 'w') as outfile:
+        with open(filepath +name +'_list_filepath' + '.json', 'w') as outfile:
             json.dump(self.metrics['list_filepath'], outfile)
+
         self.metrics.pop('list_filepath', None)
         super().save_metrics(filepath,name)
