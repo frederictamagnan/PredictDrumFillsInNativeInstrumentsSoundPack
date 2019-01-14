@@ -71,12 +71,11 @@ class MetricsTraining(Metrics):
             self.metrics['bpm'] = np.concatenate((self.metrics['bpm'], label_bpm))
             self.metrics['dataset'] = np.concatenate((self.metrics['dataset'] , label_dataset))
 
-        list_special_label=['fills',"genre","bpm","dataset"]
+        list_special_label=["fills","genre","bpm","dataset"]
         for key in list_special_label:
             self.metrics[key]=np.delete(self.metrics[key], 0, 0)
             if key!='fills':
                 self.metrics[key] = self.metrics[key].reshape((self.metrics[key].shape[0], -1))
-
 
 
 

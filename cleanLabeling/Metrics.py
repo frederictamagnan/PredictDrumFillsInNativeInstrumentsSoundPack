@@ -120,7 +120,7 @@ class Metrics:
         print(global_tensor.shape, "global tensor shape")
 
         global_indexes = global_indexes[1:]
-        global_tensor = global_tensor[1:, :, :]
+        global_tensor = global_tensor[1:, :, 0]
 
         return global_tensor
 

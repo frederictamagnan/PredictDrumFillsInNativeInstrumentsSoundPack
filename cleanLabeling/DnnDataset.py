@@ -17,7 +17,7 @@ class DnnDataset(Dataset):
     """
 
 
-    def __init__(self, data, list_filepath,dataset=None,upsampling=True):
+    def __init__(self, data, list_filepath,dataset=None,downsampling=True,upsampling=False):
 
         # if dataset is not None:
         #     self.data=self.filter_by_(dataset,data)
@@ -28,18 +28,24 @@ class DnnDataset(Dataset):
         self.data=data
         labels_deep=['vae_embeddings','drums_pitches_used','offbeat_notes','velocity_metrics']
         # labels_deep=['vae_embeddings']
-
+        print(data['vae_embeddings'].shape,"DATA VAE SHAPE")
         list_data_deep=[]
         for key in labels_deep:
             list_data_deep.append(data[key])
             print(data[key].shape,"check shape")
         self.X_deep=np.concatenate(list_data_deep,axis=1)
         Y=data['fills'][:,1,0]
+        Y=Y.reshape((-1,1))
         self.Y=Y
         self.list_filepath=list_filepath
-        if upsampling:
+        if downsampling:
+            self.downsampling()
+
+        if not(downsampling) and upsampling:
             self.upsampling()
+
         self.shuffle()
+
 
     def __getitem__(self, idx):
 
@@ -65,10 +71,10 @@ class DnnDataset(Dataset):
 
         return data_raw
 
-    def upsampling(self):
-        print(len(self.X_deep),"before upsampling")
-        indexes_0=np.argwhere(self.Y==0).reshape(-1)
-        indexes_1 = np.argwhere(self.Y == 1).reshape(-1)
+    def downsampling(self):
+        print(len(self.X_deep),"before downsampling")
+        indexes_0=np.argwhere(self.Y.reshape(-1)==0).reshape(-1)
+        indexes_1 = np.argwhere(self.Y.reshape(-1) == 1).reshape(-1)
         indexes_0_reduced=np.random.choice(indexes_0,size=len(indexes_1),replace=False)
 
 
@@ -76,13 +82,28 @@ class DnnDataset(Dataset):
 
         self.X_deep=np.concatenate((self.X_deep[indexes_0_reduced],self.X_deep[indexes_1]))
         self.list_filepath=[self.list_filepath[i] for i in indexes_0_reduced]+[self.list_filepath[i] for i in indexes_1]
-
         self.Y=np.concatenate((self.Y[indexes_0_reduced],self.Y[indexes_1]))
+        print(len(self.X_deep),"after downsampling")
+
+
+    def upsampling(self):
+        print(len(self.X_deep),"before upsampling")
+        indexes_0=np.argwhere(self.Y.reshape(-1)==0).reshape(-1)
+        indexes_1 = np.argwhere(self.Y.reshape(-1) == 1).reshape(-1)
+        indexes_1_more=np.random.choice(indexes_1,size=len(indexes_0),replace=True)
+
+
+        # print(indexes_1_reduced[:3])
+
+        self.X_deep=np.concatenate((self.X_deep[indexes_0],self.X_deep[indexes_1_more]))
+        self.list_filepath=[self.list_filepath[i] for i in indexes_0]+[self.list_filepath[i] for i in indexes_1_more]
+        self.Y=np.concatenate((self.Y[indexes_0],self.Y[indexes_1_more]))
         print(len(self.X_deep),"after upsampling")
 
     def shuffle(self):
         indexes_shuffled=np.random.choice(len(self.X_deep),size=len(self.X_deep),replace=False)
         self.X_deep=self.X_deep[indexes_shuffled]
+        self.Y=self.Y[indexes_shuffled]
         self.list_filepath=[self.list_filepath[i] for i in indexes_shuffled]
 
 

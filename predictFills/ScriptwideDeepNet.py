@@ -125,6 +125,7 @@ lentrue=len(y_true_total)
 conf=confusion_matrix(y_true_total,y_pred_total).ravel()
 print(conf/total*100)
 tn, fp, fn, tp=conf
+print(conf)
 
 print(tp/(fp+tp),"Ratio of True among all fills found")
 print(tp/(fn+tp),"Ratio of True among all fills in dataset")
