@@ -40,7 +40,7 @@ class ComputeMetricsLPD:
                     p = self.filepath_dataset + self.middle + self.file
 
                     for npz in os.listdir(p):
-                        
+
                         self.process_npz_file(p,npz)
 
 
@@ -52,6 +52,8 @@ class ComputeMetricsLPD:
         multi=Multitrack(path+"/"+npz)
         track=multi.tracks[0].pianoroll
         # print(track.shape)
+        if track.shape[0]==0:
+            return 0
         if track.shape[0]%96!=0:
             to_complete_len=96-track.shape[0]%96
             to_complete=np.zeros((to_complete_len,128))
