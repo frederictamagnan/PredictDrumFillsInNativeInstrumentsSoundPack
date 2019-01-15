@@ -68,7 +68,7 @@ def build_generation_dataset(p, npz):
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
     indexes_fills = np.argwhere(label == 1)
-    if len(indexes_fills.shape[0]) == 0:
+    if indexes_fills.shape[0] == 0:
         return None
     else:
 
