@@ -40,8 +40,10 @@ class ComputeMetricsLPD:
                     p = self.filepath_dataset + self.middle + self.file
 
                     for npz in os.listdir(p):
-
-                        self.process_npz_file(p,npz)
+                        try:
+                            self.process_npz_file(p,npz)
+                        except:
+                            print("failure")
 
 
 
