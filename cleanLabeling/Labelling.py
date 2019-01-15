@@ -25,21 +25,21 @@ class Labelling:
 
         for tag_i, tag in enumerate(self.filepath_tags):
 
-            if tag_i == 0:
-                print('>>' + tag[29:-3])
-                with open(tag, 'r') as f:
-                    # ITERATE OVER THE FOLDER LISTS
 
-                    for i, file in enumerate(f):
-                        # (str(f))
-                        #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
-                        self.file = file.rstrip()
-                        self.middle = '/'.join(self.file[2:5]) + '/'
-                        p = self.filepath_dataset + self.middle + self.file
+            print('>>' + tag[29:-3])
+            with open(tag, 'r') as f:
+                # ITERATE OVER THE FOLDER LISTS
 
-                        for npz in os.listdir(p):
-                            if '_metrics_training' in npz:
-                                self.label(p,npz)
+                for i, file in enumerate(f):
+                    # (str(f))
+                    #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
+                    self.file = file.rstrip()
+                    self.middle = '/'.join(self.file[2:5]) + '/'
+                    p = self.filepath_dataset + self.middle + self.file
+
+                    for npz in os.listdir(p):
+                        if '_metrics_training' in npz:
+                            self.label(p,npz)
 
 
     def label(self,path,npz):
