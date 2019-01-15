@@ -59,7 +59,7 @@ class Metrics:
     def velocity_metrics(self):
 
         min_axis=np.min(self.batch_multitrack_reduced_velocity,axis=1)
-        print(min_axis.shape,"min shape")
+        # print(min_axis.shape,"min shape")
         max_axis=np.max(self.batch_multitrack_reduced_velocity,axis=1)
         std_axis=np.std(self.batch_multitrack_reduced_velocity,axis=1)
         mean_axis=np.std(self.batch_multitrack_reduced_velocity,axis=1)
@@ -81,7 +81,7 @@ class Metrics:
             map_location='cpu'))
 
         train_dataset = DrumsDataset(self.batch_multitrack_reduced)
-        print(len(train_dataset))
+        # print(len(train_dataset))
 
         train_loader = Data.DataLoader(
             dataset=train_dataset,
@@ -116,8 +116,8 @@ class Metrics:
 
                 print(batch_i)
 
-        print(global_indexes.shape, "labels shape")
-        print(global_tensor.shape, "global tensor shape")
+        # print(global_indexes.shape, "labels shape")
+        # print(global_tensor.shape, "global tensor shape")
 
         global_indexes = global_indexes[1:]
         global_tensor = global_tensor[1:, :, 0]
