@@ -16,6 +16,6 @@ path_tags= [
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_RnB.id',
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id', # 13
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
-]'
+]
 cm= ComputeMetricsLPD(path,path_tags)
 cm.macro_iteration()
