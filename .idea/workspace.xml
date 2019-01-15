@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/ExploreLabelling.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" afterPath="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/DnnDataset.py" afterPath="$PROJECT_DIR$/cleanLabeling/DnnDataset.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/Labeling.py" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/TrainingClassifier.py" afterPath="$PROJECT_DIR$/cleanLabeling/TrainingClassifier.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +28,8 @@
       <file leaf-file-name="ComputeMetricsLPD.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+            <state relative-caret-position="414">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -46,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="79" selection-end-column="5" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -54,7 +49,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExploreLabelling.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Metrics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/Metrics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="122" column="46" lean-forward="false" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExploreLabelling.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ExploreLabelling.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -76,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatasetBuilderOddgrooves.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DatasetBuilderOddgrooves.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="639">
               <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="43" />
               <folding />
             </state>
@@ -106,20 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DnnNet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cleanLabeling/DnnNet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ComputeMetrics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="351">
               <caret line="28" column="104" lean-forward="true" selection-start-line="28" selection-start-column="104" selection-end-line="28" selection-end-column="104" />
               <folding />
             </state>
@@ -206,16 +203,16 @@
         <option value="$PROJECT_DIR$/cleanLabeling/MetricsTraining.py" />
         <option value="$PROJECT_DIR$/predictFills/ScriptwideDeepNet.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/cleanLabeling/DnnDataset.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/Metrics.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/MetadataVisualization.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DnnNet.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DatasetBuilderLPD.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/TrainingClassifier.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labeling.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DnnDataset.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ExploreLabelling.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/Metrics.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" />
       </list>
     </option>
   </component>
@@ -258,11 +255,6 @@
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="cleanLabeling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -428,12 +420,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1421" y="375" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2787062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36707565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36707565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -706,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="122" column="46" lean-forward="false" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/pypianoroll/multitrack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -748,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="28" column="104" lean-forward="true" selection-start-line="28" selection-start-column="104" selection-end-line="28" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumsDataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -782,39 +759,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/lib/npyio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-559">
           <caret line="383" column="0" lean-forward="false" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,6 +774,52 @@
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="79" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="122" column="46" lean-forward="false" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="28" column="104" lean-forward="true" selection-start-line="28" selection-start-column="104" selection-end-line="28" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
