@@ -67,7 +67,7 @@ class ComputeMetricsLPD:
         #enregistre metrics
         #predit label
         #enregistrelabel
-        print("done")
+        # print("done")
 
 
 if __name__=='__main__':

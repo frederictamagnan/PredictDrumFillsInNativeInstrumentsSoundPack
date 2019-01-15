@@ -24,10 +24,10 @@ class Metrics:
             self.blank_lines=np.zeros((to_complete,96,128))
             self.batch_multitrack=np.concatenate((self.batch_multitrack,self.blank_lines))
             remove_blank_lines=True
-            print(self.batch_multitrack.shape)
+            # print(self.batch_multitrack.shape)
 
         self.batch_multitrack_reduced_velocity=drumReducerExpander.encode(self.batch_multitrack)
-        print(self.batch_multitrack_reduced_velocity.shape)
+        # print(self.batch_multitrack_reduced_velocity.shape)
         self.batch_multitrack_reduced=np.zeros(self.batch_multitrack_reduced_velocity.shape)
         self.batch_multitrack_reduced[self.batch_multitrack_reduced_velocity>0]=1
 
@@ -100,7 +100,7 @@ class Metrics:
                 data = Variable(data).type(torch.float32).to(device)
                 latent_mu = vae._enc_mu(encoder(data))
                 latent_std = torch.exp(vae._enc_log_sigma(encoder(data)))
-                print(latent_std.shape, latent_mu.shape, "SHAPE LATENT")
+                # print(latent_std.shape, latent_mu.shape, "SHAPE LATENT")
                 # the distance between first 2 latent vectors
 
                 indexes = tensor_to_numpy(index)
@@ -114,7 +114,7 @@ class Metrics:
 
                 global_tensor = np.concatenate((global_tensor, latent_tensor))
 
-                print(batch_i)
+                # print(batch_i)
 
         # print(global_indexes.shape, "labels shape")
         # print(global_tensor.shape, "global tensor shape")
