@@ -18,7 +18,7 @@ from sklearn.metrics import confusion_matrix
 class TrainingClassifier:
 
 
-    def __init__(self,metrics_dir,metrics_filename,filepath_filename,batch_size,n_epochs,lr,downsampling=True,upsampling=False):
+    def __init__(self,metrics_dir,metrics_filename,filepath_filename,batch_size,n_epochs,lr,downsampling=True,upsampling=False,decision_threshold=0.5):
         # torch.manual_seed(1)
         self.metrics_dir=metrics_dir
         self.metrics_filename=metrics_filename
@@ -28,7 +28,7 @@ class TrainingClassifier:
         self.lr=lr
         self.downsampling=downsampling
         self.upsampling=upsampling
-
+        self.decision_threshold=decision_threshold
 
     def load_dataset(self):
         self.data_raw=np.load(self.metrics_dir+self.metrics_filename)
@@ -90,7 +90,7 @@ class TrainingClassifier:
                 X_d = Variable(X_deep).float()
                 y = Variable(target).float()
                 y_pred = dnn( X_d)
-                y_pred_cat = (y_pred > 0.5).squeeze(1).float()
+                y_pred_cat = (y_pred > self.decision_threshold).squeeze(1).float()
 
                 total += y.size(0)
                 correct+= (y_pred_cat.squeeze() == y.squeeze()).sum().item()
@@ -111,7 +111,7 @@ class TrainingClassifier:
                 X_d = Variable(X_deep).float()
                 y = Variable(target).float()
                 y_pred = dnn(X_d)
-                y_pred_cat = (y_pred > 0.5).squeeze(1).float()
+                y_pred_cat = (y_pred > self.decision_threshold).squeeze(1).float()
 
                 y_pred_total.append(tensor_to_numpy(y_pred_cat).astype(int))
                 y_true_total.append(tensor_to_numpy(y.squeeze(1).float()).astype(int))
@@ -208,10 +208,11 @@ if __name__=='__main__':
     metricsfilename = 'total_metrics_training.npz'
     filepathfilename = 'total_list_filepath.json'
 
-    BATCH_SIZE=512
-    N_EPOCHS=100
+    BATCH_SIZE=256
+    N_EPOCHS=600
     LR = 0.0001
-    tc=TrainingClassifier(metricsdir,metricsfilename,filepathfilename,BATCH_SIZE,N_EPOCHS,LR,downsampling=True,upsampling=False)
+    DT=0.5
+    tc=TrainingClassifier(metricsdir,metricsfilename,filepathfilename,BATCH_SIZE,N_EPOCHS,LR,downsampling=False,upsampling=True,decision_threshold=DT)
     tc.load_dataset()
     # for i in range(1000):
     #     print(tc.dataset.Y[i],tc.dataset.list_filepath[i])
