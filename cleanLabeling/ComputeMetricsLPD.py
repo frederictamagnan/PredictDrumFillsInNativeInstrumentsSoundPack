@@ -40,6 +40,7 @@ class ComputeMetricsLPD:
                     p = self.filepath_dataset + self.middle + self.file
 
                     for npz in os.listdir(p):
+
                         self.process_npz_file(p,npz)
 
 
@@ -67,7 +68,7 @@ class ComputeMetricsLPD:
 
 
 if __name__=='__main__':
-~
+
 
 
     PATH = '//home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_debug/'
