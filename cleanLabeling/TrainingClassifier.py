@@ -141,6 +141,10 @@ class TrainingClassifier:
 
         print("NUMBER OF PARAMETER : " + str(params))
 
+        self.net=dnn
+
+    def save_model(self,filepath,name):
+        torch.save(self.net.state_dict(), filepath+name)
 
 
 
@@ -221,6 +225,7 @@ if __name__=='__main__':
     print(tc.dataset.Y.sum())
     print(len(tc.dataset.Y))
     tc.train_model()
+    tc.save_model('./','fillClassifier')
 
 
 

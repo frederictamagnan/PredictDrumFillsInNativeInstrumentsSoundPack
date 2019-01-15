@@ -17,14 +17,14 @@ class DnnDataset(Dataset):
     """
 
 
-    def __init__(self, data, list_filepath,dataset=None,downsampling=True,upsampling=False):
+    def __init__(self, data, list_filepath,dataset=None,downsampling=True,upsampling=False,inference=False):
 
         # if dataset is not None:
         #     self.data=self.filter_by_(dataset,data)
 
         if list_filepath is None:
             raise "arg list filepath required"
-
+        self.inference=inference
         self.data=data
         labels_deep=['vae_embeddings','drums_pitches_used','offbeat_notes','velocity_metrics']
         # labels_deep=['vae_embeddings']
@@ -34,28 +34,33 @@ class DnnDataset(Dataset):
             list_data_deep.append(data[key])
             print(data[key].shape,"check shape")
         self.X_deep=np.concatenate(list_data_deep,axis=1)
-        Y=data['fills'][:,1,0]
-        Y=Y.reshape((-1,1))
-        self.Y=Y
-        self.list_filepath=list_filepath
-        if downsampling:
-            self.downsampling()
+        if not(self.inference):
+            Y=data['fills'][:,1,0]
+            Y=Y.reshape((-1,1))
+            self.Y=Y
+            self.list_filepath=list_filepath
+            if downsampling:
+                self.downsampling()
 
-        if not(downsampling) and upsampling:
-            self.upsampling()
+            if not(downsampling) and upsampling:
+                self.upsampling()
 
-        self.shuffle()
+            self.shuffle()
 
 
     def __getitem__(self, idx):
 
         xd = self.X_deep[idx]
-        y  = self.Y[idx]
 
-        return xd, y
+        if not(self.inference):
+            y  = self.Y[idx]
+
+            return xd, y
+
+        return xd
 
     def __len__(self):
-        return len(self.Y)
+        return len(self.X_deep)
 
 
     def filter_by_(self,dataset_number,data_raw):

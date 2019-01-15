@@ -3,10 +3,6 @@ from pypianoroll import Multitrack,Track
 import numpy as np
 from Metrics import Metrics
 
-PATH = '//home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_debug/'
-PATH_TAGS = [
-            '/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id',
-        ]
 
 
 
