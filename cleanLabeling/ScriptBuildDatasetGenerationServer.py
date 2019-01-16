@@ -79,8 +79,8 @@ def build_generation_dataset(p, npz):
     label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
 
 
-    mask_fills_cleane d =(label_previous_next_shape = =[0, 1, 0]).all(axis=1)
-    indexes_fills_cleane d =np.argwhere(mask_fills_cleane d= =True ) +1
+    mask_fills_cleaned =(label_previous_next_shape ==[0, 1, 0]).all(axis=1)
+    indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True ) +1
 
     if indexes_fills_cleaned.shape[0] == 0:
         return None
@@ -95,7 +95,7 @@ def build_generation_dataset(p, npz):
 
 if __name__ == '__main__':
 
-    serve r =True
+    server =True
 
     if server:
         path = '/home/ftamagnan/lpd_5/lpd_5_cleansed/'
