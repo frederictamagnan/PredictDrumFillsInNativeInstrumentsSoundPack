@@ -1,28 +1,30 @@
-path='/home/ftamagnan/lpd_5/lpd_5_cleansed/'
-path_tags= [
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Blues.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Country.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Electronic.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Folk.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Jazz.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Latin.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Metal.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_New-Age.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Pop.id', # 8
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Punk.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rap.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Reggae.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_RnB.id',
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id', # 13
-    '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
-]
+path = '/home/ftamagnan/lpd_5/lpd_5_cleansed/'
+# path_tags= [
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Blues.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Country.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Electronic.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Folk.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Jazz.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Latin.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Metal.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_New-Age.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Pop.id', # 8
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Punk.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rap.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Reggae.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_RnB.id',
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id', # 13
+#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
+# ]
+
+path_tags = ['/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id']
 
 import os
 import numpy as np
 from pypianoroll import Track, Multitrack
+from DrumReducerExpander import DrumReducerExpander
 
-
-def macro_iteration(filepath_dataset, filepath_tags):
+def macro_iteration(filepath_dataset, filepath_tags,max=5000,reduced=False):
     fills = np.zeros((1, 288, 128))
     count = 0
 
@@ -48,11 +50,16 @@ def macro_iteration(filepath_dataset, filepath_tags):
                         if fill is not None:
                             fills = np.concatenate((fills, fill))
 
-    fills = fills.reshape((fills.shape[0], 3, 96, 128))
-    print(fills.shape[0], "SHAPE 0")
-    fills=fills[1:]
-    np.savez("./fills", fills=fills)
-    print(count)
+                        if fills.shape[0]>max:
+                            fills = fills.reshape((fills.shape[0], 3, 96, 128))
+                            fills = fills[1:]
+                            np.savez("./fills", fills=fills)
+                            return 0
+
+
+
+
+
 
 
 def build_generation_dataset(p, npz):
@@ -68,18 +75,20 @@ def build_generation_dataset(p, npz):
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
     indexes_fills = np.argwhere(label == 1)
+    label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:]))
+    mask_fills_cleaned=(label_previous_next_shape == [0, 1, 0]).all(axis=1)
+    indexes_fills_cleaned=np.argwhere(mask_fills_cleaned==True)+1
+
     if indexes_fills.shape[0] == 0:
         return None
     else:
 
-        indexes_fills = np.delete(indexes_fills, np.where(indexes_fills == len(label) - 1))
-        indexes_fills = np.delete(indexes_fills, np.where(indexes_fills == 0))
 
-        tab = np.concatenate((track[indexes_fills - 1], track[indexes_fills], track[indexes_fills + 1]), axis=1)
+        tab = np.concatenate((track[indexes_fills_cleaned - 1], track[indexes_fills_cleaned], track[indexes_fills_cleaned + 1]), axis=1)
         # print(tab.shape)
         return tab
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     macro_iteration(filepath_dataset=path, filepath_tags=path_tags)
 

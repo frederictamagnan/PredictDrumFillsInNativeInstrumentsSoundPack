@@ -1,5 +1,7 @@
 import numpy as np
-
+from pypianoroll import Track,Multitrack
+import pypianoroll as ppr
+from utils import random_file
 DEFAULT_DRUM_TYPE_PITCHES = [
     # bass drum
     [36, 35],
@@ -34,7 +36,13 @@ DEFAULT_DRUM_TYPE_PITCHES = [
 class DrumReducerExpander:
 
 
-    def __init__(self):
+    def __init__(self, offset=False):
+
+
+        if offset:
+            for i,elt in enumerate(DEFAULT_DRUM_TYPE_PITCHES):
+                DEFAULT_DRUM_TYPE_PITCHES[i]= [x-24 for x in DEFAULT_DRUM_TYPE_PITCHES[i]]
+
         self._drum_type_pitches = DEFAULT_DRUM_TYPE_PITCHES
         self._drum_map = dict(enumerate(DEFAULT_DRUM_TYPE_PITCHES))
         self._inverse_drum_map = dict((pitch, index)
@@ -45,23 +53,47 @@ class DrumReducerExpander:
 
 
 
-    def encode(self,batch_pianoroll):
+
+
+    def encode(self,batch_pianoroll,no_batch=False):
+
+        if no_batch:
+            if len(batch_pianoroll.shape)!=2:
+                raise "error in batch pianoroll number dimensions, with no batch it must be 2"
+            batch_pianoroll=batch_pianoroll.reshape((1,batch_pianoroll.shape[0],batch_pianoroll.shape[1]))
+
 
         if len(batch_pianoroll.shape)!=3:
-            raise "error in batch pianoroll size, must be exactly 3"
+            raise "error in batch pianoroll number dimensions, must be exactly 3"
         batch_encoded_pianoroll=np.zeros((batch_pianoroll.shape[0],batch_pianoroll.shape[1],9))
         for i in range(len(self._drum_map)):
              batch_encoded_pianoroll[:,:,i]=np.amax(batch_pianoroll[:,:,self._drum_type_pitches[i]],axis=2)
+
+
+        if no_batch:
+            batch_encoded_pianoroll=batch_encoded_pianoroll.reshape((batch_encoded_pianoroll.shape[1],batch_encoded_pianoroll.shape[2]))
+
         return batch_encoded_pianoroll
 
-    def decode(self,batch_pianoroll):
+    def decode(self,batch_pianoroll,no_batch=False):
+
+        if no_batch:
+            if len(batch_pianoroll.shape)!=2:
+                raise "error in batch pianoroll number dimensions, with no batch it must be 2"
+            batch_pianoroll=batch_pianoroll.reshape((1,batch_pianoroll.shape[0],batch_pianoroll.shape[1]))
+
+
 
         if len(batch_pianoroll.shape)!=3:
-            raise "error in batch pianoroll size, must be exactly 3"
+            raise "error in batch pianoroll number dimensions, must be exactly 3"
 
         batch_decoded_pianoroll=np.zeros((batch_pianoroll.shape[0],batch_pianoroll.shape[1],128))
         for i in range(len(self._drum_type_pitches)):
             batch_decoded_pianoroll[:,:,self._drum_map[i][0]]=batch_pianoroll[:,:,i]
+
+
+        if no_batch:
+            batch_decoded_pianoroll=batch_decoded_pianoroll.reshape((batch_decoded_pianoroll.shape[1],batch_decoded_pianoroll.shape[2]))
 
         return batch_decoded_pianoroll
 
@@ -70,16 +102,26 @@ class DrumReducerExpander:
 
 if __name__=='__main__':
 
-    lol=np.zeros((256,398,128))
-    pr=DrumReducerExpander()
+    temp_path='./temp/'
+    pr=DrumReducerExpander(offset=False)
+    filepath,npz=random_file()
+    multi=Multitrack(filepath+npz)
+    multi_drums=Multitrack(tracks=[Track(multi.tracks[0].pianoroll,is_drum=True)])
+    pianoroll=multi.tracks[0].pianoroll
 
-    encoded_lol=pr.encode(lol)
-    print(encoded_lol.shape)
+    enc_piano=pr.encode(pianoroll,no_batch=True)
+    dec_piano=pr.decode(enc_piano,no_batch=True)
+    track_dec=Track(dec_piano,is_drum=True)
+    multi_dec=Multitrack(tracks=[track_dec])
 
-    lol=np.zeros((256,1256,9))
+    ppr.write(multi_drums, temp_path + 'track_origin.mid')
 
-    decoded_lol=pr.decode(lol)
-    print(decoded_lol.shape)
+    ppr.write(multi_dec, temp_path + 'track_enc_dec.mid')
+
+
+
+
+
 
 
 
