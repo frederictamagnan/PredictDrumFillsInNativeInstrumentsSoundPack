@@ -1,6 +1,4 @@
 
-
-
 # path_tags= [
 #     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Blues.id',
 #     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Country.id',
@@ -26,14 +24,10 @@ import numpy as np
 from pypianoroll import Track, Multitrack
 from DrumReducerExpander import DrumReducerExpander
 
-def macro_iteration(filepath_dataset, filepath_tags,max=5000,reduced=False,server=True):
+def macro_iteration(filepath_dataset, filepath_tags ,max=5000 ,reduced=False ,server=True):
 
-
-
-
-
-
-    fills = np.zeros((1, 288, 128))
+    enc=DrumReducerExpander()
+    fills = np.zeros((1, 3 ,96, 9))
     count = 0
 
     # ITERATE OVER THE TAG LISTS
@@ -55,11 +49,11 @@ def macro_iteration(filepath_dataset, filepath_tags,max=5000,reduced=False,serve
                     if 'label.npz' in npz:
                         count += 1
                         fill = build_generation_dataset(p, npz)
+                        fill=enc.encode(fill)
                         if fill is not None:
                             fills = np.concatenate((fills, fill))
 
-                        if fills.shape[0]>max:
-                            fills = fills.reshape((fills.shape[0], 3, 96, 128))
+                        if fills.shape[0 ] >max:
                             fills = fills[1:]
                             np.savez("./fills", fills=fills)
                             return 0
@@ -82,25 +76,26 @@ def build_generation_dataset(p, npz):
         track = np.concatenate((track, to_complete))
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
-    label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:]))
-    print(label_previous_next_shape[:3])
+    label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
 
-    mask_fills_cleaned=(label_previous_next_shape == [0, 1, 0]).all(axis=1)
-    indexes_fills_cleaned=np.argwhere(mask_fills_cleaned==True)+1
 
-    if indexes_fills.shape[0] == 0:
+    mask_fills_cleane d =(label_previous_next_shape = =[0, 1, 0]).all(axis=1)
+    indexes_fills_cleane d =np.argwhere(mask_fills_cleane d= =True ) +1
+
+    if indexes_fills_cleaned.shape[0] == 0:
         return None
     else:
 
 
-        tab = np.concatenate((track[indexes_fills_cleaned - 1], track[indexes_fills_cleaned], track[indexes_fills_cleaned + 1]), axis=1)
-        # print(tab.shape)
+        tab = np.concatenate \
+            ((track[indexes_fills_cleaned - 1], track[indexes_fills_cleaned], track[indexes_fills_cleaned + 1]), axis=1)
+        print(tab.shape)
         return tab
 
 
 if __name__ == '__main__':
 
-    server=True
+    serve r =True
 
     if server:
         path = '/home/ftamagnan/lpd_5/lpd_5_cleansed/'
