@@ -1,4 +1,6 @@
-path = '/home/ftamagnan/lpd_5/lpd_5_cleansed/'
+
+
+
 # path_tags= [
 #     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Blues.id',
 #     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Country.id',
@@ -17,14 +19,20 @@ path = '/home/ftamagnan/lpd_5/lpd_5_cleansed/'
 #     '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
 # ]
 
-path_tags = ['/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id']
+
 
 import os
 import numpy as np
 from pypianoroll import Track, Multitrack
 from DrumReducerExpander import DrumReducerExpander
 
-def macro_iteration(filepath_dataset, filepath_tags,max=5000,reduced=False):
+def macro_iteration(filepath_dataset, filepath_tags,max=5000,reduced=False,server=True):
+
+
+
+
+
+
     fills = np.zeros((1, 288, 128))
     count = 0
 
@@ -74,8 +82,9 @@ def build_generation_dataset(p, npz):
         track = np.concatenate((track, to_complete))
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
-    indexes_fills = np.argwhere(label == 1)
     label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:]))
+    print(label_previous_next_shape[:3])
+
     mask_fills_cleaned=(label_previous_next_shape == [0, 1, 0]).all(axis=1)
     indexes_fills_cleaned=np.argwhere(mask_fills_cleaned==True)+1
 
@@ -90,5 +99,18 @@ def build_generation_dataset(p, npz):
 
 
 if __name__ == '__main__':
+
+    server=True
+
+    if server:
+        path = '/home/ftamagnan/lpd_5/lpd_5_cleansed/'
+        path_tags = ['/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id']
+
+    else:
+        path = '//home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_debug/'
+        path_tags = [
+            '/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id',
+        ]
+
     macro_iteration(filepath_dataset=path, filepath_tags=path_tags)
 
