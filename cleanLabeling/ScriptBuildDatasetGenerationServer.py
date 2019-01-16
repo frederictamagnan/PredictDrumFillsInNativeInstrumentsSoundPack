@@ -49,8 +49,9 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=5000 ,reduced=False ,se
                     if 'label.npz' in npz:
                         count += 1
                         fill = build_generation_dataset(p, npz)
-                        fill=enc.encode(fill)
+
                         if fill is not None:
+                            fill = enc.encode(fill)
                             fills = np.concatenate((fills, fill))
 
                         if fills.shape[0 ] >max:
