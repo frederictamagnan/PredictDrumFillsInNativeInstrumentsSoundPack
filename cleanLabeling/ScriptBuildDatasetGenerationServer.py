@@ -51,7 +51,9 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=5000 ,reduced=False ,se
                         fill = build_generation_dataset(p, npz)
 
                         if fill is not None:
+                            fill=fill.reshape((fill.shape[0],3*96,128))
                             fill = enc.encode(fill)
+                            fill=fill.reshape((fill.shape[0],3,96,9))
                             fills = np.concatenate((fills, fill))
 
                         if fills.shape[0 ] >max:
