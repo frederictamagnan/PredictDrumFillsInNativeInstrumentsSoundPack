@@ -45,7 +45,7 @@ class DnnDataset(Dataset):
             if not(downsampling) and upsampling:
                 self.upsampling()
 
-            self.shuffle()
+            #self.shuffle()
 
 
     def __getitem__(self, idx):

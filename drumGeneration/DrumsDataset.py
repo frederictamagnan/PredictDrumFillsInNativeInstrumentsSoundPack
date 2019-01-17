@@ -1,20 +1,21 @@
 import torch.utils.data as data
-
-
-class DrumsDatasetataset(data.Dataset):
+import numpy as np
+import torch
+class DrumsDataset(data.Dataset):
 
     def __init__(self, numpy_array):
-        X_previous=numpy_array[:,0,96,9]
-        X_next=numpy_array[:,2,96,9]
+        X_previous=numpy_array[:,0,:,:]
+        X_next=numpy_array[:,2,:,:]
 
         self.X=np.concatenate((X_previous,X_next),axis=1)
-        self.y=numpy_array[:,1,96,9]
+        self.X=self.X.reshape((-1,2,96,9))
+        self.y=numpy_array[:,1,:,:]
+        self.y=self.y.reshape((-1,96*9))
 
     def __getitem__(self, index):
-        X = self.data[index, :, 0:24, :]
-        y = self.data[index, :, 24:96, :]
+        X = self.X[index]
+        y = self.y[index]
         #         X.reshape(np.prod(X.shape))
-        y = y.reshape(np.prod(y.shape))
         # print(y.shape,"lol")
         X = torch.from_numpy(X).type(torch.FloatTensor)
         y = torch.from_numpy(y).type(torch.FloatTensor)
@@ -22,4 +23,4 @@ class DrumsDatasetataset(data.Dataset):
         return X, y
 
     def __len__(self):
-        return len(self.data)
+        return len(self.X)

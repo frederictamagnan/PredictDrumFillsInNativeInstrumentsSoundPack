@@ -6,8 +6,7 @@ from utils import tensor_to_numpy
 import json
 from DnnDataset import DnnDataset
 from DnnNet import DnnNet
-from WideAndDeepDataset import WideAndDeepDataset
-from WideAndDeepNet import WideAndDeepNet
+
 import torch.nn.functional as F
 from torch.autograd import Variable
 import torch.optim as optim
@@ -41,15 +40,42 @@ class TrainingClassifier:
         self.dataset=DnnDataset(self.data_raw,self.list_filepath,downsampling=self.downsampling,upsampling=self.upsampling)
 
 
-    # def load_dataset_wide(self):
-    #     self.data_raw=np.load(self.metrics_dir+self.metrics_filename)
-    #     self.data_raw=dict(self.data_raw)
-    #
-    #     with open(self.metrics_dir+self.filepath_filename) as data_file:
-    #         self.list_filepath=json.load(data_file)
-    #
-    #
-    #     self.dataset=WideAndDeepDataset(self.data_raw,self.list_filepath,downsampling=self.downsampling)
+    def load_dataset_alter(self):
+
+        self.data_raw = np.load(self.metrics_dir + self.metrics_filename)
+        self.data_raw = dict(self.data_raw)
+
+        with open(self.metrics_dir + self.filepath_filename) as data_file:
+            self.list_filepath = json.load(data_file)
+
+
+    def split_dataset_alter(self):
+        lendata=len(self.data_raw['vae_embeddings'])
+        ratio = 0.6
+        train_length = int(lendata * ratio)
+        validation_length = int((lendata- train_length) * 0.5)
+        test_length = lendata - validation_length - train_length
+
+        self.train={}
+        self.validation={}
+        self.test={}
+        for key in self.data_raw.keys():
+            self.train[key], self.validation[key], self.test[key]= np.split(self.data_raw[key],[train_length,train_length+validation_length])
+
+
+        self.train_dataset=DnnDataset(self.train,self.list_filepath[0:train_length],downsampling=self.downsampling,upsampling=self.upsampling)
+        self.validation_dataset = DnnDataset(self.validation, self.list_filepath[train_length:train_length+validation_length], downsampling=False,
+                                        upsampling=False)
+        self.test_dataset = DnnDataset(self.test, self.list_filepath[train_length+validation_length:train_length+validation_length+test_length], downsampling=False,
+                                        upsampling=False)
+
+        self.train_loader = torch.utils.data.DataLoader(dataset=self.train_dataset, batch_size=self.batch_size, shuffle=True)
+        self.validation_loader = torch.utils.data.DataLoader(dataset=self.validation_dataset, batch_size=len(self.validation), shuffle=False)
+        self.test_loader = torch.utils.data.DataLoader(dataset=self.test_dataset, batch_size=len(self.test),
+                                                             shuffle=False)
+
+        self.dataset=self.train_dataset
+
 
     def split_dataset(self):
 
@@ -57,11 +83,16 @@ class TrainingClassifier:
         train_length= int(len(self.dataset)* ratio)
         validation_length=int((len(self.dataset)-train_length)*0.5)
         test_length=len(self.dataset)-validation_length-train_length
+
         self.train,self.validation,self.test=random_split(self.dataset,[train_length,validation_length,test_length])
+
+
+
 
         self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True)
         self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=len(self.test), shuffle=False)
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=len(self.validation), shuffle=False)
+
 
 
     def train_model(self):
@@ -213,19 +244,19 @@ if __name__=='__main__':
     filepathfilename = 'total_list_filepath.json'
 
     BATCH_SIZE=256
-    N_EPOCHS=600
+    N_EPOCHS=300
     LR = 0.0001
     DT=0.5
     tc=TrainingClassifier(metricsdir,metricsfilename,filepathfilename,BATCH_SIZE,N_EPOCHS,LR,downsampling=False,upsampling=True,decision_threshold=DT)
-    tc.load_dataset()
+    tc.load_dataset_alter()
     # for i in range(1000):
     #     print(tc.dataset.Y[i],tc.dataset.list_filepath[i])
+    tc.split_dataset_alter()
 
-    tc.split_dataset()
-    print(tc.dataset.Y.sum())
-    print(len(tc.dataset.Y))
+    # print(tc.dataset.Y.sum())
+    print(len(tc.train_dataset.Y))
     tc.train_model()
-    tc.save_model('./','fillClassifier')
+    # tc.save_model('./','fillClassifier_20190117')
 
 
 
