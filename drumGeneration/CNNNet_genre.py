@@ -18,7 +18,7 @@ class CNNNet(nn.Module):
         x = x.view(self.batch_size, -1)
         genre=genre.float()
         # print(genre.size(),"genre")
-        x=torch.cat([x,genre ], 1)git 
+        x=torch.cat([x,genre ], 1)
         # print(x.size())
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
