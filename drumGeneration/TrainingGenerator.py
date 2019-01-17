@@ -6,13 +6,14 @@ import torch.optim as optim
 import torch.nn as nn
 from CNNNet import CNNNet
 
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/fills_reduced.npz'
 class TrainingGenerator:
 
 
 
-    def __init__(self,batch_size,lr,n_epochs):
+    def __init__(self,batch_size,lr,n_epochs,dataset_filepath=local_dataset):
 
-        self.dataset_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/fills_reduced.npz'
+        self.dataset_filepath=dataset_filepath
         self.batch_size=batch_size
         self.lr=lr
         self.n_epochs=n_epochs
