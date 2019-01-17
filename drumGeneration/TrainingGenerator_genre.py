@@ -52,9 +52,9 @@ class TrainingGenerator:
 
     def train_model(self):
         if self.use_cuda:
-            cnn=CNNNet().cuda()
+            cnn=CNNNet(batch_size=self.batch_size).cuda()
         else:
-            cnn=CNNNet()
+            cnn=CNNNet(batch_size=self.batch_size)
 
         criterion = nn.BCELoss()
         optimizer = optim.SGD(cnn.parameters(), lr=self.lr, momentum=0.9)

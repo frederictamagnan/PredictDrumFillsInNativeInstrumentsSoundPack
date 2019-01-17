@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/drumGeneration/CNNNet_genre.py" afterPath="$PROJECT_DIR$/drumGeneration/CNNNet_genre.py" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/TrainingGenerator.py" afterPath="$PROJECT_DIR$/drumGeneration/TrainingGenerator.py" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py" afterPath="$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CNNNet_genre.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CNNNet_genre.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/CNNNet_genre.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="360">
+              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -60,11 +61,21 @@
       <file leaf-file-name="DrumsDataset_genre.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset_genre.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
+            <state relative-caret-position="774">
               <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingGenerator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,8 +93,8 @@
       <file leaf-file-name="TrainingGenerator_genre.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="87" column="29" lean-forward="false" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+            <state relative-caret-position="341">
+              <caret line="56" column="49" lean-forward="false" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -119,6 +130,7 @@
       <find>self.list_id</find>
       <find>self.list_npz</find>
       <find>git</find>
+      <find>256</find>
     </findStrings>
     <replaceStrings>
       <replace>channels_used</replace>
@@ -171,17 +183,17 @@
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/CNNNet.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DnnDataset.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/TrainingClassifier.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator.py" />
         <option value="$PROJECT_DIR$/drumGeneration/DrumsDataset.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumsDataset.py" />
         <option value="$PROJECT_DIR$/drumGeneration/CNNNet.py" />
         <option value="$PROJECT_DIR$/drumGeneration/Generator.py" />
         <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/DrumsDataset_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/utils.py" />
         <option value="$PROJECT_DIR$/drumGeneration/Generator_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/CNNNet_genre.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator.py" />
       </list>
     </option>
   </component>
@@ -731,16 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumsDataset_genre.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -793,16 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset_genre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/Generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -823,6 +815,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset_genre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_genre.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -831,20 +833,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/CNNNet_genre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="87" column="29" lean-forward="false" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        <state relative-caret-position="341">
+          <caret line="56" column="49" lean-forward="false" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/CNNNet_genre.py">
+    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="180">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding />
         </state>
       </provider>
