@@ -18,6 +18,14 @@ class TrainingGenerator:
         self.lr=lr
         self.n_epochs=n_epochs
 
+        self.use_cuda = torch.cuda.is_available()
+        device = torch.device("cuda" if self.use_cuda else "cpu")
+
+        if self.use_cuda:
+            print('run on GPU')
+        else:
+            print('run on CPU')
+
 
 
     def load_data(self,binarize=True):
@@ -26,7 +34,7 @@ class TrainingGenerator:
         data=data['fills']
         if binarize:
             data=(data>0.5).astype(int)
-        self.dataset=DrumsDataset(data)
+        self.dataset=DrumsDataset(data,use_cuda=self.use_cuda)
 
     def split_data(self):
         ratio = 0.6
@@ -42,7 +50,11 @@ class TrainingGenerator:
                                                              shuffle=False,drop_last=True)
 
     def train_model(self):
-        cnn=CNNNet()
+        if self.use_cuda:
+            cnn=CNNNet().cuda()
+        else:
+            cnn=CNNNet()
+
         criterion = nn.BCELoss()
         optimizer = optim.SGD(cnn.parameters(), lr=self.lr, momentum=0.9)
 
