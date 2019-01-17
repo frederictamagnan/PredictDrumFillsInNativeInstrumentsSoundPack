@@ -42,6 +42,7 @@ class Generator:
     def generate(self,n,save=True):
         self.load_model(batch_size=n)
         encoder=DrumReducerExpander()
+        genre=np.zeros((1,15,1))
         X=np.zeros((1,288,128))
         list_filepath=[]
         i=0
@@ -56,8 +57,11 @@ class Generator:
             x=piano[mid*96:(mid+3)*96]
             x=x.reshape((1,x.shape[0],x.shape[1]))
             print(x.shape)
+            g=np.zeros((1,15,1))
+            g[rf[2]]=1
             try:
                 X=np.concatenate((X,x))
+                genre=np.concatenate((genre,g))
                 i+=1
             except:
                 print("error")
@@ -66,13 +70,13 @@ class Generator:
             # print(x.shape)
         X=encoder.encode(X_old)
         X=X.reshape((X.shape[0],3,96,9))
-        X_dataset=DrumsDataset(numpy_array=X,inference=True,use_cuda=self.use_cuda)
+        X_dataset=DrumsDataset(numpy_array=X,genre=genre,inference=True,use_cuda=self.use_cuda)
         X_loader=torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
                                                              shuffle=False,drop_last=False)
         with torch.no_grad():
-            for i, (x) in enumerate(X_loader):
+            for i, (x,g) in enumerate(X_loader):
                 x = Variable(x).float()
-                y_pred = self.model(x)
+                y_pred = self.model(x,g)
                 y_pred_cat = (y_pred >0.05)
 
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)

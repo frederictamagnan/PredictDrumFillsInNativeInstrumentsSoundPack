@@ -1,7 +1,8 @@
 import numpy as np
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/fills_reduced.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_all_genre.npz')
 data=dict(data)
-data=data['fills']
+fills=data['fills']
+genre=data['genre']
 
-print(data.shape)
+print(genre.shape,fills.shape,genre.sum())
