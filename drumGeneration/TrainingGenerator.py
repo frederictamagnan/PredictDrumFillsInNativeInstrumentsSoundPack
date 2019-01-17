@@ -80,6 +80,10 @@ class TrainingGenerator:
 
         print('Finished Training')
 
+        self.net = cnn
+
+    def save_model(self, filepath, name):
+        torch.save(self.net.state_dict(), filepath + name)
 
 if __name__=="__main__":
 
