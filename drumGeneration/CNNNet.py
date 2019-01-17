@@ -9,7 +9,7 @@ class CNNNet(nn.Module):
         self.conv2 = nn.Conv2d(6, 16, 2,padding=1)
         self.fc1 = nn.Linear(768, 256)
         self.fc2 = nn.Linear(256, 256)
-        self.fc3 = nn.Linear(256, 256)
+        self.fc3 = nn.Linear(256, 864)
         self.batch_size=batch_size
 
     def forward(self, x):

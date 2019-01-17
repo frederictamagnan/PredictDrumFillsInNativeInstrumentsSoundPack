@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/drumGeneration/CNNNet.py" afterPath="$PROJECT_DIR$/drumGeneration/CNNNet.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/DrumsDataset.py" afterPath="$PROJECT_DIR$/drumGeneration/DrumsDataset.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/Generator.py" afterPath="$PROJECT_DIR$/drumGeneration/Generator.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/utils.py" afterPath="$PROJECT_DIR$/drumGeneration/utils.py" />
       <change beforePath="$PROJECT_DIR$/models/generation_model.pt" afterPath="$PROJECT_DIR$/models/generation_model.pt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/drumGeneration/CNNNet.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -848,7 +843,7 @@
     <entry file="file://$PROJECT_DIR$/drumGeneration/CNNNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
