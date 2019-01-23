@@ -83,8 +83,8 @@ if __name__=='__main__':
     metricsfilename = 'total_metrics_training.npz'
 
     viz=Visualization(metricsdir,metricsfilename)
-    viz.plot()
-    # viz.plot_by_genre()
+    # viz.plot()
+    viz.plot_by_genre()
 
 
 
