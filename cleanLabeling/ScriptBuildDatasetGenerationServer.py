@@ -28,7 +28,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 
     enc=DrumReducerExpander()
 #     fills = np.zeros((1, 3 ,96, 9))
-    vae_array=np.zeros((1,3,32))
+    vae_array=np.zeros((1,3,32,2))
     count = 0
     genre=np.zeros((1,15,1))
     # ITERATE OVER THE TAG LISTS
@@ -58,7 +58,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #                             fill = enc.encode(fill)
 #                             fill=fill.reshape((fill.shape[0],3,96,9))
 #                             fills = np.concatenate((fills, fill))
-                            vae=vae.reshape((vae.shape[0],3,32))
+                            vae=vae.reshape((vae.shape[0],3,32,2))
                             vae_array=np.concatenate((vae_array,vae))
 #                             genre_fill=np.zeros((fill.shape[0],15,1))
                             genre_fill=np.zeros((vae.shape[0],15,1))
