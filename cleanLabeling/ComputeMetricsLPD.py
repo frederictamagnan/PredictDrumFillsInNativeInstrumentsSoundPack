@@ -40,8 +40,8 @@ class ComputeMetricsLPD:
                     p = self.filepath_dataset + self.middle + self.file
 
                     for npz in os.listdir(p):
-
-                        self.process_npz_file(p,npz)
+                        if 'label' not in npz and 'metrics' not in npz:
+                            self.process_npz_file(p,npz)
 
 
 

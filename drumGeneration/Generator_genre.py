@@ -1,9 +1,9 @@
 import torch
-from CNNNet import CNNNet
+from CNNNet_genre import CNNNet
 import numpy as np
-from utils import random_file
+from utils import random_file_genre
 from pypianoroll import Track,Multitrack
-from DrumsDataset import DrumsDataset
+from DrumsDataset_genre import DrumsDataset
 from DrumReducerExpander import DrumReducerExpander
 import pypianoroll as ppr
 from utils import numpy_drums_save_to_midi
@@ -47,7 +47,7 @@ class Generator:
         list_filepath=[]
         i=0
         while i<n:
-            rf=random_file()
+            rf=random_file_genre()
             list_filepath.append(rf)
             multi=Multitrack(rf[0]+rf[1])
             multi.binarize()
@@ -77,7 +77,7 @@ class Generator:
             for i, (x,g) in enumerate(X_loader):
                 x = Variable(x).float()
                 y_pred = self.model(x,g)
-                y_pred_cat = (y_pred >0.05)
+                y_pred_cat = (y_pred >0.07)
 
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         y=y_pred_cat.reshape((n,96, 9))
@@ -125,7 +125,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'generation_model.pt'
+        model_name = 'generation_model_genre.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
