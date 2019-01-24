@@ -5,14 +5,14 @@ class DrumsDataset(data.Dataset):
 
     def __init__(self, numpy_array,genre,use_cuda=False,inference=False):
         self.inference=inference
-        X_previous=numpy_array[:,0,:]
-        X_next=numpy_array[:,2,:]
+        X_previous=numpy_array[:,0,:,:]
+        X_next=numpy_array[:,2,:,:]
 
         self.X=np.concatenate((X_previous,X_next),axis=1)
-        self.X=self.X.reshape((-1,64))
+        self.X=self.X.reshape((-1,128))
         if not inference:
-            self.y=numpy_array[:,1,:]
-            self.y=self.y.reshape((-1,32))
+            self.y=numpy_array[:,1,:,:]
+            self.y=self.y.reshape((-1,64))
         self.use_cuda=use_cuda
         self.genre=genre.reshape((genre.shape[0],15))
         print(self.genre.shape,"GENRE SHAPE")

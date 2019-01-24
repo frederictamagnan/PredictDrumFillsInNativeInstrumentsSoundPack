@@ -1,6 +1,8 @@
 import torch.utils.data as data
 import numpy as np
 import torch
+from torch.autograd import Variable
+
 class DrumsDataset(data.Dataset):
 
     def __init__(self, numpy_array,use_cuda=False,inference=False):
@@ -39,3 +41,31 @@ class DrumsDataset(data.Dataset):
 
     def __len__(self):
         return len(self.X)
+
+class EmbeddingsDataset(data.Dataset):
+
+    def __init__(self,embeddings):
+
+        mu=embeddings[:,:,0]
+        sigma=embeddings[:,:,1]
+
+        self.X=self._sample_latent(mu,sigma)
+
+    def __getitem__(self,idx):
+
+        return self.X[idx]
+
+    def __len__(self):
+        return self.X.shape[0]
+
+    def _sample_latent(self, mu, sigma):
+        """
+        Return the latent normal sample z ~ N(mu, sigma^2)
+        """
+        mu=torch.from_numpy(mu).float()
+        sigma=torch.from_numpy(sigma).float()
+        std_z = torch.from_numpy(
+            np.random.normal(0, 1, size=sigma.size())
+        ).float()
+
+        return mu + sigma * Variable(std_z, requires_grad=False).float()

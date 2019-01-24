@@ -116,7 +116,7 @@ class Decoder(torch.nn.Module):
         hn = torch.zeros(
             1,
             BATCH_SIZE, NUM_FEATURES
-        ).cuda()
+        )
         
         x = x.contiguous().view(
             BATCH_SIZE,

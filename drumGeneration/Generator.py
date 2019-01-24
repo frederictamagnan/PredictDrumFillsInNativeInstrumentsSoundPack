@@ -25,7 +25,8 @@ class Generator:
         self.load_model(256)
         self.dataset_path=dataset_path
         self.tags_path=tags_path
-
+        self.model_path = model_path
+        self.mode_name = self.mode_name
 
     def count_parameters(self):
         model_parameters = filter(lambda p: p.requires_grad, self.model.parameters())
@@ -36,7 +37,7 @@ class Generator:
     def load_model(self,batch_size):
         self.model = CNNNet(batch_size=batch_size)
         self.model.eval()
-        self.model.load_state_dict(torch.load(model_path + model_name, map_location="cuda" if self.use_cuda else "cpu"))
+        self.model.load_state_dict(torch.load(self.model_path + self.model_name, map_location="cuda" if self.use_cuda else "cpu"))
 
 
     def generate(self,n,save=True):

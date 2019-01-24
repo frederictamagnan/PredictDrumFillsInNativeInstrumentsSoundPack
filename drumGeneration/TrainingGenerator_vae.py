@@ -1,12 +1,13 @@
 import numpy as np
-from DrumsDataset_genre import DrumsDataset
+from DrumsDataset_vae_genre import DrumsDataset
 import torch
 from torch.utils.data.dataset import random_split
 import torch.optim as optim
 import torch.nn as nn
-from CNNNet_genre import CNNNet
+from DNnet import DNnet
 
-local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_all_genre.npz'
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/vae_dataset.npz'
+
 class TrainingGenerator:
 
 
@@ -31,12 +32,10 @@ class TrainingGenerator:
     def load_data(self,binarize=True):
         data = np.load(self.dataset_filepath)
         data=dict(data)
-        fills=data['fills']
+        vae=data['vae']
         genre=data['genre']
-        if binarize:
-            fills=(fills>0.5).astype(int)
-        self.dataset=DrumsDataset(numpy_array=fills,genre=genre,use_cuda=self.use_cuda)
-
+        self.dataset=DrumsDataset(numpy_array=vae,genre=genre,use_cuda=self.use_cuda)
+        print(len(self.dataset),"LEN DATASET")
     def split_data(self):
         ratio = 0.6
         train_length = int(len(self.dataset) * ratio)
@@ -52,12 +51,12 @@ class TrainingGenerator:
 
     def train_model(self):
         if self.use_cuda:
-            cnn=CNNNet(batch_size=self.batch_size).cuda()
+            dnn=DNnet().cuda()
         else:
-            cnn=CNNNet(batch_size=self.batch_size)
+            dnn=DNnet()
 
-        criterion = nn.BCELoss()
-        optimizer = optim.SGD(cnn.parameters(), lr=self.lr, momentum=0.9)
+        criterion = nn.MSELoss()
+        optimizer = optim.SGD(dnn.parameters(), lr=self.lr, momentum=0.9,weight_decay=0.3)
 
 
         for epoch in range(self.n_epochs):  # loop over the dataset multiple times
@@ -71,41 +70,42 @@ class TrainingGenerator:
                 optimizer.zero_grad()
 
                 # forward + backward + optimize
-                outputs = cnn(inputs,g)
+                outputs = dnn(inputs,g)
                 loss = criterion(outputs, labels)
                 loss.backward()
                 optimizer.step()
 
                 # print statistics
                 running_loss += loss.item()
-                if i % 20 == 19:  # print every 2000 mini-batches
-                    print('[%d, %5d] loss: %.3f' %
+                if i % 20 == 0:  # print every 2000 mini-batches
+                    print('[%d, %5d] loss: %.10f' %
                           (epoch + 1, i + 1, running_loss / 20))
                     running_loss = 0.0
             with torch.no_grad():
                 total_val_loss = 0
                 for i, data in enumerate(self.test_loader, 0):
                     inputs, g,labels = data
-                    val_outputs = cnn(inputs,g)
+                    val_outputs = dnn(inputs,g)
                     val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.data[0]
                 print("val loss",total_val_loss / i)
 
         print('Finished Training')
 
-        self.net = cnn
+        self.net = dnn
 
     def save_model(self, filepath, name):
         torch.save(self.net.state_dict(), filepath + name)
 
 if __name__=="__main__":
 
-    LR=0.01
-    BATCH_SIZE=256
-    N_EPOCHS=100
+    LR=0.001
+    BATCH_SIZE=2048
+    N_EPOCHS=200
 
 
     tg=TrainingGenerator(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS)
     tg.load_data()
     tg.split_data()
     tg.train_model()
+    tg.save_model("./../models/",'vae_generation.pt')
