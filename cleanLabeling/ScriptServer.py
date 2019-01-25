@@ -1,5 +1,5 @@
 from ComputeMetricsLPD import ComputeMetricsLPD
-path='/home/ftamagnan/lpd_5/lpd_5_cleansed/'
+path='/home/ftamagnan/dataset/lpd_5/lpd_5_cleansed/'
 path_tags= [
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Blues.id',
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Country.id',
