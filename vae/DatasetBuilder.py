@@ -20,7 +20,7 @@ class DatasetBuilder:
 
         for tag_i, tag in enumerate(self.path_tags):
 
-            data=np.zeros((1,16,9))
+            data=np.zeros((1,16,4))
             print('>>' + tag[29:-3])
             with open(tag, 'r') as f:
                 # ITERATE OVER THE FOLDER LISTS

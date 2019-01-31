@@ -1,35 +1,35 @@
 import numpy as np
 from pypianoroll import Track,Multitrack
 import pypianoroll as ppr
-# from utils import random_file
-DEFAULT_DRUM_TYPE_PITCHES = [
-    # bass drum
-    [36, 35],
-
-    # snare drum
-    [38, 27, 28, 31, 32, 33, 34, 37, 39, 40, 56, 65, 66, 75, 85],
-
-    # closed hi-hat
-    [42, 44, 54, 68, 69, 70, 71, 73, 78, 80],
-
-    # open hi-hat
-    [46, 67, 72, 74, 79, 81],
-
-    # low tom
-    [45, 29, 41, 61, 64, 84],
-
-    # mid tom
-    [48, 47, 60, 63, 77, 86, 87],
-
-    # high tom
-    [50, 30, 43, 62, 76, 83],
-
-    # crash cymbal
-    [49, 55, 57, 58],
-
-    # ride cymbal
-    [51, 52, 53, 59, 82]
-]
+from utils import random_file
+# DEFAULT_DRUM_TYPE_PITCHES = [
+#     # bass drum
+#     [36, 35],
+#
+#     # snare drum
+#     [38, 27, 28, 31, 32, 33, 34, 37, 39, 40, 56, 65, 66, 75, 85],
+#
+#     # closed hi-hat
+#     [42, 44, 54, 68, 69, 70, 71, 73, 78, 80],
+#
+#     # open hi-hat
+#     [46, 67, 72, 74, 79, 81],
+#
+#     # low tom
+#     [45, 29, 41, 61, 64, 84],
+#
+#     # mid tom
+#     [48, 47, 60, 63, 77, 86, 87],
+#
+#     # high tom
+#     [50, 30, 43, 62, 76, 83],
+#
+#     # crash cymbal
+#     [49, 55, 57, 58],
+#
+#     # ride cymbal
+#     [51, 52, 53, 59, 82]
+# ]
 
 DEFAULT_DRUM_TYPE_PITCHES_2 = [
     # bass drum
@@ -63,7 +63,7 @@ class DrumReducerExpander:
 
         if offset:
             for i,elt in enumerate(DEFAULT_DRUM_TYPE_PITCHES_2):
-                DEFAULT_DRUM_TYPE_PITCHES[i]= [x-24 for x in DEFAULT_DRUM_TYPE_PITCHES[i]]
+                DEFAULT_DRUM_TYPE_PITCHES_2[i]= [x-24 for x in DEFAULT_DRUM_TYPE_PITCHES_2[i]]
 
         self._drum_type_pitches = DEFAULT_DRUM_TYPE_PITCHES_2
         self._drum_map = dict(enumerate(DEFAULT_DRUM_TYPE_PITCHES_2))
@@ -87,7 +87,7 @@ class DrumReducerExpander:
 
         if len(batch_pianoroll.shape)!=3:
             raise "error in batch pianoroll number dimensions, must be exactly 3"
-        batch_encoded_pianoroll=np.zeros((batch_pianoroll.shape[0],batch_pianoroll.shape[1],9))
+        batch_encoded_pianoroll=np.zeros((batch_pianoroll.shape[0],batch_pianoroll.shape[1],len(self._drum_type_pitches)))
         for i in range(len(self._drum_map)):
              batch_encoded_pianoroll[:,:,i]=np.amax(batch_pianoroll[:,:,self._drum_type_pitches[i]],axis=2)
 
@@ -134,7 +134,7 @@ class DrumReducerExpander:
 
         batch_pianoroll=batch_pianoroll.reshape(batch_pianoroll.shape[0],-1,4,6,batch_pianoroll.shape[2])
         batch_pianoroll_encoded=np.max(batch_pianoroll,axis=3)
-        batch_pianoroll_encoded=batch_pianoroll_encoded.reshape(batch_pianoroll_encoded.shape[0],-1,9)
+        batch_pianoroll_encoded=batch_pianoroll_encoded.reshape(batch_pianoroll_encoded.shape[0],-1,len(self._drum_type_pitches))
 
         if no_batch:
             batch_pianoroll_encoded=batch_pianoroll_encoded.reshape((batch_pianoroll_encoded.shape[1],batch_pianoroll_encoded.shape[2]))
@@ -167,12 +167,14 @@ if __name__=='__main__':
 
     temp_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
     pr=DrumReducerExpander(offset=False)
+    print(len(pr._drum_type_pitches))
     filepath,npz=random_file()
     multi=Multitrack(filepath+npz)
     multi_drums=Multitrack(tracks=[Track(multi.tracks[0].pianoroll,is_drum=True)])
     pianoroll=multi.tracks[0].pianoroll
 
     enc_piano=pr.encode(pianoroll,no_batch=True)
+    print(enc_piano.shape)
 
     enc_piano=pr.encode_808(enc_piano,no_batch=True)
     dec_piano=pr.decode_808(enc_piano,no_batch=True)
@@ -185,9 +187,9 @@ if __name__=='__main__':
     track_dec=Track(dec_piano,is_drum=True)
     multi_dec=Multitrack(tracks=[track_dec])
 
-    ppr.write(multi_drums, temp_path + 'track_origin.mid')
+    ppr.write(multi_drums, temp_path + 'track_origin_31.mid')
 
-    ppr.write(multi_dec, temp_path + 'track_enc_dec.mid')
+    ppr.write(multi_dec, temp_path + 'track_enc_dec_31.mid')
 
 
 
