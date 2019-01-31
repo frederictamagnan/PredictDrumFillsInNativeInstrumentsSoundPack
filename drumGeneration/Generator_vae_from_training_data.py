@@ -16,7 +16,7 @@ from decimal import *
 
 class Generator:
 
-    def __init__(self,model_path,model_name,dataset_path,tags_path,temp_filepath):
+    def __init__(self,model_path,model_name,dataset_fills_path,dataset_vae_path,temp_filepath):
         self.temp_filepath=temp_filepath
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
@@ -26,8 +26,8 @@ class Generator:
         else:
             print('run on CPU')
 
-        self.dataset_path=dataset_path
-        self.tags_path=tags_path
+        self.dataset_fills_path=dataset_fills_path
+        self.dataset_vae_path=dataset_vae_path
         self.model_path=model_path
         self.model_name=model_name
         self.load_model()
@@ -47,42 +47,23 @@ class Generator:
 
     def generate(self,n,save=True):
         self.load_model()
+        list_filepath=[(str(i),str(i)) for i in range(n)]
         decoder=DrumReducerExpander()
         decoderVAE=VaeEncoderDecoder()
+        dataset_vae_genre=dict(np.load(self.dataset_vae_path))
+        dataset_fills=dict(np.load(self.dataset_fills_path))
 
-        array_vae=np.zeros((1,3,64))
-        genre=np.zeros((1,15,1))
-        X=np.zeros((1,288,128))
-        list_filepath=[]
-        i=0
-        while i<n:
-            rf=random_file_genre()
-            list_filepath.append(rf)
-            multi=Multitrack(rf[0]+rf[1])
-            multi.binarize()
+        leng=dataset_vae_genre['vae'].shape[0]
+        index=np.random.randint(0,leng,n)
+        array_vae=dataset_vae_genre['vae'][index]
+        genre=dataset_vae_genre['genre'][index]
+        X_reduced=dataset_fills['fills'][index]
+        X_reduced=X_reduced.reshape((n,-1,9))
+        X_expanded=decoder.decode(X_reduced)
+        print(X_expanded.shape)
+        X_old=X_expanded.reshape((n,3,96,128))
 
-            piano=multi.tracks[0].pianoroll
-            length=len(piano)
-            mid=int(length//96//2)
-            x=piano[mid*96:(mid+3)*96]
-            x=x.reshape((1,x.shape[0],x.shape[1]))
-            g=np.zeros((1,15,1))
-            g[rf[2]]=1
-            try:
-                metrics = dict(np.load(rf[0] + rf[1].replace('.npz', '_metrics_training.npz')))
-                vae = metrics['vae_embeddings']
-                vae = vae[mid:(mid + 3)].reshape((-1, 3, 64))
-                X=np.concatenate((X,x))
-                genre=np.concatenate((genre,g))
-                array_vae=np.concatenate((array_vae,vae))
-                i+=1
-            except:
-                print("error")
 
-        X_old=X[1:]
-        genre=genre[1:]
-        array_vae=array_vae[1:]
-        array_vae=array_vae.reshape((array_vae.shape[0],3,32,2))
         X_dataset=DrumsDataset(numpy_array=array_vae,genre=genre,inference=True,use_cuda=self.use_cuda)
         X_loader=torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
                                                              shuffle=False,drop_last=False)
@@ -145,7 +126,7 @@ class Generator:
 
             i = i + 1
             # print(i,"COUNTER")
-            if i>1000:
+            if i>100:
                 break
         print(i,"FINAL ITERATION")
         return t
@@ -164,14 +145,14 @@ if __name__=='__main__':
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
         model_name = 'vae_generation.pt'
 
-        dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
-        tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
+        dataset_vae_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/vae_dataset.npz'
+        dataset_fills_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_all_genre.npz'
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
 
 
 
 
-    g=Generator(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+    g=Generator(model_path=model_path,model_name=model_name,dataset_vae_path=dataset_vae_path,dataset_fills_path=dataset_fills_path,temp_filepath=temp_filepath)
     g.count_parameters()
     # g.generate(10,save=False)
     g.generate(10, save=True)

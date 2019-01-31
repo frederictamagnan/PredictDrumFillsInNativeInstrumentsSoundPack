@@ -51,7 +51,8 @@ def random_file(filepath_dataset=PATH,path_tags=PATH_TAGS_ROCK):
                     p = filepath_dataset + middle + file
 
                     for npz in os.listdir(p):
-                        all.append((p+'/',npz))
+                        if 'label' not in npz and 'metrics' not in npz:
+                            all.append((p+'/',npz))
 
 
         pick=all[randint(0,len(all))]

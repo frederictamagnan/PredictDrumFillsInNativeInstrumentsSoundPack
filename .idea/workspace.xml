@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/sklearn/reglog.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/Generator_vae_from_training_data.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/ScriptDichotomy.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py" afterPath="$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" afterPath="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/activity.log" afterPath="$PROJECT_DIR$/cleanLabeling/activity.log" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/temp/track_enc_dec.mid" afterPath="$PROJECT_DIR$/cleanLabeling/temp/track_enc_dec.mid" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/temp/track_origin.mid" afterPath="$PROJECT_DIR$/cleanLabeling/temp/track_origin.mid" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/utils.py" afterPath="$PROJECT_DIR$/cleanLabeling/utils.py" />
+      <change beforePath="$PROJECT_DIR$/cusum/vizualization.py" afterPath="$PROJECT_DIR$/cusum/vizualization.py" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/Generator_vae.py" afterPath="$PROJECT_DIR$/drumGeneration/Generator_vae.py" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,78 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VaeEncoderDecoder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder.py">
+      <file leaf-file-name="DrumReducerExpander.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="32" />
+            <state relative-caret-position="1224">
+              <caret line="68" column="67" lean-forward="false" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
               <folding>
-                <element signature="e#1#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Generator_vae.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_vae.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1677">
-              <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/utils.py">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+            <state relative-caret-position="236">
+              <caret line="54" column="28" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptExploreFills.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reglog.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sklearn/reglog.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DnnDataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cleanLabeling/DnnDataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrumsDataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -124,6 +82,7 @@
       <find>cuda</find>
       <find>ran</find>
       <find>seed</find>
+      <find>norma</find>
     </findStrings>
     <replaceStrings>
       <replace>channels_used</replace>
@@ -136,20 +95,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/WideAndDeepNet.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/WideAndDeepDataset.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/MetricsTraining.py" />
-        <option value="$PROJECT_DIR$/predictFills/ScriptwideDeepNet.py" />
-        <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/cleanLabeling/DnnDataset.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/DnnNet.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DatasetBuilderLPD.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labeling.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ExploreLabelling.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptServer.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/cleanLabeling/utils.py" />
         <option value="$PROJECT_DIR$/drumGeneration/CNNnet.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/CNNNet.py" />
@@ -163,7 +114,6 @@
         <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/MetadataVisualization.py" />
         <option value="$PROJECT_DIR$/cusum/utils.py" />
-        <option value="$PROJECT_DIR$/cusum/vizualization.py" />
         <option value="$PROJECT_DIR$/drumGeneration/NNnet.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Metrics.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" />
@@ -176,25 +126,34 @@
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumsDataset_vae_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/Generator_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/Generator.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/utils.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumsDataset.py" />
         <option value="$PROJECT_DIR$/models/vae_rnn.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DrumsDataset.py" />
         <option value="$PROJECT_DIR$/drumGeneration/DrumsDataset.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
         <option value="$PROJECT_DIR$/drumGeneration/DNnet.py" />
         <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator_vae.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/Generator_vae.py" />
         <option value="$PROJECT_DIR$/vizualizingLatent/sklearn.py" />
         <option value="$PROJECT_DIR$/sklearn/reglog.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/__init__.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptDichotomy.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/Generator_vae.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/Generator_vae_from_training_data.py" />
+        <option value="$PROJECT_DIR$/cusum/vizualization.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/utils.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="265" />
-    <option name="y" value="14" />
-    <option name="width" value="1366" />
-    <option name="height" value="796" />
+    <option name="x" value="222" />
+    <option name="y" value="33" />
+    <option name="width" value="1364" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -212,8 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,12 +186,24 @@
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="vizualizingLatent" type="462c0819:PsiDirectoryNode" />
+              <item name="cusum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="drumGeneration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="sklearn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,17 +212,17 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cleanLabeling" />
+      <recent name="$PROJECT_DIR$/buildDataset" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/drumGeneration" />
       <recent name="$PROJECT_DIR$/cleanLabeling" />
       <recent name="$PROJECT_DIR$/predictFills" />
       <recent name="$PROJECT_DIR$/vizualizingLatent" />
       <recent name="$PROJECT_DIR$/models" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cleanLabeling" />
-      <recent name="$PROJECT_DIR$/buildDataset" />
-      <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,26 +237,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.reglog">
-    <configuration name="DrumsDataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.DrumReducerExpander">
+    <configuration name="DrumReducerExpander" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drumGeneration" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cleanLabeling" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/DrumsDataset.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Generator_vae" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Generator_vae_from_training_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -299,7 +268,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/Generator_vae.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/Generator_vae_from_training_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -323,56 +292,56 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="TrainingGenerator_vae" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ScriptExploreMetricsFIles" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drumGeneration" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cleanLabeling" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/TrainingGenerator_vae.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="reglog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="vizualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sklearn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cusum" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklearn/reglog.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cusum/vizualization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Generator_vae" />
-      <item index="2" class="java.lang.String" itemvalue="Python.DrumsDataset" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TrainingGenerator_vae" />
-      <item index="4" class="java.lang.String" itemvalue="Python.reglog" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ScriptExploreMetricsFIles" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Generator_vae_from_training_data" />
+      <item index="3" class="java.lang.String" itemvalue="Python.vizualization" />
+      <item index="4" class="java.lang.String" itemvalue="Python.DrumReducerExpander" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.reglog" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Generator_vae" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TrainingGenerator_vae" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
-        <item index="4" class="java.lang.String" itemvalue="Python.DrumsDataset" />
+        <item index="0" class="java.lang.String" itemvalue="Python.DrumReducerExpander" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+        <item index="2" class="java.lang.String" itemvalue="Python.vizualization" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Generator_vae_from_training_data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ScriptExploreMetricsFIles" />
       </list>
     </recent_temporary>
   </component>
@@ -393,19 +362,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="265" y="14" width="1857" height="1092" extended-state="6" />
+    <frame x="222" y="33" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31428573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33897004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36298567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35735735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -423,9 +392,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18018018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23423423" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31437355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2567256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -439,80 +408,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cleanLabeling/Metrics.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cusum/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="102" column="24" lean-forward="false" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ExploreLabelling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/MetadataVisualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="86" column="16" lean-forward="false" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cusum/vizualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predictFills/WideDeepDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="476" column="0" lean-forward="false" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/torch/nn/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="1602" column="0" lean-forward="false" selection-start-line="1602" selection-start-column="0" selection-end-line="1602" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/predictFills/WideDeepNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -527,31 +427,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/lib/npyio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="383" column="0" lean-forward="false" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="59" column="73" lean-forward="false" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -573,7 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,24 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/CNNNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -654,34 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="28" column="104" lean-forward="false" selection-start-line="28" selection-start-column="104" selection-end-line="28" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1404">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,48 +553,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset.py">
+    <entry file="file://$PROJECT_DIR$/vizualizingLatent/sklearn.py" />
+    <entry file="file://$PROJECT_DIR$/sklearn/lol/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumsDataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="67">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/DnnDataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="558">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/vae_rnn.py">
+    <entry file="file://$PROJECT_DIR$/sklearn/reglog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1517">
-          <caret line="118" column="9" lean-forward="true" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+        <state relative-caret-position="522">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="104" lean-forward="false" selection-start-line="28" selection-start-column="104" selection-end-line="28" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="32" />
-          <folding>
-            <element signature="e#1#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1386">
+          <caret line="98" column="26" lean-forward="true" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/__init__.py" />
     <entry file="file://$PROJECT_DIR$/drumGeneration/DNnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -762,73 +612,158 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="59" column="73" lean-forward="false" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+        <state relative-caret-position="198">
+          <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/vae_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="118" column="9" lean-forward="false" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="51" column="44" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptDichotomy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1432">
+          <caret line="27" column="110" lean-forward="false" selection-start-line="27" selection-start-column="110" selection-end-line="27" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/training_8000.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator_vae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="58" column="89" lean-forward="false" selection-start-line="58" selection-start-column="89" selection-end-line="58" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cusum/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cusum/vizualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#29#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_vae_from_training_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_vae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1677">
-          <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator_vae.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="58" column="89" lean-forward="false" selection-start-line="58" selection-start-column="89" selection-end-line="58" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizualizingLatent/sklearn.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearn/lol/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumsDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="98" column="101" lean-forward="false" selection-start-line="98" selection-start-column="101" selection-end-line="98" selection-end-column="101" />
           <folding>
-            <element signature="e#0#36#0" expanded="false" />
+            <element signature="e#0#12#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/DnnDataset.py">
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="57" />
+        <state relative-caret-position="340">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sklearn/reglog.py">
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="290">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="77" column="14" lean-forward="false" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="54" column="28" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="68" column="67" lean-forward="false" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

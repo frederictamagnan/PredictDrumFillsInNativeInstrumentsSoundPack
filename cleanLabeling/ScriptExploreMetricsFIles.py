@@ -1,6 +1,6 @@
 import numpy as np
 
-rootdir='/home/ftamagna/Documents/_AcademiaSinica/dataset/TrainingData/MetricsFiles/total_metrics_training.npz'
+rootdir='/home/ftamagna/Documents/_AcademiaSinica/dataset/TrainingData/MetricsFiles/OG_metrics_training.npz'
 
 metricsnpz=np.load(rootdir)
 for key in metricsnpz:
@@ -18,3 +18,4 @@ print(fills[:,1].sum())
 # rawfiles=np.load(ROOTDIR+"NI_raw.npz")
 #
 # print(rawfiles['X'].shape)
+
