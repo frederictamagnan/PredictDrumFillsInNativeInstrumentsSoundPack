@@ -10,13 +10,14 @@ from DrumReducerExpander import DrumReducerExpander
 import numpy as np
 
 
-mu=np.zeros((10,16,1))
-sigma=np.ones((10,16,1))
+mu=np.zeros((100,16,1))
+print(mu)
+sigma=np.ones((100,16,1))
 
 lol=np.concatenate((mu,sigma),axis=2)
 
-print(lol.shape)
-decoder= DrumReducerExpander()
+
+decoder= DrumReducerExpander(drumpitches=4)
 
 # dataset=EmbeddingsDataset(lol)
 #
@@ -27,9 +28,9 @@ decoderVAE = VaeEncoderDecoder()
 drums_reduced=decoderVAE.decode_to_reduced_drums(lol)
 
 
-print(drums_reduced)
-print(drums_reduced.shape)
-drums_reduced=drums_reduced>0.05
+# print(drums_reduced)
+# print(drums_reduced.shape)
+drums_reduced=drums_reduced>0.5
 
 expanded_drums=decoder.decode(drums_reduced)
 expanded_drums=decoder.decode_808(expanded_drums)

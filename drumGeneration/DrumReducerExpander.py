@@ -2,36 +2,36 @@ import numpy as np
 from pypianoroll import Track,Multitrack
 import pypianoroll as ppr
 from utils import random_file
-# DEFAULT_DRUM_TYPE_PITCHES = [
-#     # bass drum
-#     [36, 35],
-#
-#     # snare drum
-#     [38, 27, 28, 31, 32, 33, 34, 37, 39, 40, 56, 65, 66, 75, 85],
-#
-#     # closed hi-hat
-#     [42, 44, 54, 68, 69, 70, 71, 73, 78, 80],
-#
-#     # open hi-hat
-#     [46, 67, 72, 74, 79, 81],
-#
-#     # low tom
-#     [45, 29, 41, 61, 64, 84],
-#
-#     # mid tom
-#     [48, 47, 60, 63, 77, 86, 87],
-#
-#     # high tom
-#     [50, 30, 43, 62, 76, 83],
-#
-#     # crash cymbal
-#     [49, 55, 57, 58],
-#
-#     # ride cymbal
-#     [51, 52, 53, 59, 82]
-# ]
+DEFAULT_DRUM_TYPE_PITCHES_9 = [
+    # bass drum
+    [36, 35],
 
-DEFAULT_DRUM_TYPE_PITCHES_2 = [
+    # snare drum
+    [38, 27, 28, 31, 32, 33, 34, 37, 39, 40, 56, 65, 66, 75, 85],
+
+    # closed hi-hat
+    [42, 44, 54, 68, 69, 70, 71, 73, 78, 80],
+
+    # open hi-hat
+    [46, 67, 72, 74, 79, 81],
+
+    # low tom
+    [45, 29, 41, 61, 64, 84],
+
+    # mid tom
+    [48, 47, 60, 63, 77, 86, 87],
+
+    # high tom
+    [50, 30, 43, 62, 76, 83],
+
+    # crash cymbal
+    [49, 55, 57, 58],
+
+    # ride cymbal
+    [51, 52, 53, 59, 82]
+]
+
+DEFAULT_DRUM_TYPE_PITCHES_4 = [
     # bass drum
     [36, 35],
 
@@ -47,6 +47,63 @@ DEFAULT_DRUM_TYPE_PITCHES_2 = [
 ]
 
 
+DEFAULT_DRUM_TYPE_PITCHES_3 = [
+    # bass drum
+    [48],
+
+    # snare drum
+    [52],
+    # closed hi-hat
+    [53],
+
+    # open hi-hat
+    [55],
+
+]
+
+DEFAULT_DRUM_TYPE_PITCHES_5 = [
+    # bass drum
+    [48],
+
+    # snare drum
+    [52],
+    # closed hi-hat
+    [54],
+
+    # open hi-hat
+    [56],
+
+]
+
+DEFAULT_DRUM_TYPE_PITCHES_6= [
+    # bass drum
+    [48],
+
+    # snare drum
+    [52],
+
+    # closed hi-hat
+    [53],
+
+    # open hi-hat
+    [55],
+
+    # low tom
+    [49],
+
+    # mid tom
+    [50],
+
+    # high tom
+    [51],
+
+    # crash cymbal
+    [56],
+
+    # ride cymbal
+    [54]
+]
+
 
 
 
@@ -58,15 +115,24 @@ DEFAULT_DRUM_TYPE_PITCHES_2 = [
 class DrumReducerExpander:
 
 
-    def __init__(self, offset=False):
-
+    def __init__(self, offset=False, drumpitches=9):
+        if drumpitches==9:
+            DEFAULT_DRUM_TYPE_PITCHES=DEFAULT_DRUM_TYPE_PITCHES_9
+        elif drumpitches==3:
+            DEFAULT_DRUM_TYPE_PITCHES=DEFAULT_DRUM_TYPE_PITCHES_3
+        elif drumpitches==5:
+            DEFAULT_DRUM_TYPE_PITCHES=DEFAULT_DRUM_TYPE_PITCHES_5
+        elif drumpitches==6:
+            DEFAULT_DRUM_TYPE_PITCHES=DEFAULT_DRUM_TYPE_PITCHES_6
+        else:
+            DEFAULT_DRUM_TYPE_PITCHES=DEFAULT_DRUM_TYPE_PITCHES_4
 
         if offset:
-            for i,elt in enumerate(DEFAULT_DRUM_TYPE_PITCHES_2):
-                DEFAULT_DRUM_TYPE_PITCHES_2[i]= [x-24 for x in DEFAULT_DRUM_TYPE_PITCHES_2[i]]
+            for i,elt in enumerate(DEFAULT_DRUM_TYPE_PITCHES):
+                DEFAULT_DRUM_TYPE_PITCHES_2[i]= [x-24 for x in DEFAULT_DRUM_TYPE_PITCHES[i]]
 
-        self._drum_type_pitches = DEFAULT_DRUM_TYPE_PITCHES_2
-        self._drum_map = dict(enumerate(DEFAULT_DRUM_TYPE_PITCHES_2))
+        self._drum_type_pitches = DEFAULT_DRUM_TYPE_PITCHES
+        self._drum_map = dict(enumerate(DEFAULT_DRUM_TYPE_PITCHES))
         self._inverse_drum_map = dict((pitch, index)
                                       for index, pitches in self._drum_map.items()
                                       for pitch in pitches)

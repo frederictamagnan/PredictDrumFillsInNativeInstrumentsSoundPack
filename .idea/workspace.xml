@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808_9.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py" afterPath="$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py" />
       <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py" />
-      <change beforePath="$PROJECT_DIR$/vae/ScriptBuilder.ipynb" afterPath="$PROJECT_DIR$/vae/ScriptBuilder.ipynb" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,23 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Generator_vae.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Generator_vae.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_vae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="119" column="76" lean-forward="true" selection-start-line="119" selection-start-column="76" selection-end-line="119" selection-end-column="76" />
+            <state relative-caret-position="216">
+              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrumReducerExpander.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vae/DrumReducerExpander.py">
+      <file leaf-file-name="VaeEncoderDecoder_808_9.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1281">
-              <caret line="191" column="54" lean-forward="false" selection-start-line="191" selection-start-column="54" selection-end-line="191" selection-end-column="54" />
+            <state relative-caret-position="254">
+              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#1#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +43,8 @@
       <file leaf-file-name="ScriptCheckVAEBasicGeneration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -65,7 +65,7 @@
       <file leaf-file-name="VaeEncoderDecoder_808.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="1818">
               <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
               <folding>
                 <element signature="e#1#36#0" expanded="true" />
@@ -74,12 +74,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generator_vae_from_training_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_vae_from_training_data.py">
+      <file leaf-file-name="ScriptCheckVAEBasicGeneration_808_9.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808_9.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vae_rnn_custom_nine_v2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/vae_rnn_custom_nine_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="117" column="9" lean-forward="false" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,43 +101,21 @@
       <file leaf-file-name="DrumReducerExpander.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1029">
-              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptCheckVAEBasicGeneration_808.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="38" column="99" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="-88">
+              <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vae_rnn_custom.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/vae_rnn_custom.py">
+      <file leaf-file-name="DrumReducerExpander.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumReducerExpander.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="54" selection-end-column="32" />
+            <state relative-caret-position="186">
+              <caret line="124" column="28" lean-forward="false" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="28" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VaeEncoderDecoder_808.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/VaeEncoderDecoder_808.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#36#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -175,12 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cleanLabeling/DnnDataset.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/TrainingClassifier.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/CNNNet.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/DrumsDataset_genre.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/utils.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/CNNNet_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/TrainingGenerator.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/MetadataVisualization.py" />
@@ -224,16 +210,22 @@
         <option value="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/VaeEncoderDecoder_808.py" />
         <option value="$PROJECT_DIR$/models/vae_rnn_custom.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py" />
         <option value="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py" />
+        <option value="$PROJECT_DIR$/models/vae_rnn_custom_nine.py" />
+        <option value="$PROJECT_DIR$/models/vae_rnn_custom_nine_v2.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py" />
+        <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumReducerExpander.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808_9.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="222" />
-    <option name="y" value="33" />
-    <option name="width" value="1364" />
-    <option name="height" value="788" />
+    <option name="x" value="164" />
+    <option name="y" value="54" />
+    <option name="width" value="1362" />
+    <option name="height" value="752" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -252,7 +244,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,12 +264,18 @@
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="vae" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,17 +284,17 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cleanLabeling" />
-      <recent name="$PROJECT_DIR$/buildDataset" />
-      <recent name="$PROJECT_DIR$/" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/drumGeneration" />
       <recent name="$PROJECT_DIR$/vae" />
       <recent name="$PROJECT_DIR$/cleanLabeling" />
       <recent name="$PROJECT_DIR$/predictFills" />
       <recent name="$PROJECT_DIR$/vizualizingLatent" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cleanLabeling" />
+      <recent name="$PROJECT_DIR$/buildDataset" />
+      <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -312,25 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ScriptCheckVAEBasicGeneration_808">
-    <configuration name="DrumReducerExpander (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vae" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vae/DrumReducerExpander.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.ScriptCheckVAEBasicGeneration_808_9">
     <configuration name="Generator_vae" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -385,7 +364,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="VaeEncoderDecoder_808" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ScriptCheckVAEBasicGeneration_808_9" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -397,26 +376,44 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808_9.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="VaeEncoderDecoder_808_9" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drumGeneration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.DrumReducerExpander (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration_808" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration" />
-      <item index="3" class="java.lang.String" itemvalue="Python.VaeEncoderDecoder_808" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Generator_vae" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration_808" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Generator_vae" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration_808_9" />
+      <item index="4" class="java.lang.String" itemvalue="Python.VaeEncoderDecoder_808_9" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration_808" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Generator_vae" />
-        <item index="2" class="java.lang.String" itemvalue="Python.VaeEncoderDecoder_808" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration" />
-        <item index="4" class="java.lang.String" itemvalue="Python.DrumReducerExpander (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration_808_9" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration" />
+        <item index="2" class="java.lang.String" itemvalue="Python.VaeEncoderDecoder_808_9" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ScriptCheckVAEBasicGeneration_808" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Generator_vae" />
       </list>
     </recent_temporary>
   </component>
@@ -437,18 +434,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="222" y="33" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3385445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30943397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5398773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3568507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -487,41 +484,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset_vae_genre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/Generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumsDataset_genre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/VaeEncoderDecoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_genre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="39" column="69" lean-forward="false" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/MetricsTraining.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1259">
@@ -711,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="54" column="28" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1404">
           <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,10 +720,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vae/DrumReducerExpander.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1281">
+        <state relative-caret-position="3384">
           <caret line="191" column="54" lean-forward="false" selection-start-line="191" selection-start-column="54" selection-end-line="191" selection-end-column="54" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -775,62 +733,16 @@
         <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#1#36#0" expanded="true" />
+            <element signature="e#1#36#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/vae_rnn_custom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="846">
+          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="54" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1029">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="110" lean-forward="false" selection-start-line="27" selection-start-column="110" selection-end-line="27" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="38" column="99" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-          <folding>
-            <element signature="e#1#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -842,11 +754,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="110" lean-forward="false" selection-start-line="27" selection-start-column="110" selection-end-line="27" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/vae_rnn_custom_nine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="117" column="9" lean-forward="false" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1818">
+          <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
+          <folding>
+            <element signature="e#1#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumReducerExpander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="124" column="28" lean-forward="false" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/vae_rnn_custom_nine_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="117" column="9" lean-forward="false" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808_9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/Generator_vae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="119" column="76" lean-forward="true" selection-start-line="119" selection-start-column="76" selection-end-line="119" selection-end-column="76" />
+        <state relative-caret-position="216">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#1#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
