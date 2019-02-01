@@ -40,7 +40,8 @@ class DatasetBuilder:
 
                                 data=np.concatenate((data,elt))
             data=data[1:]
-            np.save(self.save_data_path+tag[-7:-3],data)
+            str_='/home/herman/lpd/id_lists/tagtraum/tagtraum_'
+            np.save(self.save_data_path+tag[len(str_):-3],data)
 
 
     def open_track(self,p,npz):
