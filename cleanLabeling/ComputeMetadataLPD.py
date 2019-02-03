@@ -41,10 +41,9 @@ class ComputeMetadataLPD:
 
                     for npz in os.listdir(p):
                         if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
-                            try:
-                                self.process_npz_file(p,npz)
-                            except:
-                                print(npz,"erreur")
+
+                            self.process_npz_file(p,npz)
+
 
 
 
@@ -65,7 +64,6 @@ class ComputeMetadataLPD:
         track=track.reshape((track.shape[0]//96,96,128))
         metadata=Metadata(track)
         metadata.save_metadata(path+"/",npz[:-4])
-        print(metadata['vae_embeddings'].shape)
 
 
 
