@@ -1,4 +1,4 @@
-from ComputeMetricsLPD import ComputeMetricsLPD
+from ComputeMetadataLPD import ComputeMetadataLPD
 path='/home/ftamagnan/dataset/lpd_5/lpd_5_cleansed/'
 path_tags= [
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Blues.id',
@@ -17,5 +17,5 @@ path_tags= [
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id', # 13
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
 ]
-cm= ComputeMetricsLPD(path,path_tags)
+cm= ComputeMetadataLPD(path,path_tags)
 cm.macro_iteration()

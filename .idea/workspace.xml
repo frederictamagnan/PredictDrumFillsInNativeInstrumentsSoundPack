@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/models/vae_rnn_custom_nine_v2.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/ComputeMetrics.py" afterPath="$PROJECT_DIR$/cleanLabeling/ComputeMetadata.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" afterPath="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/DrumsDataset.py" afterPath="$PROJECT_DIR$/cleanLabeling/VaeDataset.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/Metrics.py" afterPath="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/MetricsTraining.py" afterPath="$PROJECT_DIR$/cleanLabeling/MetadataTraining.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder.py" afterPath="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py" afterPath="$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" afterPath="$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptServer.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptServer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,14 +38,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComputeMetricsLPD.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py">
+      <file leaf-file-name="ComputeMetadataLPD.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
-              <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+            <state relative-caret-position="684">
+              <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptServer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptServer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/drumGeneration/generator_vae.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/cleanLabeling/models/vae_rnn.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumsDataset_vae_genre.py" />
@@ -158,6 +159,7 @@
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/cleanLabeling/VaeEncoderDecoder_808_9.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/ScriptServer.py" />
       </list>
     </option>
   </component>
@@ -268,7 +270,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -431,13 +433,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/DatasetBuilderOddgrooves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/__init__.py" />
     <entry file="file://$PROJECT_DIR$/drumGeneration/DNnet.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -806,13 +801,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetricsLPD.py">
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+        <state relative-caret-position="684">
+          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
