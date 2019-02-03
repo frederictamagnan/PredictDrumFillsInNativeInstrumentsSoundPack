@@ -1,27 +1,27 @@
-from Metrics import Metrics
+from Metadata import Metadata
 import numpy as np
 import json
 
 
 
-class MetricsTraining(Metrics):
+class MetadataTraining(Metadata):
 
 
 
     def __init__(self,batch_multitrack,list_filepath):
 
-        Metrics.__init__(self,batch_multitrack=batch_multitrack)
+        Metadata.__init__(self,batch_multitrack=batch_multitrack)
         self.list_filepath=list_filepath
-        self.metrics['list_filepath']=list_filepath
+        self.metadata['list_filepath']=list_filepath
         self.list_genre=["Pop","Funk","Jazz","Hard","Metal","Blues & Country","Blues Rock","Ballad","Indie Rock","Indie Disco","Punk Rock"]
-        self.metadata_metrics()
+        self.metadata_metadata()
 
 
-    def metadata_metrics(self):
-        self.metrics['fills'] = np.zeros((1, 2, 1))
-        self.metrics['genre'] = np.zeros((1, 12, 1))
-        self.metrics['bpm'] = np.zeros((1, 1))
-        self.metrics['dataset'] = np.zeros((1, 2, 1))
+    def metadata_metadata(self):
+        self.metadata['fills'] = np.zeros((1, 2, 1))
+        self.metadata['genre'] = np.zeros((1, 12, 1))
+        self.metadata['bpm'] = np.zeros((1, 1))
+        self.metadata['dataset'] = np.zeros((1, 2, 1))
 
         for filepath in self.list_filepath:
             print("lol")
@@ -66,16 +66,16 @@ class MetricsTraining(Metrics):
             label_fills = label_fills.reshape(1, label_fills.shape[0], label_fills.shape[1])
             label_dataset = label_dataset.reshape(1, label_dataset.shape[0], label_dataset.shape[1])
 
-            self.metrics['fills'] = np.concatenate((self.metrics['fills'] , label_fills))
-            self.metrics['genre'] = np.concatenate((self.metrics['genre'] , label_genre))
-            self.metrics['bpm'] = np.concatenate((self.metrics['bpm'], label_bpm))
-            self.metrics['dataset'] = np.concatenate((self.metrics['dataset'] , label_dataset))
+            self.metadata['fills'] = np.concatenate((self.metadata['fills'] , label_fills))
+            self.metadata['genre'] = np.concatenate((self.metadata['genre'] , label_genre))
+            self.metadata['bpm'] = np.concatenate((self.metadata['bpm'], label_bpm))
+            self.metadata['dataset'] = np.concatenate((self.metadata['dataset'] , label_dataset))
 
         list_special_label=["fills","genre","bpm","dataset"]
         for key in list_special_label:
-            self.metrics[key]=np.delete(self.metrics[key], 0, 0)
+            self.metadata[key]=np.delete(self.metadata[key], 0, 0)
             if key!='fills':
-                self.metrics[key] = self.metrics[key].reshape((self.metrics[key].shape[0], -1))
+                self.metadata[key] = self.metadata[key].reshape((self.metadata[key].shape[0], -1))
 
 
 
@@ -92,9 +92,9 @@ class MetricsTraining(Metrics):
 
         raise "Error finding genre"
 
-    def save_metrics(self,filepath,name):
+    def save_metadata(self,filepath,name):
         with open(filepath +name +'_list_filepath' + '.json', 'w') as outfile:
-            json.dump(self.metrics['list_filepath'], outfile)
+            json.dump(self.metadata['list_filepath'], outfile)
 
-        self.metrics.pop('list_filepath', None)
-        super().save_metrics(filepath,name)
+        self.metadata.pop('list_filepath', None)
+        super().save_metadata(filepath,name)

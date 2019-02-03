@@ -1,12 +1,12 @@
 import os
 from pypianoroll import Multitrack,Track
 import numpy as np
-from Metrics import Metrics
+from Metadata import Metadata
 
 
 
 
-class ComputeMetricsLPD:
+class ComputeMetadataLPD:
 
     def __init__(self, filepath_dataset, filepath_tags):
 
@@ -40,8 +40,12 @@ class ComputeMetricsLPD:
                     p = self.filepath_dataset + self.middle + self.file
 
                     for npz in os.listdir(p):
-                        if 'label' not in npz and 'metrics' not in npz:
-                            self.process_npz_file(p,npz)
+                        if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
+                            try:
+                                self.process_npz_file(p,npz)
+                            except:
+                                print(npz,"erreur")
+
 
 
 
@@ -59,12 +63,13 @@ class ComputeMetricsLPD:
             to_complete=np.zeros((to_complete_len,128))
             track=np.concatenate((track,to_complete))
         track=track.reshape((track.shape[0]//96,96,128))
-        metrics=Metrics(track)
-        metrics.save_metrics(path+"/",npz[:-4])
+        metadata=Metadata(track)
+        metadata.save_metadata(path+"/",npz[:-4])
+        print(metadata['vae_embeddings'].shape)
 
 
 
-        #enregistre metrics
+        #enregistre metadata
         #predit label
         #enregistrelabel
         # print("done")
@@ -79,6 +84,6 @@ if __name__=='__main__':
         '/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id',
     ]
 
-    data=ComputeMetricsLPD(PATH,PATH_TAGS)
+    data=ComputeMetadataLPD(PATH,PATH_TAGS)
 
     data.macro_iteration()

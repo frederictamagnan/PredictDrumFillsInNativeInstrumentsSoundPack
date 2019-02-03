@@ -4,7 +4,7 @@ import numpy as np
 from torch.autograd import Variable
 
 
-class DrumsDataset(Dataset):
+class VaeEncodeDataset(Dataset):
     """Drums dataset."""
 
     def __init__(self,X):
@@ -20,7 +20,7 @@ class DrumsDataset(Dataset):
         return self.X[idx,:,:],idx
 
 
-class EmbeddingsDataset(Dataset):
+class VaeDecodeDataset(Dataset):
 
     def __init__(self,embeddings):
 

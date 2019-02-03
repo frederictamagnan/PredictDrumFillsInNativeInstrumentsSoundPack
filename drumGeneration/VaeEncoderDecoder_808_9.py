@@ -76,7 +76,7 @@ class VaeEncoderDecoder:
         )
 
         # warning
-        global_tensor = np.zeros((1, 16, 2))
+        global_tensor = np.zeros((1, 32, 2))
 
         for batch_i, (data, index) in enumerate(train_loader):
             with torch.no_grad():

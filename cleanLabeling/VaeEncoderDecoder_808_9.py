@@ -1,7 +1,7 @@
 
-from models.vae_rnn import *
-from DrumsDataset import DrumsDataset
-from DrumsDataset import EmbeddingsDataset
+from models.vae_rnn_custom_nine_v2 import *
+from VaeDataset import VaeEncodeDataset
+from VaeDataset import VaeDecodeDataset
 import torch.utils.data as Data
 from utils import tensor_to_numpy
 import torch
@@ -11,11 +11,10 @@ class VaeEncoderDecoder:
 
     def __init__(self):
 
-        BATCH_SIZE = 256
-        self.encoder = Encoder().to(device)
-        self.decoder = Decoder(beat=48).to(device)
-        self.vae = VAE(self.encoder, self.decoder).to(device)
-
+        self.batch_size=256
+        self.encoder = Encoder(batch_size=256).to(device)
+        self.decoder = Decoder(beat=16,batch_size=256).to(device)
+        self.vae = VAE(self.encoder, self.decoder,batch_size=256).to(device)
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
 
@@ -25,8 +24,17 @@ class VaeEncoderDecoder:
             print('run on CPU')
 
         self.vae.load_state_dict(torch.load(
-            "./../models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt",
+            "./../models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt",
             map_location=self.device))
+
+        self.count_parameters()
+
+    def count_parameters(self):
+        model_parameters = filter(lambda p: p.requires_grad, self.vae.parameters())
+        params = sum([np.prod(p.size()) for p in model_parameters])
+        self.params=params
+        print(params,"PARAMETERS")
+
 
 
 
@@ -41,7 +49,8 @@ class VaeEncoderDecoder:
             blank_lines = np.zeros([to_complete]+list(array.shape)[1:])
             new_array = np.concatenate((array, blank_lines))
         else:
-            to_complete=0
+            to_complete=None
+            new_array=array
 
         return new_array,to_complete
 
@@ -52,15 +61,17 @@ class VaeEncoderDecoder:
         :param array: its a batch of reduced drums track with shape n* 96* 9
         :return:
         """
+        print(array.shape,"array shape")
         new_array,to_complete=self.pre_process_array(array)
+        print(new_array.shape,"shape new array")
+        print(to_complete,"to complete")
 
 
-
-        train_dataset = DrumsDataset(array)
-
+        train_dataset = VaeEncodeDataset(new_array)
+        print(len(train_dataset),"len dataset")
         train_loader = Data.DataLoader(
             dataset=train_dataset,
-            batch_size=BATCH_SIZE,
+            batch_size=256,
             shuffle=False,
             drop_last=True,
             num_workers=1,
@@ -80,9 +91,14 @@ class VaeEncoderDecoder:
                 global_tensor = np.concatenate((global_tensor, latent_tensor))
 
 
+        print(global_tensor.shape,"global tensor shape")
+        print(global_tensor)
+        if to_complete is not None:
+            global_tensor = global_tensor[1:-to_complete, :, :]
+        else:
+            global_tensor = global_tensor[1:, :, :]
 
-        global_tensor = global_tensor[1:-to_complete, :, :]
-
+        print(global_tensor,"2")
         return global_tensor
 
 
@@ -90,16 +106,16 @@ class VaeEncoderDecoder:
     def decode_to_reduced_drums(self,array):
 
         new_array,to_complete=self.pre_process_array(array)
-        test_dataset= EmbeddingsDataset(new_array)
+        test_dataset= VaeDecodeDataset(new_array)
         test_loader = Data.DataLoader(
             dataset=test_dataset,
-            batch_size=BATCH_SIZE,
+            batch_size=self.batch_size,
             shuffle=False,
             drop_last=True,
             num_workers=1,
         )
 
-        global_tensor = np.zeros((1, 96,9))
+        global_tensor = np.zeros((1, 16,9))
         for batch_i, (data) in enumerate(test_loader):
             with torch.no_grad():
 
