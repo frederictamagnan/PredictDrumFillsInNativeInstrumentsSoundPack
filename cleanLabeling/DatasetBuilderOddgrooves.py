@@ -148,8 +148,8 @@ if __name__ == '__main__':
     ROOTDIR = "/home/ftamagna/Documents/_AcademiaSinica/dataset//NI_Drum_Studio_Midi_encoded/MIDI Files"
     ROOTDIR2 = "/home/ftamagna/Documents/_AcademiaSinica/dataset/oddgrooves/ODDGROOVES_FILL_PACK/OddGrooves Fill Pack General MIDI"
 
-    # datasetBuilder=DatasetBuilder(ROOTDIR)
-    # datasetBuilder.folders_to_clean_numpy('NI')
+    datasetBuilder=DatasetBuilder(ROOTDIR)
+    datasetBuilder.folders_to_clean_numpy('NI')
     datasetBuilder2 = DatasetBuilder(ROOTDIR2)
     datasetBuilder2.folders_to_clean_numpy('OG')
 

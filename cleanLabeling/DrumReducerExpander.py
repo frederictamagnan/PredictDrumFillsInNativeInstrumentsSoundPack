@@ -62,11 +62,11 @@ class DrumReducerExpander:
 
 
         if offset:
-            for i,elt in enumerate(DEFAULT_DRUM_TYPE_PITCHES_2):
+            for i,elt in enumerate(DEFAULT_DRUM_TYPE_PITCHES):
                 DEFAULT_DRUM_TYPE_PITCHES[i]= [x-24 for x in DEFAULT_DRUM_TYPE_PITCHES[i]]
 
-        self._drum_type_pitches = DEFAULT_DRUM_TYPE_PITCHES_2
-        self._drum_map = dict(enumerate(DEFAULT_DRUM_TYPE_PITCHES_2))
+        self._drum_type_pitches = DEFAULT_DRUM_TYPE_PITCHES
+        self._drum_map = dict(enumerate(DEFAULT_DRUM_TYPE_PITCHES))
         self._inverse_drum_map = dict((pitch, index)
                                       for index, pitches in self._drum_map.items()
                                       for pitch in pitches)

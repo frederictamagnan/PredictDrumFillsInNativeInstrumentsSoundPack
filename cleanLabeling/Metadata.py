@@ -17,7 +17,7 @@ class Metadata:
         self.batch_multitrack_reduced_velocity=drumReducerExpander.encode(self.batch_multitrack)
         self.batch_multitrack_reduced=np.zeros(self.batch_multitrack_reduced_velocity.shape)
         self.batch_multitrack_reduced[self.batch_multitrack_reduced_velocity>0]=1
-        self.batch_multitrack_reduced=drumReducerExpander.encode_808(self.batch_multitrack_reduced)
+        self.batch_multitrack_reduced_808=drumReducerExpander.encode_808(self.batch_multitrack_reduced)
 
         self.metadata['vae_embeddings'] = self.vae_embeddings()
         self.metadata['drums_pitches_used'] = self.drum_pitches_used()
@@ -53,7 +53,7 @@ class Metadata:
 
     def vae_embeddings(self):
         e=VaeEncoderDecoder()
-        emb=e.encode_to_embeddings(self.batch_multitrack_reduced)
+        emb=e.encode_to_embeddings(self.batch_multitrack_reduced_808)
         print(emb)
         return emb
 
