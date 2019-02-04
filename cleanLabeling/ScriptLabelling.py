@@ -1,5 +1,5 @@
 
-from Labelling import Labelling
+from Labelling_sk import Labelling
 
 path='/home/ftamagnan/lpd_5/lpd_5_cleansed/'
 path_tags= [
@@ -21,5 +21,5 @@ path_tags= [
 ]
 
 
-lb =Labelling('./' ,"fillClassifier" ,path ,path_tags)
+lb =Labelling('./models/' ,"clf_fills.pkl" ,path ,path_tags)
 lb.macro_iteration()
