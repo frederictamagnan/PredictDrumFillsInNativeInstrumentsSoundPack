@@ -26,9 +26,9 @@ from DrumReducerExpander import DrumReducerExpander
 
 def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced=False ,server=True):
 
-    enc=DrumReducerExpander()
 #     fills = np.zeros((1, 3 ,96, 9))
     vae_array=np.zeros((1,3,32,2))
+    track_array=np.zeros((1,3,16,9))
     count = 0
     genre=np.zeros((1,15,1))
     # ITERATE OVER THE TAG LISTS
@@ -50,16 +50,18 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                     if 'label.npz' in npz:
                         count += 1
 #                         fill = build_generation_dataset(p, npz)
-                        vae=build_generation_dataset(p,npz)
+                        output=build_generation_dataset(p,npz)
 
 #                         if fill is not None:
-                        if vae is not None:
+                        if output is not None:
+                            vae,track_ar=output
 #                             fill=fill.reshape((fill.shape[0],3*96,128))
 #                             fill = enc.encode(fill)
 #                             fill=fill.reshape((fill.shape[0],3,96,9))
 #                             fills = np.concatenate((fills, fill))
                             vae=vae.reshape((vae.shape[0],3,32,2))
                             vae_array=np.concatenate((vae_array,vae))
+                            track_array=np.concatenate((track_array,track_ar))
 #                             genre_fill=np.zeros((fill.shape[0],15,1))
                             genre_fill=np.zeros((vae.shape[0],15,1))
                             genre_fill[:,tag_i,0]=1
@@ -75,8 +77,9 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #     np.savez("./reduced_fills_plus_embeddings", fills=fills,genre=genre)
 
     vae_array=vae_array[1:]
+    track_array=track_array[1:]
     genre=genre[1:]
-    np.savez("./reduced_fills_plus_embbedings",vae=vae_array,genre=genre)
+    np.savez("./reduced_fills_plus_embeddings",vae=vae_array,genre=genre,track_array=track_array)
     return 0
 
 
@@ -86,11 +89,14 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 
 
 def build_generation_dataset(p, npz):
+    enc=DrumReducerExpander()
+
     label = dict(np.load(p + '/' + npz))
     label = label['label']
-    metrics_dict = dict(np.load(p + '/' + npz.replace('_label','_metrics_training')))
-    vae=metrics_dict['vae_embeddings']
+    metadata_dict = dict(np.load(p + '/' + npz.replace('_label','_metadata_training')))
+    vae=metadata_dict['vae_embeddings']
     #     print(label.shape)
+    print(p + '/' + npz.replace('_label.npz', ''))
     multi = Multitrack(p + '/' + npz.replace('_label', ''))
     track = multi.tracks[0].pianoroll
     if track.shape[0] % 96 != 0:
@@ -111,10 +117,12 @@ def build_generation_dataset(p, npz):
 
         tab=np.concatenate((vae[indexes_fills_cleaned - 1],vae[indexes_fills_cleaned],vae[indexes_fills_cleaned + 1]), axis=1)
         print(tab.shape,"tab vae shape")
-#         tab = np.concatenate \
-#             ((track[indexes_fills_cleaned - 1], track[indexes_fills_cleaned], track[indexes_fills_cleaned + 1]), axis=1)
-#         print(tab.shape)
-        return tab
+        tab_track = np.concatenate \
+            ((track[indexes_fills_cleaned - 1], track[indexes_fills_cleaned], track[indexes_fills_cleaned + 1]), axis=1)
+        tab_track=enc.encode(tab_track)
+        tab_track=enc.encode_808(tab_track)
+        tab_track=tab_track.reshape((1,3,16,9))
+        return tab,tab_track
 
 
 if __name__ == '__main__':
