@@ -1,5 +1,5 @@
 import numpy as np
-
+from utils import numpy_drums_save_to_midi
 # data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_all_genre.npz')
 # data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/vae_dataset.npz')
 #
@@ -10,16 +10,23 @@ import numpy as np
 # # print(vae[:10])
 # print(genre.shape,vae.shape,genre.sum())
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_all_genre.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_plus_embeddings.npz')
 data=dict(data)
-fills=data['fills']
-print(fills.shape)
+for elt in data.keys():
+    print(data[elt].shape)
+    print(elt)
+tr=data['track_array']
+from DrumReducerExpander import DrumReducerExpander
+dec=DrumReducerExpander()
+for i in range(len(tr)):
+    track=tr[i].reshape((3*16,9))
+    track=dec.decode(batch_pianoroll=track,no_batch=True)
+    track=dec.decode_808(batch_pianoroll=track,no_batch=True)
+    numpy_drums_save_to_midi(track,'/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/',str(i))
 
-fills=fills.reshape((19984, 3* 96, 9))
-fills=fills.reshape((19984*3*4*4,-1,9))
-print(fills.shape)
+    if i>20:
+        break
 
-for i in range(6):
-    print(fills[:,i,:].sum())
+
 
 
