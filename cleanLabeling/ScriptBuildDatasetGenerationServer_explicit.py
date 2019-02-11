@@ -96,11 +96,10 @@ def build_generation_dataset(p, npz):
 
     label = dict(np.load(p + '/' + npz))
     label = label['label']
-    metadata_dict = dict(np.load(p + '/' + npz.replace('_label','_metadata_training')))
+    metadata_dict = dict(np.load(p + '/' + npz.replace('_label_explicit','_metadata_training')))
     vae=metadata_dict['vae_embeddings']
     print(len(label),"LABEL",len(vae),"VAE")
     #     print(label.shape)
-    print(p + '/' + npz.replace('_label_explicit.npz', ''))
     multi = Multitrack(p + '/' + npz.replace('_label_explicit', ''))
     track = multi.tracks[0].pianoroll
     if track.shape[0] % 96 != 0:
