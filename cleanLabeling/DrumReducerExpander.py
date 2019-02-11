@@ -2,6 +2,8 @@ import numpy as np
 from pypianoroll import Track,Multitrack
 import pypianoroll as ppr
 from utils import random_file
+import random
+random.seed(11)
 DEFAULT_DRUM_TYPE_PITCHES = [
     # bass drum
     [36, 35],
@@ -165,16 +167,27 @@ class DrumReducerExpander:
 
 if __name__=='__main__':
 
+    import matplotlib.pyplot as plt
+
     temp_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
     pr=DrumReducerExpander(offset=False)
     filepath,npz=random_file()
+    print(npz)
     multi=Multitrack(filepath+npz)
     multi_drums=Multitrack(tracks=[Track(multi.tracks[0].pianoroll,is_drum=True)])
     pianoroll=multi.tracks[0].pianoroll
-
+    i=10
+    print(len(pianoroll))
+    # plt.plot(pianoroll[96*i:96*(i+1),38])
+    plt.show()
     enc_piano=pr.encode(pianoroll,no_batch=True)
 
     enc_piano=pr.encode_808(enc_piano,no_batch=True)
+    e2=enc_piano[16*i:16*(i+1),:]
+    print(e2)
+    e2[e2==0]
+    mean_axis = np.amin(e2, axis=0)
+    print(mean_axis,"lol")
     dec_piano=pr.decode_808(enc_piano,no_batch=True)
 
     # import sys

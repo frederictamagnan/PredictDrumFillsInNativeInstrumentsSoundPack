@@ -15,6 +15,7 @@ class Metadata:
 
 
         self.batch_multitrack_reduced_velocity=drumReducerExpander.encode(self.batch_multitrack)
+        self.batch_multitrack_reduced_velocity_808=drumReducerExpander.encode_808(self.batch_multitrack_reduced_velocity)
         self.batch_multitrack_reduced=np.zeros(self.batch_multitrack_reduced_velocity.shape)
         self.batch_multitrack_reduced[self.batch_multitrack_reduced_velocity>0]=1
         self.batch_multitrack_reduced_808=drumReducerExpander.encode_808(self.batch_multitrack_reduced)
@@ -40,13 +41,13 @@ class Metadata:
 
     def velocity_metadata(self):
 
-        min_axis=np.min(self.batch_multitrack_reduced_velocity,axis=1)
+        # min_axis=np.min(self.batch_multitrack_reduced_velocity,axis=1)
         # print(min_axis.shape,"min shape")
-        max_axis=np.max(self.batch_multitrack_reduced_velocity,axis=1)
-        std_axis=np.std(self.batch_multitrack_reduced_velocity,axis=1,dtype=np.float64)
-        mean_axis=np.mean(self.batch_multitrack_reduced_velocity,axis=1,dtype=np.float64)
+        max_axis=np.max(self.batch_multitrack_reduced_velocity_808,axis=1)
+        std_axis=np.std(self.batch_multitrack_reduced_velocity_808,axis=1,dtype=np.float64)
+        mean_axis=np.mean(self.batch_multitrack_reduced_velocity_808,axis=1,dtype=np.float64)
 
-        velocity_metadata=np.concatenate([min_axis,max_axis,std_axis,mean_axis],axis=1)
+        velocity_metadata=np.concatenate([max_axis,std_axis,mean_axis],axis=1)
         # print(label_array.shape,"LABEL ARRAY SHAPE")
 
         return velocity_metadata
