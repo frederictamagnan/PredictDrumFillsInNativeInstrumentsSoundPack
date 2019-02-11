@@ -1,5 +1,5 @@
 
-from Labelling_sk import Labelling
+from Labelling_explicit import Labelling
 
 path='/home/ftamagnan/dataset/lpd_5/lpd_5_cleansed/'
 path_tags= [
@@ -21,5 +21,5 @@ path_tags= [
 ]
 
 
-lb =Labelling(path ,path_tags)
+lb =Labelling(path,path_tags)
 lb.macro_iteration()
