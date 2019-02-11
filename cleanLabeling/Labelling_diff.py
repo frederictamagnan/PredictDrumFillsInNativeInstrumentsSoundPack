@@ -40,6 +40,7 @@ class Labelling:
         data=dict(np.load(path+'/'+npz))
         diff=data['diff']
         diff=diff.reshape(-1,16*9)
+        diff[diff<0]=0
         diff=np.sum(diff,axis=1)
         y=(diff>3)*1
         print(y.shape,"y shape")

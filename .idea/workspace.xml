@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/Labelling_diff.py" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling_diff.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +39,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ScriptExploreFills.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Labelling_diff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="273">
+              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -50,10 +61,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DrumReducerExpander.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2168">
+              <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ScriptBuildDatasetGenerationServer_explicit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="-497">
               <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
               <folding />
             </state>
@@ -63,8 +84,8 @@
       <file leaf-file-name="ScriptBuildDatasetGenerationServer_diff.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-551">
-              <caret line="102" column="57" lean-forward="false" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+            <state relative-caret-position="421">
+              <caret line="114" column="61" lean-forward="false" selection-start-line="114" selection-start-column="61" selection-end-line="114" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -199,10 +220,10 @@
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptLabelling_explicit.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_explicit.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_diff.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
       </list>
@@ -302,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ScriptBuildDatasetGenerationServer_diff">
+  <component name="RunManager" selected="Python.ScriptExploreFills">
     <configuration name="ComputeMetadataLPD" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -316,24 +337,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="DrumReducerExpander" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cleanLabeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,20 +396,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="ScriptExploreFills" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drumGeneration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.DrumReducerExpander" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ComputeMetadataLPD" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Metadata" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Labelling_diff" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ScriptBuildDatasetGenerationServer_diff" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ComputeMetadataLPD" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Metadata" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Labelling_diff" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ScriptBuildDatasetGenerationServer_diff" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ScriptBuildDatasetGenerationServer_diff" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Labelling_diff" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ComputeMetadataLPD" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Metadata" />
-        <item index="4" class="java.lang.String" itemvalue="Python.DrumReducerExpander" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ScriptBuildDatasetGenerationServer_diff" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Labelling_diff" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ComputeMetadataLPD" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Metadata" />
       </list>
     </recent_temporary>
   </component>
@@ -512,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1728">
           <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -746,29 +760,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
           <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="187" column="11" lean-forward="false" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,24 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_diff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_explicit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -826,10 +804,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="187" column="11" lean-forward="false" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2168">
+          <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-497">
+          <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="102" column="57" lean-forward="false" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+        <state relative-caret-position="421">
+          <caret line="114" column="61" lean-forward="false" selection-start-line="114" selection-start-column="61" selection-end-line="114" selection-end-column="61" />
           <folding />
         </state>
       </provider>
