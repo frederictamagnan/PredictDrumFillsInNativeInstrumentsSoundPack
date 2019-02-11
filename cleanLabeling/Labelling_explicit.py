@@ -39,14 +39,15 @@ class Labelling:
         data=dict(np.load(path+'/'+npz))
         vm=data['velocity_metadata']
         list_vm=[]
-        for i in range(4):
-            m=((vm[:, 22+i] > vm[:, 22+i].max() * 0.75)*1).reshape(1,-1)
+        index_vm=[22,23,24,25,19]
+        for i in index_vm:
+            m=((vm[:, i] > vm[:, i].max() * 0.75)*1).reshape(1,-1)
             print(m.shape,"m shape")
             list_vm.append(m)
 
         vm_ = np.concatenate(list_vm,axis=0)
         print(vm_.shape)
-        y=np.sum(vm_,axis=0)>=2
+        y=np.sum(vm_,axis=0)>=3
         print(y.shape,"y shape")
         # y=self.clf.predict(X)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_explicit.npz', label=y)
