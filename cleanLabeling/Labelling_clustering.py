@@ -60,7 +60,7 @@ class Labelling:
                 max=sum_
                 clust_max=i
 
-        y=y_pred[y_pred==clust_max]*1
+        y=(y_pred==clust_max)*1
         print(y,"YYYY")
         print(y)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_clustering.npz', label=y)
