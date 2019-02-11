@@ -27,8 +27,10 @@ from DrumReducerExpander import DrumReducerExpander
 def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced=False ,server=True):
 
 #     fills = np.zeros((1, 3 ,96, 9))
-    vae_array=np.zeros((1,3,32,2))
-    track_array=np.zeros((1,3,16,9))
+#     vae_array=np.zeros((1,3,32,2))
+#     track_array=np.zeros((1,3,16,9))
+    vae_array=np.zeros((1,4,32,2))
+    track_array=np.zeros((1,4,16,9))
     count = 0
     genre=np.zeros((1,15,1))
     # ITERATE OVER THE TAG LISTS
