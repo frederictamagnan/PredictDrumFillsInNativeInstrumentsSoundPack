@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" afterPath="$PROJECT_DIR$/cleanLabeling/DrumReducerExpander.py" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/Metadata.py" afterPath="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Labelling_diff.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Labelling_diff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_diff.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
@@ -50,6 +46,26 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptBuildDatasetGenerationServer_explicit.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptBuildDatasetGenerationServer_diff.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-551">
+              <caret line="102" column="57" lean-forward="false" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vizualizingLatent/sklearn.py" />
         <option value="$PROJECT_DIR$/sklearn/reglog.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" />
         <option value="$PROJECT_DIR$/drumGeneration/__init__.py" />
@@ -189,6 +204,7 @@
         <option value="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_diff.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
       </list>
     </option>
   </component>
@@ -286,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Labelling_diff">
+  <component name="RunManager" selected="Python.ScriptBuildDatasetGenerationServer_diff">
     <configuration name="ComputeMetadataLPD" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -359,19 +375,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ScriptExploreFills" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ScriptBuildDatasetGenerationServer_diff" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drumGeneration" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cleanLabeling" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,17 +396,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.DrumReducerExpander" />
       <item index="1" class="java.lang.String" itemvalue="Python.ComputeMetadataLPD" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Metadata" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Labelling_diff" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Metadata" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Labelling_diff" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ScriptBuildDatasetGenerationServer_diff" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Labelling_diff" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ComputeMetadataLPD" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Metadata" />
-        <item index="3" class="java.lang.String" itemvalue="Python.DrumReducerExpander" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ScriptBuildDatasetGenerationServer_diff" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Labelling_diff" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ComputeMetadataLPD" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Metadata" />
+        <item index="4" class="java.lang.String" itemvalue="Python.DrumReducerExpander" />
       </list>
     </recent_temporary>
   </component>
@@ -443,13 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vae/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vae/ScriptBuilder.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -711,14 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -791,14 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_explicit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -814,6 +807,30 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_explicit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="102" column="57" lean-forward="false" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
