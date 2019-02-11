@@ -107,19 +107,24 @@ def build_generation_dataset(p, npz):
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
     label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
-    
+    # label_previous_next_shape = np.concatenate((label[:-3],label[1:-2], label[2:-1], label[3:])).reshape((-1 ,4))
 
-    mask_fills_cleaned =(label_previous_next_shape ==[0, 1, 0]).all(axis=1)
+
+    mask_fills_cleaned =(label_previous_next_shape ==[0, 0, 1]).all(axis=1)
+    # mask_fills_cleaned =(label_previous_next_shape ==[0,0, 0, 1]).all(axis=1)
+
     indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True ) +1
 
     if indexes_fills_cleaned.shape[0] == 0:
         return None
     else:
 
-        tab=np.concatenate((vae[indexes_fills_cleaned - 1],vae[indexes_fills_cleaned],vae[indexes_fills_cleaned + 1]), axis=1)
+        # tab=np.concatenate((vae[indexes_fills_cleaned - 1],vae[indexes_fills_cleaned],vae[indexes_fills_cleaned + 1]), axis=1)
         print(tab.shape,"tab vae shape")
+        tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1],vae[indexes_fills_cleaned + 2]), axis=1)
+
         tab_track = np.concatenate \
-            ((track[indexes_fills_cleaned - 1], track[indexes_fills_cleaned], track[indexes_fills_cleaned + 1]), axis=1)
+            ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1], track[indexes_fills_cleaned + 2]), axis=1)
         print(tab_track.shape)
         tab_track=tab_track.reshape(tab_track.shape[0],-1,tab_track.shape[3])
         tab_track=enc.encode(tab_track)
