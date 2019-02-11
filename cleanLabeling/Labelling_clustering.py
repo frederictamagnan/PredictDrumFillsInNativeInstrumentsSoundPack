@@ -1,15 +1,15 @@
 import numpy as np
-from sklearn.externals import joblib
+
 from sklearn.cluster import KMeans
 import os
 class Labelling:
 
-    def __init__(self,filepath_model,filename_model,filepath_dataset,filepath_tags):
+    def __init__(self,filepath_dataset,filepath_tags):
 
 
         self.filepath_dataset = filepath_dataset
         self.filepath_tags = filepath_tags
-        self.clf=joblib.load(filepath_model+filename_model)
+
 
     def macro_iteration(self):
 
@@ -73,6 +73,6 @@ if __name__=='__main__':
         '/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id',
     ]
 
-    lb=Labelling('./models/',"clf_fills.pkl",PATH,PATH_TAGS)
+    lb=Labelling(PATH,PATH_TAGS)
     lb.macro_iteration()
 
