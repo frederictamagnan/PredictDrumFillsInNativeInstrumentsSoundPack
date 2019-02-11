@@ -42,7 +42,7 @@ class Labelling:
         diff=diff.reshape(-1,16*9)
         diff[diff<0]=0
         diff=np.sum(diff,axis=1)
-        y=(diff>3)*1
+        y=(diff>5)*1
         print(y.shape,"y shape")
         # y=self.clf.predict(X)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_diff.npz', label=y)
