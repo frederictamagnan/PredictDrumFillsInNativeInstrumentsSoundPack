@@ -44,7 +44,7 @@ class Labelling:
         for label in list_label:
             list_x.append(data[label])
         X = np.concatenate(list_x, axis=1)
-        y=(self.clf.predict_proba(X)>2)*1
+        y=(self.clf.predict_proba(X)>0.6)*1
         y=y[:,1]
         # y=self.clf.predict(X)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label.npz', label=y)
