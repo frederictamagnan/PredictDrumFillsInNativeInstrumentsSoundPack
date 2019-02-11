@@ -53,13 +53,15 @@ class Labelling:
             print(X.shape)
             x=X[tab_index_bar][:,23:26]
             print(x.shape)
-
+            print(x,"X")
             sum_=np.sum(x)
+            print(sum_,"SUM")
             if sum_>max:
                 max=sum_
                 clust_max=i
 
         y=y_pred[y_pred==clust_max]*1
+        print(y,"YYYY")
         print(y)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_clustering.npz', label=y)
 
