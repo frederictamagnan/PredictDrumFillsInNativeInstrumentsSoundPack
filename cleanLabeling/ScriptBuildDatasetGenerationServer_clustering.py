@@ -110,7 +110,7 @@ def build_generation_dataset(p, npz):
 
     # label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
     # label_previous_next_shape = np.concatenate((label[:-3],label[1:-2], label[2:-1], label[3:])).reshape((-1 ,4))
-    label_previous_next_shape = np.concatenate((label[:-1], label[1:]).reshape((-1 ,2)))
+    label_previous_next_shape = np.concatenate((label[:-1], label[1:])).reshape((-1 ,2))
 
 
     # mask_fills_cleaned =(label_previous_next_shape ==[-1, 1,-1]).all(axis=1)
