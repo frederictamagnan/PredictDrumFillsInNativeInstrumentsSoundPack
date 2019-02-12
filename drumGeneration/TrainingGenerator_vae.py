@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn as nn
 from DNnet import DNnet
 
-local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_plus_embeddings_c3.npz'
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/ununbest.npz'
 
 class TrainingGenerator:
 
@@ -56,7 +56,7 @@ class TrainingGenerator:
             dnn=DNnet()
 
         criterion = nn.MSELoss()
-        optimizer = optim.SGD(dnn.parameters(), lr=self.lr, momentum=0.9,weight_decay=0.3)
+        optimizer = optim.SGD(dnn.parameters(), lr=self.lr, momentum=0.9,weight_decay=0.6)
 
 
         for epoch in range(self.n_epochs):  # loop over the dataset multiple times
@@ -100,12 +100,12 @@ class TrainingGenerator:
 if __name__=="__main__":
 
     LR=0.001
-    BATCH_SIZE=2048
-    N_EPOCHS=50
+    BATCH_SIZE=4096
+    N_EPOCHS=200
 
 
     tg=TrainingGenerator(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS)
     tg.load_data()
     tg.split_data()
     tg.train_model()
-    tg.save_model("./../models/",'vae_generation.pt')
+    tg.save_model("./../models/",'vae_generation_onelayer.pt')

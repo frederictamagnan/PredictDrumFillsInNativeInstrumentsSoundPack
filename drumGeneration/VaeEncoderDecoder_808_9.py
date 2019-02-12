@@ -34,7 +34,7 @@ class VaeEncoderDecoder:
         model_parameters = filter(lambda p: p.requires_grad, self.vae.parameters())
         params = sum([np.prod(p.size()) for p in model_parameters])
         self.params=params
-        print(params,"PARAMETERS")
+        print(params,"VAE V PARAMETERS")
 
 
 

@@ -11,6 +11,8 @@ class DrumsDataset(data.Dataset):
         X_next=numpy_array[:,2,:,:]
 
         self.X=np.concatenate((X_previous,X_next),axis=1)
+        self.X=X_previous
+
         self.X=self.X.reshape((-1,2,96,9))
         if not inference:
             self.y=numpy_array[:,1,:,:]

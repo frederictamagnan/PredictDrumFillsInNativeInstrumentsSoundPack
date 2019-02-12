@@ -5,7 +5,7 @@ from utils import random_file
 from sklearn.cluster import KMeans
 import random
 from pypianoroll import Track,Multitrack
-random.seed(12)
+random.seed(14)
 import pypianoroll as ppr
 path,npz=random_file()
 mt=dict(np.load(path+'/'+npz.replace('.npz','_metadata_training.npz')))
@@ -15,12 +15,12 @@ X=mt['velocity_metadata']
 
 print(X.shape)
 tsne = TSNE(n_components=2, random_state=0)
-# X_trans= tsne.fit_transform(X)
+X_trans= tsne.fit_transform(X)
 random_state = 170
 km=KMeans(n_clusters=6, random_state=random_state)
 y_pred = km.fit_predict(X)
-# plt.scatter(X_trans[:, 0], X_trans[:, 1], c=y_pred)
-# plt.show()
+plt.scatter(X_trans[:, 0], X_trans[:, 1], c=y_pred)
+plt.show()
 
 path_temp = '/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
 
