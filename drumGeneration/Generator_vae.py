@@ -10,7 +10,7 @@ from utils import numpy_drums_save_to_midi
 from torch.autograd import Variable
 from utils import tensor_to_numpy
 import torch.utils.data
-from VaeEncoderDecoder import VaeEncoderDecoder
+from VaeEncoderDecoder_808_9 import VaeEncoderDecoder
 from models.vae_rnn import *
 from decimal import *
 
@@ -57,6 +57,7 @@ class Generator:
         i=0
         while i<n:
             rf=random_file_genre()
+            print(rf)
             list_filepath.append(rf)
             multi=Multitrack(rf[0]+rf[1])
             multi.binarize()
@@ -69,7 +70,7 @@ class Generator:
             g=np.zeros((1,15,1))
             g[rf[2]]=1
             try:
-                metrics = dict(np.load(rf[0] + rf[1].replace('.npz', '_metrics_training.npz')))
+                metrics = dict(np.load(rf[0] + rf[1].replace('.npz', '_metadata_training.npz')))
                 vae = metrics['vae_embeddings']
                 vae = vae[mid:(mid + 3)].reshape((-1, 3, 64))
                 X=np.concatenate((X,x))
@@ -96,7 +97,7 @@ class Generator:
         drums_reduced=decoderVAE.decode_to_reduced_drums(y_pred)
         # print(drums_reduced.shape,"shape drums red")
         l=drums_reduced.shape[0]
-        threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*8,number_notes_max=l*20)
+        threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*2,number_notes_max=l*20)
         drums_reduced=drums_reduced>threshold  #0.76159416
         # drums_reduced=drums_reduced>0.76159416
         # print(drums_reduced.sum(),"number Notes")

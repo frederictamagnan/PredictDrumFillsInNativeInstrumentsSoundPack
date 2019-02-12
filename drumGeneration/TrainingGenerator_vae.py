@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn as nn
 from DNnet import DNnet
 
-local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/vae_dataset.npz'
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/reduced_fills_plus_embeddings_c3.npz'
 
 class TrainingGenerator:
 
@@ -101,7 +101,7 @@ if __name__=="__main__":
 
     LR=0.001
     BATCH_SIZE=2048
-    N_EPOCHS=200
+    N_EPOCHS=50
 
 
     tg=TrainingGenerator(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS)

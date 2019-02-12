@@ -52,7 +52,7 @@ def random_file(filepath_dataset=PATH,path_tags=PATH_TAGS_ROCK):
                     p = filepath_dataset + middle + file
 
                     for npz in os.listdir(p):
-                        if 'metrics' not in npz and 'label' not in npz:
+                        if 'metadata' not in npz and 'label' not in npz:
                             all.append((p+'/',npz))
 
 
@@ -79,7 +79,7 @@ def random_file_genre(filepath_dataset=PATH, path_tags=PATH_TAGS_ROCK):
                 p = filepath_dataset + middle + file
 
                 for npz in os.listdir(p):
-                    if 'metrics' not in npz and 'label' not in npz:
+                    if 'metadata' not in npz and 'label' not in npz:
                         all.append((p + '/', npz,tag_i))
 
     pick = all[randint(0, len(all))]

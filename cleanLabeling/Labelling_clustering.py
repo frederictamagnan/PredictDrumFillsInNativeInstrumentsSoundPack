@@ -44,23 +44,26 @@ class Labelling:
         km = KMeans(n_clusters=6, random_state=random_state)
         y_pred = km.fit_predict(X)
         print(y_pred.shape,"y_pred_shape")
-        max=-10
-        clust_max=0
+        max=6
+        clust_max=-1
         for i in range(6):
             tab_index_bar = np.argwhere(y_pred == i)
             tab_index_bar=tab_index_bar.reshape(-1)
             print(tab_index_bar,"tab index bar")
             print(X.shape)
-            x=X[tab_index_bar][:,23:26]
+            x=X[tab_index_bar][:,22:26]
             print(x.shape)
             print(x,"X")
             sum_=np.sum(x)
             print(sum_,"SUM")
-            if sum_>max:
+            if sum_>max*len(tab_index_bar):
                 max=sum_
                 clust_max=i
 
-        y=(y_pred==clust_max)*1
+        if clust_max==-1:
+            y=np.zeros(y_pred.shape)
+        else:
+            y=(y_pred==clust_max)*1
         print(y,"YYYY")
         print(y)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_clustering.npz', label=y)
