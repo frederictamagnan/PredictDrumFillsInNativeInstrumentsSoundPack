@@ -56,7 +56,7 @@ class Labelling:
                 tab_index_bar=tab_index_bar.reshape(-1)
                 print(tab_index_bar,"tab index bar")
                 print(X.shape)
-                x=np.concatenate((X[tab_index_bar][:,22:26],X[tab_index_bar][19]))
+                x=np.concatenate((X[tab_index_bar][:,22:26],X[tab_index_bar][:,19]),axis=1)
                 print(x.shape)
                 print(x,"X")
                 sum_=np.sum(x)
