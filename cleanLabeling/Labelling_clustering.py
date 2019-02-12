@@ -44,8 +44,8 @@ class Labelling:
         km = KMeans(n_clusters=6, random_state=random_state)
         y_pred = km.fit_predict(X)
         print(y_pred.shape,"y_pred_shape")
-        number_notes_in_fills=5
-        max=number_notes_in_fills*60/16
+        number_notes_in_fills=4
+        max=number_notes_in_fills*50/16
         clust_max=-1
         most_frequent=np.bincount(y_pred).argmax()
         for i in range(6):
@@ -56,7 +56,7 @@ class Labelling:
                 tab_index_bar=tab_index_bar.reshape(-1)
                 print(tab_index_bar,"tab index bar")
                 print(X.shape)
-                x=X[tab_index_bar][:,22:26]
+                x=np.concatenate((X[tab_index_bar][:,22:26],X[tab_index_bar][19]))
                 print(x.shape)
                 print(x,"X")
                 sum_=np.sum(x)
