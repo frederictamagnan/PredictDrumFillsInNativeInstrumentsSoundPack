@@ -27,8 +27,8 @@ from DrumReducerExpander import DrumReducerExpander
 def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced=False ,server=True):
 
 #     fills = np.zeros((1, 3 ,96, 9))
-    vae_array=np.zeros((1,3,32,2))
-    track_array=np.zeros((1,3,16,9))
+    vae_array=np.zeros((1,2,32,2))
+    track_array=np.zeros((1,2,16,9))
 #     vae_array=np.zeros((1,4,32,2))
 #     track_array=np.zeros((1,4,16,9))
     count = 0
@@ -61,7 +61,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #                             fill = enc.encode(fill)
 #                             fill=fill.reshape((fill.shape[0],3,96,9))
 #                             fills = np.concatenate((fills, fill))
-                            vae=vae.reshape((vae.shape[0],3,32,2))
+                            vae=vae.reshape((vae.shape[0],2,32,2))
 #                             vae = vae.reshape((vae.shape[0], 4, 32, 2))
                             vae_array=np.concatenate((vae_array,vae))
                             track_array=np.concatenate((track_array,track_ar))
@@ -108,12 +108,15 @@ def build_generation_dataset(p, npz):
         track = np.concatenate((track, to_complete))
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
-    label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
+    # label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
     # label_previous_next_shape = np.concatenate((label[:-3],label[1:-2], label[2:-1], label[3:])).reshape((-1 ,4))
+    label_previous_next_shape = np.concatenate((label[:-1], label[1:]).reshape((-1 ,2)))
 
 
-    mask_fills_cleaned =(label_previous_next_shape ==[-1, 1,-1]).all(axis=1)
+    # mask_fills_cleaned =(label_previous_next_shape ==[-1, 1,-1]).all(axis=1)
     # mask_fills_cleaned =(label_previous_next_shape ==[0,0, 0, 1]).all(axis=1)
+    mask_fills_cleaned =(label_previous_next_shape ==[-1, 1]).all(axis=1)
+
 
     indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
 
@@ -121,18 +124,21 @@ def build_generation_dataset(p, npz):
         return None
     else:
 
-        tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1],vae[indexes_fills_cleaned + 2]), axis=1)
+        # tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1],vae[indexes_fills_cleaned + 2]), axis=1)
         # tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1],vae[indexes_fills_cleaned + 2],vae[indexes_fills_cleaned + 3]), axis=1)
+        tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1]), axis=1)
 
         tab_track = np.concatenate \
-            ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1], track[indexes_fills_cleaned + 2]), axis=1)
+            ((track[indexes_fills_cleaned], track[indexes_fills_cleaned + 1]), axis=1)
+        # tab_track = np.concatenate \
+        #     ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1], track[indexes_fills_cleaned + 2]), axis=1)
         # tab_track = np.concatenate \
         #         ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1], track[indexes_fills_cleaned + 2],track[indexes_fills_cleaned + 3]), axis=1)
         tab_track=tab_track.reshape(tab_track.shape[0],-1,tab_track.shape[3])
         tab_track=enc.encode(tab_track)
         tab_track=enc.encode_808(tab_track)
         # tab_track=tab_track.reshape((-1,3,16,9))
-        tab_track = tab_track.reshape((-1, 3, 16, 9))
+        tab_track = tab_track.reshape((-1, 2, 16, 9))
         return tab,tab_track
 
 

@@ -5,7 +5,7 @@ from utils import random_file
 from sklearn.cluster import KMeans
 import random
 from pypianoroll import Track,Multitrack
-random.seed(37)
+random.seed(12)
 import pypianoroll as ppr
 path,npz=random_file()
 mt=dict(np.load(path+'/'+npz.replace('.npz','_metadata_training.npz')))

@@ -95,9 +95,9 @@ class Generator:
         y_pred=tensor_to_numpy(y_pred)
         y_pred=y_pred.reshape((y_pred.shape[0],32,2))
         drums_reduced=decoderVAE.decode_to_reduced_drums(y_pred)
-        # print(drums_reduced.shape,"shape drums red")
+        print(drums_reduced.shape,"shape drums red")
         l=drums_reduced.shape[0]
-        threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*2,number_notes_max=l*20)
+        threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*10,number_notes_max=l*20)
         drums_reduced=drums_reduced>threshold  #0.76159416
         # drums_reduced=drums_reduced>0.76159416
         # print(drums_reduced.sum(),"number Notes")
