@@ -112,7 +112,7 @@ def build_generation_dataset(p, npz):
     # label_previous_next_shape = np.concatenate((label[:-3],label[1:-2], label[2:-1], label[3:])).reshape((-1 ,4))
 
 
-    mask_fills_cleaned =(label_previous_next_shape ==[0, 1, 0]).all(axis=1)
+    mask_fills_cleaned =(label_previous_next_shape ==[-1, 1,-1]).all(axis=1)
     # mask_fills_cleaned =(label_previous_next_shape ==[0,0, 0, 1]).all(axis=1)
 
     indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )

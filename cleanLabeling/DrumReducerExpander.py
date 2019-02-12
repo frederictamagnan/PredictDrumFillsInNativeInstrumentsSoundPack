@@ -3,7 +3,7 @@ from pypianoroll import Track,Multitrack
 import pypianoroll as ppr
 from utils import random_file
 import random
-random.seed(18)
+random.seed(11)
 DEFAULT_DRUM_TYPE_PITCHES = [
     # bass drum
     [36, 35],
@@ -183,6 +183,7 @@ if __name__=='__main__':
     enc_piano=pr.encode(pianoroll,no_batch=True)
 
     enc_piano=pr.encode_808(enc_piano,no_batch=True)
+    print(enc_piano[16*4:16*5,:])
     enc_piano[enc_piano>0]=80
     enc_piano=enc_piano[:16*40].reshape((-1,16,9))
     enc_piano=np.diff(enc_piano,axis=0)
