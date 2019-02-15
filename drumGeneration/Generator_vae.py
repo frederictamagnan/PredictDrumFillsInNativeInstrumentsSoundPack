@@ -123,7 +123,7 @@ class Generator:
         X_old_enc=decoder.encode_808(X_old_enc)
         X_old_enc=X_old_enc.reshape((-1,2*16,9))
         X_old_enc=X_old_enc[:,:16,:]
-        # np.save(self.temp_filepath+"generated_with_regression_previous",X_old_enc)
+        np.save(self.temp_filepath+"generated_with_regression_previous",X_old_enc)
 
         # X_old_r=X_old.reshape(X_old.shape[0],3,96,128)
         X_old_r=X_old.reshape(X_old.shape[0],2,96,128)
@@ -190,7 +190,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'vae_generation_onelayer.pt'
+        model_name = 'vae_generation.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
@@ -202,6 +202,6 @@ if __name__=='__main__':
     g=Generator(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
     g.count_parameters()
     # g.generate(10,save=False)
-    g.generate(10, save=True)
+    g.generate(800, save=False)
 
 
