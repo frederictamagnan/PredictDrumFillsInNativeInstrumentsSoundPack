@@ -47,7 +47,7 @@ class ComputeMetadataLPD:
 
         else:
             list_filepath=self.whole_dataset()
-            for tag_i, tag in enumerate(self.list_filepath):
+            for tag_i, tag in enumerate(list_filepath):
 
                 print('>>' + tag[29:-3])
                 with open(tag, 'r') as f:
