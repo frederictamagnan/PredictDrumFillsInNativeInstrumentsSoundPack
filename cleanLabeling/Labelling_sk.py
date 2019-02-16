@@ -9,7 +9,7 @@ class Labelling:
         self.filepath_dataset = filepath_dataset
         self.filepath_tags = filepath_tags
         self.clf=joblib.load(filepath_model+filename_model)
-        self.scaler=joblib.load(filename_model+'scaler.pkl')
+        self.scaler=joblib.load(filepath_model+'scaler.pkl')
 
     def macro_iteration(self):
 
