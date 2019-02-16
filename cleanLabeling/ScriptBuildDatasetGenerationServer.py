@@ -83,7 +83,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                 if 'label.npz' in filepath:
                     count += 1
                     #                         fill = build_generation_dataset(p, npz)
-                    output = build_generation_dataset(p, npz)
+                    output = build_generation_dataset(subdir, file)
 
                     #                         if fill is not None:
                     if output is not None:
@@ -97,9 +97,9 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                         vae_array = np.concatenate((vae_array, vae))
                         track_array = np.concatenate((track_array, track_ar))
                         #                             genre_fill=np.zeros((fill.shape[0],15,1))
-                        genre_fill = np.zeros((vae.shape[0], 15, 1))
-                        genre_fill[:, tag_i, 0] = 1
-                        genre = np.concatenate((genre, genre_fill))
+                        # genre_fill = np.zeros((vae.shape[0], 15, 1))
+                        # genre_fill[:, tag_i, 0] = 1
+                        # genre = np.concatenate((genre, genre_fill))
 
 #     fills = fills[1:]
 #     genre=genre[1:]
@@ -107,7 +107,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 
     vae_array=vae_array[1:]
     track_array=track_array[1:]
-    genre=genre[1:]
+    # genre=genre[1:]
     np.savez("./reduced_fills_plus_embeddings",vae=vae_array,genre=genre,track_array=track_array)
     return 0
 
