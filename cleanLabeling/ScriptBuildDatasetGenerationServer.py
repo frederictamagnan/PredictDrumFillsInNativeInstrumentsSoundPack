@@ -75,7 +75,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
     #                             np.savez("./fills", fills=fills)
     #                             return 0
     else:
-        for subdir, dirs, files in os.walk(self.filepath_dataset):
+        for subdir, dirs, files in os.walk(filepath_dataset):
             for file in files:
                 print(subdir, dirs, file)
                 filepath = os.path.join(subdir, file)
