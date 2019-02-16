@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/models/scaler.pkl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -253,6 +253,12 @@
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="cleanLabeling" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="dataAugmentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,6 +270,11 @@
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="evaluate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
@@ -284,18 +295,18 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cleanLabeling/models" />
+      <recent name="$PROJECT_DIR$/evaluate" />
+      <recent name="$PROJECT_DIR$/dataAugmentation" />
+      <recent name="$PROJECT_DIR$/cleanLabeling" />
+      <recent name="$PROJECT_DIR$/clustering" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dataAugmentation" />
       <recent name="$PROJECT_DIR$/cleanLabeling" />
       <recent name="$PROJECT_DIR$/buildDataset" />
       <recent name="$PROJECT_DIR$/" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/evaluate" />
-      <recent name="$PROJECT_DIR$/dataAugmentation" />
-      <recent name="$PROJECT_DIR$/cleanLabeling" />
-      <recent name="$PROJECT_DIR$/clustering" />
-      <recent name="$PROJECT_DIR$/cleanLabeling/models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,9 +447,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="18" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
