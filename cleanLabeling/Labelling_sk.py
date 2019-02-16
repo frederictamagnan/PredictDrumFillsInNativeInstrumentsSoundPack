@@ -38,7 +38,7 @@ class Labelling:
                 for file in files:
                     print(subdir, dirs, file)
                     filepath = os.path.join(subdir, file)
-                    if '_metadata_training' in npz:
+                    if '_metadata_training' in filepath:
                         self.label(subdir, file)
 
     def label(self,path,npz):
