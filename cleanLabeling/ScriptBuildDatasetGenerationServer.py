@@ -24,7 +24,7 @@ import numpy as np
 from pypianoroll import Track, Multitrack
 from DrumReducerExpander import DrumReducerExpander
 
-def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced=False ,server=True):
+def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced=False ,server=True,whole_dataset=False):
 
 #     fills = np.zeros((1, 3 ,96, 9))
 #     vae_array=np.zeros((1,3,32,2))
@@ -34,47 +34,73 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
     count = 0
     genre=np.zeros((1,15,1))
     # ITERATE OVER THE TAG LISTS
+    if not whole_dataset:
+        for tag_i, tag in enumerate(filepath_tags):
 
-    for tag_i, tag in enumerate(filepath_tags):
+            print('>>' + tag[29:-3])
+            with open(tag, 'r') as f:
+                # ITERATE OVER THE FOLDER LISTS
 
-        print('>>' + tag[29:-3])
-        with open(tag, 'r') as f:
-            # ITERATE OVER THE FOLDER LISTS
+                for i, file in enumerate(f):
+                    # (str(f))
+                    #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
+                    file = file.rstrip()
+                    middle = '/'.join(file[2:5]) + '/'
+                    p = filepath_dataset + middle + file
 
-            for i, file in enumerate(f):
-                # (str(f))
-                #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
-                file = file.rstrip()
-                middle = '/'.join(file[2:5]) + '/'
-                p = filepath_dataset + middle + file
+                    for npz in os.listdir(p):
+                        if 'label.npz' in npz:
+                            count += 1
+    #                         fill = build_generation_dataset(p, npz)
+                            output=build_generation_dataset(p,npz)
 
-                for npz in os.listdir(p):
-                    if 'label.npz' in npz:
-                        count += 1
-#                         fill = build_generation_dataset(p, npz)
-                        output=build_generation_dataset(p,npz)
+    #                         if fill is not None:
+                            if output is not None:
+                                vae,track_ar=output
+    #                             fill=fill.reshape((fill.shape[0],3*96,128))
+    #                             fill = enc.encode(fill)
+    #                             fill=fill.reshape((fill.shape[0],3,96,9))
+    #                             fills = np.concatenate((fills, fill))
+    #                             vae=vae.reshape((vae.shape[0],3,32,2))
+                                vae = vae.reshape((vae.shape[0], 2, 32, 2))
+                                vae_array=np.concatenate((vae_array,vae))
+                                track_array=np.concatenate((track_array,track_ar))
+    #                             genre_fill=np.zeros((fill.shape[0],15,1))
+                                genre_fill=np.zeros((vae.shape[0],15,1))
+                                genre_fill[:,tag_i,0]=1
+                                genre=np.concatenate((genre,genre_fill))
 
-#                         if fill is not None:
-                        if output is not None:
-                            vae,track_ar=output
-#                             fill=fill.reshape((fill.shape[0],3*96,128))
-#                             fill = enc.encode(fill)
-#                             fill=fill.reshape((fill.shape[0],3,96,9))
-#                             fills = np.concatenate((fills, fill))
-#                             vae=vae.reshape((vae.shape[0],3,32,2))
-                            vae = vae.reshape((vae.shape[0], 2, 32, 2))
-                            vae_array=np.concatenate((vae_array,vae))
-                            track_array=np.concatenate((track_array,track_ar))
-#                             genre_fill=np.zeros((fill.shape[0],15,1))
-                            genre_fill=np.zeros((vae.shape[0],15,1))
-                            genre_fill[:,tag_i,0]=1
-                            genre=np.concatenate((genre,genre_fill))
+    #                         if fills.shape[0] >max:
+    #                             fills = fills[1:]
+    #                             np.savez("./fills", fills=fills)
+    #                             return 0
+    else:
+        for subdir, dirs, files in os.walk(self.filepath_dataset):
+            for file in files:
+                print(subdir, dirs, file)
+                filepath = os.path.join(subdir, file)
 
-#                         if fills.shape[0] >max:
-#                             fills = fills[1:]
-#                             np.savez("./fills", fills=fills)
-#                             return 0
-    
+                if 'label.npz' in filepath:
+                    count += 1
+                    #                         fill = build_generation_dataset(p, npz)
+                    output = build_generation_dataset(p, npz)
+
+                    #                         if fill is not None:
+                    if output is not None:
+                        vae, track_ar = output
+                        #                             fill=fill.reshape((fill.shape[0],3*96,128))
+                        #                             fill = enc.encode(fill)
+                        #                             fill=fill.reshape((fill.shape[0],3,96,9))
+                        #                             fills = np.concatenate((fills, fill))
+                        #                             vae=vae.reshape((vae.shape[0],3,32,2))
+                        vae = vae.reshape((vae.shape[0], 2, 32, 2))
+                        vae_array = np.concatenate((vae_array, vae))
+                        track_array = np.concatenate((track_array, track_ar))
+                        #                             genre_fill=np.zeros((fill.shape[0],15,1))
+                        genre_fill = np.zeros((vae.shape[0], 15, 1))
+                        genre_fill[:, tag_i, 0] = 1
+                        genre = np.concatenate((genre, genre_fill))
+
 #     fills = fills[1:]
 #     genre=genre[1:]
 #     np.savez("./reduced_fills_plus_embeddings", fills=fills,genre=genre)
@@ -168,5 +194,5 @@ if __name__ == '__main__':
             '/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id',
         ]
 
-    macro_iteration(filepath_dataset=path, filepath_tags=path_tags)
+    macro_iteration(filepath_dataset=path, filepath_tags=path_tags,whole_dataset=True)
 
