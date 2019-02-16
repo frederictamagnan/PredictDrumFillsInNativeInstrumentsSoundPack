@@ -9,6 +9,7 @@ class Labelling:
         self.filepath_dataset = filepath_dataset
         self.filepath_tags = filepath_tags
         self.clf=joblib.load(filepath_model+filename_model)
+        self.scaler=joblib.load(filename_model+'scaler.pkl')
 
     def macro_iteration(self):
 
@@ -44,7 +45,8 @@ class Labelling:
         for label in list_label:
             list_x.append(data[label])
         X = np.concatenate(list_x, axis=1)
-        y=(self.clf.predict_proba(X)>0.4)*1
+        X_std=self.scaler.transform(X)
+        y=(self.clf.predict_proba(X_std)>0.5)*1
         y=y[:,1]
         # y=self.clf.predict(X)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label.npz', label=y)
