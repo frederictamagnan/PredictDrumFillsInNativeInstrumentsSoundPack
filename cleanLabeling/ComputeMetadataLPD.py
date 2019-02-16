@@ -46,36 +46,12 @@ class ComputeMetadataLPD:
                                 self.process_npz_file(p,npz)
 
         else:
-            list_filepath=self.whole_dataset()
-            for tag_i, tag in enumerate(list_filepath):
-
-                print('>>' + tag[29:-3])
-                with open(tag, 'r') as f:
-                    # ITERATE OVER THE FOLDER LISTS
-
-                    for i, file in enumerate(f):
-                        # (str(f))
-                        #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
-                        self.file = file.rstrip()
-                        self.middle = '/'.join(self.file[2:5]) + '/'
-                        p = self.filepath_dataset + self.middle + self.file
-
-                        for npz in os.listdir(p):
-                            if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
-                                self.process_npz_file(p, npz)
-
-    def whole_dataset(self):
-
-
-        list_filepath = []
-        for subdir, dirs, files in os.walk(self.filepath_dataset):
-            for file in files:
-                # try:
-                filepath = os.path.join(subdir, file)
-                if 'metadata' not in filepath and 'label' not in filepath:
-                    list_filepath.append((-1,filepath))
-
-        return list_filepath
+            for subdir, dirs, files in os.walk(self.filepath_dataset):
+                for file in files:
+                    print(subdir, dirs, file)
+                    filepath = os.path.join(subdir, file)
+                    if 'metadata' not in filepath and 'label' not in filepath:
+                        self.process_npz_file(subdir, file)
 
 
 
