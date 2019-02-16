@@ -20,33 +20,62 @@ class ComputeMetadataLPD:
 
 
 
-    def macro_iteration(self):
+    def macro_iteration(self,whole_dataset=False):
 
 
         # ITERATE OVER THE TAG LISTS
 
-        for tag_i, tag in enumerate(self.filepath_tags):
+        if not whole_dataset:
+            for tag_i, tag in enumerate(self.filepath_tags):
 
 
-            print('>>' + tag[29:-3])
-            with open(tag, 'r') as f:
-                # ITERATE OVER THE FOLDER LISTS
+                print('>>' + tag[29:-3])
+                with open(tag, 'r') as f:
+                    # ITERATE OVER THE FOLDER LISTS
 
-                for i, file in enumerate(f):
-                    # (str(f))
-                    #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
-                    self.file = file.rstrip()
-                    self.middle = '/'.join(self.file[2:5]) + '/'
-                    p = self.filepath_dataset + self.middle + self.file
+                    for i, file in enumerate(f):
+                        # (str(f))
+                        #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
+                        self.file = file.rstrip()
+                        self.middle = '/'.join(self.file[2:5]) + '/'
+                        p = self.filepath_dataset + self.middle + self.file
 
-                    for npz in os.listdir(p):
-                        if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
+                        for npz in os.listdir(p):
+                            if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
 
-                            self.process_npz_file(p,npz)
+                                self.process_npz_file(p,npz)
+
+        else:
+            list_filepath=self.whole_dataset()
+            for tag_i, tag in enumerate(self.list_filepath):
+
+                print('>>' + tag[29:-3])
+                with open(tag, 'r') as f:
+                    # ITERATE OVER THE FOLDER LISTS
+
+                    for i, file in enumerate(f):
+                        # (str(f))
+                        #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
+                        self.file = file.rstrip()
+                        self.middle = '/'.join(self.file[2:5]) + '/'
+                        p = self.filepath_dataset + self.middle + self.file
+
+                        for npz in os.listdir(p):
+                            if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
+                                self.process_npz_file(p, npz)
+
+    def whole_dataset(self):
 
 
+        list_filepath = []
+        for subdir, dirs, files in os.walk(self.filepath_dataset):
+            for file in files:
+                # try:
+                filepath = os.path.join(subdir, file)
+                if 'metadata' not in filepath and 'label' not in filepath:
+                    list_filepath.append((-1,filepath))
 
-
+        return list_filepath
 
 
 
@@ -84,4 +113,4 @@ if __name__=='__main__':
 
     data=ComputeMetadataLPD(PATH,PATH_TAGS)
 
-    data.macro_iteration()
+    data.macro_iteration(whole_dataset=True)

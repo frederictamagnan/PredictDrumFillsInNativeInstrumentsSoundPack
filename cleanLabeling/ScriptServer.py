@@ -18,4 +18,4 @@ path_tags= [
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
 ]
 cm= ComputeMetadataLPD(path,path_tags)
-cm.macro_iteration()
+cm.macro_iteration(whole_dataset=True)
