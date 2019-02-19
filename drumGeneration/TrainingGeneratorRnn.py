@@ -11,7 +11,7 @@ class TrainingGenerator:
 
 
 
-    def __init__(self,batch_size,lr,n_epochs,dataset_filepath=local_dataset):
+    def __init__(self,batch_size,lr,n_epochs,dataset_filepath):
 
         self.dataset_filepath=dataset_filepath
         self.batch_size=batch_size
@@ -103,13 +103,16 @@ if __name__=="__main__":
     BATCH_SIZE=4096
     N_EPOCHS=200
 
-    if server=False:
+    server=False
+    if not(server):
         local_dataset = '/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/bigsupervised.npz'
 
-        tg=TrainingGenerator(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS,local_dataset=local_dataset)
+        tg=TrainingGenerator(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS,dataset_filepath=local_dataset)
         tg.load_data()
         tg.split_data()
         tg.train_model()
         tg.save_model("./../models/",'vae_generation.pt')
-        
+
+
+
 
