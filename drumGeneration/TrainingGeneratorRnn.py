@@ -44,6 +44,11 @@ class TrainingGenerator:
         self.train, self.validation, self.test = random_split(self.dataset,
                                                               [train_length, validation_length, test_length])
 
+        print(len(self.train),"SELF TRAIN")
+        print(len(self.validation), "SELF validation")
+        print(len(self.test), "SELF test")
+
+
         self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=True)
         self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=True)
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size,
@@ -83,12 +88,13 @@ class TrainingGenerator:
                     running_loss = 0.0
             with torch.no_grad():
                 total_val_loss = 0
-                for i, data in enumerate(self.test_loader, 0):
+                for j, data in enumerate(self.validation_loader):
                     inputs, labels = data
                     val_outputs = rnn(inputs)
                     val_loss_size = criterion(val_outputs, labels,reduction='sum')
                     total_val_loss += val_loss_size.data[0]
-                print("val loss",total_val_loss / i)
+                print(i,"i val loss")
+                print("val loss",total_val_loss / j)
 
         print('Finished Training')
 
@@ -100,7 +106,7 @@ class TrainingGenerator:
 if __name__=="__main__":
 
     LR=0.001
-    BATCH_SIZE=4096
+    BATCH_SIZE=2048
     N_EPOCHS=200
 
     server=False
