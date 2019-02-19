@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import torch
 class RnnGenerateNet(nn.Module):
 
-    def __init__(self,num_features=9,gru_hidden_size=16,batch_size=4096):
+    def __init__(self,num_features=9,gru_hidden_size=64,batch_size=4096):
         super(RnnGenerateNet, self).__init__()
 
         self.num_features=num_features
