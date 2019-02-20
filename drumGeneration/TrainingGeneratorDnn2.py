@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from Dnn2GenerateNet import Dnn2GenerateNet
 import torch.nn as nn
-
+from utils import tensor_to_numpy
 
 class TrainingGenerator:
 
@@ -55,6 +55,16 @@ class TrainingGenerator:
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size,
                                                              shuffle=False,drop_last=True)
 
+    def accuracy(self, outputs, labels):
+        o = tensor_to_numpy(outputs)
+        l = tensor_to_numpy(labels)
+        o = o.reshape(-1)
+        l = l.reshape(-1)
+        o = (o > 0.5) * 1
+        print(o.shape, l.shape)
+        acc = ((o == l) * 1).sum() / (o.shape[0])
+        print("ACC", acc, "1", o.sum())
+
     def count_parameters(self,model):
         model_parameters = filter(lambda p: p.requires_grad, model.parameters())
         params = sum([np.prod(p.size()) for p in model_parameters])
@@ -98,6 +108,7 @@ class TrainingGenerator:
                     total_val_loss += val_loss_size.data[0]
                 print("epochs ",str(epoch)," : val loss",total_val_loss / (j+1), "training loss", running_loss / (i+1))
 
+                print(self.accuracy(outputs,labels))
         print('Finished Training')
 
         self.net = dnn

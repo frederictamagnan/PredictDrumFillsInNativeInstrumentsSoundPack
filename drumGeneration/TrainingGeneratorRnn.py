@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from RnnGenerateNet import RnnGenerateNet
 import torch.nn as nn
-
+from utils import tensor_to_numpy
 class TrainingGenerator:
 
 
@@ -66,7 +66,7 @@ class TrainingGenerator:
         else:
             rnn = RnnGenerateNet(batch_size=self.batch_size)
 
-        criterion =  nn.BCELoss()
+        criterion =  nn.BCELoss(reduction='sum')
         optimizer = optim.SGD(rnn.parameters(), lr=self.lr, momentum=0.9,weight_decay=0.6)
         self.count_parameters(rnn)
 
@@ -97,13 +97,24 @@ class TrainingGenerator:
                     val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.data[0]
                 print("epochs ",str(epoch)," : val loss",total_val_loss / (j+1), "training loss", running_loss / (i+1))
-
+            self.accuracy(outputs,labels)
         print('Finished Training')
 
         self.net = rnn
 
     def save_model(self, filepath, name):
         torch.save(self.net.state_dict(), filepath + name)
+
+    def accuracy(self,outputs,labels):
+        o = tensor_to_numpy(outputs)
+        l = tensor_to_numpy(labels)
+        o = o.reshape(-1)
+        l = l.reshape(-1)
+        o = (o > 0.5) * 1
+        print(o.shape, l.shape)
+        acc = ((o == l) * 1).sum() / (o.shape[0])
+        print("ACC", acc, "1", o.sum())
+
 
 if __name__=="__main__":
 
