@@ -96,7 +96,7 @@ class TrainingGenerator:
                     val_outputs = dnn(inputs)
                     val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.data[0]
-                print("epochs : val loss",total_val_loss / (j+1), "training loss", running_loss / (i+1))
+                print("epochs ",str(i)," : val loss",total_val_loss / (j+1), "training loss", running_loss / (i+1))
 
         print('Finished Training')
 

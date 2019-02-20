@@ -15,15 +15,15 @@ class RnnGenerateNet(nn.Module):
         #
         self.gru0 = torch.nn.GRU(
             input_size=self.num_features,
-            num_layers=2,
-            hidden_size=16,
+            num_layers=3,
+            hidden_size=64,
             bias=True,
             batch_first=True,
             bidirectional=False)
 
         self.gru1 = torch.nn.GRU(
-            input_size=16,
-            num_layers=2,
+            input_size=64,
+            num_layers=6,
             hidden_size=9,
             bias=True,
             batch_first=True,
