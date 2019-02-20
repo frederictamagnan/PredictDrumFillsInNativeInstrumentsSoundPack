@@ -97,7 +97,6 @@ class TrainingGenerator:
                     val_outputs = rnn(inputs)
                     val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.data[0]
-                print(i,"i val loss")
                 print("val loss",total_val_loss / j)
 
         print('Finished Training')
