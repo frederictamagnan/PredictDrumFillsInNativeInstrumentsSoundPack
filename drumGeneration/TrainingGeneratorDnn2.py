@@ -50,10 +50,10 @@ class TrainingGenerator:
         print(len(self.test), "SELF test")
 
 
-        self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=False)
-        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=False)
+        self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=True)
+        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=True)
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size,
-                                                             shuffle=False,drop_last=False)
+                                                             shuffle=False,drop_last=True)
 
     def count_parameters(self,model):
         model_parameters = filter(lambda p: p.requires_grad, model.parameters())
