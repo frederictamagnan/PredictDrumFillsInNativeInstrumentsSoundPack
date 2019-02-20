@@ -12,20 +12,36 @@ class RnnGenerateNet(nn.Module):
         self.num_directions=1
         self.seq_len=16
         self.gru_out_dim = self.seq_len * self.gru_hidden_size * self.num_directions
-
-        self.gru = torch.nn.GRU(
+        #
+        self.gru0 = torch.nn.GRU(
             input_size=self.num_features,
             num_layers=1,
-            hidden_size=self.gru_hidden_size,
+            hidden_size=9,
             bias=True,
             batch_first=True,
             bidirectional=False)
-        self.bn0 = torch.nn.BatchNorm1d(self.gru_out_dim)
-        self.linear0 = torch.nn.Linear(
-            self.gru_out_dim,
-            self.gru_out_dim)
+
+        self.gru1 = torch.nn.GRU(
+            input_size=9,
+            num_layers=1,
+            hidden_size=9,
+            bias=True,
+            batch_first=True,
+            bidirectional=False)
+
         self.gru2 = torch.nn.GRU(
-            input_size=self.gru_hidden_size,
+            input_size=9,
+            num_layers=1,
+            hidden_size=9,
+            bias=True,
+            batch_first=True,
+            bidirectional=False)
+        # self.bn0 = torch.nn.BatchNorm1d(self.gru_out_dim)
+        # self.linear0 = torch.nn.Linear(
+        #     self.gru_out_dim,
+        #     self.gru_out_dim)
+        self.gru3 = torch.nn.GRU(
+            input_size=9,
             num_layers=1,
             hidden_size=self.num_features,
             bias=True,
@@ -41,19 +57,21 @@ class RnnGenerateNet(nn.Module):
 
     def forward(self, x):
 
-        x,h = self.gru(x,None)
+        x,h = self.gru0(x,None)
         # print(x.size(),"size after layer 1")
-        x = x.contiguous().view(
-            self.batch_size,
-            self.gru_out_dim)
-        x = self.bn0(x)
-        x=F.relu(self.linear0(x))
-        x = x.contiguous().view(
-            self.batch_size,
-            self.seq_len,
-            self.gru_hidden_size)
+        # x = x.contiguous().view(
+        #     self.batch_size,
+        #     self.gru_out_dim)
+        # x = self.bn0(x)
+        # x=F.relu(self.linear0(x))
+        # x = x.contiguous().view(
+        #     self.batch_size,
+        #     self.seq_len,
+        #     self.gru_hidden_size)
 
-        x,h=self.gru2(x,None)
+        x,h=self.gru1(x,h)
+        x, h = self.gru2(x, h)
+        # x, h = self.gru3(x, None)
         # x = x.contiguous().view(
         #     self.batch_size,
         #     self.gru_out_dim)

@@ -54,6 +54,12 @@ class TrainingGenerator:
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size,
                                                              shuffle=False,drop_last=True)
 
+    def count_parameters(self,model):
+        model_parameters = filter(lambda p: p.requires_grad, model.parameters())
+        params = sum([np.prod(p.size()) for p in model_parameters])
+        self.params=params
+        print(params,"PARAMETERS_RNN")
+
     def train_model(self):
         if self.use_cuda:
             rnn=RnnGenerateNet(batch_size=self.batch_size).cuda()
@@ -62,7 +68,7 @@ class TrainingGenerator:
 
         criterion =  F.binary_cross_entropy
         optimizer = optim.SGD(rnn.parameters(), lr=self.lr, momentum=0.9,weight_decay=0.6)
-
+        self.count_parameters(rnn)
 
         for epoch in range(self.n_epochs):  # loop over the dataset multiple times
 
