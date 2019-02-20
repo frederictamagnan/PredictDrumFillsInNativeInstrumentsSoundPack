@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/drumGeneration/RnnGenerateNet.py" afterPath="$PROJECT_DIR$/drumGeneration/RnnGenerateNet.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/TrainingGeneratorDnn2.py" afterPath="$PROJECT_DIR$/drumGeneration/TrainingGeneratorDnn2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/drumGeneration/RnnGenerateNet.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <caret line="116" column="28" lean-forward="false" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -29,7 +28,7 @@
       <file leaf-file-name="TrainingGeneratorRnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGeneratorRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="395">
               <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -46,6 +45,26 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/torch/nn/modules/module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="517" column="0" lean-forward="false" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RnnGenerateNet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/RnnGenerateNet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="117" column="30" lean-forward="false" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cleanLabeling/MetricsTraining.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ComputeMetrics.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/cleanLabeling/DrumsDataset.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/DrumsDataset.py" />
@@ -175,6 +193,7 @@
         <option value="$PROJECT_DIR$/drumGeneration/TrainingGeneratorRnn.py" />
         <option value="$PROJECT_DIR$/drumGeneration/Dnn2GenerateNet.py" />
         <option value="$PROJECT_DIR$/drumGeneration/TrainingGeneratorDnn2.py" />
+        <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/RnnGenerateNet.py" />
         <option value="$PROJECT_DIR$/drumGeneration/RnnGenerateNet.py" />
       </list>
     </option>
@@ -208,11 +227,6 @@
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="drumGeneration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
@@ -369,8 +383,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.TrainingGeneratorRnn" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TrainingGeneratorDnn2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.RnnGenerateNet" />
+        <item index="1" class="java.lang.String" itemvalue="Python.RnnGenerateNet" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TrainingGeneratorDnn2" />
         <item index="3" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
         <item index="4" class="java.lang.String" itemvalue="Python.RnnGenerateDataset" />
       </list>
@@ -450,20 +464,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_explicit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -738,14 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9180">
-          <caret line="517" column="0" lean-forward="false" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/RnnGenerateDataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -808,9 +800,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="517" column="0" lean-forward="false" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/vae_rnn_custom_nine_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="104" column="24" lean-forward="false" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/RnnGenerateNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="117" column="30" lean-forward="false" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGeneratorRnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="395">
           <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -821,7 +839,7 @@
     <entry file="file://$PROJECT_DIR$/drumGeneration/RnnGenerateNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <caret line="116" column="28" lean-forward="false" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
