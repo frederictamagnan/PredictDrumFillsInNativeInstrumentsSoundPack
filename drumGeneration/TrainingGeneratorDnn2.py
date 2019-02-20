@@ -82,7 +82,7 @@ class TrainingGenerator:
 
                 # forward + backward + optimize
                 outputs = dnn(inputs)
-                loss = criterion(outputs, labels,reduction='sum')
+                loss = criterion(outputs, labels,reduction='mean')
                 loss.backward()
                 optimizer.step()
 
@@ -95,7 +95,7 @@ class TrainingGenerator:
                 for j, data in enumerate(self.validation_loader):
                     inputs, labels = data
                     val_outputs = dnn(inputs)
-                    val_loss_size = criterion(val_outputs, labels,reduction='sum')
+                    val_loss_size = criterion(val_outputs, labels,reduction='mean')
                     total_val_loss += val_loss_size.data[0]
                 print("val loss",total_val_loss / (j+1))
 
