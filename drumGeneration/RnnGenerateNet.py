@@ -23,7 +23,7 @@ class RnnGenerateNet(nn.Module):
 
         self.gru1 = torch.nn.GRU(
             input_size=64,
-            num_layers=6,
+            num_layers=3,
             hidden_size=9,
             bias=True,
             batch_first=True,
