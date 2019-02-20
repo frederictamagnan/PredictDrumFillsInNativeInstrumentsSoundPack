@@ -49,10 +49,10 @@ class TrainingGenerator:
         print(len(self.test), "SELF test")
 
 
-        self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=True)
-        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=True)
+        self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=False)
+        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=False)
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size,
-                                                             shuffle=False,drop_last=True)
+                                                             shuffle=False,drop_last=False)
 
     def count_parameters(self,model):
         model_parameters = filter(lambda p: p.requires_grad, model.parameters())
@@ -88,7 +88,6 @@ class TrainingGenerator:
 
                 # print statistics
                 running_loss += loss.item()
-            print('[%d, %5d] training loss: %.10f' %(epoch + 1, i + 1, running_loss / (i+1)))
 
             with torch.no_grad():
                 total_val_loss = 0
@@ -97,7 +96,7 @@ class TrainingGenerator:
                     val_outputs = rnn(inputs)
                     val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.data[0]
-                print("val loss",total_val_loss / j)
+                print("epochs : val loss",total_val_loss / (j+1), "training loss", running_loss / (i+1))
 
         print('Finished Training')
 
