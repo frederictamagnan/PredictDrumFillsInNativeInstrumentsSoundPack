@@ -89,8 +89,7 @@ class TrainingGenerator:
 
                 # print statistics
                 running_loss += loss.item()
-                # print('[%d, %5d] loss: %.10f' %(epoch + 1, i + 1, running_loss / (i+1)))
-                running_loss = 0.0
+            print('[%d, %5d] training loss: %.10f' %(epoch + 1, i + 1, running_loss / (i+1)))
             with torch.no_grad():
                 total_val_loss = 0
                 for j, data in enumerate(self.validation_loader):
