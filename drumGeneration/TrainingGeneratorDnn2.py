@@ -5,6 +5,7 @@ from torch.utils.data.dataset import random_split
 import torch.optim as optim
 import torch.nn.functional as F
 from Dnn2GenerateNet import Dnn2GenerateNet
+import torch.nn as nn
 
 
 class TrainingGenerator:
@@ -66,7 +67,7 @@ class TrainingGenerator:
         else:
             dnn = Dnn2GenerateNet(batch_size=self.batch_size)
 
-        criterion =  F.binary_cross_entropy
+        criterion =  nn.BCELoss()
         optimizer = optim.SGD(dnn.parameters(), lr=self.lr, momentum=0.9,weight_decay=0.6)
         self.count_parameters(dnn)
 
@@ -82,7 +83,7 @@ class TrainingGenerator:
 
                 # forward + backward + optimize
                 outputs = dnn(inputs)
-                loss = criterion(outputs, labels,reduction='mean')
+                loss = criterion(outputs, labels)
                 loss.backward()
                 optimizer.step()
 
@@ -95,7 +96,7 @@ class TrainingGenerator:
                 for j, data in enumerate(self.validation_loader):
                     inputs, labels = data
                     val_outputs = dnn(inputs)
-                    val_loss_size = criterion(val_outputs, labels,reduction='mean')
+                    val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.data[0]
                 print("val loss",total_val_loss / (j+1))
 
