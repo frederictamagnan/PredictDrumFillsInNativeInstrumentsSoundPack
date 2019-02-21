@@ -25,33 +25,27 @@ class ComputeMetadataLPD:
 
         # ITERATE OVER THE TAG LISTS
 
-        if not whole_dataset:
-            for tag_i, tag in enumerate(self.filepath_tags):
+
+        for tag_i, tag in enumerate(self.filepath_tags):
 
 
-                print('>>' + tag[29:-3])
-                with open(tag, 'r') as f:
-                    # ITERATE OVER THE FOLDER LISTS
+            print('>>' + tag[29:-3])
+            with open(tag, 'r') as f:
+                # ITERATE OVER THE FOLDER LISTS
 
-                    for i, file in enumerate(f):
-                        # (str(f))
-                        #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
-                        self.file = file.rstrip()
-                        self.middle = '/'.join(self.file[2:5]) + '/'
-                        p = self.filepath_dataset + self.middle + self.file
+                for i, file in enumerate(f):
+                    # (str(f))
+                    #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
+                    self.file = file.rstrip()
+                    self.middle = '/'.join(self.file[2:5]) + '/'
+                    p = self.filepath_dataset + self.middle + self.file
 
-                        for npz in os.listdir(p):
-                            if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
+                    for npz in os.listdir(p):
+                        if 'label' not in npz and 'metadata' not in npz and 'metrics' not in npz:
 
-                                self.process_npz_file(p,npz)
+                            self.process_npz_file(p,npz)
 
-        else:
-            for subdir, dirs, files in os.walk(self.filepath_dataset):
-                for file in files:
-                    print(subdir, dirs, file)
-                    filepath = os.path.join(subdir, file)
-                    if 'metadata' not in filepath and 'label' not in filepath:
-                        self.process_npz_file(subdir, file)
+
 
 
 

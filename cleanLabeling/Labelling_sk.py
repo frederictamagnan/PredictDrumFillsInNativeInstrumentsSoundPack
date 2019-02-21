@@ -11,40 +11,34 @@ class Labelling:
         self.clf=joblib.load(filepath_model+filename_model)
         self.scaler=joblib.load(filepath_model+'scaler.pkl')
 
-    def macro_iteration(self,whole_dataset=False):
+    def macro_iteration(self):
 
 
         # ITERATE OVER THE TAG LISTS
-        if not whole_dataset:
-            for tag_i, tag in enumerate(self.filepath_tags):
+
+        for tag_i, tag in enumerate(self.filepath_tags):
 
 
-                print('>>' + tag[29:-3])
-                with open(tag, 'r') as f:
-                    # ITERATE OVER THE FOLDER LISTS
+            print('>>' + tag[29:-3])
+            with open(tag, 'r') as f:
+                # ITERATE OVER THE FOLDER LISTS
 
-                    for i, file in enumerate(f):
-                        # (str(f))
-                        #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
-                        self.file = file.rstrip()
-                        self.middle = '/'.join(self.file[2:5]) + '/'
-                        p = self.filepath_dataset + self.middle + self.file
+                for i, file in enumerate(f):
+                    # (str(f))
+                    #                 print('load files..{}/{}'.format(i + 1, number_files[tag_i]), end="\r")
+                    self.file = file.rstrip()
+                    self.middle = '/'.join(self.file[2:5]) + '/'
+                    p = self.filepath_dataset + self.middle + self.file
 
-                        for npz in os.listdir(p):
-                            if '_metadata_training' in npz:
-                                self.label(p,npz)
-        else:
-            for subdir, dirs, files in os.walk(self.filepath_dataset):
-                for file in files:
-                    print(subdir, dirs, file)
-                    filepath = os.path.join(subdir, file)
-                    if '_metadata_training' in filepath:
-                        self.label(subdir, file)
+                    for npz in os.listdir(p):
+                        if '_metadata_training' in npz:
+                            self.label(p,npz)
+
 
     def label(self,path,npz):
 
         data=dict(np.load(path+'/'+npz))
-        print(npz,"NPZ")
+        # print(npz,"NPZ")
         data['vae_embeddings'] = data['vae_embeddings'][:, 0:32]
         list_label=['vae_embeddings','offbeat_notes','velocity_metadata','drums_pitches_used']
         list_x=[]

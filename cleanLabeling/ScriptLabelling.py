@@ -23,4 +23,4 @@ path_tags= [
 
 
 lb =Labelling('./models/' ,"clf_fills.pkl" ,path ,path_tags)
-lb.macro_iteration(whole_dataset=True)
+lb.macro_iteration()
