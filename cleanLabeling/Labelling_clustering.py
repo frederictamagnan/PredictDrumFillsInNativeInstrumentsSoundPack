@@ -38,12 +38,12 @@ class Labelling:
     def label(self,path,npz):
 
         data=dict(np.load(path+'/'+npz))
-        print(npz,"NPZ")
+        # print(npz,"NPZ")
         X=data['velocity_metadata']
         random_state = 170
         km = KMeans(n_clusters=6, random_state=random_state)
         y_pred = km.fit_predict(X)
-        print(y_pred.shape,"y_pred_shape")
+        # print(y_pred.shape,"y_pred_shape")
         number_notes_in_fills=4
         max=number_notes_in_fills*50/16
         clust_max=-1
@@ -54,13 +54,13 @@ class Labelling:
             else:
                 tab_index_bar = np.argwhere(y_pred == i)
                 tab_index_bar=tab_index_bar.reshape(-1)
-                print(tab_index_bar,"tab index bar")
-                print(X.shape)
+                # print(tab_index_bar,"tab index bar")
+                # print(X.shape)
                 x=np.concatenate((X[tab_index_bar][:,22:26],X[tab_index_bar][:,19].reshape(-1,1)),axis=1)
-                print(x.shape)
-                print(x,"X")
+                # print(x.shape)
+                # print(x,"X")
                 sum_=np.sum(x)
-                print(sum_,"SUM")
+                # print(sum_,"SUM")
                 if sum_>max*len(tab_index_bar):
                     max=sum_
                     clust_max=i
