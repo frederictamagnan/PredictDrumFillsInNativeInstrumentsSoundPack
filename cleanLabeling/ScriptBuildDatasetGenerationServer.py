@@ -1,20 +1,21 @@
 
 # path_tags= [
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Blues.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Country.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Electronic.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Folk.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Jazz.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Latin.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Metal.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_New-Age.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Pop.id', # 8
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Punk.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rap.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Reggae.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_RnB.id',
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id', # 13
-#     '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Blues.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Country.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Electronic.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Folk.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Jazz.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Latin.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Metal.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_New-Age.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Pop.id', # 8
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Punk.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Rap.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Reggae.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_RnB.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Rock.id', # 13
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_World.id',
+#     '/home/ftamagnan/dataset/id_lists/tagtraum/tagtraum_Unknown.id'
 # ]
 
 
@@ -74,32 +75,6 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
     #                             fills = fills[1:]
     #                             np.savez("./fills", fills=fills)
     #                             return 0
-    else:
-        for subdir, dirs, files in os.walk(filepath_dataset):
-            for file in files:
-                print(subdir, dirs, file)
-                filepath = os.path.join(subdir, file)
-
-                if 'label.npz' in filepath:
-                    count += 1
-                    #                         fill = build_generation_dataset(p, npz)
-                    output = build_generation_dataset(subdir, file)
-
-                    #                         if fill is not None:
-                    if output is not None:
-                        vae, track_ar = output
-                        #                             fill=fill.reshape((fill.shape[0],3*96,128))
-                        #                             fill = enc.encode(fill)
-                        #                             fill=fill.reshape((fill.shape[0],3,96,9))
-                        #                             fills = np.concatenate((fills, fill))
-                        #                             vae=vae.reshape((vae.shape[0],3,32,2))
-                        vae = vae.reshape((vae.shape[0], 2, 32, 2))
-                        vae_array = np.concatenate((vae_array, vae))
-                        track_array = np.concatenate((track_array, track_ar))
-                        #                             genre_fill=np.zeros((fill.shape[0],15,1))
-                        # genre_fill = np.zeros((vae.shape[0], 15, 1))
-                        # genre_fill[:, tag_i, 0] = 1
-                        # genre = np.concatenate((genre, genre_fill))
 
 #     fills = fills[1:]
 #     genre=genre[1:]
