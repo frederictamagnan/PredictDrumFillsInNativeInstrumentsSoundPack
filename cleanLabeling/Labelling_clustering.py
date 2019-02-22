@@ -71,8 +71,8 @@ class Labelling:
             y=(y_pred==clust_max)*1
 
         y[y_pred==most_frequent]=-1
-        print(y,"YYYY")
-        print(y)
+        # print(y,"YYYY")
+        # print(y)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_clustering.npz', label=y)
 
 
