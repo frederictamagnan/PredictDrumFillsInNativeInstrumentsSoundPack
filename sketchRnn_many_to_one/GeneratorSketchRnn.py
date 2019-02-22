@@ -139,7 +139,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'sketchrnn.pt'
+        model_name = 'sketchrnn_onemany.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']

@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn as nn
 from DNnet import DNnet
 
-local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/ununbest.npz'
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/bigsupervised.npz'
 
 class TrainingGenerator:
 
