@@ -99,9 +99,9 @@ def build_generation_dataset(p, npz):
     label = label['label']
     metadata_dict = dict(np.load(p + '/' + npz.replace('_label','_metadata_training')))
     vae=metadata_dict['vae_embeddings']
-    print(len(label),"LABEL",len(vae),"VAE")
+    # print(len(label),"LABEL",len(vae),"VAE")
     #     print(label.shape)
-    print(p + '/' + npz.replace('_label.npz', ''))
+    # print(p + '/' + npz.replace('_label.npz', ''))
     multi = Multitrack(p + '/' + npz.replace('_label', ''))
     track = multi.tracks[0].pianoroll
     if track.shape[0] % 96 != 0:
@@ -160,6 +160,7 @@ if __name__ == '__main__':
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_RnB.id',
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_Rock.id', # 13
     '/home/herman/lpd/id_lists/tagtraum/tagtraum_World.id',
+            '/home/herman/lpd/id_lists/tagtraum/tagtraum_Unknown.id'
 ]
 
 

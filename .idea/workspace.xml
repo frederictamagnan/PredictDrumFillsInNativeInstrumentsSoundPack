@@ -4,6 +4,7 @@
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/cleanLabeling/Labelling.py" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling.py" />
       <change beforePath="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,23 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sketchRnn_many_to_one/GeneratorSketchRnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="141" column="42" lean-forward="false" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptBuildDatasetGenerationServer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScriptBuildDatasetGenerationServer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-524">
-              <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+            <state relative-caret-position="108">
+              <caret line="162" column="64" lean-forward="false" selection-start-line="162" selection-start-column="64" selection-end-line="162" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -48,12 +37,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Labelling_sk.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Labelling_sk.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_sk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+            <state relative-caret-position="808">
+              <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComputeMetadataLPD.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptLabelling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Labelling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,7 +223,6 @@
         <option value="$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/sketchRnn_many_to_one/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_many_to_one/GeneratorSketchRnn.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumsDataset_vae_genre.py" />
         <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
         <option value="$PROJECT_DIR$/drumGeneration/DNnet.py" />
@@ -210,6 +230,7 @@
         <option value="$PROJECT_DIR$/drumGeneration/Generator_vae.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py" />
       </list>
     </option>
   </component>
@@ -580,20 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_clustering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2556">
@@ -852,24 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGenerator_vae.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
@@ -880,10 +869,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_sk.py">
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+          <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_sk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="162" column="64" lean-forward="false" selection-start-line="162" selection-start-column="64" selection-end-line="162" selection-end-column="64" />
           <folding />
         </state>
       </provider>
