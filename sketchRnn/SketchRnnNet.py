@@ -80,14 +80,15 @@ class SketchDecoder(nn.Module):
         z_big=z_big.repeat(1, 16,1)
 
         x = torch.cat([x, z_big], 2)
-        # print(x.size(),"x size after cat")
+
+        print(x.size()[0],"x size after cat")
 
         # x = x.contiguous().view(
         #     self.batch_size,
         #     self.seq_len,
         #     self.num_features + self.linear_hidden_size[1])
         # print(x.size(),"contiguous")
-        hz=hz.view(-1,self.batch_size,self.linear_hidden_size[1])
+        hz=hz.view(-1,x.size()[0],self.linear_hidden_size[1])
         x,hz=self.gru(x,hz)
         # print(x.size(),"X after gru dec")
         x=self.bn1(x)
