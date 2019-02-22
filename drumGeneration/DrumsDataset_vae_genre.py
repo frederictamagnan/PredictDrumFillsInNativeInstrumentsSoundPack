@@ -16,7 +16,7 @@ class DrumsDataset(data.Dataset):
             self.y=numpy_array[:,1,:,:]
             self.y=self.y.reshape((-1,64))
         self.use_cuda=use_cuda
-        self.genre=genre.reshape((genre.shape[0],15))
+        self.genre=genre.reshape((genre.shape[0],16))
         print(self.genre.shape,"GENRE SHAPE")
 
     def __getitem__(self, index):

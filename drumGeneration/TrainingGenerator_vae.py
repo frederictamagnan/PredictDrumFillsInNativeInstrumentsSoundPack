@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn as nn
 from DNnet import DNnet
 
-local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/bigsupervised.npz'
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/22supervised.npz'
 
 class TrainingGenerator:
 
@@ -88,7 +88,7 @@ class TrainingGenerator:
                     val_outputs = dnn(inputs,g)
                     val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.data[0]
-                print("val loss",total_val_loss / i)
+                print("val loss",total_val_loss / (i+1))
 
         print('Finished Training')
 

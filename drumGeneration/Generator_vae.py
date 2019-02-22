@@ -48,7 +48,7 @@ class Generator:
         # array_vae=np.zeros((1,3,64))
         array_vae=np.zeros((1,2,64))
 
-        genre=np.zeros((1,15,1))
+        genre=np.zeros((1,16,1))
         # X=np.zeros((1,288,128))
         X=np.zeros((1,192,128))
 
@@ -68,7 +68,7 @@ class Generator:
             x=piano[mid*96:(mid+2)*96]
 
             x=x.reshape((1,x.shape[0],x.shape[1]))
-            g=np.zeros((1,15,1))
+            g=np.zeros((1,16,1))
             # print(rf,"RF")
             g[:,rf[2],:]=1
             try:
@@ -202,6 +202,6 @@ if __name__=='__main__':
     g=Generator(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
     g.count_parameters()
     # g.generate(10,save=False)
-    g.generate(800, save=False)
+    g.generate(10, save=True)
 
 

@@ -6,7 +6,7 @@ class DNnet(nn.Module):
         super(DNnet, self).__init__()
 
         # self.fc1 = nn.Linear(128+15, 64)
-        self.fc1 = nn.Linear(64+15, 64)
+        self.fc1 = nn.Linear(64+16, 64)
         #
         #
         self.fc2 = nn.Linear(64, 64)
