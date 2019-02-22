@@ -71,8 +71,8 @@ class TrainingSketchRnn:
         print(params,"PARAMETERS_RNN")
 
     def train_model(self):
-        encoder = SketchEncoder(linear_hidden_size=self.linear_hidden_size,gru_hidden_size=self.gru_hidden_size).to(self.device)
-        decoder = SketchDecoder(linear_hidden_size=self.linear_hidden_size).to(self.device)
+        encoder = SketchEncoder(batch_size=self.batch_size,linear_hidden_size=self.linear_hidden_size,gru_hidden_size=self.gru_hidden_size).to(self.device)
+        decoder = SketchDecoder(batch_size=self.batch_size,linear_hidden_size=self.linear_hidden_size).to(self.device)
         sketchrnn = SketchRnnNet(encoder, decoder).to(self.device)
         optimizer = optim.Adam(sketchrnn.parameters(), lr=self.lr)
         test_err = 0
