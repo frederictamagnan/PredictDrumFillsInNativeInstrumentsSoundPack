@@ -105,13 +105,13 @@ class TrainingSketchRnn:
                 if batch_i % 5 == 0:
                     print('Train Epoch: {} [{:4d}/{} ({:2.0f}%)]      Loss: {:.6f}'.format(
                         epoch,
-                        batch_i * BATCH_SIZE,
+                        batch_i * self.batch_size,
                         len(self.train_loader.dataset),
                         100. * batch_i / len(self.train_loader),
-                        loss.data.item() / BATCH_SIZE))
+                        loss.data.item() / self.batch_size))
                     print('bce: {:.6f}, kld: {:.6f}'.format(
-                        bce.data.item() / BATCH_SIZE,
-                        kld.data.item() / BATCH_SIZE))
+                        bce.data.item() / self.batch_size,
+                        kld.data.item() / self.batch_size))
             print('====> Epoch: {} Average loss: {:.4f}, bce: {:.4f}, kld: {:.4f}'.format(
                 epoch, loss_sum / len(self.train_loader.dataset),
                        bce_sum / len(self.train_loader.dataset),
