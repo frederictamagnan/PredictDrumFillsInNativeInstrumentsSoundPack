@@ -19,7 +19,7 @@ tr=data['track_array']
 from DrumReducerExpander import DrumReducerExpander
 dec=DrumReducerExpander()
 for i in range(len(tr)):
-    track=tr[i+200].reshape((2*16,9))
+    track=tr[i+250].reshape((2*16,9))
     track=dec.decode(batch_pianoroll=track,no_batch=True)
     track=dec.decode_808(batch_pianoroll=track,no_batch=True)
     numpy_drums_save_to_midi(track,'/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/',str(i))
