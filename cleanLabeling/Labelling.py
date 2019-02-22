@@ -59,7 +59,7 @@ class Labelling:
             for i, (X_deep) in enumerate(inference_loader):
                 X_d = Variable(X_deep).float()
                 y_pred = self.model(X_d)
-                y_pred_cat = (y_pred >0.4).squeeze(1).float()
+                y_pred_cat = (y_pred >0.3).squeeze(1).float()
 
                 y_pred_total.append(tensor_to_numpy(y_pred_cat).astype(int))
 
