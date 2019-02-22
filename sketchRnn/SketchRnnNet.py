@@ -81,7 +81,7 @@ class SketchDecoder(nn.Module):
 
         x = torch.cat([x, z_big], 2)
 
-        print(x.size()[0],"x size after cat")
+        # print(x.size()[0],"x size after cat")
 
         # x = x.contiguous().view(
         #     self.batch_size,
