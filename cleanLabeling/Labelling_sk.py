@@ -48,7 +48,7 @@ class Labelling:
         X_std=self.scaler.transform(X)
         y=(self.clf.predict_proba(X_std)>0.5)*1
         y=y[:,1]
-        print("number of fills",y.sum())
+        # print("number of fills",y.sum())
         # y=self.clf.predict(X)
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label.npz', label=y)
 
