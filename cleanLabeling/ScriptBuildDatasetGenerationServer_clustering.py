@@ -98,7 +98,7 @@ def build_generation_dataset(p, npz):
     label = label['label']
     metadata_dict = dict(np.load(p + '/' + npz.replace('_label_clustering','_metadata_training')))
     vae=metadata_dict['vae_embeddings']
-    print(len(label),"LABEL",len(vae),"VAE")
+    # print(len(label),"LABEL",len(vae),"VAE")
     #     print(label.shape)
     multi = Multitrack(p + '/' + npz.replace('_label_clustering', ''))
     track = multi.tracks[0].pianoroll
