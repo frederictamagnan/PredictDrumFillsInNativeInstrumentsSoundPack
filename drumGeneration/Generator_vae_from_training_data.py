@@ -210,7 +210,7 @@ if __name__=='__main__':
         model_name = 'vae_generation.pt'
 
 
-        dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/ununbest.npz'
+        dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised.npz'
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
 
 
@@ -219,6 +219,6 @@ if __name__=='__main__':
     g=Generator(model_path=model_path,model_name=model_name,dataset=dataset,temp_filepath=temp_filepath)
     g.count_parameters()
     # g.generate(10,save=False)
-    g.generate(500, save=True)
+    g.generate(10, save=True)
 
 

@@ -73,6 +73,7 @@ class Generator:
             g[:,rf[2],:]=1
             try:
                 metrics = dict(np.load(rf[0] + rf[1].replace('.npz', '_metadata_training.npz')))
+                print("open")
                 vae = metrics['vae_embeddings']
                 # vae = vae[mid:(mid + 3)].reshape((-1, 3, 64))
                 vae = vae[mid:(mid + 2)].reshape((-1, 2, 64))
