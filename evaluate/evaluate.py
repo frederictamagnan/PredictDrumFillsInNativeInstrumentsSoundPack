@@ -1,7 +1,7 @@
 import numpy as np
 
 # r=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/evaluation/'+'generated_with_regression_t.npy')
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/1502supervised.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedClustering.npz')
 data=data['track_array']
 print(data.shape,"data shape")
 p=data[:,0,:,:]
@@ -29,7 +29,7 @@ for i in range(9):
 print(list_p,list_a)
 import matplotlib.pyplot as plt
 
-fig, axs = plt.subplots(1, 2)
+fig, axs = plt.subplots(1, 2,sharey=True)
 axs[0].bar(name_pitches, list_p)
 axs[1].bar(name_pitches, list_a)
 plt.show()

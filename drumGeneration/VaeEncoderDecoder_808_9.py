@@ -65,8 +65,9 @@ class VaeEncoderDecoder:
 
 
 
-        train_dataset = DrumsDataset(array)
+        # train_dataset = DrumsDataset(array)
 
+        train_dataset = Data.TensorDataset(array)
         train_loader = Data.DataLoader(
             dataset=train_dataset,
             batch_size=self.batch_size,

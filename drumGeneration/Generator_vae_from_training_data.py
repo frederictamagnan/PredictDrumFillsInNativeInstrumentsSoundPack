@@ -55,7 +55,7 @@ class Generator:
         genre=data['genre'][:n]
         # array_vae=array_vae.reshape((array_vae.shape[0],3,32,2))
         array_vae = array_vae.reshape((array_vae.shape[0], 2, 32, 2))
-
+        array_vae[:, :, :, 1] = 0.05
         X_dataset = DrumsDataset(numpy_array=array_vae, genre=genre, inference=True, use_cuda=self.use_cuda)
         X_loader = torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
                                                shuffle=False, drop_last=False)
