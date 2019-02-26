@@ -33,7 +33,7 @@ class GeneratorSketchRnn:
 
 
 
-        self.load_model(10)
+        self.load_model(1000)
         self.count_parameters()
 
 
@@ -44,9 +44,9 @@ class GeneratorSketchRnn:
         print(params,"beta vae parameters")
 
     def load_model(self,batch_size):
-        encoder = SketchEncoder(batch_size=10,linear_hidden_size=self.linear_hidden_size, gru_hidden_size=self.gru_hidden_size).to(
+        encoder = SketchEncoder(batch_size=1000,linear_hidden_size=self.linear_hidden_size, gru_hidden_size=self.gru_hidden_size).to(
             self.device)
-        decoder = SketchDecoder(batch_size=10,linear_hidden_size=self.linear_hidden_size).to(self.device)
+        decoder = SketchDecoder(batch_size=1000,linear_hidden_size=self.linear_hidden_size).to(self.device)
         self.model = SketchRnnNet(encoder, decoder).to(self.device)
         self.model.eval()
         print("GOOD")
@@ -69,9 +69,9 @@ class GeneratorSketchRnn:
             mid=int(length//96//2)
             x=piano[mid*96:(mid+2)*96]
             x=x.reshape((1,x.shape[0],x.shape[1]))
-            print(x.shape)
+            # print(x.shape)
             try:
-                print(X.shape)
+                # print(X.shape)
                 X=np.concatenate((X,x))
                 i+=1
             except:
@@ -90,7 +90,7 @@ class GeneratorSketchRnn:
             for i, (x) in enumerate(X_loader):
                 x = Variable(x).float()
                 y_pred = self.model(x)
-                y_pred_cat = (y_pred >0.5)
+                y_pred_cat = (y_pred >0.15)
 
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         y=y_pred_cat.reshape((n,16, 9))
@@ -109,9 +109,8 @@ class GeneratorSketchRnn:
                 numpy_drums_save_to_midi(X_old[i].reshape(192,128),self.temp_filepath,list_filepath[i][1]+"_original")
                 numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, list_filepath[i][1] + "_new")
 
-
-
-
+        new2 = np.concatenate((X[:, 0, :, :], y), axis=1)
+        np.save(temp_filepath+'all',new2)
         print(y.shape)
 
 
@@ -151,6 +150,6 @@ if __name__=='__main__':
     g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
     g.count_parameters()
     # g.generate(10,save=False)
-    g.generate(10, save=True)
+    g.generate(1000, save=False)
 
 

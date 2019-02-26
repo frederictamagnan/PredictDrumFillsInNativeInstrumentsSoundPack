@@ -47,11 +47,23 @@ class Metadata:
         max_axis=np.max(self.batch_multitrack_reduced_velocity_808,axis=1)
         std_axis=np.std(self.batch_multitrack_reduced_velocity_808,axis=1,dtype=np.float64)
         mean_axis=np.mean(self.batch_multitrack_reduced_velocity_808,axis=1,dtype=np.float64)
-
         velocity_metadata=np.concatenate([max_axis,std_axis,mean_axis],axis=1)
+
+
+
         # print(label_array.shape,"LABEL ARRAY SHAPE")
 
         return velocity_metadata
+
+    def count(self):
+
+        # min_axis=np.min(self.batch_multitrack_reduced_velocity,axis=1)
+        # print(min_axis.shape,"min shape")
+        sum=np.sum(self.batch_multitrack_reduced_808,axis=1)
+
+        return sum
+
+
 
     def vae_embeddings(self):
         e=VaeEncoderDecoder()
