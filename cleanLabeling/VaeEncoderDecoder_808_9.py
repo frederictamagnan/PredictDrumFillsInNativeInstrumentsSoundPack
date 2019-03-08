@@ -33,7 +33,7 @@ class VaeEncoderDecoder:
         model_parameters = filter(lambda p: p.requires_grad, self.vae.parameters())
         params = sum([np.prod(p.size()) for p in model_parameters])
         self.params=params
-        print(params,"PARAMETERS")
+        # print(params,"PARAMETERS")
 
 
 
@@ -61,14 +61,14 @@ class VaeEncoderDecoder:
         :param array: its a batch of reduced drums track with shape n* 96* 9
         :return:
         """
-        print(array.shape,"array shape")
+        # print(array.shape,"array shape")
         new_array,to_complete=self.pre_process_array(array)
-        print(new_array.shape,"shape new array")
-        print(to_complete,"to complete")
+        # print(new_array.shape,"shape new array")
+        # print(to_complete,"to complete")
 
 
         train_dataset = VaeEncodeDataset(new_array)
-        print(len(train_dataset),"len dataset")
+        # print(len(train_dataset),"len dataset")
         train_loader = Data.DataLoader(
             dataset=train_dataset,
             batch_size=256,
@@ -91,14 +91,14 @@ class VaeEncoderDecoder:
                 global_tensor = np.concatenate((global_tensor, latent_tensor))
 
 
-        print(global_tensor.shape,"global tensor shape")
-        print(global_tensor)
+        # print(global_tensor.shape,"global tensor shape")
+        # print(global_tensor)
         if to_complete is not None:
             global_tensor = global_tensor[1:-to_complete, :, :]
         else:
             global_tensor = global_tensor[1:, :, :]
 
-        print(global_tensor,"2")
+        # print(global_tensor,"2")
         return global_tensor
 
 

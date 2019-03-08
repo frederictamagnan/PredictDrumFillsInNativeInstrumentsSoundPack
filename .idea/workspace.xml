@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="" />
+    <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py" afterPath="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,15 +21,6 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evaluationLabelling.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluate/evaluationLabelling.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -67,8 +60,20 @@
       <file leaf-file-name="Metadata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="1293">
               <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VaeEncoderDecoder_808_9.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="134" column="32" lean-forward="true" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -106,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptServer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScriptServer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptServer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -175,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dataAugmentation/main.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" />
         <option value="$PROJECT_DIR$/RnnLabellingFills/RnnFillsDataset.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/RnnGenerateDataset.py" />
@@ -226,6 +230,7 @@
         <option value="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/MetadataTraining.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py" />
       </list>
     </option>
   </component>
@@ -505,13 +510,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sketchRnn_many_to_one/GeneratorSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="141" column="42" lean-forward="false" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/DrumsDataset_vae_genre.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -872,18 +870,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1293">
+          <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="134" column="32" lean-forward="true" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
           <folding />
         </state>
       </provider>
