@@ -39,7 +39,8 @@ class Labelling:
 
         data=dict(np.load(path+'/'+npz))
         diff=data['diff']
-        diff=diff.reshape(-1,16*9)
+        diff=np.concatenate((diff[:-2,:],diff[1:-1],diff[2:]),axis=1)
+        y=diff[:,1]-diff[:,]
         diff[diff<0]=0
         diff=np.sum(diff,axis=1)
         y=(diff>5)*1

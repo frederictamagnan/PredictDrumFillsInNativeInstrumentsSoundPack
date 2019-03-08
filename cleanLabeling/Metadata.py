@@ -24,7 +24,8 @@ class Metadata:
         self.metadata['drums_pitches_used'] = self.drum_pitches_used()
         self.metadata['offbeat_notes'] = self.offbeat_notes()
         self.metadata['velocity_metadata'] = self.velocity_metadata()
-        self.metadata['diff']=self.diff()
+        self.metadata['reduced_drums']=self.batch_multitrack_reduced_808
+        self.metadata['reduced_drums_velocity']=self.batch_multitrack_reduced_velocity_808
 
         for key in self.metadata.keys():
             self.metadata[key]=self.metadata[key].reshape((self.metadata[key].shape[0],-1))
@@ -71,12 +72,7 @@ class Metadata:
         print(emb)
         return emb
 
-    def diff(self):
 
-        diff=np.diff(self.batch_multitrack_reduced_808,axis=0)
-        print(diff.shape)
-        diff=np.concatenate((np.zeros((1,16,9)),diff))
-        return diff
 
     def save_metadata(self,filepath,name):
         np.savez(filepath+name+'_metadata_training.npz',**self.metadata)
