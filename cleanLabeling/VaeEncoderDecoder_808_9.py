@@ -18,10 +18,10 @@ class VaeEncoderDecoder:
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
 
-        if self.use_cuda:
-            print('run on GPU')
-        else:
-            print('run on CPU')
+        # if self.use_cuda:
+        #     print('run on GPU')
+        # else:
+        #     print('run on CPU')
 
         self.vae.load_state_dict(torch.load(
             "./../models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt",
