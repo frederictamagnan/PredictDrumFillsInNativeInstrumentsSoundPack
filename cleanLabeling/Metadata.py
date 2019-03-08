@@ -69,7 +69,7 @@ class Metadata:
     def vae_embeddings(self):
         e=VaeEncoderDecoder()
         emb=e.encode_to_embeddings(self.batch_multitrack_reduced_808)
-        print(emb)
+        # print(emb)
         return emb
 
 

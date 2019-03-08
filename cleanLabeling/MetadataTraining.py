@@ -24,7 +24,7 @@ class MetadataTraining(Metadata):
         self.metadata['dataset'] = np.zeros((1, 2, 1))
 
         for filepath in self.list_filepath:
-            print("lol")
+            # print("lol")
             # Process the fills label
             if "Fill" in filepath or "OddGrooves" in filepath:
                 label_fills = np.array([[0], [1]])
@@ -51,11 +51,11 @@ class MetadataTraining(Metadata):
                 list_ = ['Groove', 'Fill']
                 offset = [8, 6]
                 index_ = int(label_fills[1, 0])
-                print(index_)
+                # print(index_)
                 string_ = list_[index_]
                 offset_ = offset[index_]
                 index_bpm = filepath.index("BPM")
-                print(string_)
+                # print(string_)
                 index_middle = filepath.index(string_)
                 bpm = int(filepath[index_middle + offset_:index_bpm])
                 label_bpm = np.full(shape=(1, 1), fill_value=bpm)
@@ -87,7 +87,7 @@ class MetadataTraining(Metadata):
 
             if elt in subdir:
                 label_genre[i,0]=1
-                print("RETURN LABEL")
+                # print("RETURN LABEL")
                 return label_genre
 
         raise "Error finding genre"

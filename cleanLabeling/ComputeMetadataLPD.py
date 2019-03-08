@@ -50,7 +50,7 @@ class ComputeMetadataLPD:
 
 
     def process_npz_file(self,path,npz):
-        print(path,npz)
+        # print(path,npz)
         multi=Multitrack(path+"/"+npz)
         track=multi.tracks[0].pianoroll
         # print(track.shape)
