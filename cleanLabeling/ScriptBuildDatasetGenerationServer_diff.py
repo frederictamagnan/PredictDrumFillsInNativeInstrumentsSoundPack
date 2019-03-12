@@ -66,7 +66,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                             vae_array=np.concatenate((vae_array,vae))
                             track_array=np.concatenate((track_array,track_ar))
 #                             genre_fill=np.zeros((fill.shape[0],15,1))
-                            genre_fill=np.zeros((vae.shape[0],15,1))
+                            genre_fill=np.zeros((vae.shape[0],16,1))
                             genre_fill[:,tag_i,0]=1
                             genre=np.concatenate((genre,genre_fill))
 
