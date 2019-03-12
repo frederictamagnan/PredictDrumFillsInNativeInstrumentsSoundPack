@@ -38,14 +38,9 @@ class Labelling:
     def label(self,path,npz):
 
         data=dict(np.load(path+'/'+npz))
-        diff=data['diff']
-        diff=np.concatenate((diff[:-2,:],diff[1:-1],diff[2:]),axis=1)
-        y=diff[:,1]-diff[:,]
-        diff[diff<0]=0
-        diff=np.sum(diff,axis=1)
-        y=(diff>5)*1
-        print(y.shape,"y shape")
-        # y=self.clf.predict(X)
+        rdv=data['reduced_drums_velocity']>0
+        diff=np.concatenate((rdv[:-2,:],rdv[1:-1],rdv[2:]),axis=1)
+        y=(diff[:,1]-diff[:,0]>3 and diff[:,2]-diff[:,1]>3)*1
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_diff.npz', label=y)
 
 
