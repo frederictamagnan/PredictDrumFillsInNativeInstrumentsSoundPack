@@ -44,7 +44,7 @@ class Labelling:
         diff1=np.sum((diff[:, 1, :] - diff[:, 0, :]>0)*1,axis=0)
         diff2 = np.sum((diff[:, 2, :] - diff[:, 1, :] > 0) * 1, axis=0)
         y=(np.logical_and(diff1>3,diff2>3))*1
-        print(y.shape)
+        # print(y.shape)
         y=np.concatenate(([0],y,[0]))
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_diff.npz', label=y)
 
