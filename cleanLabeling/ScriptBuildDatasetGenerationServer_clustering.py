@@ -115,7 +115,7 @@ def build_generation_dataset(p, npz):
 
     # mask_fills_cleaned =(label_previous_next_shape ==[-1, 1,-1]).all(axis=1)
     # mask_fills_cleaned =(label_previous_next_shape ==[0,0, 0, 1]).all(axis=1)
-    mask_fills_cleaned =(label_previous_next_shape ==[-1, 1]).all(axis=1)
+    mask_fills_cleaned =(label_previous_next_shape ==[0, 1]).all(axis=1)
 
 
     indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
