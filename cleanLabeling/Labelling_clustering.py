@@ -39,40 +39,52 @@ class Labelling:
 
         data=dict(np.load(path+'/'+npz))
         # print(npz,"NPZ")
-        X=data['velocity_metadata']
+        vel=data['velocity_metadata']
+
+        vae=data['vae_embeddings'].reshape((-1,2,32))[:,0,:]
+
+        vel=vel.reshape((vel.shape[0],-1))
+        vae=vae.reshape((vae.shape[0],-1))
+        X=np.concatenate((vae,vel),axis=1)
         random_state = 170
         km = KMeans(n_clusters=6, random_state=random_state)
         y_pred = km.fit_predict(X)
         # print(y_pred.shape,"y_pred_shape")
-        number_notes_in_fills=4
-        max=number_notes_in_fills*50/16
-        clust_max=-1
-        most_frequent=np.bincount(y_pred).argmax()
-        for i in range(6):
-            if i==most_frequent:
-                pass
-            else:
-                tab_index_bar = np.argwhere(y_pred == i)
-                tab_index_bar=tab_index_bar.reshape(-1)
-                # print(tab_index_bar,"tab index bar")
-                # print(X.shape)
-                x=np.concatenate((X[tab_index_bar][:,22:26],X[tab_index_bar][:,19].reshape(-1,1)),axis=1)
-                # print(x.shape)
-                # print(x,"X")
-                sum_=np.sum(x)
-                # print(sum_,"SUM")
-                if sum_>max*len(tab_index_bar):
-                    max=sum_
-                    clust_max=i
-
-        if clust_max==-1:
-            y=np.zeros(y_pred.shape)
-        else:
-            y=(y_pred==clust_max)*1
-
-        y[y_pred==most_frequent]=-1
+        # number_notes_in_fills=4
+        # max=number_notes_in_fills*50/16
+        # clust_max=-1
+        # most_frequent=np.bincount(y_pred).argmax()
+        # for i in range(6):
+        #     if i==most_frequent:
+        #         pass
+        #     else:
+        #         tab_index_bar = np.argwhere(y_pred == i)
+        #         tab_index_bar=tab_index_bar.reshape(-1)
+        #         # print(tab_index_bar,"tab index bar")
+        #         # print(X.shape)
+        #         x=np.concatenate((X[tab_index_bar][:,22:26],X[tab_index_bar][:,19].reshape(-1,1)),axis=1)
+        #         # print(x.shape)
+        #         # print(x,"X")
+        #         sum_=np.sum(x)
+        #         # print(sum_,"SUM")
+        #         if sum_>max*len(tab_index_bar):
+        #             max=sum_
+        #             clust_max=i
+        #
+        # if clust_max==-1:
+        #     y=np.zeros(y_pred.shape)
+        # else:
+        #     y=(y_pred==clust_max)*1
+        #
+        # y[y_pred==most_frequent]=-1
         # print(y,"YYYY")
         # print(y)
+        y = np.zeros(y_pred.shape)
+        for i in range(6):
+            if (np.argwhere(y_pred == i)*1).sum()<=(len(y))/4:
+                y[y_pred==i]=1
+
+
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_clustering.npz', label=y)
 
 
