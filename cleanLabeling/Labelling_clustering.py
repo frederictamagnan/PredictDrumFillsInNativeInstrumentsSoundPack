@@ -41,11 +41,12 @@ class Labelling:
         # print(npz,"NPZ")
         vel=data['velocity_metadata']
 
-        vae=data['vae_embeddings'].reshape((-1,2,32))[:,0,:]
-
-        vel=vel.reshape((vel.shape[0],-1))
-        vae=vae.reshape((vae.shape[0],-1))
-        X=np.concatenate((vae,vel),axis=1)
+        # vae=data['vae_embeddings'].reshape((-1,2,32))[:,0,:]
+        #
+        # vel=vel.reshape((vel.shape[0],-1))
+        # vae=vae.reshape((vae.shape[0],-1))
+        # X=np.concatenate((vae,vel),axis=1)
+        X=vel
         random_state = 170
         km = KMeans(n_clusters=6, random_state=random_state)
         y_pred = km.fit_predict(X)
