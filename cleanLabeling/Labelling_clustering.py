@@ -40,12 +40,12 @@ class Labelling:
         data=dict(np.load(path+'/'+npz))
         # print(npz,"NPZ")
         vel=data['velocity_metadata']
-
+        dpu=data['drums_pitches_used']
         vae=data['vae_embeddings'].reshape((-1,2,32))[:,0,:]
-
+        dpu=dpu.reshape((dpu.shape[0],-1))
         vel=vel.reshape((vel.shape[0],-1))
         vae=vae.reshape((vae.shape[0],-1))
-        X=np.concatenate((vae,vel),axis=1)
+        X=np.concatenate((vae,vel,dpu),axis=1)
         # X=vel
         random_state = 170
         km = KMeans(n_clusters=6, random_state=random_state)
