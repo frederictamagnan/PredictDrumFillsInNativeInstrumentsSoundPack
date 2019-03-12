@@ -41,6 +41,7 @@ class Labelling:
         rdv=data['reduced_drums_velocity']>0
         diff=np.concatenate((rdv[:-2,:],rdv[1:-1],rdv[2:]),axis=1)
         y=(diff[:,1]-diff[:,0]>3 and diff[:,2]-diff[:,1]>3)*1
+        y=np.concatenate(([0],y,[0]))
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_diff.npz', label=y)
 
 
