@@ -41,8 +41,8 @@ class Labelling:
         rdv=(data['reduced_drums_velocity']>0)*1
         rdv=rdv.reshape((rdv.shape[0],-1))
         diff=np.stack((rdv[:-2,:],rdv[1:-1],rdv[2:]),axis=1)
-        diff1=np.sum((diff[:, 1, :] - diff[:, 0, :]>0)*1,axis=0)
-        diff2 = np.sum((diff[:, 2, :] - diff[:, 1, :] > 0) * 1, axis=0)
+        diff1=np.sum((diff[:, 1, :] - diff[:, 0, :]>0)*1,axis=1)
+        diff2 = np.sum((diff[:, 1, :] - diff[:, 2, :] > 0) * 1, axis=1)
         y=(np.logical_and(diff1>3,diff2>3))*1
         # print(y.shape)
         y=np.concatenate(([0],y,[0]))
