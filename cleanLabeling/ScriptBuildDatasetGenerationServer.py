@@ -118,22 +118,18 @@ def build_generation_dataset(p, npz):
     # mask_fills_cleaned =(label_previous_next_shape ==[0, 1]).all(axis=1)
     #
     # indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
-    print(label.shape)
-    print(label)
+
     string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '').replace('\n','')
-    print(string)
-    print(len(string))
+
     indexes_fills_cleaned=allindices(string,'01')
-    print(indexes_fills_cleaned)
+
     indexes_fills_cleaned=np.asarray(indexes_fills_cleaned)
 
 
     if indexes_fills_cleaned.shape[0] == 0:
         return None
     else:
-        print(indexes_fills_cleaned)
-        print(indexes_fills_cleaned.shape)
-        print(vae.shape)
+
         # tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1],vae[indexes_fills_cleaned + 2]), axis=1)
         tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1]), axis=1)
 
@@ -141,6 +137,7 @@ def build_generation_dataset(p, npz):
         #     ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1], track[indexes_fills_cleaned + 2]), axis=1)
         tab_track = np.concatenate \
                 ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1]), axis=1)
+        print(tab_track.shape,"tab track shape")
         tab_track=tab_track.reshape(tab_track.shape[0],-1,tab_track.shape[3])
         tab_track=enc.encode(tab_track)
         tab_track=enc.encode_808(tab_track)
