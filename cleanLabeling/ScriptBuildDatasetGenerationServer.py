@@ -121,8 +121,9 @@ def build_generation_dataset(p, npz):
     print(label.shape)
     print(label)
     string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '')
+    print(string)
     indexes_fills_cleaned=allindices(string,'01')
-
+    print(indexes_fills_cleaned)
     indexes_fills_cleaned=np.asarray(indexes_fills_cleaned)
 
 
@@ -146,7 +147,9 @@ def build_generation_dataset(p, npz):
         tab_track = tab_track.reshape((-1, 2, 16, 9))
         return tab,tab_track
 
-def allindices(string, sub, listindex=[], offset=0):
+def allindices(string, sub):
+    listindex = []
+    offset = 0
     i = string.find(sub, offset)
     while i >= 0:
         listindex.append(i)
