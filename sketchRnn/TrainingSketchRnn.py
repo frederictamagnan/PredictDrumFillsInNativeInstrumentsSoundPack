@@ -72,7 +72,7 @@ class TrainingSketchRnn:
 
     def train_model(self):
 
-        self.loss_train_metrics=np.zeros((1,4))
+        self.loss_train_metrics=np.zeros((1,5))
 
 
 
@@ -145,9 +145,12 @@ class TrainingSketchRnn:
             print('====> Testing Average Loss: {}'.format(
                 loss_sum_test / len(self.test_loader.dataset)))
 
-            self.loss_train_metrics = np.append(self.loss_train_metrics, [epoch, loss_sum / len(self.train_loader.dataset),
-                                                                bce_sum / len(self.train_loader.dataset),
-                                                                kld_sum / len(self.train_loader.dataset),loss_sum_test / len(self.test_loader.dataset)])
+            row=np.asarray([epoch, loss_sum / len(self.train_loader.dataset),
+             bce_sum / len(self.train_loader.dataset),
+             kld_sum / len(self.train_loader.dataset), loss_sum_test / len(self.test_loader.dataset)]).reshape((1,5))
+
+
+            self.loss_train_metrics = np.concatenate(self.loss_train_metrics, row)
 
 
         self.net=sketchrnn

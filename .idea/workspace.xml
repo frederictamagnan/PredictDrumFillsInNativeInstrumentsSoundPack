@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/evaluate/train_metrics.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/evaluate/.~lock.evaluation.ods#" afterPath="" />
       <change beforePath="$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,24 +80,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingGeneratorRnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGeneratorRnn.py">
+      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="405">
+              <caret line="147" column="12" lean-forward="false" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py">
+      <file leaf-file-name="train_metrics.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evaluate/train_metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="157" column="42" lean-forward="false" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,16 +107,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-984">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptBuildDatasetGenerationServer_diff.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cleanLabeling/ScriptExploreMetricsFIles.py" />
         <option value="$PROJECT_DIR$/RnnLabellingFills/RnnFillsDataset.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/drumGeneration/RnnGenerateDataset.py" />
         <option value="$PROJECT_DIR$/drumGeneration/RnnGenerateDataset.py" />
@@ -229,6 +221,7 @@
         <option value="$PROJECT_DIR$/evaluate/barplot.py" />
         <option value="$PROJECT_DIR$/evaluate/evaluate.py" />
         <option value="$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py" />
+        <option value="$PROJECT_DIR$/evaluate/train_metrics.py" />
       </list>
     </option>
   </component>
@@ -278,11 +271,6 @@
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="evaluate" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="sketchRnn" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -321,43 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.evaluate">
-    <configuration name="Labelling_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cleanLabeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/Labelling_clustering.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Labelling_diff" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cleanLabeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cleanLabeling/Labelling_diff.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.train_metrics">
     <configuration name="ScriptExploreFills" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -371,6 +323,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="TrainingSketchRnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sketchRnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -412,20 +382,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="train_metrics" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate/train_metrics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.barplot" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Labelling_clustering" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Labelling_diff" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
-      <item index="4" class="java.lang.String" itemvalue="Python.evaluate" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+      <item index="2" class="java.lang.String" itemvalue="Python.evaluate" />
+      <item index="3" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
+      <item index="4" class="java.lang.String" itemvalue="Python.train_metrics" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.evaluate" />
-        <item index="1" class="java.lang.String" itemvalue="Python.barplot" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Labelling_clustering" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Labelling_diff" />
+        <item index="0" class="java.lang.String" itemvalue="Python.train_metrics" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
+        <item index="2" class="java.lang.String" itemvalue="Python.evaluate" />
+        <item index="3" class="java.lang.String" itemvalue="Python.barplot" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
       </list>
     </recent_temporary>
   </component>
@@ -494,13 +482,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataAugmentation/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drumGeneration/DrumReducerExpander.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -843,22 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/RnnGenerateNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1674">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGeneratorRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sketchRnn/SketchRnnNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-984">
@@ -867,13 +832,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/TrainingGeneratorRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="99" column="41" lean-forward="false" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/RnnGenerateNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1674">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="157" column="42" lean-forward="false" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+        <state relative-caret-position="405">
+          <caret line="147" column="12" lean-forward="false" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluate/train_metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
