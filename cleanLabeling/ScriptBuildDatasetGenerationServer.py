@@ -122,6 +122,7 @@ def build_generation_dataset(p, npz):
     print(label)
     string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '')
     print(string)
+    print(len(string))
     indexes_fills_cleaned=allindices(string,'01')
     print(indexes_fills_cleaned)
     indexes_fills_cleaned=np.asarray(indexes_fills_cleaned)
