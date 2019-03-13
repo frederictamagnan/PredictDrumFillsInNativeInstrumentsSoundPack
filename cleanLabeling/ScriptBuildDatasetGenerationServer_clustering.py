@@ -140,6 +140,12 @@ def build_generation_dataset(p, npz):
         # tab_track=tab_track.reshape((-1,3,16,9))
         tab_track = tab_track.reshape((-1, 2, 16, 9))
         return tab,tab_track
+def allindices(string, sub, listindex=[], offset=0):
+    i = string.find(sub, offset)
+    while i >= 0:
+        listindex.append(i)
+        i = string.find(sub, i + 1)
+    return listindex
 
 
 if __name__ == '__main__':
