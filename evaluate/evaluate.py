@@ -1,7 +1,7 @@
 import numpy as np
 
 # r=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/evaluation/'+'generated_with_regression_t.npy')
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised_09.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedDiff.npz')
 data=data['track_array']
 print(data.shape,"data shape")
 p=data[:,0,:,:]
@@ -17,10 +17,12 @@ name_pitches = ['bass drum','snare drum','closed hi-hat','open hi-hat','low tom'
 
 print(p.shape,a.shape)
 
-p=p.reshape((-1,9))*1
-a=a.reshape((-1,9))*1
+
 d=a-p
 d[d<0]=0
+p=p.reshape((-1,9))*1
+a=a.reshape((-1,9))*1
+
 d=d.reshape((-1,9))*1
 
 
@@ -35,10 +37,10 @@ for i in range(9):
 
 
 
-print(list_p,list_a)
+print(list_p,list_a,list_d)
 import matplotlib.pyplot as plt
 
-fig, axs = plt.subplots(1, 3,sharey=True)
+fig, axs = plt.subplots(3, 1,sharey=True)
 axs[0].bar(name_pitches, list_p)
 axs[1].bar(name_pitches, list_a)
 axs[2].bar(name_pitches, list_d)

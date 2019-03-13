@@ -71,6 +71,11 @@ class TrainingSketchRnn:
         print(params,"PARAMETERS_RNN")
 
     def train_model(self):
+
+        self.loss_train_metrics=np.zeros((1,4))
+
+
+
         encoder = SketchEncoder(batch_size=self.batch_size,linear_hidden_size=self.linear_hidden_size,gru_hidden_size=self.gru_hidden_size).to(self.device)
         decoder = SketchDecoder(batch_size=self.batch_size,linear_hidden_size=self.linear_hidden_size).to(self.device)
         sketchrnn = SketchRnnNet(encoder, decoder).to(self.device)
@@ -121,28 +126,36 @@ class TrainingSketchRnn:
             #         bce_sum / len(train_loader.dataset),
             #         kld_sum / len(train_loader.dataset)))
 
-            if epoch % 5 == 0:
-                loss_sum_test = 0
-                for batch_i, data in enumerate(self.test_loader):
-                    with torch.no_grad():
-                        data = Variable(data[0]).type(torch.float32).to(self.device)
-                        data_out = sketchrnn(data)
 
-                        loss = F.binary_cross_entropy(
-                            data_out,
-                            data,
-                            reduction='sum'
-                        )
-                        loss_sum_test += loss.item()
 
-                print('====> Testing Average Loss: {}'.format(
-                    loss_sum_test / len(self.test_loader.dataset)))
-                test_err = loss_sum_test / len(self.test_loader.dataset)
+            # if epoch % 5 == 0:
+            loss_sum_test = 0
+            for batch_i, data in enumerate(self.test_loader):
+                with torch.no_grad():
+                    data = Variable(data[0]).type(torch.float32).to(self.device)
+                    data_out = sketchrnn(data)
+
+                    loss = F.binary_cross_entropy(
+                        data_out,
+                        data,
+                        reduction='sum'
+                    )
+                    loss_sum_test += loss.item()
+
+            print('====> Testing Average Loss: {}'.format(
+                loss_sum_test / len(self.test_loader.dataset)))
+
+            self.loss_train_metrics = np.append(self.loss_train_metrics, [epoch, loss_sum / len(self.train_loader.dataset),
+                                                                bce_sum / len(self.train_loader.dataset),
+                                                                kld_sum / len(self.train_loader.dataset),loss_sum_test / len(self.test_loader.dataset)])
+
+
         self.net=sketchrnn
 
 
     def save_model(self, filepath, name):
         torch.save(self.net.state_dict(), filepath + name)
+        np.save('./metrics_training',self.loss_train_metrics)
 
     def accuracy(self,outputs,labels):
         o = tensor_to_numpy(outputs)
