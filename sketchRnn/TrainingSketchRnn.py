@@ -155,7 +155,7 @@ class TrainingSketchRnn:
 
     def save_model(self, filepath, name):
         torch.save(self.net.state_dict(), filepath + name)
-        np.save('./metrics_training',self.loss_train_metrics)
+        np.save('./metrics_training_'+name,self.loss_train_metrics)
 
     def accuracy(self,outputs,labels):
         o = tensor_to_numpy(outputs)
