@@ -21,14 +21,20 @@ values = list(data.values())
 print(values)
 
 
-fig, axs = plt.subplots(1, 3,sharey=True)
+fig, axs = plt.subplots(1, 1,sharey=True)
 plt.subplots_adjust(wspace=0.01)
 
-for i in range(0,3):
-    axs[i].bar(xticks, values[i])
-    axs[i].set_title(title[i])
-    axs[i].set_xticks(xticks)
-    axs[i].set_xticklabels(names)
+# for i in range(0,3):
+#     axs[i].bar(xticks, values[i])
+#     axs[i].set_title(title[i])
+#     axs[i].set_xticks(xticks)
+#     axs[i].set_xticklabels(names)
+# fig.suptitle('Fills Statistics')
+
+axs.bar(xticks, values[0])
+axs.set_title(title[0])
+axs.set_xticks(xticks)
+axs.set_xticklabels(names)
 fig.suptitle('Fills Statistics')
 
 # plt.show()

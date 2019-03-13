@@ -109,16 +109,16 @@ def build_generation_dataset(p, npz):
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
     # label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
-    # label_previous_next_shape = np.concatenate((label[:-3],label[1:-2], label[2:-1], label[3:])).reshape((-1 ,4))
-    label_previous_next_shape = np.concatenate((label[:-1], label[1:])).reshape((-1 ,2))
+    # label_previous_next_shape = np.concatenate((label[:-1],label[1:])).reshape((-1 ,2))
+    #
+    #
+    # # mask_fills_cleaned =(label_previous_next_shape ==[0, 0, 1]).all(axis=1)
+    # mask_fills_cleaned =(label_previous_next_shape ==[0, 1]).all(axis=1)
+    #
+    # indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
 
-
-    # mask_fills_cleaned =(label_previous_next_shape ==[-1, 1,-1]).all(axis=1)
-    # mask_fills_cleaned =(label_previous_next_shape ==[0,0, 0, 1]).all(axis=1)
-    mask_fills_cleaned =(label_previous_next_shape ==[0, 1]).all(axis=1)
-
-
-    indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
+    string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '')
+    indexes_fills_cleaned = allindices(string, '01')
 
     if indexes_fills_cleaned.shape[0] == 0:
         return None

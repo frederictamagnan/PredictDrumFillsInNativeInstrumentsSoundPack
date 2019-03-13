@@ -10,7 +10,7 @@ from utils import numpy_drums_save_to_midi
 # # print(vae[:10])
 # print(genre.shape,vae.shape,genre.sum())
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedClustering_v2.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised.npz')
 data=dict(data)
 for elt in data.keys():
     print(data[elt].shape)

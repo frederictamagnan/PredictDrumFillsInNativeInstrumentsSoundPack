@@ -111,13 +111,16 @@ def build_generation_dataset(p, npz):
     track = track.reshape((track.shape[0] // 96, 96, 128))
 
     # label_previous_next_shape = np.concatenate((label[:-2], label[1:-1], label[2:])).reshape((-1 ,3))
-    label_previous_next_shape = np.concatenate((label[:-1],label[1:])).reshape((-1 ,2))
+    # label_previous_next_shape = np.concatenate((label[:-1],label[1:])).reshape((-1 ,2))
+    #
+    #
+    # # mask_fills_cleaned =(label_previous_next_shape ==[0, 0, 1]).all(axis=1)
+    # mask_fills_cleaned =(label_previous_next_shape ==[0, 1]).all(axis=1)
+    #
+    # indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
 
-
-    # mask_fills_cleaned =(label_previous_next_shape ==[0, 0, 1]).all(axis=1)
-    mask_fills_cleaned =(label_previous_next_shape ==[0, 1]).all(axis=1)
-
-    indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
+    string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '')
+    indexes_fills_cleaned=allindices(string,'01')
 
     if indexes_fills_cleaned.shape[0] == 0:
         return None
@@ -136,6 +139,14 @@ def build_generation_dataset(p, npz):
         # tab_track=tab_track.reshape((-1,3,16,9))
         tab_track = tab_track.reshape((-1, 2, 16, 9))
         return tab,tab_track
+
+def allindices(string, sub, listindex=[], offset=0):
+    i = string.find(sub, offset)
+    while i >= 0:
+        listindex.append(i)
+        i = string.find(sub, i + 1)
+    return listindex
+
 
 
 if __name__ == '__main__':
