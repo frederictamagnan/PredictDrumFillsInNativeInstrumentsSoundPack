@@ -119,7 +119,7 @@ def build_generation_dataset(p, npz):
 
     string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '')
     indexes_fills_cleaned = allindices(string, '01')
-
+    indexes_fills_cleaned = np.asarray(indexes_fills_cleaned)
     if indexes_fills_cleaned.shape[0] == 0:
         return None
     else:
