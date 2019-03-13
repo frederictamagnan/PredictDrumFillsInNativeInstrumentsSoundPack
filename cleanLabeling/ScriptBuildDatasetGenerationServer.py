@@ -137,11 +137,8 @@ def build_generation_dataset(p, npz):
         #     ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1], track[indexes_fills_cleaned + 2]), axis=1)
         tab_track = np.concatenate \
                 ((track[indexes_fills_cleaned ], track[indexes_fills_cleaned+1]), axis=1)
-        print(tab_track.shape,"tab track shape")
-        tab_track=tab_track.reshape(tab_track.shape[0],-1,tab_track.shape[3])
         tab_track=enc.encode(tab_track)
         tab_track=enc.encode_808(tab_track)
-        # tab_track=tab_track.reshape((-1,3,16,9))
         tab_track = tab_track.reshape((-1, 2, 16, 9))
         return tab,tab_track
 
