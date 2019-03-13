@@ -150,7 +150,7 @@ class TrainingSketchRnn:
              kld_sum / len(self.train_loader.dataset), loss_sum_test / len(self.test_loader.dataset)]).reshape((1,5))
 
 
-            self.loss_train_metrics = np.concatenate(self.loss_train_metrics, row)
+            self.loss_train_metrics = np.concatenate((self.loss_train_metrics, row))
 
 
         self.net=sketchrnn
