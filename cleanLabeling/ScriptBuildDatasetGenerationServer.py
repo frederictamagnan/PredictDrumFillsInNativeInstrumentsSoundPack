@@ -128,7 +128,9 @@ def build_generation_dataset(p, npz):
     if indexes_fills_cleaned.shape[0] == 0:
         return None
     else:
-
+        print(indexes_fills_cleaned)
+        print(indexes_fills_cleaned.shape)
+        print(vae.shape)
         # tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1],vae[indexes_fills_cleaned + 2]), axis=1)
         tab=np.concatenate((vae[indexes_fills_cleaned ],vae[indexes_fills_cleaned+1]), axis=1)
 
