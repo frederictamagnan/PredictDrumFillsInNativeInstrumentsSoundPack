@@ -112,7 +112,7 @@ def build_generation_dataset(p, npz):
     # mask_fills_cleaned =(label_previous_next_shape ==[0, 1]).all(axis=1)
     # indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
 
-    string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '')
+    string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '').replace('\n','')
     indexes_fills_cleaned = allindices(string, '01')
     indexes_fills_cleaned = np.asarray(indexes_fills_cleaned)
     if indexes_fills_cleaned.shape[0] == 0:

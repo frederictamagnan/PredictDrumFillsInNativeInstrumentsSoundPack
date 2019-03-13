@@ -120,7 +120,7 @@ def build_generation_dataset(p, npz):
     # indexes_fills_cleaned =np.argwhere(mask_fills_cleaned==True )
     print(label.shape)
     print(label)
-    string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '')
+    string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '').replace('\n','')
     print(string)
     print(len(string))
     indexes_fills_cleaned=allindices(string,'01')
