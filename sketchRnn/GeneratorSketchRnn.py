@@ -145,11 +145,19 @@ if __name__=='__main__':
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
 
 
+folder=['c','s','d']
+for i_name,name in enumerate(['Clustering','Supervised','Diff']):
+    for beta in [1,10,250]:
+
+        model_name='sketchrnn_'+name+'_'+str(beta)+'.pt'
+        temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'+folder[i_name]+'/'+str(beta)+'/'
+        g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+        g.count_parameters()
+        # g.generate(10,save=False)
+        g.generate(10, save=True)
 
 
-    g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
-    g.count_parameters()
-    # g.generate(10,save=False)
-    g.generate(10, save=True)
-
-
+# g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+#         g.count_parameters()
+#         # g.generate(10,save=False)
+#         g.generate(10, save=True)

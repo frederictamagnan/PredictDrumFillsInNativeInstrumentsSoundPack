@@ -26,7 +26,7 @@ class Metadata:
         self.metadata['velocity_metadata'] = self.velocity_metadata()
         self.metadata['reduced_drums']=self.batch_multitrack_reduced_808
         self.metadata['reduced_drums_velocity']=self.batch_multitrack_reduced_velocity_808
-
+        self.metadata['count']=self.count()
         for key in self.metadata.keys():
             self.metadata[key]=self.metadata[key].reshape((self.metadata[key].shape[0],-1))
 
