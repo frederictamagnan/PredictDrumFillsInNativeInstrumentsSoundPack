@@ -2,37 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Clustering_0.01.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Clustering_100.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Diff_0.01.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Diff_100.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Supervised_0.01.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Supervised_100.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_0.01.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_1.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_100.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_0.01.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_1.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_100.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_0.01.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_1.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_100.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_0.01.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_100.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_0.01.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_100.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_0.01.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_100.pt.npy" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
-      <change beforePath="$PROJECT_DIR$/models/sketchrnn_Clustering_1.pt" afterPath="$PROJECT_DIR$/models/sketchrnn_Clustering_1.pt" />
-      <change beforePath="$PROJECT_DIR$/models/sketchrnn_Diff_1.pt" afterPath="$PROJECT_DIR$/models/sketchrnn_Diff_1.pt" />
-      <change beforePath="$PROJECT_DIR$/models/sketchrnn_Supervised_1.pt" afterPath="$PROJECT_DIR$/models/sketchrnn_Supervised_1.pt" />
       <change beforePath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_0.01.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_1.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_100.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_0.01.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_1.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_100.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_0.01.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_1.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_100.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_0.01.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_1.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_10.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_100.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_250.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_0.01.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_1.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_10.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_100.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_250.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_0.01.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_1.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_10.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_100.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_250.pt.npy" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +36,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EvaluateSketchRnn.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1310">
+              <caret line="125" column="33" lean-forward="false" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -356,13 +361,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2690027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2690027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31141868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31083843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -741,16 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sketchRnn/SketchRnnDataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -786,6 +782,14 @@
           <folding>
             <element signature="e#0#12#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1310">
+          <caret line="125" column="33" lean-forward="false" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

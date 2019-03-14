@@ -115,7 +115,7 @@ if __name__=='__main__':
 
 folder=['c','s','d']
 for i_name,name in enumerate(['Clustering','Supervised','Diff']):
-    for beta in [0.01,10,250]:
+    for beta in [0.01,1,100]:
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted'+name+'.npz'
         indices_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/indices/indices_sketchrnn_'+name+'_'+str(beta)+'.pt.npz'
         model_name='sketchrnn_'+name+'_'+str(beta)+'.pt'
@@ -123,7 +123,7 @@ for i_name,name in enumerate(['Clustering','Supervised','Diff']):
         g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath,indices_path=indices_path)
         g.count_parameters()
         # g.generate(10,save=False)
-        g.generate(10, save=True)
+        g.generate(10, save=False)
 
 
 # g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
