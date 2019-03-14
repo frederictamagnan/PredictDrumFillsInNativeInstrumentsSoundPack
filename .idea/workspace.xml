@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/Metadata.py" afterPath="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
-      <change beforePath="$PROJECT_DIR$/evaluate/clusteringloss.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluate/diffloss.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluate/metrics_clustering.npz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluate/metrics_diff.npz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluate/metrics_sk.npz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluate/supervisedloss.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluate/train_metrics.py" afterPath="$PROJECT_DIR$/evaluate/train_metrics.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py" />
-    </list>
+    <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,21 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="372">
               <caret line="161" column="117" lean-forward="false" selection-start-line="161" selection-start-column="117" selection-end-line="161" selection-end-column="117" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_metrics.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="train_metrics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluate/train_metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+            <state relative-caret-position="649">
+              <caret line="41" column="20" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="41" selection-end-column="20" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -266,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GeneratorSketchRnn">
+  <component name="RunManager" selected="Python.train_metrics">
     <configuration name="ComputeMetadata" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -366,8 +354,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train_metrics" />
+        <item index="0" class="java.lang.String" itemvalue="Python.train_metrics" />
+        <item index="1" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn" />
         <item index="2" class="java.lang.String" itemvalue="Python.ComputeMetadata" />
         <item index="3" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
         <item index="4" class="java.lang.String" itemvalue="Python.evaluate" />
@@ -812,21 +800,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="161" column="117" lean-forward="false" selection-start-line="161" selection-start-column="117" selection-end-line="161" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evaluate/train_metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        <state relative-caret-position="649">
+          <caret line="41" column="20" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="41" selection-end-column="20" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn/TrainingSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="161" column="117" lean-forward="false" selection-start-line="161" selection-start-column="117" selection-end-line="161" selection-end-column="117" />
+          <folding />
         </state>
       </provider>
     </entry>
