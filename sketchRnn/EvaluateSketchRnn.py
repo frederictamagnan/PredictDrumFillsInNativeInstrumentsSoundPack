@@ -74,7 +74,7 @@ class GeneratorSketchRnn:
             y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
             y=self.train[:,1,:,:]
 
-            
+
             print(y_pred_cat.shape)
 
 

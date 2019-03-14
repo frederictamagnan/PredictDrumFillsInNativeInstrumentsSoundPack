@@ -2,70 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/.ScriptBuildDatasetGenerationServer.py.swp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ComputeMetadata.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ComputeMetadataLPD.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/DatasetBuilderOddgrooves.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/DnnDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/DnnNet.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/DrumReducerExpander.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ExploreLabelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/Labelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/Labelling_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/Labelling_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/Labelling_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/Labelling_sk.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/Metadata.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/MetadataTraining.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/MetadataVisualization.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptExploreMetricsFIles.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/ScriptServer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/TrainingClassifier.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/VaeDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/VaeEncoderDecoder_808_9.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/activity.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/activity.log.1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/fillClassifier" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/clf_fills.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/scaler.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat48_loss4E+01_tanh_gru32_e20_b256_hd16-2_20181212_105409.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn_2z.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn_batch_size.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn_custom_nine_v2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/temp/track_enc_dec.mid" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/temp/track_origin.mid" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils/utils.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Clustering_0.01.pt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Clustering_100.pt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Diff_0.01.pt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Diff_100.pt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Supervised_0.01.pt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/sketchrnn_Supervised_100.pt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_0.01.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_1.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Clustering_100.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_0.01.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_1.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Diff_100.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_0.01.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_1.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/indices_sketchrnn_Supervised_100.pt.npz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_0.01.pt.npy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_100.pt.npy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_0.01.pt.npy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_100.pt.npy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_0.01.pt.npy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_100.pt.npy" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/__init__.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/lol.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_1.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_10.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Clustering_250.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_1.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_10.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Diff_250.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_1.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_10.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/metrics_training_sketchrnn_Supervised_250.pt.npy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils.py" afterPath="$PROJECT_DIR$/sketchRnn/utils/utils2.py" />
+      <change beforePath="$PROJECT_DIR$/models/sketchrnn_Clustering_1.pt" afterPath="$PROJECT_DIR$/models/sketchrnn_Clustering_1.pt" />
+      <change beforePath="$PROJECT_DIR$/models/sketchrnn_Diff_1.pt" afterPath="$PROJECT_DIR$/models/sketchrnn_Diff_1.pt" />
+      <change beforePath="$PROJECT_DIR$/models/sketchrnn_Supervised_1.pt" afterPath="$PROJECT_DIR$/models/sketchrnn_Supervised_1.pt" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/__init__.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,76 +42,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EvaluateSketchRnn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SketchRnnDataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sketchRnn/SketchRnnDataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Metadata.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptExploreFills.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="102" lean-forward="false" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2716">
-              <caret line="151" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -257,11 +155,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="526" />
-    <option name="y" value="78" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="247" />
+    <option name="y" value="14" />
     <option name="width" value="1293" />
-    <option name="height" value="684" />
+    <option name="height" value="712" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -279,8 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,11 +193,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LabelDrumFills" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -457,15 +355,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="526" y="78" width="1293" height="684" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38592422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2690027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31141868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31141868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -590,13 +487,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn/lol.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn/lol.txt" />
     <entry file="file://$PROJECT_DIR$/sketchRnn/ScriptCheck.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -650,9 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="134" column="36" lean-forward="false" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -675,9 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -685,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2268">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="135" column="158" lean-forward="false" selection-start-line="135" selection-start-column="158" selection-end-line="135" selection-end-column="158" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="959">
           <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="99" column="41" lean-forward="false" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1674">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,9 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2500">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="96" lean-forward="false" selection-start-line="3" selection-start-column="96" selection-end-line="3" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,9 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,9 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1754">
           <caret line="159" column="46" lean-forward="false" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="161" column="117" lean-forward="false" selection-start-line="161" selection-start-column="117" selection-end-line="161" selection-end-column="117" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,9 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="649">
           <caret line="41" column="20" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="41" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -861,27 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
           <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2716">
-          <caret line="151" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,15 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="102" lean-forward="false" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +738,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="46" selection-end-column="5" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -922,17 +756,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py">
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
+        <state relative-caret-position="504">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="96" lean-forward="false" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="151" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#12#0" expanded="false" />
           </folding>
         </state>
       </provider>
