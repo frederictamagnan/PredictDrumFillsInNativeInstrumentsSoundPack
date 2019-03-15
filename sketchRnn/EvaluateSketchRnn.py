@@ -224,7 +224,7 @@ for i_name,name in enumerate(['Clustering','Supervised','Diff']):
 
     t_warmness=[]
     t_chi2=[]
-    for beta in [0.01,1,100]:
+    for beta in [0.001,0.01,1,100,250]:
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted'+name+'.npz'
         indices_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/indices/indices_sketchrnn_'+name+'_'+str(beta)+'.pt.npz'
         model_name='sketchrnn_'+name+'_'+str(beta)+'.pt'
