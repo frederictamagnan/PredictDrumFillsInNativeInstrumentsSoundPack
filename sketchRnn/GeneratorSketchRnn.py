@@ -96,7 +96,7 @@ class GeneratorSketchRnn:
         y=y_pred_cat.reshape((n,16, 9))
         print(y[0])
         # print(X[1, 0, :, :],"value")
-        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :], y,y,y),axis=1)
+        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y,X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y),axis=1)
         print(new.shape)
         # print(new[0].sum())
         new_dec=encoder.decode(new)
@@ -145,19 +145,19 @@ if __name__=='__main__':
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
 
 
-folder=['c','s','d']
-for i_name,name in enumerate(['Clustering','Supervised','Diff']):
-    for beta in [1,10,250]:
-
-        model_name='sketchrnn_'+name+'_'+str(beta)+'.pt'
-        temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'+folder[i_name]+'/'+str(beta)+'/'
-        g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
-        g.count_parameters()
-        # g.generate(10,save=False)
-        g.generate(10, save=True)
-
-
-# g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+# folder=['c','s','d']
+# for i_name,name in enumerate(['Clustering','Supervised','Diff']):
+#     for beta in [1,10,250]:
+#
+#         model_name='sketchrnn_'+name+'_'+str(beta)+'.pt'
+#         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'+folder[i_name]+'/'+str(beta)+'/'
+#         g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
 #         g.count_parameters()
 #         # g.generate(10,save=False)
 #         g.generate(10, save=True)
+
+
+g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+g.count_parameters()
+        # g.generate(10,save=False)
+g.generate(10, save=True)

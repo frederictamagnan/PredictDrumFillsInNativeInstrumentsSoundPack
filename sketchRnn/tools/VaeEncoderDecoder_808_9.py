@@ -1,9 +1,9 @@
 
 from models.vae_rnn_custom_nine_v2 import *
-from VaeDataset import VaeEncodeDataset
-from VaeDataset import VaeDecodeDataset
+from tools.VaeDataset import VaeEncodeDataset
+from tools.VaeDataset import VaeDecodeDataset
 import torch.utils.data as Data
-from utils import tensor_to_numpy
+from tools.utils import tensor_to_numpy
 import torch
 class VaeEncoderDecoder:
 

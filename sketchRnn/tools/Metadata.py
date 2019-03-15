@@ -1,6 +1,6 @@
 from DrumReducerExpander import DrumReducerExpander
 from models.vae_rnn_custom_nine_v2 import *
-from VaeEncoderDecoder_808_9 import VaeEncoderDecoder
+from tools.VaeEncoderDecoder_808_9 import VaeEncoderDecoder
 class Metadata:
 
 

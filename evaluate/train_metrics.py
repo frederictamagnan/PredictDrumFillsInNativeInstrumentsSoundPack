@@ -7,8 +7,8 @@ sns.set()
 
 def training_overview():
     for beta in [1,10,250]:
-        for name in ['c','s','d']:
-            data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/beta/metrics_'+name+'_'+str(beta)+'.pt.npy')
+        for name in ['Clustering','Supervised','Diff']:
+            data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/beta/metrics_training_sketchrnn_'+name+'_'+str(beta)+'.pt.npy')
             # dataset = pd.DataFrame({'Epochs': data[:, 0],'Train Loss': data[:, 1], 'BCE': data[:, 2],'kld': data[:, 3],'Test Loss': data[:, 4]}
             # dataset = pd.DataFrame({'BCE': data[:, 2],'kld': data[:, 3],'Test Loss': data[:, 4]})
 
@@ -17,17 +17,17 @@ def training_overview():
             # np.savetxt(name+'_'+str(beta)+'loss.csv',a,delimiter=';',newline='\n',fmt="%s")
             overall = pd.DataFrame({'Train Loss': data[:, 1], 'BCE': data[:, 2],'kld': data[:, 3],'Test Loss': data[:, 4]})
             ax = sns.lineplot( data=overall)
-            fig=ax.fig
+
 
 
             plt.show()
 names=['Clustering','Supervised','Rule Based']
 metrics=['Train Loss','BCE','kld','Test Loss']
 def influence_beta():
-    for i_name,name in enumerate(['c','s','d']):
+    for i_name,name in enumerate(['Clustering','Supervised','Diff']):
         list_df = [pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame()]
-        for beta in [1,10,250]:
-            data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/beta/metrics_'+name+'_'+str(beta)+'.pt.npy')
+        for beta in [0.01,1,100]:
+            data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/beta/metrics_training_sketchrnn_'+name+'_'+str(beta)+'.pt.npy')
             for i,elt in enumerate(['Train Loss','BCE','kld','Test Loss']):
                 list_df[i]['beta='+str(beta)]=data[:,i+1]
 
@@ -39,4 +39,5 @@ def influence_beta():
 
 
 if __name__=='__main__':
+    training_overview()
     influence_beta()

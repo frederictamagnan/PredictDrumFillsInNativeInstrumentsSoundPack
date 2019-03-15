@@ -1,7 +1,7 @@
 import numpy as np
 from pypianoroll import Track,Multitrack
 import pypianoroll as ppr
-from utils import random_file
+
 import random
 random.seed(11)
 DEFAULT_DRUM_TYPE_PITCHES = [
