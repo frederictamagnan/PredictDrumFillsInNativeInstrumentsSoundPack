@@ -2,61 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/tools/scaler.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn/utils.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/evaluate/train_metrics.py" afterPath="$PROJECT_DIR$/evaluate/train_metrics.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py" />
       <change beforePath="$PROJECT_DIR$/sketchRnn/ScriptTrainingBeta.py" afterPath="$PROJECT_DIR$/sketchRnn/ScriptTrainingBeta.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/.ScriptBuildDatasetGenerationServer.py.swp" afterPath="$PROJECT_DIR$/sketchRnn/tools/.ScriptBuildDatasetGenerationServer.py.swp" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ComputeMetadata.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ComputeMetadata.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ComputeMetadataLPD.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ComputeMetadataLPD.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/DatasetBuilderOddgrooves.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/DatasetBuilderOddgrooves.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/DnnDataset.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/DnnDataset.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/DnnNet.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/DnnNet.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/DrumReducerExpander.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/DrumReducerExpander.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ExploreLabelling.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ExploreLabelling.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/Labelling.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/Labelling.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/Labelling_clustering.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/Labelling_clustering.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/Labelling_diff.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/Labelling_diff.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/Labelling_explicit.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/Labelling_explicit.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/Labelling_sk.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/Labelling_sk.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/Metadata.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/Metadata.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/MetadataTraining.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/MetadataTraining.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/MetadataVisualization.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/MetadataVisualization.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptBuildDatasetGenerationServer.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer_clustering.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptBuildDatasetGenerationServer_clustering.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer_diff.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptBuildDatasetGenerationServer_diff.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptBuildDatasetGenerationServer_explicit.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptBuildDatasetGenerationServer_explicit.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptExploreMetricsFIles.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptExploreMetricsFIles.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptLabelling.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling_clustering.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptLabelling_clustering.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling_diff.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptLabelling_diff.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptLabelling_explicit.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptLabelling_explicit.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/ScriptServer.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/ScriptServer.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/TrainingClassifier.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/TrainingClassifier.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/VaeDataset.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/VaeDataset.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/VaeEncoderDecoder_808_9.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/VaeEncoderDecoder_808_9.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/activity.log" afterPath="$PROJECT_DIR$/sketchRnn/tools/activity.log" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/activity.log.1" afterPath="$PROJECT_DIR$/sketchRnn/tools/activity.log.1" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/fillClassifier" afterPath="$PROJECT_DIR$/sketchRnn/tools/fillClassifier" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/__init__.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/clf_fills.pkl" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/clf_fills.pkl" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/scaler.pkl" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/scaler.pkl" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat48_loss4E+01_tanh_gru32_e20_b256_hd16-2_20181212_105409.pt" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_L1E-02_beta2E+01_beat48_loss4E+01_tanh_gru32_e20_b256_hd16-2_20181212_105409.pt" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_rnn.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn_2z.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_rnn_2z.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn_batch_size.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_rnn_batch_size.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/models/vae_rnn_custom_nine_v2.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/models/vae_rnn_custom_nine_v2.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/temp/track_enc_dec.mid" afterPath="$PROJECT_DIR$/sketchRnn/tools/temp/track_enc_dec.mid" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/temp/track_origin.mid" afterPath="$PROJECT_DIR$/sketchRnn/tools/temp/track_origin.mid" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/utils.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/utils.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn/utils/utils2.py" afterPath="$PROJECT_DIR$/sketchRnn/tools/utils2.py" />
-      <change beforePath="$PROJECT_DIR$/sklearn/warmness.pkl" afterPath="$PROJECT_DIR$/sketchRnn/tools/warmness.pkl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/sketchRnn/ScriptTrainingBeta.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -103,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="98" column="128" lean-forward="true" selection-start-line="98" selection-start-column="128" selection-end-line="98" selection-end-column="128" />
+              <caret line="98" column="128" lean-forward="false" selection-start-line="98" selection-start-column="128" selection-end-line="98" selection-end-column="128" />
               <folding />
             </state>
           </provider>
@@ -879,7 +826,7 @@
     <entry file="file://$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="98" column="128" lean-forward="true" selection-start-line="98" selection-start-column="128" selection-end-line="98" selection-end-column="128" />
+          <caret line="98" column="128" lean-forward="false" selection-start-line="98" selection-start-column="128" selection-end-line="98" selection-end-column="128" />
           <folding />
         </state>
       </provider>
@@ -905,7 +852,7 @@
     <entry file="file://$PROJECT_DIR$/sketchRnn/ScriptTrainingBeta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
