@@ -1,0 +1,5 @@
+torch==0.4.1
+numpy==1.15.1
+matplotlib==2.1.2
+pypianoroll==0.5.0
+scikit_learn==0.20.3

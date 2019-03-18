@@ -19,7 +19,7 @@ import torch
 
 class GeneratorSketchRnn:
 
-    def __init__(self,model_path,model_name,dataset_path,tags_path,temp_filepath,indices_path):
+    def __init__(self,model_path,model_name,dataset_path,tags_path,temp_filepath,indices_path,tag):
         self.temp_filepath=temp_filepath
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
@@ -36,8 +36,10 @@ class GeneratorSketchRnn:
         self.linear_hidden_size=[64,32]
         self.gru_hidden_size=64
         self.indices_path=indices_path
-        max=10
+        self.tag=tag
+        max=325
         factor=1
+        offset=0
         torch.manual_seed(0)
         np.random.seed(0)
         self.load_model(batch_size=max*factor)
@@ -46,12 +48,32 @@ class GeneratorSketchRnn:
         indices = dict(np.load(self.indices_path))
         dataset = dataset['track_array']
 
-        self.train = np.tile(dataset[indices['train']][:max],(factor,1,1,1))
-        self.validation =np.tile( dataset[indices['validation']][:max],(factor,1,1,1))
+        #train validation creation from indices
+        self.train=dataset[indices['train']]
+        self.validation=dataset[indices['validation']]
+
+
+        #Filter
+        self.train = self.filter(self.train)
+        self.validation = self.filter(self.validation)
+
+
+        #multiplication
+        self.train = np.tile(self.train[offset:max+offset],(factor,1,1,1))
+        self.validation =np.tile( self.validation[offset:max+offset],(factor,1,1,1))
+
+        #shuffle
+        np.random.shuffle(self.train)
+        np.random.shuffle(self.validation)
+
+
+
+
+        print(self.train.shape,self.validation.shape,'FILTER SHAPE')
         # self.train = dataset[indices['train']][:max]
         # self.validation = dataset[indices['validation']][:max]
         self.count_parameters()
-        print(self.train[1][0][0],self.validation[1][0][0],"LOAD DATASET")
+
 
 
         self.clf = joblib.load('./tools/warmness.pkl')
@@ -74,8 +96,7 @@ class GeneratorSketchRnn:
         self.model.load_state_dict(torch.load(self.model_path + self.model_name, map_location="cuda" if self.use_cuda else "cpu"))
 
 
-    def generate(self,save=True):
-
+    def generate(self,save=False):
 
         for i_dataset,dataset in enumerate([self.train,self.validation]):
             X_dataset=SketchRnnDataset(numpy_array=dataset,inference=True,use_cuda=self.use_cuda)
@@ -89,9 +110,9 @@ class GeneratorSketchRnn:
                     y_pred_cat = (y_pred >0.15)
 
             self.y_gen=tensor_to_numpy(y_pred_cat).astype(int)
-            self.y_or=self.train[:,1,:,:]
-            self.x_or = self.train[:, 0, :, :]
-            # print(y_pred_cat.shape)
+            self.y_or=(self.train[:,1,:,:]>0)*1
+            self.x_or = (self.train[:, 0, :, :]>0)*1
+            print(self.y_gen.shape,self.y_or.shape,self.x_or.shape,"GEN")
 
         if save:
             encoder=DrumReducerExpander()
@@ -100,7 +121,7 @@ class GeneratorSketchRnn:
             new_dec = encoder.decode_808(new_dec)
 
             for i in range(len(new_dec)):
-                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath + "_new",str(i)+'_'+str(time.time()))
+                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath +self.tag+ "_new",str(i)+'_')
 
 
 
@@ -110,9 +131,9 @@ class GeneratorSketchRnn:
         dist_x_or = self.x_or.reshape((-1, 9))
         dist_y_gen=self.y_gen.reshape((-1,9))
         dist_y_or=self.y_or.reshape((-1,9))
-
-        # dist_y_gen = self.y_gen.reshape((-1, 9))[:,4:8]
-        # dist_y_or = self.y_or.reshape((-1, 9))[:,4:8]
+        print(dist_x_or.sum(),dist_y_gen.sum(),dist_y_or.sum(),"SUM")
+        dist_y_gen = self.y_gen.reshape((-1, 9))[:,4:8]
+        dist_y_or = self.y_or.reshape((-1, 9))[:,4:8]
         # dist_y_gen=(dist_y_gen-dist_x_or>0)*1
         # dist_y_or=(dist_y_or-dist_x_or>0)*1
 
@@ -134,7 +155,7 @@ class GeneratorSketchRnn:
         # list_gen=list_gen/dist_y_gen.sum()
         # list_or=list_or/dist_y_or.sum()
         # list_x_or=list_x_or/dist_x_or.sum()
-        # print(list_gen,list_or,list_x_or)
+        print(list_gen,list_or,list_x_or)
 
         chisq,pvalue=chisquare(list_gen,f_exp=list_or)
 
@@ -145,6 +166,9 @@ class GeneratorSketchRnn:
         # statt,pvalue=stats.wilcoxon(list_gen,list_or)
 
         # print(pvalue)
+        arr=np.asarray([list_or,list_x_or])
+        chi2,pvalue,dof,expected=stats.chi2_contingency(arr)
+
         return pvalue
 
 
@@ -173,6 +197,13 @@ class GeneratorSketchRnn:
 
         return warmness
 
+    def filter(self,dataset,n=5):
+        print(dataset.shape)
+        sumi=dataset[:,0,:,:]
+        sumi = sumi.reshape((sumi.shape[0], 16 * 9))
+        sumi = np.sum(sumi, axis=1)
+        dataset = dataset[np.where(sumi > n)]
+        return dataset
 
 
 
@@ -230,7 +261,7 @@ for i_name,name in enumerate(['Clustering','Supervised','Diff']):
         model_name='sketchrnn_'+name+'_'+str(beta)+'.pt'
         # temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'+folder[i_name]+'/'+str(beta)+'/'
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
-        g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath,indices_path=indices_path)
+        g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath,indices_path=indices_path,tag="_"+str(beta)+"_"+name+"_")
         g.count_parameters()
         # g.generate(10,save=False)
         g.generate()
@@ -244,8 +275,8 @@ for i_name,name in enumerate(['Clustering','Supervised','Diff']):
     row_testchi2.append(t_chi2)
 
 
-df_w = pd.DataFrame(row_warmness, columns = ['0.01','1','100'], index=['Clustering','Supervised','Diff'])
-df_t = pd.DataFrame(row_testchi2, columns = ['0.01','1','100'], index=['Clustering','Supervised','Diff'])
+df_w = pd.DataFrame(row_warmness, columns = ['0.001','0.01','1','100','250'], index=['Clustering','Supervised','Diff'])
+df_t = pd.DataFrame(row_testchi2, columns = ['0.001','0.01','1','100','250'], index=['Clustering','Supervised','Diff'])
 
 print("Original Dataframe" , df_w, sep='\n')
 print("Original Dataframe" , df_t, sep='\n')
