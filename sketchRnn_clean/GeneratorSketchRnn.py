@@ -44,9 +44,9 @@ class GeneratorSketchRnn:
         print(params,"beta vae parameters")
 
     def load_model(self,batch_size):
-        encoder = SketchEncoder(batch_size=10,linear_hidden_size=self.linear_hidden_size, gru_hidden_size=self.gru_hidden_size).to(
+        encoder = SketchEncoder(batch_size=batch_size,linear_hidden_size=self.linear_hidden_size, gru_hidden_size=self.gru_hidden_size).to(
             self.device)
-        decoder = SketchDecoder(batch_size=10,linear_hidden_size=self.linear_hidden_size).to(self.device)
+        decoder = SketchDecoder(batch_size=batch_size,linear_hidden_size=self.linear_hidden_size).to(self.device)
         self.model = SketchRnnNet(encoder, decoder).to(self.device)
         self.model.eval()
         print("GOOD")
@@ -115,6 +115,67 @@ class GeneratorSketchRnn:
 
 
 
+    def generate_from(self,array,tag,save=True,th=0.15):
+        n=len(array)
+        self.load_model(batch_size=n)
+        encoder = DrumReducerExpander()
+        X=encoder.encode(array)
+        X=encoder.encode_808(X)
+        X=X.reshape((X.shape[0],1,16,9))
+        X_dataset=SketchRnnDataset(numpy_array=X,inference=True,use_cuda=self.use_cuda)
+        X_loader=torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
+                                                             shuffle=False,drop_last=True)
+        with torch.no_grad():
+            for i, (x) in enumerate(X_loader):
+                x = Variable(x).float()
+                y_pred = self.model(x)
+                y_pred_cat = (y_pred >th)
+        y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
+        y=y_pred_cat.reshape((n,16, 9))
+        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :], y,X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y),axis=1)
+        new_dec=encoder.decode(new)
+        new_dec=encoder.decode_808(new_dec)
+
+        if save==True:
+            for i in range(len(X)):
+                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, str(i) + "_new"+tag)
+
+
+    def generate_long(self,tag,array,n=10,save=True,th=0.30):
+        self.load_model(batch_size=1)
+        encoder = DrumReducerExpander()
+
+        list_x=[]
+        X = encoder.encode(array,no_batch=True)
+        X = encoder.encode_808(X,no_batch=True)
+
+        list_x.append(X)
+        print(X.shape,"X SHAPE 0")
+        for i in range(n):
+            X = X.reshape((1, 1, 16, 9))
+            X_dataset = SketchRnnDataset(numpy_array=X, inference=True, use_cuda=self.use_cuda)
+            X_loader = torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
+                                                   shuffle=False, drop_last=False)
+
+            with torch.no_grad():
+                for i, (x) in enumerate(X_loader):
+                    x = Variable(x).float()
+                    y_pred = self.model(x)
+                    y_pred_cat = (y_pred >th)
+            y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
+            y_pred_cat=y_pred_cat.reshape((16,9))
+            list_x.append(y_pred_cat),
+            X=y_pred_cat
+            print(X.shape,"X SHAPE")
+
+        new=np.concatenate(list_x,axis=0)
+        print(new.shape,"NEWWWW")
+        new_dec = encoder.decode(new,no_batch=True)
+        new_dec = encoder.decode_808(new_dec,no_batch=True)
+
+        if save == True:
+
+            numpy_drums_save_to_midi(new_dec, self.temp_filepath, str(i) + "_new" + tag)
 
 
 
@@ -157,7 +218,7 @@ if __name__=='__main__':
 #         g.generate(10, save=True)
 
 
-g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
-g.count_parameters()
-        # g.generate(10,save=False)
-g.generate(10, save=True)
+    g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+    g.count_parameters()
+            # g.generate(10,save=False)
+    g.generate(10, save=True)

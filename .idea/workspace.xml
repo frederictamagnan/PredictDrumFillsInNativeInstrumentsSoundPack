@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn_clean/ScriptGenerateSame.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sketchRnn_clean/ScriptIntersect.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/GeneratorSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn_clean/GeneratorSketchRnn.py" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Clustering_0.01_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Clustering_0.1_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Clustering_100_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Clustering_1_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Clustering_250_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Diff_0.01_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Diff_0.1_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Diff_100_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Diff_1_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Diff_250_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Supervised_0.01_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Supervised_0.1_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Supervised_100_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Supervised_1_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/metrics_training_sketchrnn_Supervised_250_cleaned.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/trainingSketchRnn.ipynb" afterPath="$PROJECT_DIR$/sketchRnn_clean/trainingSketchRnn.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +35,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zAILabs/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#1#42#0" expanded="true" />
               </folding>
@@ -26,66 +44,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sketchRnn_clean/TrainingSketchRnn.py">
+      <file leaf-file-name="ScriptGenerateSame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sketchRnn_clean/ScriptGenerateSame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="347">
+              <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainingSketchRnn.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sketchRnn_clean/trainingSketchRnn.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptExploreFills.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/GeneratorSketchRnn.py">
+        <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/sketchRnn_clean/GeneratorSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="64" column="15" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="15" />
+            <state relative-caret-position="126">
+              <caret line="170" column="40" lean-forward="false" selection-start-line="170" selection-start-column="40" selection-end-line="170" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vae_rnn_custom_nine_v2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zAILabs/classifier/utils/vae_rnn_custom_nine_v2.py">
+      <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sketchRnn_clean/GeneratorSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            <state relative-caret-position="154">
+              <caret line="143" column="31" lean-forward="false" selection-start-line="143" selection-start-column="31" selection-end-line="143" selection-end-column="31" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VaeDataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zAILabs/classifier/utils/VaeDataset.py">
+      <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/GeneratorSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="774">
+              <caret line="64" column="15" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -96,26 +93,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SketchRnnDataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/SketchRnnDataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SketchRnnNet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/SketchRnnNet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="10" selection-end-line="117" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -180,10 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/drumGeneration/Generator_rnn_2.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/TrainingGeneratorRnn.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/MetadataTraining.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_diff.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_clustering.py" />
@@ -231,10 +204,14 @@
         <option value="$PROJECT_DIR$/zAILabs/sketchRnn/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/zAILabs/main.py" />
         <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+        <option value="$PROJECT_DIR$/sketchRnn_clean/ScriptIntersect.py" />
+        <option value="$PROJECT_DIR$/sketchRnn_clean/GeneratorSketchRnn.py" />
+        <option value="$PROJECT_DIR$/sketchRnn_clean/ScriptGenerateSame.py" />
+        <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/sketchRnn_clean/GeneratorSketchRnn.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="183" />
     <option name="y" value="44" />
     <option name="width" value="1291" />
@@ -267,23 +244,51 @@
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="cleanLabeling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="cleanLabeling" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="drumGeneration" type="462c0819:PsiDirectoryNode" />
+              <item name="sketchRnn_clean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="zAILabs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="zAILabs" type="462c0819:PsiDirectoryNode" />
+              <item name="classifier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="zAILabs" type="462c0819:PsiDirectoryNode" />
+              <item name="classifier" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="zAILabs" type="462c0819:PsiDirectoryNode" />
+              <item name="classifier" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="zAILabs" type="462c0819:PsiDirectoryNode" />
+              <item name="sketchRnn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
+              <item name="zAILabs" type="462c0819:PsiDirectoryNode" />
+              <item name="sketchRnn" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,43 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ScriptExploreFills">
-    <configuration name="Metadata (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zAILabs/classifier/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zAILabs/classifier/utils/Metadata.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Metadata" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/DrumFillsNI/zAILabs/classifier/utils" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/DrumFillsNI/zAILabs/classifier/utils/Metadata.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.ScriptGenerateSame">
     <configuration name="ScriptExploreFills" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -375,6 +344,42 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ScriptGenerateSame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sketchRnn_clean" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sketchRnn_clean/ScriptGenerateSame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ScriptIntersect" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sketchRnn_clean" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sketchRnn_clean/ScriptIntersect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -418,18 +423,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.classifier" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Metadata" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Metadata (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.main" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ScriptIntersect" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ScriptGenerateSame" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.classifier" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Metadata (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Metadata" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ScriptGenerateSame" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ScriptIntersect" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+        <item index="3" class="java.lang.String" itemvalue="Python.main" />
+        <item index="4" class="java.lang.String" itemvalue="Python.classifier" />
       </list>
     </recent_temporary>
   </component>
@@ -450,14 +455,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="183" y="44" width="1291" height="676" extended-state="1" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.61192876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4043044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53333336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24174175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -516,42 +522,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="98" column="128" lean-forward="false" selection-start-line="98" selection-start-column="128" selection-end-line="98" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn/DrumReducerExpander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3892">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/zAILabs/sketchRnn/DrumReducerExpander.py" />
-    <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/utils/DrumReducerExpander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3032">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-962">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/VaeDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/VaeEncoderDecoder_808_9.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -810,7 +780,112 @@
         <state relative-caret-position="810">
           <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/SketchRnnDataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/SketchRnnNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="10" selection-end-line="117" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/ScriptIntersect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/TrainingSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/trainingSketchRnn.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/EvaluateSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="268" column="35" lean-forward="true" selection-start-line="268" selection-start-column="35" selection-end-line="268" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#12#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/ScriptTrainingBeta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/GeneratorSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="143" column="31" lean-forward="false" selection-start-line="143" selection-start-column="31" selection-end-line="143" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/ScriptGenerateSame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/sketchRnn_clean/GeneratorSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="170" column="40" lean-forward="false" selection-start-line="170" selection-start-column="40" selection-end-line="170" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zAILabs/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,62 +900,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/GeneratorSketchRnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
+        <state relative-caret-position="774">
           <caret line="64" column="15" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/SketchRnnDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zAILabs/sketchRnn/SketchRnnNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="10" selection-end-line="117" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zAILabs/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/TrainingSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn_clean/trainingSketchRnn.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
