@@ -29,11 +29,27 @@ tr=tr>0
 #         if i>30:
 #             break
 
-sumi=tr.reshape((tr.shape[0],32*9))
-sumi=np.sum(sumi,axis=1)
-tr_f=tr[np.where(sumi>10)]
-print(sumi.shape)
-print(tr_f.shape)
+minn=7
+for name in ['Clustering','Supervised','Diff']:
+    data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted'+name+'.npz')
+    data=dict(data)
+    tr=data['track_array']
+    tr=tr>0
+    regular=tr[:,0,:,:].reshape((tr.shape[0],16*9))
+    fill=tr[:,1,:,:].reshape((tr.shape[0],16*9))
+    regular_sum=np.sum(regular,axis=1)
+    fill_sum=np.sum(fill,axis=1)
+    indices=np.argwhere(np.logical_and(regular_sum>minn, fill_sum>minn))
+    tr_f=tr[indices]
+    print(tr.shape)
+    print(tr_f.shape)
+
+    for key in data.keys():
+        data[key]=data[key][indices]
+
+    np.savez('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted'+name+'_cleaned.npz',**data)
+
+
 
 
 
