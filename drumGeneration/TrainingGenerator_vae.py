@@ -108,4 +108,4 @@ if __name__=="__main__":
     tg.load_data()
     tg.split_data()
     tg.train_model()
-    tg.save_model("./../models/",'vae_generation.pt')
+    # tg.save_model("./../models/",'vae_generation.pt')

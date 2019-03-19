@@ -29,6 +29,6 @@ for i_name,name in enumerate(['Clustering','Supervised','Diff']):
         array=array['X']
         np.random.seed(8)
         np.random.shuffle(array)
-        array=array[:10]
+        array=array[320:500]
         # g.generate_from(array,tag="_"+name+'_'+str(beta),th=0.3)
         g.generate_long("_"+name+'_long'+str(beta),array[0])

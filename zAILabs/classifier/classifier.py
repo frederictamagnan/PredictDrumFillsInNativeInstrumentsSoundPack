@@ -1,8 +1,14 @@
 from classifier.utils.Metadata import Metadata
+from classifier.utils.Metadata import DrumReducerExpander
 import numpy as np
 from sklearn.externals import joblib
 
-def predict(array):
+def predict(array,reduced=False):
+
+    if reduced:
+        enc=DrumReducerExpander()
+        array=enc.decode(array,no_batch=True)
+
     clf = joblib.load('./classifier/utils/models/warmness.pkl')
 
     scaler = joblib.load('./classifier/utils/models/scaler.pkl')

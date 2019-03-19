@@ -11,13 +11,13 @@ import torch.utils.data
 
 class GeneratorSketchRnn:
 
-    def __init__(self):
+    def __init__(self,model_name="sketch_rnn.pt"):
 
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
 
         self.model_path = "./sketchRnn/model/"
-        self.model_name = "sketch_rnn.pt"
+        self.model_name = model_name
         self.linear_hidden_size=[64,32]
         self.gru_hidden_size=64
 
@@ -59,7 +59,7 @@ class GeneratorSketchRnn:
             for i, (x) in enumerate(X_loader):
                 x = Variable(x).float()
                 y_pred = self.model(x)
-                y_pred_cat = (y_pred >0.15)
+                y_pred_cat = (y_pred >0.30)
 
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         # print(new[0].sum())
