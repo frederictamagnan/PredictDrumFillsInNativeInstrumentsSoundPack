@@ -1,4 +1,4 @@
-    import numpy as np
+import numpy as np
 import torch
 from torch.autograd import Variable
 from torch import optim
@@ -10,18 +10,19 @@ from matplotlib import pyplot as plt
 '''
 Constants
 '''
-# BATCH_SIZE = 256
+BATCH_SIZE = 256
 NUM_FEATURES = 9 # original: 128, trimmed: 47 (34 - 81)
-SEQ_LEN = 16
-BEAT = 16
+SEQ_LEN = 96
+BEAT = 48
 NUM_BARS = 1
 NUM_BEATS_PER_BAR = 4
 NUM_DIRECTIONS = 2
 # GRU_HIDDEN_SIZE = 16
-GRU_HIDDEN_SIZE = 64
+GRU_HIDDEN_SIZE = 32
 # GRU_HIDDEN_SIZE = 256
 # 1.
 LINEAR_HIDDEN_SIZE = [64, 32]
+# LINEAR_HIDDEN_SIZE = [4, 1]
 # 2.
 # LINEAR_HIDDEN_SIZE = [128, 64]
 # 3.
@@ -50,7 +51,7 @@ else:
 
 class Encoder(torch.nn.Module):
 
-    def __init__(self,batch_size=256):
+    def __init__(self):
         super(Encoder, self).__init__()
         self.gru = torch.nn.GRU(
             input_size=NUM_FEATURES,
@@ -60,7 +61,7 @@ class Encoder(torch.nn.Module):
             batch_first=True,
             bidirectional=True,
         )
-        self.batch_size=batch_size
+        
         self.gru_out_dim = SEQ_LEN * GRU_HIDDEN_SIZE * NUM_DIRECTIONS
         self.bn0 = torch.nn.BatchNorm1d(self.gru_out_dim)
         self.linear0 = torch.nn.Linear(
@@ -74,7 +75,7 @@ class Encoder(torch.nn.Module):
         
         x, _ = self.gru(x, None)
         x = x.contiguous().view(
-            self.batch_size,
+            BATCH_SIZE,
             self.gru_out_dim)
         x = self.bn0(x)
         x = activation_function(self.linear0(x))
@@ -85,10 +86,10 @@ class Encoder(torch.nn.Module):
 
 class Decoder(torch.nn.Module):
 
-    def __init__(self, beat=BEAT,batch_size=256):
+    def __init__(self, beat=BEAT):
         super(Decoder, self).__init__()
         self.beat = beat
-        self.batch_size=batch_size
+
         self.gru_in_dim = SEQ_LEN * NUM_FEATURES
         self.linear0 = torch.nn.Linear(
             LINEAR_HIDDEN_SIZE[1],
@@ -114,23 +115,20 @@ class Decoder(torch.nn.Module):
         x = activation_function_out(self.bn0(self.linear0(x)))
         hn = torch.zeros(
             1,
-            self.batch_size, NUM_FEATURES
+            BATCH_SIZE, NUM_FEATURES
         )
         
         x = x.contiguous().view(
-            self.batch_size,
+            BATCH_SIZE,
             SEQ_LEN,
             NUM_FEATURES)
         n_sections = SEQ_LEN // self.beat
         b = self.beat
-        #for i in range(n_sections):
-        x, hn = self.gru(x, hn)
-        x = self.bn1(x)
-#         out = self.bn2(self.linear1(x[:,:b,:]))
-        out = self.bn2(self.linear1(x))
-        melody = torch.sigmoid(out)
-
-#             melody[:,b*i:b*(i+1),:] = torch.sigmoid(out)
+        for i in range(n_sections):
+            x, hn = self.gru(x, hn)
+            x = self.bn1(x)
+            out = self.bn2(self.linear1(x[:,:b,:]))
+            melody[:,b*i:b*(i+1),:] = torch.sigmoid(out)
 
         melody = activation_function_out(melody)
         return melody
@@ -139,13 +137,10 @@ class Decoder(torch.nn.Module):
 class VAE(torch.nn.Module):
 
 
-    def __init__(self, encoder, decoder,batch_size=256):
+    def __init__(self, encoder, decoder):
         super(VAE, self).__init__()
-        self.batch_size=batch_size
         self.encoder = encoder
         self.decoder = decoder
-        self.encoder.batch_size=self.batch_size
-        self.decoder.batch_size=self.batch_size
         self._enc_mu = torch.nn.Linear(
             LINEAR_HIDDEN_SIZE[0],
             LINEAR_HIDDEN_SIZE[1])
@@ -172,6 +167,7 @@ class VAE(torch.nn.Module):
     def forward(self, state):
         h_enc = self.encoder(state)
         z = self._sample_latent(h_enc)
+        print(z.shape,"LATENT SHAPE")
         output = self.decoder(z)
 
         return output

@@ -136,11 +136,11 @@ class SketchRnnNet(nn.Module):
         """
         mu = self._enc_mu(h_enc)
         log_sigma = self._enc_log_sigma(h_enc)
-        sigma = torch.exp(log_sigma)
+        sigma = torch.exp(log_sigma/2)
         std_z = torch.from_numpy(
             np.random.normal(0, 1, size=sigma.size())
         ).float()
-
+        self.z_log_sigma=log_sigma
         self.z_mean = mu
         self.z_sigma = sigma
 
@@ -157,7 +157,7 @@ class SketchRnnNet(nn.Module):
 
 
 
-def elbo(recon_tracks, tracks, mu, sigma, beta=0.5):
+def elbo(recon_tracks, tracks, mu, logvar, beta=0.5):
     """
     Args:
         recon_x: generating images
@@ -171,6 +171,7 @@ def elbo(recon_tracks, tracks, mu, sigma, beta=0.5):
         reduction='sum',
     )
     # KLD = beta * torch.sum(mu * mu + sigma.exp() - sigma - 1)
-    KLD = torch.sum(mu * mu + sigma.exp() - sigma - 1)
+    # KLD = torch.sum(mu * mu + sigma.exp() - sigma - 1)
+    KLD=-0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
     return BCE + KLD * beta, BCE, KLD
 

@@ -4,7 +4,7 @@ names = ['min adj','max adj','mean_adj','count','on 4th beat']
 
 xticks = [i for i in range(len(names))]
 
-data_raw=np.load('metrics_diff.npz')
+data_raw=np.load('metrics_diff_10.npz')
 data=dict(data_raw)
 
 
