@@ -12,4 +12,4 @@ for beta in [0.01,0.1,1,100,250]:
         tg.load_data()
         tg.split_data()
         tg.train_model()
-        tg.save_model("./../models/",'sketchrnn_'+name+'_'+str(beta)+'_cleaned.pt')
+        tg.save_model("./../models/",'sketchrnn_'+name+'_'+str(beta)+'_kld.pt')
