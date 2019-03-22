@@ -142,8 +142,9 @@ class SketchRnnNet(nn.Module):
         ).float()
         self.z_log_sigma=log_sigma
         self.z_mean = mu
+        tensor = torch.ones((2,), dtype=torch.float32)
+        sigma=tensor.new_full((32,),5,dtype=torch.float32)
         self.z_sigma = sigma
-
         return mu + sigma * Variable(std_z, requires_grad=False).to(self.device)
 
     def forward(self, x):

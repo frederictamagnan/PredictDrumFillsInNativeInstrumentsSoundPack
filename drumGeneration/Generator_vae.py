@@ -91,7 +91,7 @@ class Generator:
         array_vae=array_vae[1:]
         # array_vae=array_vae.reshape((array_vae.shape[0],3,32,2))
         array_vae=array_vae.reshape((array_vae.shape[0],2,32,2))
-        array_vae[:,:,:,1]=0.05
+        # array_vae[:,:,:,1]=0.05
 
         X_dataset=DrumsDataset(numpy_array=array_vae,genre=genre,inference=True,use_cuda=self.use_cuda)
         X_loader=torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
@@ -104,6 +104,7 @@ class Generator:
 
         y_pred=tensor_to_numpy(y_pred)
         y_pred=y_pred.reshape((y_pred.shape[0],32,2))
+        y_pred[:,:,1]=0.05
         # y_pred[:,:,1]=1
         # print(y_pred[0])
         drums_reduced=decoderVAE.decode_to_reduced_drums(y_pred)
@@ -112,7 +113,7 @@ class Generator:
 
         l=drums_reduced.shape[0]
         # threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*5,number_notes_max=l*15)
-        drums_reduced=drums_reduced>0.75  #0.76159416
+        drums_reduced=drums_reduced>0.76159416  #0.76159416
         np.save(self.temp_filepath+"generated_with_regression",drums_reduced)
 
         # drums_reduced=drums_reduced>0.76159416
@@ -127,11 +128,17 @@ class Generator:
         X_old_enc=X_old_enc[:,:16,:]
         np.save(self.temp_filepath+"generated_with_regression_previous",X_old_enc)
 
+        X_old_dec=decoder.decode(X_old_enc)
+        X_old_dec=decoder.decode_808(X_old_dec)
+
         # X_old_r=X_old.reshape(X_old.shape[0],3,96,128)
         X_old_r=X_old.reshape(X_old.shape[0],2,96,128)
+        print(X_old_dec.shape)
+
 
         # X_new=np.concatenate((X_old_r[:,0,:,:],drums,X_old_r[:,2,:,:],),axis=1)
-        X_new=np.concatenate((X_old_r[:,0,:,:],X_old_r[:,0,:,:],drums,drums,drums,drums),axis=1)
+        # X_new=np.concatenate((X_old_r[:,0,:,:],X_old_r[:,0,:,:],X_old_r[:,0,:,:],drums,X_old_r[:,0,:,:],X_old_r[:,0,:,:],X_old_r[:,0,:,:],drums),axis=1)
+        X_new=np.concatenate((X_old_dec,X_old_dec,X_old_dec,drums,X_old_dec,X_old_dec,X_old_dec,drums),axis=1)
 
 
         # print(X_new.shape,"x new shape")
@@ -192,7 +199,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'vae_generation.pt'
+        model_name = 'vae_generation_cleaned.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']

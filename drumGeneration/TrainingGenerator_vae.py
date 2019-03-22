@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn as nn
 from DNnet import DNnet
 
-local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised.npz'
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised_cleaned.npz'
 
 class TrainingGenerator:
 
@@ -45,7 +45,7 @@ class TrainingGenerator:
                                                               [train_length, validation_length, test_length])
 
         self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=True)
-        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=True)
+        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=False)
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size,
                                                              shuffle=False,drop_last=True)
 
@@ -87,8 +87,9 @@ class TrainingGenerator:
                     inputs, g,labels = data
                     val_outputs = dnn(inputs,g)
                     val_loss_size = criterion(val_outputs, labels)
-                    total_val_loss += val_loss_size.data[0]
-                print("val loss",total_val_loss / (i+1))
+                    total_val_loss += val_loss_size.item()
+                print('loss: %.10f' %(total_val_loss / (i+1)))
+                print(len(self.test))
 
         print('Finished Training')
 
@@ -100,12 +101,11 @@ class TrainingGenerator:
 if __name__=="__main__":
 
     LR=0.001
-    BATCH_SIZE=4096
-    N_EPOCHS=30
-
+    BATCH_SIZE=4096*2
+    N_EPOCHS=500
 
     tg=TrainingGenerator(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS)
     tg.load_data()
     tg.split_data()
     tg.train_model()
-    # tg.save_model("./../models/",'vae_generation.pt')
+    tg.save_model("./../models/",'vae_generation_cleaned.pt')

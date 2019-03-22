@@ -18,8 +18,8 @@ else:
 for i_name,name in enumerate(['Supervised']):
 
 
-    for beta in [0.01,0.1,1,100,250]:
-        model_name='sketchrnn_'+name+'_'+str(beta)+'_kld.pt'
+    for i_beta,beta in enumerate([250]):
+        model_name='sketchrnn_old.pt'
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
         g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
         g.count_parameters()
@@ -29,6 +29,7 @@ for i_name,name in enumerate(['Supervised']):
         array=array['X']
         np.random.seed(8)
         np.random.shuffle(array)
-        array=array[400:500]
-        g.generate_from(array,tag="_"+name+'_'+str(beta),th=0.3)
-        # g.generate_long("_"+name+'_long'+str(beta),array[0])
+        array=array[200:300]
+        # g.generate_from(array,tag="_method_2",th=0.10)
+        for i in range(10):
+            g.generate_long(str(i)+"_method_2",array[i],th=0.10)

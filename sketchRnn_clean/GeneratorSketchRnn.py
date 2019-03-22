@@ -132,13 +132,13 @@ class GeneratorSketchRnn:
                 y_pred_cat = (y_pred >th)
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         y=y_pred_cat.reshape((n,16, 9))
-        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :], y,X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y),axis=1)
+        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y,X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y),axis=1)
         new_dec=encoder.decode(new)
         new_dec=encoder.decode_808(new_dec)
 
         if save==True:
             for i in range(len(X)):
-                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, str(i) + "_new"+tag)
+                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath,"sample_"+str(i) +tag)
 
 
     def generate_long(self,tag,array,n=10,save=True,th=0.30):

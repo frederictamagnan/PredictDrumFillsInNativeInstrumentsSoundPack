@@ -132,14 +132,46 @@ class GeneratorSketchRnn:
                 y_pred_cat = (y_pred >th)
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         y=y_pred_cat.reshape((n,16, 9))
-        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :], y,X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y),axis=1)
+        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y,X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y),axis=1)
         new_dec=encoder.decode(new)
         new_dec=encoder.decode_808(new_dec)
 
         if save==True:
             for i in range(len(X)):
-                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, str(i) + "_new"+tag)
+                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, "sample_"+str(i) +tag)
 
+    def generate_from_magenta(self, array, tag, save=True, th=0.15):
+        n = len(array)
+        self.load_model(batch_size=n)
+        encoder = DrumReducerExpander()
+        X=array
+        X_dataset = SketchRnnDataset(numpy_array=X, inference=True, use_cuda=self.use_cuda)
+        X_loader = torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
+                                               shuffle=False, drop_last=True)
+        with torch.no_grad():
+            for i, (x) in enumerate(X_loader):
+                x = Variable(x).float()
+                y_pred = self.model(x)
+                y_pred_cat = (y_pred > th)
+        y_pred_cat = tensor_to_numpy(y_pred_cat).astype(int)
+        y = y_pred_cat.reshape((n, 16, 9))
+        new = np.concatenate(
+            (X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y, X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y), axis=1)
+
+        new_dec = encoder.decode(new)
+        new_dec = encoder.decode_808(new_dec)
+
+        old = np.concatenate(
+            (array[:, 0, :, :], array[:, 0, :, :], array[:, 0, :, :], array[:, 1, :, :], array[:, 0, :, :],
+             array[:, 0, :, :], array[:, 0, :, :], array[:, 1, :, :]), axis=1)
+
+        old_dec = encoder.decode(old)
+        old_dec = encoder.decode_808(old_dec)
+
+        if save == True:
+            for i in range(len(X)):
+                numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, "sample_" + str(i) + tag)
+                numpy_drums_save_to_midi(old_dec[i], self.temp_filepath, "sample_" + str(i) + tag+"_magenta")
 
     def generate_long(self,tag,array,n=10,save=True,th=0.30):
         self.load_model(batch_size=1)
@@ -175,7 +207,7 @@ class GeneratorSketchRnn:
 
         if save == True:
 
-            numpy_drums_save_to_midi(new_dec, self.temp_filepath, str(i) + "_new" + tag)
+            numpy_drums_save_to_midi(new_dec, self.temp_filepath, "sample_" +tag)
 
 
 
@@ -217,8 +249,10 @@ if __name__=='__main__':
 #         # g.generate(10,save=False)
 #         g.generate(10, save=True)
 
-
-    g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
-    g.count_parameters()
-            # g.generate(10,save=False)
-    g.generate(10, save=True)
+    import numpy as np
+    np.random.seed(10)
+    for i in range(10):
+        g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+        g.count_parameters()
+                # g.generate(10,save=False)
+        g.generate(1, save=True)

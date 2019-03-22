@@ -240,7 +240,7 @@ class GeneratorSketchRnn:
         rec= (tp) / (fn + tp)
         prec= (tp) / (fp + tp)
         f=2*prec*rec/(prec+rec)
-        return f
+        return acc
 
 
 
@@ -287,15 +287,15 @@ folder=['c','s','d']
 row_warmness=[]
 row_testchi2=[]
 row_tprec=[]
-for i_name,name in enumerate(['Clustering','Supervised','Diff']):
+for i_name,name in enumerate(['Supervised']):
 
     t_warmness=[]
     t_chi2=[]
     t_prec=[]
     for beta in [0.01,0.1,1,100,250]:
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted'+name+'.npz'
-        indices_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/indices/indices_sketchrnn_'+name+'_'+str(beta)+'_cleaned.pt.npz'
-        model_name='sketchrnn_'+name+'_'+str(beta)+'_cleaned.pt'
+        indices_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/indices/indices_sketchrnn_'+name+'_'+str(beta)+'_kld.pt.npz'
+        model_name='sketchrnn_'+name+'_'+str(beta)+'_kld.pt'
         # temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'+folder[i_name]+'/'+str(beta)+'/'
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
         g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath,indices_path=indices_path,tag="_"+str(beta)+"_"+name+"_")

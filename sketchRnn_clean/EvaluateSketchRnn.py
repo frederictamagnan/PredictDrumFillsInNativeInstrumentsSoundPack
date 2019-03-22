@@ -240,7 +240,7 @@ class GeneratorSketchRnn:
         rec= (tp) / (fn + tp)
         prec= (tp) / (fp + tp)
         f=2*prec*rec/(prec+rec)
-        return f
+        return prec
 
 
 
