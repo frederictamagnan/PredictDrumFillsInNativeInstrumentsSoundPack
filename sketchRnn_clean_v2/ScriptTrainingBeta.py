@@ -4,7 +4,7 @@ LR=0.001
 
 N_EPOCHS=400
 for beta in [250]:
-    for name,batch_size in [('Supervised',2048)]:
+    for name,batch_size in [('Supervised',300)]:
         BATCH_SIZE=batch_size
         local_dataset='/home/ftamagnan/dataset/FillsExtracted'+name+'_cleaned_v2.npz'
 
