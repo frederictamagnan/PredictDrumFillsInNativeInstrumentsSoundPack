@@ -63,7 +63,7 @@ class GeneratorSketchRnn:
             rf=random_file()
             list_filepath.append(rf)
             multi=Multitrack(rf[0]+rf[1])
-            multi.binarize()
+            # multi.binarize()
             piano=multi.tracks[0].pianoroll
             length=len(piano)
             mid=int(length//96//2)
@@ -89,8 +89,9 @@ class GeneratorSketchRnn:
         with torch.no_grad():
             for i, (x) in enumerate(X_loader):
                 x = Variable(x).float()
-                y_pred = self.model(x)
-                y_pred_cat = (y_pred >0.15)
+                y_pred_cat = self.model(x)
+                y_pred_cat[y_pred_cat<0.25]=0
+                y_pred_cat=y_pred_cat*128*4
 
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         y=y_pred_cat.reshape((n,16, 9))
@@ -231,7 +232,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'sketchrnn.pt'
+        model_name = 'sketchrnn_Supervised_250_velocity.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
@@ -250,9 +251,9 @@ if __name__=='__main__':
 #         g.generate(10, save=True)
 
     import numpy as np
-    np.random.seed(10)
-    for i in range(10):
-        g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
-        g.count_parameters()
-                # g.generate(10,save=False)
-        g.generate(1, save=True)
+    # np.random.seed(10)
+
+    g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
+    g.count_parameters()
+            # g.generate(10,save=False)
+    g.generate(10, save=True)

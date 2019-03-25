@@ -115,8 +115,8 @@ def numpy_drums_save_to_midi(array,filepath,filename):
 
     track=Track(array,is_drum=True)
     multi=Multitrack(tracks=[track])
-    multi.binarize()
-    multi.assign_constant(100)
+    # multi.binarize()
+    # multi.assign_constant(100)
     ppr.write(multi,filepath+filename)
 
 
