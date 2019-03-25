@@ -15,19 +15,24 @@ data=dict(data)
 for elt in data.keys():
     print(data[elt].shape)
     print(elt)
+
 tr=data['track_array']
-print(tr[0]/128)
+vae=data['vae']
+genre=data['genre']
+# print(tr[0]/128)
 tr=tr>0
-# from DrumReducerExpander import DrumReducerExpander
-# dec=DrumReducerExpander()
+print(np.unique(tr,axis=0).shape,"UNIQUE")
+tr=np.unique(tr,axis=0)
+from DrumReducerExpander import DrumReducerExpander
+dec=DrumReducerExpander()
 # if 1==1:
 #     for i in range(len(tr)):
-#         track=tr[i+250].reshape((2*16,9))
+#         track=tr[i+20].reshape((2*16,9))
 #         track=dec.decode(batch_pianoroll=track,no_batch=True)
 #         track=dec.decode_808(batch_pianoroll=track,no_batch=True)
 #         numpy_drums_save_to_midi(track,'/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/',str(i))
 #
-#         if i>30:
+#         if i>10:
 #             break
 
 # minn=7
@@ -53,7 +58,8 @@ tr=tr>0
 #     genre=data['genre'][indices[:,0],:,:]
 #     print(genre.shape,"lol")
 #     print(track_array.shape,"LOL")
-#     np.savez('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted'+name+'_cleaned.npz',vae=vae,track_array=track_array,genre=genre)
+name='Supervised'
+np.savez('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted'+name+'_cleaned_v2.npz',vae=vae,track_array=tr,genre=genre)
 
 
 
