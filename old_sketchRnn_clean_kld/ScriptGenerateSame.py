@@ -29,7 +29,7 @@ for i_name,name in enumerate(['Supervised']):
         array=array['X']
         np.random.seed(8)
         np.random.shuffle(array)
-        array=array[200:300]
-        # g.generate_from(array,tag="_method_2",th=0.10)
-        for i in range(10):
-            g.generate_long(str(i)+"_method_2",array[i],th=0.10)
+        array=array[200:210]
+        g.generate_from(array,tag="_method_2",th=0.10)
+        # for i in range(10):
+        #     g.generate_long(str(i)+"_method_2",array[i],th=0.10)

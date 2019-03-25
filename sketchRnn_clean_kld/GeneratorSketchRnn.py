@@ -171,7 +171,7 @@ class GeneratorSketchRnn:
         if save == True:
             for i in range(len(X)):
                 numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, "sample_" + str(i) + tag)
-                numpy_drums_save_to_midi(old_dec[i], self.temp_filepath, "sample_" + str(i) + tag+"_magenta")
+                # numpy_drums_save_to_midi(old_dec[i], self.temp_filepath, "sample_" + str(i) + tag+"_magenta")
 
     def generate_long(self,tag,array,n=10,save=True,th=0.30):
         self.load_model(batch_size=1)

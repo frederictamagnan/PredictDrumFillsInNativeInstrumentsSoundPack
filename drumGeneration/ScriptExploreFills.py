@@ -10,12 +10,13 @@ from utils import numpy_drums_save_to_midi
 # # print(vae[:10])
 # print(genre.shape,vae.shape,genre.sum())
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsMagenta.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised_cleaned.npz')
 data=dict(data)
 for elt in data.keys():
     print(data[elt].shape)
     print(elt)
 tr=data['track_array']
+print(tr[0]/128)
 tr=tr>0
 # from DrumReducerExpander import DrumReducerExpander
 # dec=DrumReducerExpander()

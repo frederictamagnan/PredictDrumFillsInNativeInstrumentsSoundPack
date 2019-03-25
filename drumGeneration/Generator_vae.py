@@ -188,6 +188,63 @@ class Generator:
         return t
 
 
+    def generate_from_magenta(self, array,genre,beat, tag, save=True, th=0.15):
+        n = len(array)
+        print(beat.shape,"beat")
+        # self.load_model(batch_size=n)
+        decoder = DrumReducerExpander()
+        decoderVAE = VaeEncoderDecoder()
+        X=array
+        print(X.shape)
+        X_dataset = DrumsDataset(numpy_array=X,genre=genre, inference=True, use_cuda=self.use_cuda)
+        X_loader = torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
+                                               shuffle=False, drop_last=True)
+        with torch.no_grad():
+            for i, (x,g) in enumerate(X_loader):
+                x = Variable(x).float()
+                print(x)
+                y_pred = self.model(x,g)
+
+        y_pred=tensor_to_numpy(y_pred)
+        y_pred=y_pred.reshape((y_pred.shape[0],32,2))
+        y_pred[:,:,1]=0.40
+        # y_pred[:,:,1]=1
+        # print(y_pred[0])
+        drums_reduced=decoderVAE.decode_to_reduced_drums(y_pred)
+
+        # print(drums_reduced.shape,"shape drums red")
+
+        l=drums_reduced.shape[0]
+        # threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*5,number_notes_max=l*15)
+        drums_reduced=drums_reduced>0.76159416  #0.76159416
+        np.save(self.temp_filepath+"generated_with_regression",drums_reduced)
+
+        # drums_reduced=drums_reduced>0.76159416
+        # print(drums_reduced.sum(),"number Notes")
+        drums_reduced=decoder.decode_808(drums_reduced)
+        drums=decoder.decode(drums_reduced)
+        # print(drums.shape,"drumshape")
+        # print(X_old.shape,"X OLD")
+
+
+
+        X_old_dec=decoder.decode(beat[:,0,:,:])
+        X_old_dec=decoder.decode_808(X_old_dec)
+
+        # X_old_r=X_old.reshape(X_old.shape[0],3,96,128)
+
+
+
+        print(X_old_dec.shape,drums.shape)
+        # X_new=np.concatenate((X_old_r[:,0,:,:],drums,X_old_r[:,2,:,:],),axis=1)
+        # X_new=np.concatenate((X_old_r[:,0,:,:],X_old_r[:,0,:,:],X_old_r[:,0,:,:],drums,X_old_r[:,0,:,:],X_old_r[:,0,:,:],X_old_r[:,0,:,:],drums),axis=1)
+        X_new=np.concatenate((X_old_dec,X_old_dec,X_old_dec,drums,X_old_dec,X_old_dec,X_old_dec,drums),axis=1)
+        if save==True:
+            for i in range(len(X_old_dec)):
+                # numpy_drums_save_to_midi(X_old_r[i].reshape(288,128),self.temp_filepath,list_filepath[i][1]+"_original")
+                numpy_drums_save_to_midi(X_new[i], self.temp_filepath,   "sample_" + str(i) + tag)
+
+
 if __name__=='__main__':
 
 
