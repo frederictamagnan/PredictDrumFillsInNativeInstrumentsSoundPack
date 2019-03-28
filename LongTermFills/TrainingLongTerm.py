@@ -24,8 +24,8 @@ class TrainingLongTerm:
         self.linear_hidden_size=linear_hidden_size
         self.gru_embedding_hidden_size=gru_embedding_hidden_size
 
-        # self.use_cuda = torch.cuda.is_available()
-        # self.use_cuda=False
+        self.use_cuda = torch.cuda.is_available()
+        
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
 
         if self.use_cuda:
