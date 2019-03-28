@@ -32,7 +32,7 @@ class TrainingLongTerm:
             print('run on GPU')
         else:
             print('run on CPU')
-        self.device=torch.device("cpu")
+        # self.device=torch.device("cpu")
 
 
     def load_data(self,binarize=True):
