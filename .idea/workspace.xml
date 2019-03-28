@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/LongTermFills/LongTermNet.py" afterPath="$PROJECT_DIR$/LongTermFills/LongTermNet.py" />
+      <change beforePath="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" afterPath="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LongTermNet.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LongTermNet.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1386">
+            <state relative-caret-position="-1746">
               <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="LongTermNetDataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNetDataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="126">
+              <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="70" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingLongTerm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrainingLongTerm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="39" />
+            <state relative-caret-position="220">
+              <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -82,7 +82,6 @@
       <find>float</find>
       <find>ran</find>
       <find>norma</find>
-      <find>cuda</find>
       <find>total</find>
       <find>Metrics</find>
       <find>rando</find>
@@ -103,6 +102,7 @@
       <find>print</find>
       <find>count</find>
       <find>seed</find>
+      <find>cuda</find>
     </findStrings>
     <replaceStrings>
       <replace>channels_used</replace>
@@ -170,8 +170,8 @@
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py" />
         <option value="$PROJECT_DIR$/LongTermFills/LongTermNetDataset.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/LongTermFills/LongTermNet.py" />
-        <option value="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" />
         <option value="$PROJECT_DIR$/LongTermFills/LongTermNet.py" />
+        <option value="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" />
       </list>
     </option>
   </component>
@@ -791,20 +791,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNetDataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="126">
+          <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="70" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -813,11 +803,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1386">
+        <state relative-caret-position="-1746">
           <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#4630#4670#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
