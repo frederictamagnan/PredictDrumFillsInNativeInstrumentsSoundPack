@@ -68,7 +68,7 @@ class Encoder(torch.nn.Module):
     def forward(self, x):
 
 
-        hn = torch.zeros(4,x.size()[0], self.gru_hidden_size)
+        hn = torch.zeros(4,x.size()[0], self.gru_hidden_size).to(self.device)
 
         list_cont=[]
         for i in range(self.bars_input):
@@ -80,7 +80,7 @@ class Encoder(torch.nn.Module):
 
         output_gru1=(torch.cat(list_cont, 1))
 
-        hn2 = torch.zeros(1,x.size()[0], self.gru_hidden_size_2)
+        hn2 = torch.zeros(1,x.size()[0], self.gru_hidden_size_2).to(self.device)
 
         x3,hn2=self.gru2(output_gru1,hn2)
         hn2 = hn2.contiguous().view(
@@ -141,12 +141,12 @@ class DecoderFills(torch.nn.Module):
         z_output = z_input.view(z_output.size()[0],1, z_output.size()[1])
         x = torch.cat([z_input, z_output], 1)
 
-        hn1 = torch.zeros(1,z_input.size()[0], self.gru_embedding_hidden_size)
+        hn1 = torch.zeros(1,z_input.size()[0], self.gru_embedding_hidden_size).to(self.device)
         list_concat=[]
         x1, hn1 = self.gru_embeddings(x, hn1)
 
         for i in range(self.bars_output):
-            hn2 = torch.zeros(1, z_input.size()[0], self.num_features)
+            hn2 = torch.zeros(1, z_input.size()[0], self.num_features).to(self.device)
             x1_=x1[:, i, :]
             x1_ = x1_.view(x1_.size()[0], 1, x1_.size()[1],)
             input = x1_.repeat(1, 16,1)

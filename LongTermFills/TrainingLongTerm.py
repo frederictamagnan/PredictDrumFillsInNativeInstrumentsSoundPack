@@ -25,7 +25,7 @@ class TrainingLongTerm:
         self.gru_embedding_hidden_size=gru_embedding_hidden_size
 
         self.use_cuda = torch.cuda.is_available()
-        
+
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
 
         if self.use_cuda:
