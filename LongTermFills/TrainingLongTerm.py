@@ -93,7 +93,7 @@ class TrainingLongTerm:
                 optimizer.zero_grad()
                 data_out = longTermNet(x,y)
                 # print(data_out.size(),"dATA OUT")
-
+                print(data_out.sum()/len(data),y.sum()/len(data),"number one")
                 loss,bce,kld_f,kld_r=longTermNet.elbo(data_out,y)
 
 
