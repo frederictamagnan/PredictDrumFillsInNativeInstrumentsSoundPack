@@ -161,12 +161,12 @@ class GeneratorSketchRnn:
         new_dec = encoder.decode(new)
         new_dec = encoder.decode_808(new_dec)
 
-        old = np.concatenate(
-            (array[:, 0, :, :], array[:, 0, :, :], array[:, 0, :, :], array[:, 1, :, :], array[:, 0, :, :],
-             array[:, 0, :, :], array[:, 0, :, :], array[:, 1, :, :]), axis=1)
+        # old = np.concatenate(
+        #     (array[:, 0, :, :], array[:, 0, :, :], array[:, 0, :, :], array[:, 1, :, :], array[:, 0, :, :],
+        #      array[:, 0, :, :], array[:, 0, :, :], array[:, 1, :, :]), axis=1)
 
-        old_dec = encoder.decode(old)
-        old_dec = encoder.decode_808(old_dec)
+        # old_dec = encoder.decode(old)
+        # old_dec = encoder.decode_808(old_dec)
 
         if save == True:
             for i in range(len(X)):

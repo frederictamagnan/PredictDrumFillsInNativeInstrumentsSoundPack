@@ -19,7 +19,7 @@ for i_name,name in enumerate(['Supervised']):
 
 
     # for beta in [0.01,0.1,1,100,250]:
-    for i_beta,beta in enumerate([ 0.1,250]):
+    for i_beta,beta in enumerate([ 0.01,250]):
         model_name='sketchrnn_'+name+'_'+str(beta)+'_kld.pt'
         temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
         g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)

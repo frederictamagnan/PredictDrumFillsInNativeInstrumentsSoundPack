@@ -113,7 +113,7 @@ class Generator:
 
         l=drums_reduced.shape[0]
         # threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*5,number_notes_max=l*15)
-        drums_reduced=drums_reduced>0.76159416  #0.76159416
+        drums_reduced=drums_reduced>0.75  #0.76159416
         np.save(self.temp_filepath+"generated_with_regression",drums_reduced)
 
         # drums_reduced=drums_reduced>0.76159416
@@ -126,7 +126,7 @@ class Generator:
         X_old_enc=decoder.encode_808(X_old_enc)
         X_old_enc=X_old_enc.reshape((-1,2*16,9))
         X_old_enc=X_old_enc[:,:16,:]
-        np.save(self.temp_filepath+"generated_with_regression_previous",X_old_enc)
+
 
         X_old_dec=decoder.decode(X_old_enc)
         X_old_dec=decoder.decode_808(X_old_dec)
@@ -134,7 +134,7 @@ class Generator:
         # X_old_r=X_old.reshape(X_old.shape[0],3,96,128)
         X_old_r=X_old.reshape(X_old.shape[0],2,96,128)
         print(X_old_dec.shape)
-
+        np.save(self.temp_filepath + "generated_with_regression_previous", X_old_enc)
 
         # X_new=np.concatenate((X_old_r[:,0,:,:],drums,X_old_r[:,2,:,:],),axis=1)
         # X_new=np.concatenate((X_old_r[:,0,:,:],X_old_r[:,0,:,:],X_old_r[:,0,:,:],drums,X_old_r[:,0,:,:],X_old_r[:,0,:,:],X_old_r[:,0,:,:],drums),axis=1)
@@ -145,9 +145,9 @@ class Generator:
         if save==True:
             for i in range(len(X_old)):
                 # numpy_drums_save_to_midi(X_old_r[i].reshape(288,128),self.temp_filepath,list_filepath[i][1]+"_original")
-                numpy_drums_save_to_midi(X_old_r[i].reshape(192,128),self.temp_filepath,list_filepath[i][1]+"_original")
+                # numpy_drums_save_to_midi(X_old_r[i].reshape(192,128),self.temp_filepath,list_filepath[i][1]+"_original")
 
-                numpy_drums_save_to_midi(X_new[i], self.temp_filepath, list_filepath[i][1] + "_new")
+                numpy_drums_save_to_midi(X_new[i], self.temp_filepath, "sample_"+str(i)+'_method_2') #list_filepath[i][1] + "_new"
                 print(X_new[i].shape)
 
 
@@ -195,7 +195,8 @@ class Generator:
         decoder = DrumReducerExpander()
         decoderVAE = VaeEncoderDecoder()
         X=array
-        print(X.shape)
+        print(X.shape,"X SHAPE")
+        # X=(X>0)*1
         X_dataset = DrumsDataset(numpy_array=X,genre=genre, inference=True, use_cuda=self.use_cuda)
         X_loader = torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
                                                shuffle=False, drop_last=True)
@@ -207,7 +208,8 @@ class Generator:
 
         y_pred=tensor_to_numpy(y_pred)
         y_pred=y_pred.reshape((y_pred.shape[0],32,2))
-        y_pred[:,:,1]=0.40
+        y_pred[:,:,1]=0.05
+        # y_pred[:,6:8,0]=y_pred[:,6:8,0]+10
         # y_pred[:,:,1]=1
         # print(y_pred[0])
         drums_reduced=decoderVAE.decode_to_reduced_drums(y_pred)
@@ -216,8 +218,8 @@ class Generator:
 
         l=drums_reduced.shape[0]
         # threshold=self.search_treshold(array=drums_reduced,number_notes_min=l*5,number_notes_max=l*15)
-        drums_reduced=drums_reduced>0.76159416  #0.76159416
-        np.save(self.temp_filepath+"generated_with_regression",drums_reduced)
+        drums_reduced=(drums_reduced>0.76159416)*1  #0.76159416
+        # np.save(self.temp_filepath+"generated_with_regression",drums_reduced)
 
         # drums_reduced=drums_reduced>0.76159416
         # print(drums_reduced.sum(),"number Notes")
@@ -256,7 +258,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'vae_generation_cleaned.pt'
+        model_name = 'vae_generation__c_cleaned_v2.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
@@ -268,6 +270,6 @@ if __name__=='__main__':
     g=Generator(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
     g.count_parameters()
     # g.generate(10,save=False)
-    g.generate(10, save=True)
+    g.generate(100, save=True)
 
 

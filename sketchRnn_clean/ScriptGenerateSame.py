@@ -28,8 +28,8 @@ for i_name,name in enumerate(['Clustering','Supervised','Diff']):
         array=np.load(dataset_array+name_array)
         array=dict(array)
         array=array['X']
-        np.random.seed(8)
-        np.random.shuffle(array)
-        array=array[321:500]
+        # np.random.seed(8)
+        # np.random.shuffle(array)
+        array=array[0:30]
         g.generate_from(array,tag="_"+name+'_'+str(beta),th=0.15)
         # g.generate_long("_"+name+'_long'+str(beta),array[0])

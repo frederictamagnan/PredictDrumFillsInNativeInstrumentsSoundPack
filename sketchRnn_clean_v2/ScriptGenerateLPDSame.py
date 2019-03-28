@@ -32,7 +32,7 @@ for i_name,name in enumerate(['Supervised']):
         dataset_path = '/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtracted' + name + '_cleaned.npz'
         indices_path = '/home/ftamagna/Documents/_AcademiaSinica/dataset/trainingMetricsLoss/indices/indices_sketchrnn_' + name + '_' + str(
             beta) + '_kld.pt.npz'
-        model_name = 'sketchrnn_' + name + '_' + str(beta) + '_kld.pt'
+        model_name = 'sketchrnn_' + name + '_' + str(beta) + '_v2.pt'
 
         dataset = dict(np.load(dataset_path))
         indices = dict(np.load(indices_path))
@@ -40,7 +40,7 @@ for i_name,name in enumerate(['Supervised']):
         validation = dataset[indices['validation']]
         g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
         g.count_parameters()
-        array=validation[10:30]
+        array=validation[60:90]
 
         g.generate_from_magenta(array,tag="_method_1",th=0.30)
 

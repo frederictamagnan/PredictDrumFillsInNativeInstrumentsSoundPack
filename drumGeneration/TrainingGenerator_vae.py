@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn as nn
 from DNnet import DNnet
 
-local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised_cleaned.npz'
+local_dataset='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised_cleaned_v2.npz'
 
 class TrainingGenerator:
 
@@ -77,10 +77,10 @@ class TrainingGenerator:
 
                 # print statistics
                 running_loss += loss.item()
-                if i % 20 == 0:  # print every 2000 mini-batches
-                    print('[%d, %5d] loss: %.10f' %
-                          (epoch + 1, i + 1, running_loss / 20))
-                    running_loss = 0.0
+                # if i % 20 == 0:  # print every 2000 mini-batches
+            print('[%d, %5d] loss: %.10f' %
+                  (epoch + 1, i + 1, running_loss / len(self.train)))
+            running_loss = 0.0
             with torch.no_grad():
                 total_val_loss = 0
                 for i, data in enumerate(self.test_loader, 0):
@@ -88,8 +88,8 @@ class TrainingGenerator:
                     val_outputs = dnn(inputs,g)
                     val_loss_size = criterion(val_outputs, labels)
                     total_val_loss += val_loss_size.item()
-                print('loss: %.10f' %(total_val_loss / (i+1)))
-                print(len(self.test))
+                print('Val loss: %.10f' %(total_val_loss / (i+1)))
+                # print(len(self.test))
 
         print('Finished Training')
 
@@ -101,11 +101,11 @@ class TrainingGenerator:
 if __name__=="__main__":
 
     LR=0.001
-    BATCH_SIZE=4096*2
-    N_EPOCHS=500
+    BATCH_SIZE=600
+    N_EPOCHS=100
 
     tg=TrainingGenerator(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS)
     tg.load_data()
     tg.split_data()
     tg.train_model()
-    tg.save_model("./../models/",'vae_generation_cleaned.pt')
+    tg.save_model("./../models/",'vae_generation__c_cleaned_v2.pt')
