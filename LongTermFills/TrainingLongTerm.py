@@ -132,11 +132,11 @@ class TrainingLongTerm:
                 with torch.no_grad():
                     # x,y = Variable(data).type(torch.float32).to(self.device)
                     x,y=data
-                    data_out = LongTermNet(x,y)
+                    data_out = longTermNet(x,y)
 
                     loss = F.binary_cross_entropy(
                         data_out,
-                        data,
+                        y,
                         reduction='sum'
                     )
                     loss_sum_test += loss.item()
