@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/LongTermFills/LongTermNet.py" afterPath="$PROJECT_DIR$/LongTermFills/LongTermNet.py" />
       <change beforePath="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" afterPath="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LongTermNet.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LongTermNet.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="148" column="86" lean-forward="false" selection-start-line="148" selection-start-column="86" selection-end-line="148" selection-end-column="86" />
+            <state relative-caret-position="174">
+              <caret line="246" column="16" lean-forward="false" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="16" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
                 <element signature="e#4698#4738#0" expanded="false" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="LongTermNetDataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNetDataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="504">
+              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -39,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingLongTerm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrainingLongTerm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-730">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="332">
+              <caret line="78" column="90" lean-forward="false" selection-start-line="78" selection-start-column="90" selection-end-line="78" selection-end-column="90" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -54,7 +53,7 @@
       <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sketchRnn_clean_kld/TrainingSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2898">
+            <state relative-caret-position="1966">
               <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="188" selection-end-column="52" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -74,8 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>git</find>
-      <find>256</find>
       <find>vae sha</find>
       <find>opti</find>
       <find>float</find>
@@ -103,6 +100,8 @@
       <find>seed</find>
       <find>cuda</find>
       <find>run</find>
+      <find>use_cuda</find>
+      <find>use</find>
       <find>cpu</find>
     </findStrings>
     <replaceStrings>
@@ -171,8 +170,8 @@
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py" />
         <option value="$PROJECT_DIR$/LongTermFills/LongTermNetDataset.py" />
         <option value="$USER_HOME$/PycharmProjects/DrumFillsNI/LongTermFills/LongTermNet.py" />
-        <option value="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" />
         <option value="$PROJECT_DIR$/LongTermFills/LongTermNet.py" />
+        <option value="$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py" />
       </list>
     </option>
   </component>
@@ -392,8 +391,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="409" y="59" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29973045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29973045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2801636" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -786,20 +786,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn_clean_kld/TrainingSketchRnn.py">
+    <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2898">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="188" selection-end-column="52" />
+        <state relative-caret-position="174">
+          <caret line="246" column="16" lean-forward="false" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="16" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#4698#4738#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py">
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean_kld/TrainingSketchRnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="1966">
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="188" selection-end-column="52" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -808,21 +809,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNetDataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="504">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNet.py">
+    <entry file="file://$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="148" column="86" lean-forward="false" selection-start-line="148" selection-start-column="86" selection-end-line="148" selection-end-column="86" />
+        <state relative-caret-position="332">
+          <caret line="78" column="90" lean-forward="false" selection-start-line="78" selection-start-column="90" selection-end-line="78" selection-end-column="90" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#4698#4738#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

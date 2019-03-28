@@ -76,7 +76,7 @@ class TrainingLongTerm:
         encoderFills= Encoder(num_features=9,gru_hidden_size=self.gru_hidden_size,gru_hidden_size_2=self.gru_hidden_size,seq_len=self.seq_len,num_directions=self.num_directions,linear_hidden_size=self.linear_hidden_size).to(self.device)
         encoderRegular= Encoder(num_features=9,gru_hidden_size=self.gru_hidden_size,gru_hidden_size_2=self.gru_hidden_size,seq_len=self.seq_len,num_directions=self.num_directions,linear_hidden_size=self.linear_hidden_size).to(self.device)
         decoderFills=DecoderFills(linear_hidden_size=self.linear_hidden_size,gru_embedding_hidden_size=self.gru_embedding_hidden_size).to(self.device)
-        longTermNet=LongTermNet(encoderFills, decoderFills,encoderRegular)
+        longTermNet=LongTermNet(encoderFills, decoderFills,encoderRegular).to(self.device)
 
         optimizer = optim.Adam(longTermNet.parameters(), lr=self.lr)
         test_err = 0
