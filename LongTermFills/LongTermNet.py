@@ -21,7 +21,7 @@ class Encoder(torch.nn.Module):
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
 
-
+        self.device = torch.device("cpu")
 
         self.bars_input=bars_input
 
@@ -104,7 +104,7 @@ class DecoderFills(torch.nn.Module):
         '''
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device("cuda" if self.use_cuda else "cpu")
-
+        self.device = torch.device("cpu")
         self.bars_input=2
         self.bars_output=2
         self.linear_hidden_size=linear_hidden_size
@@ -251,7 +251,7 @@ class LongTermNet(nn.Module):
             print('run on GPU')
         else:
             print('run on CPU')
-
+        self.device = torch.device("cpu")
 
 
         self.encoderFills = encoderFills
