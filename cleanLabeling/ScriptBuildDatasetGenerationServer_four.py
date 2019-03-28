@@ -83,7 +83,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
     vae_array=vae_array[1:]
     track_array=track_array[1:]
     genre=genre[1:]
-    np.savez("./FillsExtractedSupervised",vae=vae_array,genre=genre,track_array=track_array)
+    np.savez("./FillsExtractedFour",vae=vae_array,genre=genre,track_array=track_array)
     return 0
 
 

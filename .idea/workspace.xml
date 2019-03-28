@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/drumGeneration/ScriptGenerateSimple.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/DNnet.py" afterPath="$PROJECT_DIR$/drumGeneration/DNnet.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/Generator_vae.py" afterPath="$PROJECT_DIR$/drumGeneration/Generator_vae.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptGenerateLPDSame.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptGenerateLPDSame.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/TrainingGenerator_vae.py" afterPath="$PROJECT_DIR$/drumGeneration/TrainingGenerator_vae.py" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/utils.py" afterPath="$PROJECT_DIR$/drumGeneration/utils.py" />
-      <change beforePath="$PROJECT_DIR$/old_sketchRnn_clean_kld/ScriptGenerateSame.py" afterPath="$PROJECT_DIR$/old_sketchRnn_clean_kld/ScriptGenerateSame.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean/ScriptGenerateSame.py" afterPath="$PROJECT_DIR$/sketchRnn_clean/ScriptGenerateSame.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_kld/GeneratorSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_kld/GeneratorSketchRnn.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_kld/ScriptGenerateLPDSame.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_kld/ScriptGenerateLPDSame.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_kld/ScriptGenerateMagenta.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_kld/ScriptGenerateMagenta.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_v2/GeneratorSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_v2/GeneratorSketchRnn.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateLPDSame.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateLPDSame.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateMagenta.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateMagenta.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateSame.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateSame.py" />
-      <change beforePath="$PROJECT_DIR$/sketchRnn_clean_v2/SketchRnnNet.py" afterPath="$PROJECT_DIR$/sketchRnn_clean_v2/SketchRnnNet.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +28,8 @@
       <file leaf-file-name="ScriptBuildDatasetGenerationServer_four.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1846">
-              <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="440">
+              <caret line="85" column="34" lean-forward="false" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -885,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1846">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        <state relative-caret-position="440">
+          <caret line="85" column="34" lean-forward="false" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
           <folding />
         </state>
       </provider>
