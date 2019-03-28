@@ -153,7 +153,7 @@ class TrainingLongTerm:
             # self.loss_train_metrics = np.concatenate((self.loss_train_metrics, row))
 
 
-        self.net=LongTermNet
+        self.net=longTermNet
 
 
     def save_model(self, filepath, name):
