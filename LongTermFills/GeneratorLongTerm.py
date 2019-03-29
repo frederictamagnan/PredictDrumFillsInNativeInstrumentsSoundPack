@@ -31,7 +31,7 @@ class GeneratorSketchRnn:
         self.gru_hidden_size=64
         self.num_directions=2
         self.seq_len=2
-        self.gru_embedding_hidden_size=16
+        self.gru_embedding_hidden_size=32
 
 
         self.load_model(10)
@@ -82,7 +82,7 @@ class GeneratorSketchRnn:
         print(drums.shape)
         drums=tensor_to_numpy(drums)
         print(drums[0])
-        drums=(drums>0.28)*1
+        drums=(drums>0.26)*1
 
 
         enc=DrumReducerExpander()
@@ -94,6 +94,61 @@ class GeneratorSketchRnn:
             for i in range(len(drums)):
                 numpy_drums_save_to_midi(drums_dec[i],self.temp_filepath,str(i))
 
+
+    def generate_fills_properly(self,n,save=True):
+
+        offset=20
+        dataset=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedFour_cleaned_v2.npz')
+        dataset=dict(dataset)['track_array'][offset:offset+n]*1
+        print(dataset.shape)
+        regular = torch.from_numpy(dataset).type(torch.FloatTensor)
+        regular_dataset = Data.TensorDataset(regular)
+        regular_loader = Data.DataLoader(
+            dataset=regular,
+            batch_size=n,
+            shuffle=True,
+            drop_last=True,
+            num_workers=1,
+        )
+        for batch_i, data in enumerate(regular_loader):
+            with torch.no_grad():
+                # print(data[0].size())
+                # print(type(data),data.shape)
+                z_input = self.encoderRegular(data[:, 0:2, :,:].reshape((n,32,9)))
+
+        z_input=self.model._sample_latent(z_input)[0]
+        z_input = tensor_to_numpy(z_input).reshape((n,1,32))
+        z_output = np.random.randn(n, 1, 32)
+
+        z_concat=np.concatenate((z_input,z_output),axis=1)
+
+
+        sample = torch.from_numpy(z_concat).type(torch.FloatTensor)
+        sample_dataset = Data.TensorDataset(sample)
+        train_loader = Data.DataLoader(
+            dataset=sample_dataset,
+            batch_size=n,
+            shuffle=True,
+            drop_last=True,
+            num_workers=1,
+        )
+        for batch_i, data in enumerate(train_loader):
+            with torch.no_grad():
+                # print(data[0].size())
+                drums = self.decoderFills(data[0][:, 0, :], data[0][:, 1, :])
+
+        print(drums.shape)
+        drums = tensor_to_numpy(drums)
+        print(drums[0])
+        drums = (drums > 0.27) * 1
+
+        enc = DrumReducerExpander()
+        drums_dec = enc.decode(drums)
+        drums_dec = enc.decode_808(drums_dec)
+
+        if save==True:
+            for i in range(len(drums)):
+                numpy_drums_save_to_midi(drums_dec[i],self.temp_filepath,str(i))
 
 
 
@@ -147,4 +202,5 @@ g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=da
 g.count_parameters()
         # g.generate(10,save=False)
 # g.generate(10, save=True)
-g.generate_fills(n=10,save=True)
+# g.generate_fills(n=10,save=True)
+g.generate_fills_properly(n=10)

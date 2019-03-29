@@ -26,6 +26,7 @@ class VaeEncoderDecoder:
 
         self.vae.load_state_dict(torch.load(
             "./../models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt",
+            # "./../models/vae_L1E-02_beta2E+02_beat8_loss3E+01_tanh_gru64_e50_b8192_hd64-32_20190329_143925.pt",
             map_location=self.device))
 
         self.count_parameters()

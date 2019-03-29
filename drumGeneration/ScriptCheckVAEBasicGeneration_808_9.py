@@ -10,9 +10,9 @@ from DrumReducerExpander import DrumReducerExpander
 import numpy as np
 
 
-mu=np.zeros((1000,32,1))
+mu=np.zeros((20,32,1))
 # print(mu)
-sigma=np.ones((1000,32,1))
+sigma=np.ones((20,32,1))*1
 
 lol=np.concatenate((mu,sigma),axis=2)
 print(lol.shape,"lol")
@@ -30,7 +30,7 @@ drums_reduced=decoderVAE.decode_to_reduced_drums(lol)
 
 # print(drums_reduced)
 print(drums_reduced.shape)
-drums_reduced=drums_reduced>0.75
+drums_reduced=drums_reduced>0.76
 filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
 
 # np.save(filepath+"generated_with_normal",drums_reduced)

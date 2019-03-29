@@ -2,9 +2,9 @@ from TrainingSketchRnn import TrainingSketchRnn
 
 LR=0.001
 
-N_EPOCHS=400
+N_EPOCHS=300
 for beta in [250]:
-    for name,batch_size in [('Supervised',300)]:
+    for name,batch_size in [('Diff',4096)]:
         BATCH_SIZE=batch_size
         local_dataset='/home/ftamagnan/dataset/FillsExtracted'+name+'_cleaned_v2.npz'
 
