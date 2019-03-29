@@ -311,9 +311,10 @@ class LongTermNet(nn.Module):
         # KLD = beta * torch.sum(mu * mu + sigma.exp() - sigma - 1)
         KLD_f = -0.5 * torch.sum(1 + self.log_f - self.mu_f.pow(2) - self.log_f.exp())
         KLD_r = -0.5 * torch.sum(1 + self.log_r - self.mu_r.pow(2) - self.log_r.exp())
+        beta_f=250
+        beta_r=0.1
 
-
-        return BCE + KLD_f*beta+KLD_r * beta, BCE, KLD_f,KLD_r
+        return BCE + KLD_f*beta_f+KLD_r * beta_r, BCE, KLD_f,KLD_r
 
 
 
