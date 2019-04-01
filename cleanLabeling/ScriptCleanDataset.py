@@ -1,6 +1,6 @@
 import numpy as np
 filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/'
-filename='FillsExtractedFour.npz'
+filename='FillsExtractedDoubleFour.npz'
 data=np.load(filepath+filename)
 data=dict(data)
 
