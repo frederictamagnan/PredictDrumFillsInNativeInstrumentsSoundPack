@@ -3,7 +3,7 @@ from TrainingSketchRnn import TrainingSketchRnn
 LR=0.001
 
 N_EPOCHS=300
-for beta in [250]:
+for beta in [500]:
     for name,batch_size in [('Four',300)]:
         BATCH_SIZE=batch_size
         local_dataset='/home/ftamagnan/dataset/FillsExtracted'+name+'_cc.npz'
