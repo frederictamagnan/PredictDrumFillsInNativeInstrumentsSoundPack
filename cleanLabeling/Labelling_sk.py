@@ -40,18 +40,18 @@ class Labelling:
         data=dict(np.load(path+'/'+npz))
         # print(npz,"NPZ")
         data['vae_embeddings'] = data['vae_embeddings'][:, 0:32]
-        list_label=['vae_embeddings','offbeat_notes','velocity_metadata','drums_pitches_used']
+        list_label=['vae_embeddings','velocity_metadata']
         list_x=[]
         for label in list_label:
             list_x.append(data[label])
         X = np.concatenate(list_x, axis=1)
         X_std=self.scaler.transform(X)
-        y=(self.clf.predict_proba(X_std)>0.05)*1
+        y=(self.clf.predict_proba(X_std)>0.5)*1
         print(self.clf.predict_proba(X_std))
         y=y[:,1]
         # print("number of fills",y.sum())
         # y=self.clf.predict(X)
-        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label005.npz', label=y)
+        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label05.npz', label=y)
 
 
 
