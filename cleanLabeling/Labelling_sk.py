@@ -46,8 +46,8 @@ class Labelling:
             list_x.append(data[label])
         X = np.concatenate(list_x, axis=1)
         X_std=self.scaler.transform(X)
-        y=(self.clf.predict_proba(X_std)>0.5)*1
-        print(self.clf.predict_proba(X_std))
+        y=(self.clf.predict_proba(X_std)>0.7)*1
+        # print(self.clf.predict_proba(X_std))
         y=y[:,1]
         # print("number of fills",y.sum())
         # y=self.clf.predict(X)
