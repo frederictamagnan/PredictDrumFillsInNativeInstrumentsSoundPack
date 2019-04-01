@@ -155,6 +155,7 @@ class GeneratorSketchRnn:
                 y_pred_cat = (y_pred > th)
         y_pred_cat = tensor_to_numpy(y_pred_cat).astype(int)
         y = y_pred_cat.reshape((n, 16, 9))
+        y[:,:,1]=0
         new = np.concatenate(
             (X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y, X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y), axis=1)
 

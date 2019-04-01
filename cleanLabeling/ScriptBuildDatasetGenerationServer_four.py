@@ -83,7 +83,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
     vae_array=vae_array[1:]
     track_array=track_array[1:]
     genre=genre[1:]
-    np.savez("./FillsExtractedFour",vae=vae_array,genre=genre,track_array=track_array)
+    np.savez("./FillsExtractedDoubleFour",vae=vae_array,genre=genre,track_array=track_array)
     return 0
 
 
@@ -121,7 +121,7 @@ def build_generation_dataset(p, npz):
 
     string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '').replace('\n','')
 
-    indexes_fills_cleaned=allindices(string,'0001')
+    indexes_fills_cleaned=allindices(string,'0011')
 
     indexes_fills_cleaned=np.asarray(indexes_fills_cleaned)
 

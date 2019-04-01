@@ -40,7 +40,7 @@ for i_name,name in enumerate(['Supervised']):
         validation = dataset[indices['validation']]
         g=GeneratorSketchRnn(model_path=model_path,model_name=model_name,dataset_path=dataset_path,tags_path=tags_path,temp_filepath=temp_filepath)
         g.count_parameters()
-        array=validation[60:90]
+        array=validation[30:60]
 
-        g.generate_from_magenta(array,tag="_method_1",th=0.30)
+        g.generate_from_magenta(array,tag="_method_1",th=0.2)
 
