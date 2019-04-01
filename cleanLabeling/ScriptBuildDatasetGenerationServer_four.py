@@ -50,7 +50,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                 p = filepath_dataset + middle + file
 
                 for npz in os.listdir(p):
-                    if 'label.npz' in npz:
+                    if 'label05.npz' in npz:
                         count += 1
 #                         fill = build_generation_dataset(p, npz)
                         output=build_generation_dataset(p,npz)
@@ -97,12 +97,12 @@ def build_generation_dataset(p, npz):
 
     label = dict(np.load(p + '/' + npz))
     label = label['label']
-    metadata_dict = dict(np.load(p + '/' + npz.replace('_label','_metadata_training')))
+    metadata_dict = dict(np.load(p + '/' + npz.replace('_label05','_metadata_training')))
     vae=metadata_dict['vae_embeddings']
     # print(len(label),"LABEL",len(vae),"VAE")
     #     print(label.shape)
     # print(p + '/' + npz.replace('_label.npz', ''))
-    multi = Multitrack(p + '/' + npz.replace('_label', ''))
+    multi = Multitrack(p + '/' + npz.replace('_label05', ''))
     track = multi.tracks[0].pianoroll
     if track.shape[0] % 96 != 0:
         to_complete_len = 96 - track.shape[0] % 96
@@ -121,7 +121,7 @@ def build_generation_dataset(p, npz):
 
     string = np.array2string(label, precision=0, separator='')[1:-1].replace('.', '').replace(' ', '').replace('\n','')
 
-    indexes_fills_cleaned=allindices(string,'0011')
+    indexes_fills_cleaned=allindices(string,'0001')
 
     indexes_fills_cleaned=np.asarray(indexes_fills_cleaned)
 
