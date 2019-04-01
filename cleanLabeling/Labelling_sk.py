@@ -46,11 +46,11 @@ class Labelling:
             list_x.append(data[label])
         X = np.concatenate(list_x, axis=1)
         X_std=self.scaler.transform(X)
-        y=(self.clf.predict_proba(X_std)>0.5)*1
+        y=(self.clf.predict_proba(X_std)>0.3)*1
         y=y[:,1]
         # print("number of fills",y.sum())
         # y=self.clf.predict(X)
-        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label05.npz', label=y)
+        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label03.npz', label=y)
 
 
 
