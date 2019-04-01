@@ -50,7 +50,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                 p = filepath_dataset + middle + file
 
                 for npz in os.listdir(p):
-                    if 'label03.npz' in npz:
+                    if 'label005.npz' in npz:
                         count += 1
 #                         fill = build_generation_dataset(p, npz)
                         output=build_generation_dataset(p,npz)
@@ -83,7 +83,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
     vae_array=vae_array[1:]
     track_array=track_array[1:]
     genre=genre[1:]
-    np.savez("./FillsExtractedSupervised03",vae=vae_array,genre=genre,track_array=track_array)
+    np.savez("./FillsExtractedSupervised005",vae=vae_array,genre=genre,track_array=track_array)
     return 0
 
 
@@ -97,12 +97,12 @@ def build_generation_dataset(p, npz):
 
     label = dict(np.load(p + '/' + npz))
     label = label['label']
-    metadata_dict = dict(np.load(p + '/' + npz.replace('_label03','_metadata_training')))
+    metadata_dict = dict(np.load(p + '/' + npz.replace('_label005','_metadata_training')))
     vae=metadata_dict['vae_embeddings']
     # print(len(label),"LABEL",len(vae),"VAE")
     #     print(label.shape)
     # print(p + '/' + npz.replace('_label.npz', ''))
-    multi = Multitrack(p + '/' + npz.replace('_label03', ''))
+    multi = Multitrack(p + '/' + npz.replace('_label005', ''))
     track = multi.tracks[0].pianoroll
     if track.shape[0] % 96 != 0:
         to_complete_len = 96 - track.shape[0] % 96
