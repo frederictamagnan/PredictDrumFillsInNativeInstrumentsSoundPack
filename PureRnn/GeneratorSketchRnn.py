@@ -92,9 +92,18 @@ class GeneratorSketchRnn:
             for i, (x) in enumerate(X_loader):
                 x = Variable(x).float()
                 y_pred = self.model(x)
-                y_pred_cat = (y_pred >0.35)
+                # y_pred_cat = (y_pred > 0.25)
+        y_pred = tensor_to_numpy(y_pred).astype(float)
+        y_pred_cat=np.zeros(y_pred.shape)
 
-        y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
+
+        t=np.array([0.3,0.20,0.3,0.3,0.20,0.20,0.20,0.2,0.30])
+
+        for i in range(len(t)):
+            y_pred_cat[:,:,i]=(y_pred[:,:,i]>t[i])*1
+
+
+        # y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         y=y_pred_cat.reshape((n,16, 9))
         print(y[0])
         # print(X[1, 0, :, :],"value")
