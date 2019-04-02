@@ -92,7 +92,7 @@ class GeneratorSketchRnn:
             for i, (x) in enumerate(X_loader):
                 x = Variable(x).float()
                 y_pred = self.model(x)
-                y_pred_cat = (y_pred >0.25)
+                y_pred_cat = (y_pred >0.5)
 
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
         y=y_pred_cat.reshape((n,16, 9))
