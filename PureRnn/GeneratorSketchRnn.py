@@ -47,8 +47,10 @@ class GeneratorSketchRnn:
         encoder = SketchEncoder(batch_size=batch_size,linear_hidden_size=self.linear_hidden_size, gru_hidden_size=self.gru_hidden_size).to(
             self.device)
         decoder = SketchDecoder(batch_size=batch_size,linear_hidden_size=self.linear_hidden_size).to(self.device)
-        self.model = SketchRnnNet(encoder, decoder).to(self.device)
+        # self.model = SketchRnnNet(encoder, decoder).to(self.device)
+        self.model=decoder
         self.model.eval()
+
         print("GOOD")
         self.model.load_state_dict(torch.load(self.model_path + self.model_name, map_location="cuda" if self.use_cuda else "cpu"))
 

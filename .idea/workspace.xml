@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" afterPath="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" />
       <change beforePath="$PROJECT_DIR$/PureRnn/SketchRnnNet.py" afterPath="$PROJECT_DIR$/PureRnn/SketchRnnNet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +15,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sketchRnn_clean_v3/GeneratorSketchRnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="49" column="66" lean-forward="true" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SketchRnnNet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PureRnn/SketchRnnNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="89" column="16" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+            <state relative-caret-position="344">
+              <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -66,7 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>opti</find>
       <find>float</find>
       <find>ran</find>
       <find>norma</find>
@@ -96,6 +119,7 @@
       <find>print</find>
       <find>use</find>
       <find>device</find>
+      <find>relu</find>
     </findStrings>
     <replaceStrings>
       <replace>channels_used</replace>
@@ -114,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sketchRnn_velocity/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_velocity/ScriptTrainingBeta.py" />
         <option value="$PROJECT_DIR$/sketchRnn_velocity/SketchRnnDataset.py" />
         <option value="$PROJECT_DIR$/sketchRnn_velocity/utils.py" />
@@ -157,13 +180,14 @@
         <option value="$PROJECT_DIR$/sketchRnn_clean_v2/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/ScriptTrainingBeta.py" />
-        <option value="$PROJECT_DIR$/sketchRnn_clean_v3/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
         <option value="$PROJECT_DIR$/buildDataset/ScriptchangeChannel.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v4/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v4/TrainingSketchRnn.py" />
         <option value="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" />
+        <option value="$PROJECT_DIR$/sketchRnn_clean_v3/GeneratorSketchRnn.py" />
+        <option value="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/PureRnn/SketchRnnNet.py" />
       </list>
     </option>
@@ -201,12 +225,7 @@
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="buildDataset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="sketchRnn_clean_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="PureRnn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TrainingSketchRnn">
+  <component name="RunManager" selected="Python.SketchRnnNet">
     <configuration name="GeneratorSketchRnn (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,37 +286,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ScriptGenerateLPDSame (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="GeneratorSketchRnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sketchRnn_double" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PureRnn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sketchRnn_double/ScriptGenerateLPDSame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ScriptGenerateMagenta (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sketchRnn_clean_v2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateMagenta.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,6 +317,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/buildDataset/ScriptchangeChannel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="SketchRnnNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PureRnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PureRnn/SketchRnnNet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -340,19 +359,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ScriptGenerateLPDSame (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ScriptGenerateMagenta (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ScriptchangeChannel" />
-      <item index="4" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
+      <item index="0" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ScriptchangeChannel" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
+      <item index="3" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn" />
+      <item index="4" class="java.lang.String" itemvalue="Python.SketchRnnNet" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ScriptchangeChannel" />
-        <item index="2" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ScriptGenerateMagenta (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ScriptGenerateLPDSame (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.SketchRnnNet" />
+        <item index="1" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ScriptchangeChannel" />
+        <item index="4" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -444,13 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sketchRnn/GeneratorSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2268">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LongTermFills/TrainingLongTerm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -731,16 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sketchRnn_clean_v3/GeneratorSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="92" column="42" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="890">
@@ -809,10 +811,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn_clean_v3/GeneratorSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="49" column="66" lean-forward="true" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PureRnn/SketchRnnNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="89" column="16" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+        <state relative-caret-position="344">
+          <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
           <folding />
         </state>
       </provider>
