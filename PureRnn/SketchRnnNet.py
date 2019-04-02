@@ -74,8 +74,8 @@ class SketchDecoder(nn.Module):
         self.bn2 = torch.nn.BatchNorm1d(self.seq_len)
         self.linear1 = torch.nn.Linear(
             self.gru_2_hidden,
-            64)
-        self.linear2=torch.nn.Linear(64,self.num_features)
+            self.num_features)
+        # self.linear2=torch.nn.Linear(64,self.num_features)
 
     def forward(self, x):
 
@@ -86,7 +86,7 @@ class SketchDecoder(nn.Module):
         x=self.linear1(x)
 
         x = self.bn2(x)
-        x=F.relu(self.linear2(x))
+        # x=F.relu(self.linear2(x))
         x = torch.sigmoid(x)
         # print(x.size(),"x final")
         return x
