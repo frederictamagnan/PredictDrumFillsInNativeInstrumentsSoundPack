@@ -76,7 +76,7 @@ class SketchDecoder(nn.Module):
             self.gru_2_hidden,
             self.num_features)
 
-    def forward(self, x,z,hz):
+    def forward(self, x):
 
         x,hz=self.gru(x)
 
