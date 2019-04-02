@@ -79,14 +79,14 @@ class SketchDecoder(nn.Module):
     def forward(self, x):
 
         x,hz=self.gru(x)
-        print(x.size(),"x after GRU")
+        # print(x.size(),"x after GRU")
         x=self.bn1(x)
 
         x=self.linear1(x)
 
         x = self.bn2(x)
         x = torch.sigmoid(x)
-        print(x.size(),"x final")
+        # print(x.size(),"x final")
         return x
 
 
