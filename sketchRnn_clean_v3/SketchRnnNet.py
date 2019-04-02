@@ -89,7 +89,7 @@ class SketchDecoder(nn.Module):
         #     self.seq_len,
         #     self.num_features + self.linear_hidden_size[1])
         # print(x.size(),"contiguous")
-        hz=hz.view(-1,x.size()[0],self.linear_hidden_size[1])
+        hz=hz.view(-1,x.size()[0],self.gru_2_hidden)
         x,hz=self.gru(x,hz)
         # print(x.size(),"X after gru dec")
         x=self.bn1(x)
