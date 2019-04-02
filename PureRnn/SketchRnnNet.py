@@ -79,7 +79,7 @@ class SketchDecoder(nn.Module):
     def forward(self, x):
 
         x,hz=self.gru(x)
-
+        print(x.size(),"x after GRU")
         x=self.bn1(x)
 
         x=self.linear1(x)
