@@ -3,13 +3,12 @@ from sklearn.externals import joblib
 import os
 class Labelling:
 
-    def __init__(self,filepath_model,filename_model,filepath_dataset,filepath_tags):
+    def __init__(self,filepath_dataset,filepath_tags):
 
 
         self.filepath_dataset = filepath_dataset
         self.filepath_tags = filepath_tags
-        self.clf=joblib.load(filepath_model+filename_model)
-        self.scaler=joblib.load(filepath_model+'scaler.pkl')
+
 
     def macro_iteration(self):
 
@@ -38,20 +37,20 @@ class Labelling:
     def label(self,path,npz):
 
         data=dict(np.load(path+'/'+npz))
-        # print(npz,"NPZ")
-        data['vae_embeddings'] = data['vae_embeddings'][:, 0:32]
-        list_label=['vae_embeddings','velocity_metadata']
-        list_x=[]
-        for label in list_label:
-            list_x.append(data[label])
-        X = np.concatenate(list_x, axis=1)
-        X_std=self.scaler.transform(X)
-        y=(self.clf.predict_proba(X_std)>0.1)*1
-        # print(self.clf.predict_proba(X_std))
-        y=y[:,1]
-        # print("number of fills",y.sum())
+        vm=data['velocity_metadata']
+        list_vm=[]
+        index_vm=[22,23,24,25,19]
+        for i in index_vm:
+            m=((vm[:, i] > vm[:, i].max() * 0.75)*1).reshape(1,-1)
+            print(m.shape,"m shape")
+            list_vm.append(m)
+
+        vm_ = np.concatenate(list_vm,axis=0)
+        print(vm_.shape)
+        y=np.sum(vm_,axis=0)>=3
+        print(y.shape,"y shape")
         # y=self.clf.predict(X)
-        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label03.npz', label=y)
+        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_explicit.npz', label=y)
 
 
 

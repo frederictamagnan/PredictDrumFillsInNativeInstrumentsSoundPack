@@ -5,7 +5,7 @@ import midi
 def changeChannel(rootdir,newdir):
     for subdir, dirs, files in os.walk(rootdir):
         for file in files:
-            if file not in [".DS_Store"]:
+            if file not in ["header"]:
                 filepath=os.path.join(subdir, file)
 
                 pattern = midi.read_midifile(filepath)
@@ -24,10 +24,10 @@ def changeChannel(rootdir,newdir):
 
 
 
-rootdir="/home/ftamagna/Documents/_AcademiaSinica/dataset/NI_Drum_Studio_Midi/MIDI Files"
+rootdir="/home/ftamagna/Téléchargements/000082@INDIEPENDENT"
 import os
 
-newdir="/home/ftamagna/Documents/_AcademiaSinica/dataset//NI_Drum_Studio_Midi_encoded/MIDI Files"
+newdir="//home/ftamagna/Téléchargements/000082@INDIEPENDENT2"
 
 
 changeChannel(rootdir,newdir)
