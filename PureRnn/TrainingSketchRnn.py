@@ -91,7 +91,7 @@ class TrainingSketchRnn:
                 optimizer.zero_grad()
                 data_out = sketchrnn(x)
 
-                print(type(data))
+                # print(type(data))
                 loss = F.binary_cross_entropy(data_out,y,reduction='sum')
                 loss.backward()
                 optimizer.step()
