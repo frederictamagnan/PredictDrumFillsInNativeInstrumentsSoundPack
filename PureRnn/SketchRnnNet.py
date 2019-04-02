@@ -86,7 +86,7 @@ class SketchDecoder(nn.Module):
 
         x = self.bn2(x)
         x = torch.sigmoid(x)
-
+        print(x.size(),"x final")
         return x
 
 

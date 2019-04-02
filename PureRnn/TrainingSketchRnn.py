@@ -88,16 +88,11 @@ class TrainingSketchRnn:
             kld_sum = 0
             for batch_i, data in enumerate(self.train_loader):
                 x, y = data
-                # print(x.size(),y.size(),"X Y SIZE")
                 optimizer.zero_grad()
                 data_out = sketchrnn(x)
-                # print(data_out.size(),"dATA OUT")
 
-                loss = F.binary_cross_entropy(
-                    data_out,
-                    data,
-                    reduction='sum'
-                )
+                print(type(data))
+                loss = F.binary_cross_entropy(data_out,y,reduction='sum')
                 loss.backward()
                 optimizer.step()
 
@@ -176,7 +171,7 @@ if __name__=="__main__":
 
     server=False
     if not(server):
-        local_dataset = '/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/bigsupervised.npz'
+        local_dataset = '/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised07_cc.npz'
 
         tg=TrainingSketchRnn(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS,dataset_filepath=local_dataset,beta=0.5,linear_hidden_size=[64,32],gru_hidden_size=64)
         tg.load_data()
