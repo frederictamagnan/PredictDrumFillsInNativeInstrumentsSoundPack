@@ -130,6 +130,7 @@ class SketchRnnNet(nn.Module):
         self._enc_log_sigma = torch.nn.Linear(
             self.linear_hidden_size[0],
             self.linear_hidden_size[1])
+        self.proj=torch.nn.Linear(32,64)
 
     def _sample_latent(self, h_enc):
         """
@@ -151,7 +152,7 @@ class SketchRnnNet(nn.Module):
     def forward(self, x):
         h_enc = self.encoder(x)
         z = self._sample_latent(h_enc)
-        hz=torch.tanh(z)
+        hz=torch.tanh(self.proj(z))
         output = self.decoder(x,z,hz)
 
         return output
