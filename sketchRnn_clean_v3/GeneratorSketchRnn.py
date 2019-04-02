@@ -56,7 +56,7 @@ class GeneratorSketchRnn:
     def generate(self,n,save=True):
         self.load_model(batch_size=n)
         encoder=DrumReducerExpander()
-        X=np.zeros((1,96*4,128))
+        X=np.zeros((1,192,128))
         list_filepath=[]
         i=0
         while i<n:
@@ -67,7 +67,7 @@ class GeneratorSketchRnn:
             piano=multi.tracks[0].pianoroll
             length=len(piano)
             mid=int(length//96//2)
-            x=piano[mid*96:(mid+4)*96]
+            x=piano[mid*96:(mid+2)*96]
             x=x.reshape((1,x.shape[0],x.shape[1]))
             # print(x.shape)
             try:
@@ -81,7 +81,7 @@ class GeneratorSketchRnn:
             # print(x.shape)
         X=encoder.encode(X_old)
         X=encoder.encode_808(X)
-        X=X.reshape((X.shape[0],4,16,9))
+        X=X.reshape((X.shape[0],2,16,9))
         X_dataset=SketchRnnDataset(numpy_array=X,inference=True,use_cuda=self.use_cuda)
         print("LOAD DATASET GOOD")
         X_loader=torch.utils.data.DataLoader(dataset=X_dataset, batch_size=len(X_dataset),
@@ -90,14 +90,13 @@ class GeneratorSketchRnn:
             for i, (x) in enumerate(X_loader):
                 x = Variable(x).float()
                 y_pred = self.model(x)
-                y_pred_cat = (y_pred >0.25)
+                y_pred_cat = (y_pred >0.15)
 
         y_pred_cat=tensor_to_numpy(y_pred_cat).astype(int)
-        y=y_pred_cat.reshape((n,32, 9))
+        y=y_pred_cat.reshape((n,16, 9))
         print(y[0])
         # print(X[1, 0, :, :],"value")
-        x_=X[:, 0:2, :, :].reshape((n,32,9))
-        new = np.concatenate((x_, y,x_, y),axis=1)
+        new = np.concatenate((X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y,X[:, 0, :, :],X[:, 0, :, :],X[:, 0, :, :], y),axis=1)
         print(new.shape)
         # print(new[0].sum())
         new_dec=encoder.decode(new)
@@ -107,7 +106,7 @@ class GeneratorSketchRnn:
 
         if save==True:
             for i in range(len(X)):
-                numpy_drums_save_to_midi(X_old[i].reshape(96*4,128),self.temp_filepath,list_filepath[i][1]+"_original")
+                numpy_drums_save_to_midi(X_old[i].reshape(192,128),self.temp_filepath,list_filepath[i][1]+"_original")
                 numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, list_filepath[i][1] + "_new")
 
         new2 = np.concatenate((X[:, 0, :, :], y), axis=1)
@@ -155,10 +154,10 @@ class GeneratorSketchRnn:
                 y_pred = self.model(x)
                 y_pred_cat = (y_pred > th)
         y_pred_cat = tensor_to_numpy(y_pred_cat).astype(int)
-        y = y_pred_cat.reshape((n, 32, 9))
+        y = y_pred_cat.reshape((n, 16, 9))
         y[:,:,1]=0
         new = np.concatenate(
-            (X[:, :2, :, :], y, X[:, :2, :, :], y), axis=1)
+            (X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y, X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y), axis=1)
 
         new_dec = encoder.decode(new)
         new_dec = encoder.decode_808(new_dec)
@@ -233,7 +232,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'sketchrnn_Four_500_v2.pt'
+        model_name = 'sketchrnn_Supervised_250_v2.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']

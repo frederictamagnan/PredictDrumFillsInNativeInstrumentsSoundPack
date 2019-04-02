@@ -7,7 +7,7 @@ from torch.autograd import Variable
 
 class SketchEncoder(nn.Module):
 
-    def __init__(self,batch_size=256,num_features=9,gru_hidden_size=64,seq_len=16,num_directions=2,linear_hidden_size=[64,32]):
+    def __init__(self,batch_size=256,num_features=9,gru_hidden_size=32,seq_len=16,num_directions=1,linear_hidden_size=[64,32]):
         super(SketchEncoder, self).__init__()
 
         self.num_features=num_features
@@ -58,13 +58,14 @@ class SketchDecoder(nn.Module):
     def __init__(self,batch_size=256,num_features=9,seq_len=16,linear_hidden_size=[64,32]):
         super(SketchDecoder, self).__init__()
         self.num_features = num_features
+        self.gru_2_hidden=64
         self.seq_len = seq_len
         self.linear_hidden_size = linear_hidden_size
         self.batch_size=batch_size
         self.gru = torch.nn.GRU(
             input_size=self.num_features+self.linear_hidden_size[1],
             num_layers=1,
-            hidden_size=self.linear_hidden_size[1],
+            hidden_size=self.gru_2_hidden,
             bias=True,
             batch_first=True,
             bidirectional=False,
@@ -72,7 +73,7 @@ class SketchDecoder(nn.Module):
         self.bn1 = torch.nn.BatchNorm1d(self.seq_len)
         self.bn2 = torch.nn.BatchNorm1d(self.seq_len)
         self.linear1 = torch.nn.Linear(
-            self.linear_hidden_size[1],
+            self.gru_2_hidden,
             self.num_features)
 
     def forward(self, x,z,hz):

@@ -22,7 +22,7 @@ else:
 #train validation creation from indices
 
 
-for i_name,name in enumerate(['Four']):
+for i_name,name in enumerate(['Supervised']):
 
 
     # for beta in [0.01,0.1,1,100,250]:

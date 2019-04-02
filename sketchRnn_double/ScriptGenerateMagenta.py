@@ -15,7 +15,7 @@ else:
     tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
     temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
     indices_path='lol'
-for i_name,name in enumerate(['Supervised']):
+for i_name,name in enumerate(['Four']):
 
 
     # for beta in [0.01,0.1,1,100,250]:
@@ -27,7 +27,7 @@ for i_name,name in enumerate(['Supervised']):
         # g.generate(10,save=False)
         array = np.load(dataset_array + name_array)
 
-        array = array.reshape((array.shape[0], 1, 16, 9))
+        array = array.reshape((array.shape[0], 1, 32, 9))
 
 
         g.generate_from_magenta(array,tag="_method_1",th=0.18)
