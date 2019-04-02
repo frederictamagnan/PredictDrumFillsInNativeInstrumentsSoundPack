@@ -1,6 +1,6 @@
 from TrainingSketchRnn import TrainingSketchRnn
 
-LR=0.001
+LR=0.0001
 
 N_EPOCHS=300
 for beta in [250]:
