@@ -58,13 +58,13 @@ class SketchDecoder(nn.Module):
     def __init__(self,batch_size=256,num_features=9,seq_len=16,linear_hidden_size=[64,32]):
         super(SketchDecoder, self).__init__()
         self.num_features = num_features
-        self.gru_2_hidden=128
+        self.gru_2_hidden=64
         self.seq_len = seq_len
         self.linear_hidden_size = linear_hidden_size
         self.batch_size=batch_size
         self.gru = torch.nn.GRU(
             input_size=self.num_features,
-            num_layers=1,
+            num_layers=2,
             hidden_size=self.gru_2_hidden,
             bias=True,
             batch_first=True,
