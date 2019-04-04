@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" afterPath="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" afterPath="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,21 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="748">
               <caret line="64" column="90" lean-forward="true" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptTrainingBeta.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScriptTrainingBeta.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="108" lean-forward="false" selection-start-line="11" selection-start-column="108" selection-end-line="11" selection-end-column="108" />
+            <state relative-caret-position="108">
+              <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -153,8 +153,8 @@
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
         <option value="$PROJECT_DIR$/PureRnn/ScriptCleaning.py" />
         <option value="$PROJECT_DIR$/PureRnn/ScriptIntersect.py" />
-        <option value="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
         <option value="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" />
+        <option value="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
       </list>
     </option>
   </component>
@@ -774,18 +774,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py">
+    <entry file="file://$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="108" lean-forward="false" selection-start-line="11" selection-start-column="108" selection-end-line="11" selection-end-column="108" />
+        <state relative-caret-position="748">
+          <caret line="64" column="90" lean-forward="true" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py">
+    <entry file="file://$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="64" column="90" lean-forward="true" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
+        <state relative-caret-position="108">
+          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
           <folding />
         </state>
       </provider>

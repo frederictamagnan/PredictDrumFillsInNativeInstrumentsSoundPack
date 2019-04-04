@@ -4,7 +4,7 @@ LR=0.001
 
 N_EPOCHS=300
 
-for name,batch_size in [('Supervised',256),('Supervised03',2048),('RuleBased',4096)]:
+for name,batch_size in [('Supervised',256),('Supervised03',1024),('RuleBased',4096)]:
     BATCH_SIZE=batch_size
 
     local_dataset='/home/ftamagnan/dataset/FillsExtracted'+name+'_train.npz'
