@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn/ScriptCleaning.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/PureRnn/ScriptIntersect.py" afterPath="$PROJECT_DIR$/PureRnn/ScriptIntersect.py" />
-      <change beforePath="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" afterPath="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" afterPath="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1682">
               <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptTrainingBeta.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="108" lean-forward="false" selection-start-line="11" selection-start-column="108" selection-end-line="11" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -159,7 +166,6 @@
         <option value="$PROJECT_DIR$/sketchRnn_clean_v4/TrainingSketchRnn.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/PureRnn/SketchRnnNet.py" />
-        <option value="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
         <option value="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptCleanDataset.py" />
         <option value="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
@@ -169,6 +175,7 @@
         <option value="$PROJECT_DIR$/PureRnn/ScriptCleaning.py" />
         <option value="$PROJECT_DIR$/PureRnn/ScriptIntersect.py" />
         <option value="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" />
+        <option value="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
       </list>
     </option>
   </component>
@@ -658,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PureRnn/DrumReducerExpander.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -799,6 +799,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1682">
           <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="108" lean-forward="false" selection-start-line="11" selection-start-column="108" selection-end-line="11" selection-end-column="108" />
           <folding />
         </state>
       </provider>
