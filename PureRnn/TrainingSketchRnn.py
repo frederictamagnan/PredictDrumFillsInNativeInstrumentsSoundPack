@@ -61,7 +61,7 @@ class TrainingSketchRnn:
 
         self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=True)
         self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=False,drop_last=True)
-        self.validation_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size,
+        self.validation_loader = torch.utils.data.DataLoader(dataset=self.validation, batch_size=self.batch_size,
                                                              shuffle=False,drop_last=True)
 
     def count_parameters(self,model):
