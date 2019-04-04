@@ -1,6 +1,6 @@
 import numpy as np
 filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/'
-filename='FillsExtractedSupervised07_cc.npz'
+filename='FillsExtractedClustering_cleaned_v2.npz'
 data=np.load(filepath+filename)
 data=dict(data)
 
@@ -30,7 +30,7 @@ print(vae.shape,track_array.shape,genre.shape)
 #KILL SNARE
 print(track_array[:,1,:,1].shape)
 snare=np.sum(track_array[:,1,:,1],axis=1)
-indices=np.argwhere(snare<6)
+indices=np.argwhere(snare<10)
 
 vae=vae[indices[:,0],:,:,:]
 track_array=track_array[indices[:,0],:,:,:]

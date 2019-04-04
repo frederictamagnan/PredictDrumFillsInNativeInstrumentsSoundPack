@@ -166,7 +166,7 @@ class GeneratorSketchRnn:
         # statt,pvalue=stats.wilcoxon(list_gen,list_or)
 
         # print(pvalue)
-        arr=np.asarray([list_or,list_x_or])
+        arr=np.asarray([list_or,list_gen])
         chi2,pvalue,dof,expected=stats.chi2_contingency(arr)
 
         return pvalue

@@ -4,8 +4,28 @@
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" afterPath="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" />
-      <change beforePath="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" afterPath="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/Indices.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/ScriptCheck.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/indices_sketchrnn_Diff_250_v2.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/indices_sketchrnn_Diff_250_v3.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/indices_sketchrnn_Diff_250_v4.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/indices_sketchrnn_Supervised_250_v2.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/indices_sketchrnn_Supervised_250_v3.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/indices_sketchrnn_Supervised_250_v4.pt.npz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/lol.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/metrics_training_sketchrnn_Diff_250_v2.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/metrics_training_sketchrnn_Diff_250_v3.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/metrics_training_sketchrnn_Diff_250_v4.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/metrics_training_sketchrnn_Supervised_250_v2.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/metrics_training_sketchrnn_Supervised_250_v3.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/metrics_training_sketchrnn_Supervised_250_v4.pt.npy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PureRnn/script.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_paper/ISMIRDrumFillNet.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
+      <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py" />
       <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptCleanDataset.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptCleanDataset.py" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <change beforePath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" afterPath="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,21 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ScriptTrainingBeta.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GeneratorSketchRnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2656">
-              <caret line="99" column="55" lean-forward="false" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
+            <state relative-caret-position="1692">
+              <caret line="94" column="43" lean-forward="false" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -41,7 +51,7 @@
       <file leaf-file-name="DrumReducerExpander.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PureRnn/DrumReducerExpander.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -53,9 +63,81 @@
       <file leaf-file-name="ScriptCleanDataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptCleanDataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state relative-caret-position="576">
+              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SketchRnnNet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PureRnn/SketchRnnNet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="60" column="28" lean-forward="false" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptExploreFills.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptBuildDatasetGenerationServer05.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Labelling_sk.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_sk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="53" column="80" lean-forward="false" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptLabelling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-160">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptIntersect.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PureRnn/ScriptIntersect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-48">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluateSketchRnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PureRnn/EvaluateSketchRnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2484">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sketchRnn_velocity/SketchRnnDataset.py" />
         <option value="$PROJECT_DIR$/sketchRnn_velocity/utils.py" />
         <option value="$PROJECT_DIR$/sketchRnn_velocity/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_fusion.py" />
@@ -147,7 +228,6 @@
         <option value="$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808_9.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptTrainingBeta.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateMagenta.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v2/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v2/ScriptGenerateLPDSame.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py" />
@@ -159,25 +239,27 @@
         <option value="$PROJECT_DIR$/sketchRnn_clean_v2/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/ScriptTrainingBeta.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py" />
-        <option value="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
         <option value="$PROJECT_DIR$/buildDataset/ScriptchangeChannel.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v4/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v4/TrainingSketchRnn.py" />
         <option value="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/PureRnn/SketchRnnNet.py" />
+        <option value="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
         <option value="$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptCleanDataset.py" />
-        <option value="$PROJECT_DIR$/PureRnn/ScriptTrainingBeta.py" />
+        <option value="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/Labelling_sk.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="y" value="-4" />
-    <option name="width" value="1285" />
-    <option name="height" value="652" />
+    <option name="x" value="45" />
+    <option name="y" value="24" />
+    <option name="width" value="1283" />
+    <option name="height" value="616" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,7 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,6 +299,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,6 +336,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.GeneratorSketchRnn">
+    <configuration name="EvaluateSketchRnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sketchRnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="GeneratorSketchRnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,19 +390,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ScriptchangeChannel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ScriptExploreFills" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/buildDataset" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drumGeneration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/buildDataset/ScriptchangeChannel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -326,38 +426,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="TrainingSketchRnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PureRnn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ScriptchangeChannel" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
-      <item index="2" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SketchRnnNet" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ScriptCleanDataset" />
+      <item index="0" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SketchRnnNet" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ScriptCleanDataset" />
+      <item index="3" class="java.lang.String" itemvalue="Python.EvaluateSketchRnn" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.GeneratorSketchRnn" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ScriptCleanDataset" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SketchRnnNet" />
-        <item index="3" class="java.lang.String" itemvalue="Python.TrainingSketchRnn" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ScriptchangeChannel" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+        <item index="2" class="java.lang.String" itemvalue="Python.EvaluateSketchRnn" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ScriptCleanDataset" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SketchRnnNet" />
       </list>
     </recent_temporary>
   </component>
@@ -378,25 +460,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="-4" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29649594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33973867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2972973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40899795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -449,69 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/PycharmProjects/DrumFillsNI/LongTermFills/LongTermNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LongTermFills/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1616">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNetDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LongTermFills/LongTermNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="316" column="48" lean-forward="false" selection-start-line="316" selection-start-column="48" selection-end-line="316" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptGenerateSimple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LongTermFills/GeneratorLongTerm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1772">
-          <caret line="101" column="59" lean-forward="false" selection-start-line="101" selection-start-column="59" selection-end-line="101" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/VaeEncoderDecoder_808_9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" column="111" lean-forward="false" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptCheckVAEBasicGeneration_808_9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sketchRnn_clean_v2/ScriptTrainingBeta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -543,13 +562,6 @@
     <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_explicit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-324">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -593,13 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="92" lean-forward="false" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -708,27 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="104" column="54" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_sk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/buildDataset/ScriptchangeChannel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="1591" column="0" lean-forward="false" selection-start-line="1591" selection-start-column="0" selection-end-line="1591" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,9 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1404">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="49" column="66" lean-forward="true" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,43 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="94" column="35" lean-forward="true" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/SketchRnnNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="60" column="28" lean-forward="false" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/DrumReducerExpander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2656">
-          <caret line="99" column="55" lean-forward="false" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptCleanDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,6 +766,152 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/DrumReducerExpander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptCleanDataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/SketchRnnNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="60" column="28" lean-forward="false" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluate/train_metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluate/evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchRnn/EvaluateSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3024">
+          <caret line="168" column="29" lean-forward="false" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/ScriptCheck.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/lol.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/Indices.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/ScriptIntersect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/EvaluateSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2484">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="94" column="43" lean-forward="false" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer05.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_sk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="53" column="80" lean-forward="false" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
           <folding />
         </state>
       </provider>

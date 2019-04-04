@@ -10,7 +10,7 @@ from utils import numpy_drums_save_to_midi
 # # print(vae[:10])
 # print(genre.shape,vae.shape,genre.sum())
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedFour_cc.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedSupervised07_cc_cc.npz')
 data=dict(data)
 for elt in data.keys():
     print(data[elt].shape)
@@ -26,7 +26,7 @@ tr=data['track_array']
 # genre=data['genre'][indices]
 from DrumReducerExpander import DrumReducerExpander
 dec=DrumReducerExpander()
-if 1==1:
+if 1==0:
     for i in range(len(tr)):
         track=tr[i+2300].reshape((4*16,9))
         track=dec.decode(batch_pianoroll=track,no_batch=True)
