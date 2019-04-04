@@ -47,9 +47,9 @@ class TrainingSketchRnn:
 
 
     def split_data(self):
-        ratio = 0.6
+        ratio = 0.8
         train_length = int(len(self.dataset) * ratio)
-        validation_length = int((len(self.dataset) - train_length) * 0.5)
+        validation_length = int((len(self.dataset) - train_length) * 1)
         test_length = len(self.dataset) - validation_length - train_length
         self.train, self.validation, self.test = random_split(self.dataset,
                                                               [train_length, validation_length, test_length])
@@ -121,7 +121,7 @@ class TrainingSketchRnn:
 
             # if epoch % 5 == 0:
             loss_sum_test = 0
-            for batch_i, data in enumerate(self.test_loader):
+            for batch_i, data in enumerate(self.validation_loader):
                 with torch.no_grad():
                     data = Variable(data[0]).type(torch.float32).to(self.device)
                     data_out = sketchrnn(data)
@@ -134,11 +134,11 @@ class TrainingSketchRnn:
                     loss_sum_test += loss.item()
 
             print('====> Testing Average Loss: {}'.format(
-                loss_sum_test / len(self.test_loader.dataset)))
+                loss_sum_test / len(self.validation_loader.dataset)))
 
             row=np.asarray([epoch, loss_sum / len(self.train_loader.dataset),
              bce_sum / len(self.train_loader.dataset),
-             kld_sum / len(self.train_loader.dataset), loss_sum_test / len(self.test_loader.dataset)]).reshape((1,5))
+             kld_sum / len(self.train_loader.dataset), loss_sum_test / len(self.validation_loader.dataset)]).reshape((1,5))
 
 
             self.loss_train_metrics = np.concatenate((self.loss_train_metrics, row))
