@@ -39,6 +39,7 @@ for key in data1.keys():
 y_fills=total['y_fills']
 print(y_fills[:,1,0].sum())
 
+print(y_fills1[:,1].sum(),y_fills2[:,1].sum())
 
 # np.savez(newdir+"total",**total)
 

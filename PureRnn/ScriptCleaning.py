@@ -19,7 +19,7 @@ for name in name_raw:
     minn=7
     tr=data['track_array']
     track_array=tr>0
-
+    print(track_array.shape,"before")
     track_array, indices = np.unique(track_array, axis=0, return_index=True)
     vae = data['vae'][indices]
     genre = data['genre'][indices]

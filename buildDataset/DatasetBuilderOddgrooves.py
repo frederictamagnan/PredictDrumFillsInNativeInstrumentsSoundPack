@@ -62,8 +62,8 @@ class DatasetBuilder:
 
     def folders_to_clean_numpy(self):
         list_filepath=[]
-        filldifferent1=0
-        filldifferent2=0
+        self.filldifferent1=0
+        self.filldifferent2=0
         beat_resolution=True
         list_subdir=[]
         X=np.zeros((1,96,9))
@@ -183,7 +183,7 @@ class DatasetBuilder:
         y_velocity=y_velocity[1:,]
 
 
-        np.savez(newdir+'dataset_part_total_'+TIME+'.npz',X=X,y_genre=y_genre,y_fills=y_fills,y_bpm=y_bpm,y_dataset=y_dataset,y_used=y_used,y_velocity=y_velocity,y_offbeat=y_offbeat)
+        # np.savez(newdir+'dataset_part_total_'+TIME+'.npz',X=X,y_genre=y_genre,y_fills=y_fills,y_bpm=y_bpm,y_dataset=y_dataset,y_used=y_used,y_velocity=y_velocity,y_offbeat=y_offbeat)
 
         with open(newdir + 'data'+TIME+'.json', 'w') as outfile:
             json.dump(list_subdir, outfile)
@@ -191,7 +191,7 @@ class DatasetBuilder:
 
         print("errors count : ",error)
         print(i,"nb loop")
-        print("fill different less",filldifferent2,"mre",filldifferent1)
+        print("fill different less",self.filldifferent2,"mre",self.filldifferent1)
         print(beat_resolution)
 
     def load_dataset(self,filepath):
@@ -212,18 +212,22 @@ class DatasetBuilder:
             padding = np.zeros((96 - length, height))
             print(multi.tracks[0].pianoroll.shape,padding.shape)
             a=np.concatenate((padding, multi.tracks[0].pianoroll))
-            print(a)
+            # print(a)
             multi.tracks[0].pianoroll =a
             list_multi.append(multi)
+            # print("pad")
+            self.filldifferent2+=1
             return list_multi
         else:
+            print("crop")
             i=0
             while (i + 1) * 96 <= length:
                 new_multi=multi.copy()
                 new_multi.tracks[0].pianoroll=multi.tracks[0].pianoroll[i*96:(i+1)*96]
                 list_multi.append(new_multi)
-                i+=1
 
+                i+=1
+            self.filldifferent1+=1
         return list_multi
 
 

@@ -92,7 +92,7 @@ class GeneratorSketchRnn:
             for i, (x) in enumerate(X_loader):
                 x = Variable(x).float()
                 y_pred = self.model(x)
-                y_pred_cat = (y_pred > 0.27)
+                y_pred_cat = (y_pred > 0.25)
         # y_pred = tensor_to_numpy(y_pred).astype(float)
         # y_pred_cat=np.zeros(y_pred.shape)
 
@@ -244,7 +244,7 @@ if __name__=='__main__':
 
     else:
         model_path='/home/ftamagna/Documents/_AcademiaSinica/code/DrumFillsNI/models/'
-        model_name = 'sketchrnn_Supervised_250_v4.pt'
+        model_name = 'sketchrnn_Supervised_v4.pt'
 
         dataset_path='/home/ftamagna/Documents/_AcademiaSinica/dataset/lpd_5/lpd_5_cleansed/'
         tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
