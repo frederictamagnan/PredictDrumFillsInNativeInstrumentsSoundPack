@@ -32,7 +32,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #     track_array=np.zeros((1,3,16,9))
     vae_array=np.zeros((1,3,32,2))
     track_array=np.zeros((1,3,16,9))
-    real_track_array=np.zeros((1,3,196,128))
+    # real_track_array=np.zeros((1,3,196,128))
     count = 0
     genre=np.zeros((1,16,1))
     # ITERATE OVER THE TAG LISTS
@@ -67,7 +67,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                             vae = vae.reshape((vae.shape[0], 3, 32, 2))
                             vae_array=np.concatenate((vae_array,vae))
                             track_array=np.concatenate((track_array,track_ar))
-                            real_track_array=np.concatenate((real_track_array,tab_ar_o))
+                            # real_track_array=np.concatenate((real_track_array,tab_ar_o))
 #                             genre_fill=np.zeros((fill.shape[0],15,1))
                             genre_fill=np.zeros((vae.shape[0],16,1))
                             genre_fill[:,tag_i,0]=1
@@ -85,7 +85,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
     vae_array=vae_array[1:]
     track_array=track_array[1:]
     genre=genre[1:]
-    real_track_array=real_track_array[1:]
+    # real_track_array=real_track_array[1:]
     np.savez("./FillsExtractedSupervised",vae=vae_array,genre=genre,track_array=track_array,real_track_array=real_track_array)
     return 0
 
@@ -144,7 +144,7 @@ def build_generation_dataset(p, npz):
         tab_track=enc.encode_808(tab_track)
         tab_track = tab_track.reshape((-1, 3, 16, 9))
         tab_track_o=tab_track_o.reshape((-1,3,96,128))
-        return tab,tab_track,tab_track_o
+        return tab,tab_track
 
 def allindices(string, sub):
     listindex = []

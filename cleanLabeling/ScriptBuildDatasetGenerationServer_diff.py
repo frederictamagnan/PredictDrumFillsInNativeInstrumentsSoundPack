@@ -29,7 +29,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #     fills = np.zeros((1, 3 ,96, 9))
     vae_array=np.zeros((1,3,32,2))
     track_array=np.zeros((1,3,16,9))
-    real_track_array=np.zeros((1,3,96,128))
+    # real_track_array=np.zeros((1,3,96,128))
 #     vae_array=np.zeros((1,4,32,2))
 #     track_array=np.zeros((1,4,16,9))
     count = 0
@@ -57,7 +57,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 
 #                         if fill is not None:
                         if output is not None:
-                            vae,track_ar,track_ar_o=output
+                            vae,track_ar=output
 #                             fill=fill.reshape((fill.shape[0],3*96,128))
 #                             fill = enc.encode(fill)
 #                             fill=fill.reshape((fill.shape[0],3,96,9))
@@ -66,7 +66,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #                             vae = vae.reshape((vae.shape[0], 4, 32, 2))
                             vae_array=np.concatenate((vae_array,vae))
                             track_array=np.concatenate((track_array,track_ar))
-                            real_track_array=np.concatenate((real_track_array,track_ar_o))
+                            # real_track_array=np.concatenate((real_track_array,track_ar_o))
 #                             genre_fill=np.zeros((fill.shape[0],15,1))
                             genre_fill=np.zeros((vae.shape[0],16,1))
                             genre_fill[:,tag_i,0]=1
@@ -80,7 +80,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #     fills = fills[1:]
 #     genre=genre[1:]
 #     np.savez("./reduced_fills_plus_embeddings", fills=fills,genre=genre)
-    real_track_array=real_track_array[1:]
+#     real_track_array=real_track_array[1:]
     vae_array=vae_array[1:]
     track_array=track_array[1:]
     genre=genre[1:]
@@ -135,7 +135,7 @@ def build_generation_dataset(p, npz):
         # tab_track=tab_track.reshape((-1,3,16,9))
         tab_track = tab_track.reshape((-1,3,16, 9))
         tab_track_o = tab_track_o.reshape((-1, 3, 96, 128))
-        return tab,tab_track,tab_track_o
+        return tab,tab_track
 
 def allindices(string, sub):
     listindex = []
