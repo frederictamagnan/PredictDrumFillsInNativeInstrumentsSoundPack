@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/Labelling_diff_anti.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff_anti.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/RnnDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/RnnNet.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/ScriptIntersect.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/TrainingRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/utils.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff_anti.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py" afterPath="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer.py" />
-      <change beforePath="$PROJECT_DIR$/handlabel/ScriptCleaning.py" afterPath="$PROJECT_DIR$/handlabel/ScriptCleaning.py" />
-      <change beforePath="$PROJECT_DIR$/handlabel/ScriptWriteMidi.py" afterPath="$PROJECT_DIR$/handlabel/ScriptWriteMidi.py" />
-      <change beforePath="$PROJECT_DIR$/models/sketchrnn.pt" afterPath="$PROJECT_DIR$/models/sketchrnn.pt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,11 +46,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Labelling_diff_anti.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Labelling_diff_anti.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_diff_anti.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
               <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptLabelling_diff.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptLabelling_diff_anti.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff_anti.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -103,18 +112,6 @@
             <state relative-caret-position="468">
               <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScriptConcatenateMultiMidi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-              <folding>
-                <element signature="e#80#105#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -178,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_four.py" />
         <option value="$PROJECT_DIR$/sketchRnn_double/SketchRnnDataset.py" />
         <option value="$PROJECT_DIR$/sketchRnn_double/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_double/ScriptGenerateLPDSame.py" />
@@ -229,6 +225,7 @@
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_diff_anti.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff_anti.py" />
+        <option value="$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff_anti.py" />
       </list>
     </option>
   </component>
@@ -494,8 +491,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/pandas/core/generic.py" />
-    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/pandas/core/dtypes/cast.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/pandas/core/internals.py" />
     <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_diff.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -876,6 +871,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff_anti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
           <folding />
         </state>
       </provider>
