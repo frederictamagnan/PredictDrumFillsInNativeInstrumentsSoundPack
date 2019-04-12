@@ -50,7 +50,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                 p = filepath_dataset + middle + file
 
                 for npz in os.listdir(p):
-                    if 'label_diff.npz' in npz:
+                    if 'label_diff_anti.npz' in npz:
                         count += 1
 #                         fill = build_generation_dataset(p, npz)
                         output=build_generation_dataset(p,npz)
