@@ -36,9 +36,9 @@ def testchi2(test):
     e=list_rp
     arr = np.asarray([o, e])
     chi2, pvalue, dof, expected = stats.chi2_contingency(arr)
-    chi_squared_stat = (np.power(o- e,2) / e).sum()
-    pvalue = 1 - stats.chi2.cdf(x=chi_squared_stat,  # Find the p-value
-                                 df=8)
+    # chi_squared_stat = (np.power(o- e,2) / e).sum()
+    # pvalue = 1 - stats.chi2.cdf(x=chi_squared_stat,  # Find the p-value
+    #                              df=8)
 
     return pvalue
 

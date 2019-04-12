@@ -51,7 +51,7 @@ class Labelling:
         y=y[:,1]
         # print("number of fills",y.sum())
         # y=self.clf.predict(X)
-        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label05.npz', label=y)
+        np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label.npz', label=y)
 
 
 

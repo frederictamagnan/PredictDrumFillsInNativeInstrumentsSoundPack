@@ -15,8 +15,8 @@ else:
     tags_path= ['/home/ftamagna/Documents/_AcademiaSinica/code/LabelDrumFills/id_lists/tagtraum/tagtraum_Rock.id']
     temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
     indices_path='lol'
-th=[0.23,0.23,0.20]
-for i_name,name in enumerate(['Supervised','Supervised03','RuleBased']):
+th=[0.23,0.21,0.23]
+for i_name,name in enumerate(['Supervised',"Supervised03",'RuleBased']):
 
     model_name='sketchrnn_'+name+'_v4.pt'
     temp_filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/'
@@ -26,7 +26,7 @@ for i_name,name in enumerate(['Supervised','Supervised03','RuleBased']):
     array = np.load(dataset_array + name_array)
 
     array=dict(array)
-    array=array['track_array'][:30]
+    array=array['track_array'][0:30]
     array=array[:,0,:,:].reshape((array.shape[0],1,16,9))
     g.generate_from_magenta(array,tag="_method_"+str(i_name),th=th[i_name])
 

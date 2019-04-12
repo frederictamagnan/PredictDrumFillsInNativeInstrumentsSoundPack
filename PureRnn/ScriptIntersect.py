@@ -36,7 +36,8 @@ list_arr=[]
 for name in name_raw:
     temp=np.load(filepath+name.replace('.npz','_c.npz'))
     temp=dict(temp)
-    temp=(temp['track_array']>0)*1
+    # temp=(temp['track_array']>0)*1
+    temp = temp['track_array']
     list_arr.append(temp)
 
 def inter(a,b,c):
@@ -65,7 +66,7 @@ def inter(a,b,c):
         np.savez(filepath+name_raw[i].replace('.npz','_train.npz'),track_array=elt)
 
     print(inter_.shape)
-    np.savez(filepath+'validation',track_array=inter_)
+    np.savez(filepath+'validation_velo',track_array=inter_)
 
 
 

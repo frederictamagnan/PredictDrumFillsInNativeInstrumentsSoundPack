@@ -26,6 +26,7 @@ tr=data['track_array']
 # genre=data['genre'][indices]
 from DrumReducerExpander import DrumReducerExpander
 dec=DrumReducerExpander()
+np.random.shuffle(tr)
 if 1==1:
     for i in range(len(tr)):
         # track=tr[i+300].reshape((2*16,9))
@@ -38,7 +39,7 @@ if 1==1:
         track=dec.decode_808(batch_pianoroll=track,no_batch=True)
         numpy_drums_save_to_midi(track,'/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/',str(i))
 
-        if i>10:
+        if i>50:
             break
 
 # minn=7

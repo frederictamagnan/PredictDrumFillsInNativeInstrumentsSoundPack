@@ -19,6 +19,7 @@ def grade(data):
 
     # print(data)
     grade=[0,0,0,0,0,0]
+    grade_list=[[],[],[],[],[],[]]
     number=[0,0,0,0,0,0]
     list_value=[[],[],[],[],[],[]]
 
@@ -35,23 +36,29 @@ def grade(data):
             sum_=pd.to_numeric(data[key]).sum(skipna=True)
             grade[model_id]+=sum_
             list_value[model_id]=list_value[model_id]+ pd.to_numeric(data[key]).tolist()
-            count_=data.count()[i]
-            number[model_id]+=count_
-            grade_column+=1
 
+            count_=data.count()[i]
+            # print(count_,"COUNT")
+            number[model_id]+=(count_)
+            grade_column+=1
+            grade_list[model_id].append(sum_)
+
+        if grade_column==3*4 :
+            pass
     def remove_values_from_list(the_list, val):
        return [value for value in the_list if value != val]
     grade=remove_values_from_list(grade,0)
     number=remove_values_from_list(number,0)
 
 
+
     import numpy as np
     lol=np.array(grade)/np.array(number)
     print(lol)
-
+    # print(grade_list)
     print(grade, number)
-    return list_value
-value=grade(data)
+    return list_value,np.array(grade_list)
+value,grade_list=grade(data)
 
 
 # def most_frequent(List):
@@ -60,7 +67,7 @@ value=grade(data)
 
 def most_frequent(List):
     unique_elements, counts_elements = np.unique(np.array(List), return_counts=True)
-    return np.asarray((unique_elements, counts_elements))
+    return np.asarray((unique_elements, counts_elements/sum(counts_elements)))
 mapping=[[0,2,4,5],[0,5,4,2],[4,0,5,2],[5,2,4,0],[0,4,5,2]]
 total=[]
 column_coherent=0
@@ -131,8 +138,21 @@ for i,key in enumerate(data.keys()):
         column_coherent+=1
         # print(column_coherent)
 most=most_frequent(total)
-print(most,"Best groove")
+# print(most,"Best groove")
 print(len(value[2]),len(value[4]))
-# print(value[2])
+print(np.isnan(value[4]).sum())
+from scipy.stats import wilcoxon
 stat,pvalue=ttest_rel(value[2],value[4],nan_policy='omit')
+
 print(pvalue)
+a=value[2]
+b=value[4]
+a=np.array(a)
+b=np.array(b)
+a=a[~(np.isnan(a))]
+b=b[~(np.isnan(b))]
+t,pvalue=wilcoxon(a,b)
+print(pvalue)
+print(b[:5])
+
+print(grade_list)

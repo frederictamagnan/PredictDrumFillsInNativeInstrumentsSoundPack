@@ -78,14 +78,26 @@ class Metadata:
         np.savez(filepath+name+'_metadata_training.npz',**self.metadata)
 
 if __name__=='__main__':
-    lol=np.zeros((257,96,128))
-    metadata=Metadata(lol)
-    metadata_d=metadata.metadata
-    for key in metadata_d.keys():
-        print("shape metadata", key, metadata_d[key].shape)
+    # lol=np.zeros((257,96,128))
+    # metadata=Metadata(lol)
+    # metadata_d=metadata.metadata
+    # for key in metadata_d.keys():
+    #     print("shape metadata", key, metadata_d[key].shape)
 
+    filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/'
+    name=['validation.npz']
+    enc=DrumReducerExpander()
+    for elt in name:
+        data=np.load(filepath+elt)
+        data=dict(data)
+        data=data['track_array']
+        data=data[:,1,:,:]
+        print(data.shape)
+        data=enc.decode(data)
+        data=enc.decode_808(data)
+        metadata=Metadata(data)
 
-
+        np.save(filepath+elt+'_vae.npy',metadata.metadata['vae_embeddings'])
 
 
 

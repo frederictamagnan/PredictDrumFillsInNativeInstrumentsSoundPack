@@ -171,7 +171,9 @@ class GeneratorSketchRnn:
         new = np.concatenate(
             (X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y, X[:, 0, :, :], X[:, 0, :, :], X[:, 0, :, :], y), axis=1)
 
+        # np.savez(self.temp_filepath+tag,track_array=y)
         new_dec = encoder.decode(new)
+
         new_dec = encoder.decode_808(new_dec)
 
         # old = np.concatenate(
@@ -182,6 +184,7 @@ class GeneratorSketchRnn:
         # old_dec = encoder.decode_808(old_dec)
 
         if save == True:
+            pass
             for i in range(len(X)):
                 numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, "sample_" + str(i) + tag)
                 # numpy_drums_save_to_midi(old_dec[i], self.temp_filepath, "sample_" + str(i) + tag+"_magenta")
