@@ -58,7 +58,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 
 #                         if fill is not None:
                         if output is not None:
-                            vae,track_ar,tab_ar_o=output
+                            vae,track_ar=output
 #                             fill=fill.reshape((fill.shape[0],3*96,128))
 #                             fill = enc.encode(fill)
 #                             fill=fill.reshape((fill.shape[0],3,96,9))
