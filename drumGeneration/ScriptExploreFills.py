@@ -10,7 +10,7 @@ from utils import numpy_drums_save_to_midi
 # # print(vae[:10])
 # print(genre.shape,vae.shape,genre.sum())
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/validation.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumDetection/dataset2.npz')
 data=dict(data)
 for elt in data.keys():
     print(data[elt].shape)
@@ -33,7 +33,8 @@ if 1==1:
 
         rp=tr[i+300,0,:,:]
         f=tr[i+300,1,:,:]
-        track=np.concatenate((rp,rp,rp,f,rp,rp,rp,f),axis=0)
+        rp2 = tr[i + 300, 2, :, :]
+        track=np.concatenate((rp,f,rp2,rp,f,rp2),axis=0)
         print(track.shape)
         track=dec.decode(batch_pianoroll=track,no_batch=True)
         track=dec.decode_808(batch_pianoroll=track,no_batch=True)

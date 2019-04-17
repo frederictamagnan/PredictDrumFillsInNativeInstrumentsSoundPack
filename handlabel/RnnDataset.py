@@ -13,6 +13,7 @@ class RnnDataset(data.Dataset):
 
         if not inference:
             self.y=y.reshape((y.shape[0],1))
+            # print(self.y[400:440])
         print(self.X.shape)
         print(self.y.shape)
         self.use_cuda=use_cuda

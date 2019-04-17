@@ -34,8 +34,9 @@ class TrainingRnn:
         data=dict(data)
         X=data['X']
         y = data['y']
+        print(y.sum(),"YYY")
         self.dataset=RnnDataset(X=X,y=y,use_cuda=self.use_cuda)
-        print(len(self.dataset),"LEN DATASET")
+        print(len(self.dataset),"LEN DATASET",self.dataset.y.sum())
 
 
     def split_data(self):
@@ -102,7 +103,7 @@ class TrainingRnn:
                 with torch.no_grad():
                     # data = Variable(data[0]).type(torch.float32).to(self.device)
                     x, y = data
-
+                    # print(y,"lool y ")
                     data_out = rnn(x)
 
                     loss = F.binary_cross_entropy(data_out, y, reduction='sum')
@@ -127,20 +128,24 @@ class TrainingRnn:
         np.savez('./indices_'+name,train=self.train.indices,test=self.test.indices,validation=self.validation.indices)
 
     def accuracy(self,outputs,labels):
+
         o = tensor_to_numpy(outputs)
+
+        # print(o.shape, "lool")
         l = tensor_to_numpy(labels)
         o = o.reshape(-1)
         l = l.reshape(-1)
+        # print(o, l)
         o = (o > 0.5) * 1
-        print(o.shape, l.shape)
+        # print(o.shape, l.shape)
         acc = ((o == l) * 1).sum() / (o.shape[0])
-        print("ACC", acc *100,"% ")
+        print("ACC", acc *100,"% ",o.sum(),l.sum())
 
 
 if __name__=="__main__":
 
     LR=0.01
-    BATCH_SIZE=20
+    BATCH_SIZE=100
     N_EPOCHS=20
 
     server=False
@@ -151,7 +156,7 @@ if __name__=="__main__":
         tg.load_data()
         tg.split_data()
         tg.train_model()
-        tg.save_model("./../models/",'sketchrnn.pt')
+        tg.save_model("./../models/",'rnndetection.pt')
 
 
 
