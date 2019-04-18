@@ -46,6 +46,7 @@ class Labelling:
         data=dict(np.load(path+'/'+npz))
         # print(npz,"NPZ")
         raw=data['reduced_drums']
+        print(raw.shape)
         X=np.stack((raw[:-2,:,:],raw[1:-1,:,:],raw[2:,:,:]))
         dataset=RnnDataset(X=X ,inference=False,use_cuda=True)
         dataloader=torch.utils.data.DataLoader(dataset=dataset,batch_size=len(dataset),shuffle=False,drop_last=False)
