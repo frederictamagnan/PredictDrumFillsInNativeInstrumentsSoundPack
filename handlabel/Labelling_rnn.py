@@ -15,7 +15,7 @@ class Labelling:
 
         device=torch.device("cuda" if self.use_cuda else "cpu")
 
-        self.rnn = RnnNet()
+        self.rnn = RnnNet().to(device)
         self.rnn.load_state_dict(torch.load('./../models/rnndetection.pt', map_location=device))
 
     def macro_iteration(self):
@@ -46,9 +46,11 @@ class Labelling:
         data=dict(np.load(path+'/'+npz))
         # print(npz,"NPZ")
         raw=data['reduced_drums']
-        print(raw.shape)
+        raw=raw.reshape((raw.shape[0],16,9))
+
+#         print(raw.shape)
         X=np.stack((raw[:-2,:,:],raw[1:-1,:,:],raw[2:,:,:]))
-        dataset=RnnDataset(X=X ,inference=False,use_cuda=True)
+        dataset=RnnDataset(X=X ,y=None,inference=True,use_cuda=True)
         dataloader=torch.utils.data.DataLoader(dataset=dataset,batch_size=len(dataset),shuffle=False,drop_last=False)
 
 
@@ -58,7 +60,9 @@ class Labelling:
                 y = self.rnn(x)
 
         y=tensor_to_numpy(y)
+#         print(y.shape)
         y=(y>0.9)*1
+        y=y.reshape(-1)
         y=np.concatenate((np.zeros(1),y,np.zeros(1)))
 
         np.savez(path+'/' + npz.replace('_metadata_training.npz','') + '_label_rnn.npz', label=y)
