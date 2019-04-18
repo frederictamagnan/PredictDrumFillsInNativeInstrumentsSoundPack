@@ -54,7 +54,7 @@ class TrainingRnn:
 
         self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=True)
         self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=len(self.test), shuffle=True,drop_last=True)
-        self.validation_loader = torch.utils.data.DataLoader(dataset=self.validation, batch_size=self.batch_size,
+        self.validation_loader = torch.utils.data.DataLoader(dataset=self.validation, batch_size=len(self.validation),
                                                              shuffle=True,drop_last=True)
 
     def count_parameters(self,model):
@@ -109,12 +109,25 @@ class TrainingRnn:
                     loss = F.binary_cross_entropy(data_out, y, reduction='sum')
 
                     loss_sum_test += loss.item()
-                    self.accuracy(data_out, y), "accuracy"
+                    self.accuracy(data_out, y)
             print('====> Testing Average Loss: {}'.format(
                 loss_sum_test / len(self.validation_loader.dataset)))
 
+        loss_sum_test = 0
+        for batch_i, data in enumerate(self.test_loader):
+            with torch.no_grad():
+                # data = Variable(data[0]).type(torch.float32).to(self.device)
+                x, y = data
+                # print(y,"lool y ")
+                data_out = rnn(x)
 
+                loss = F.binary_cross_entropy(data_out, y, reduction='sum')
 
+                loss_sum_test += loss.item()
+                print("---- TEST ACC----")
+                self.accuracy(data_out, y)
+        print('!!!====> Testing Average Loss: {}'.format(
+            loss_sum_test / len(self.test_loader.dataset)))
 
 
 

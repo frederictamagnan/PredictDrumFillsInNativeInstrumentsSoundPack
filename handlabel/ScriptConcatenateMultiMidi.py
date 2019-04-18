@@ -34,7 +34,7 @@ for elt in l:
     # print(drum_reduced.shape)
     if drum_reduced.shape[0]==48:
         drum_reduced=drum_reduced.reshape((1,3,16,9))
-        data_bad=np.concatenate((data_bad,drum_reduced))
+        data_bad=np.concatenate((data_bad   ,drum_reduced))
 
 data2=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumDetection/'+'dataset2.npz')
 data2=dict(data2)
