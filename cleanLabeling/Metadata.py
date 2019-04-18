@@ -96,8 +96,9 @@ if __name__=='__main__':
         data=enc.decode(data)
         data=enc.decode_808(data)
         metadata=Metadata(data)
+        print(metadata.metadata['reduced_drums'].shape)
 
-        np.save(filepath+elt+'_vae.npy',metadata.metadata['vae_embeddings'])
+        # np.save(filepath+elt+'_vae.npy',metadata.metadata['vae_embeddings'])
 
 
 
