@@ -71,12 +71,10 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
                             genre_fill=np.zeros((vae.shape[0],16,1))
                             genre_fill[:,tag_i,0]=1
                             genre=np.concatenate((genre,genre_fill))
-                    if track_array.shape[0]>2000:
-                        break
-                if track_array.shape[0] > 2000:
+
+                if track_array.shape[0] > 300:
                     break
-        if track_array.shape[0] > 2000:
-            break
+
 
 #                         if fills.shape[0] >max:
 #                             fills = fills[1:]
