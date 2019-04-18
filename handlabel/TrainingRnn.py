@@ -149,7 +149,7 @@ class TrainingRnn:
         o = o.reshape(-1)
         l = l.reshape(-1)
         # print(o, l)
-        o = (o > 0.7) * 1
+        o = (o > 0.9) * 1
         # print(o.shape, l.shape)
         acc = ((o == l) * 1).sum() / (o.shape[0])
         from sklearn.metrics import confusion_matrix
@@ -167,8 +167,8 @@ class TrainingRnn:
 if __name__=="__main__":
 
     LR=0.001
-    BATCH_SIZE=100
-    N_EPOCHS=20
+    BATCH_SIZE=300
+    N_EPOCHS=100
 
     server=False
     if not(server):
