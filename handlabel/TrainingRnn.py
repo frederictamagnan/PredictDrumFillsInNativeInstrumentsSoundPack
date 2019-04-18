@@ -53,7 +53,7 @@ class TrainingRnn:
 
 
         self.train_loader = torch.utils.data.DataLoader(dataset=self.train, batch_size=self.batch_size, shuffle=True,drop_last=True)
-        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=self.batch_size, shuffle=True,drop_last=True)
+        self.test_loader = torch.utils.data.DataLoader(dataset=self.test, batch_size=len(self.test), shuffle=True,drop_last=True)
         self.validation_loader = torch.utils.data.DataLoader(dataset=self.validation, batch_size=self.batch_size,
                                                              shuffle=True,drop_last=True)
 
@@ -136,15 +136,24 @@ class TrainingRnn:
         o = o.reshape(-1)
         l = l.reshape(-1)
         # print(o, l)
-        o = (o > 0.5) * 1
+        o = (o > 0.7) * 1
         # print(o.shape, l.shape)
         acc = ((o == l) * 1).sum() / (o.shape[0])
-        print("ACC", acc *100,"% ",o.sum(),l.sum())
+        from sklearn.metrics import confusion_matrix
+        tn, fp, fn, tp = confusion_matrix(l, o).ravel()
+        print("tn,fp,fn,tp = ", tn, fp, fn, tp)
+        print("Accuracy = ", (tp + tn) / (tn + fp + fn + tp))
+        print("Recall = ", (tp) / (fn + tp))
+        print("Precision = ", (tp) / (fp + tp))
+
+        # prec= np.where(o==1 and l==1).sum()/o.sum()
+        prec=0
+        # print("ACC", acc *100,"% ",o.sum(),l.sum(),"prec",prec*100,'%')
 
 
 if __name__=="__main__":
 
-    LR=0.01
+    LR=0.001
     BATCH_SIZE=100
     N_EPOCHS=20
 
