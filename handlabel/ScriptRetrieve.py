@@ -117,7 +117,7 @@ def build_generation_dataset(p, npz):
 
     for i in range(len(track_enc)):
         for j in range(len(ref)):
-            if np.equal(compare_track[i],ref[j])
+            if np.equal(compare_track[i],ref[j]):
                 indexes_fills_cleaned.append(i)
     indexes_fills_cleaned=indexes_fills_cleaned+1
     indexes_fills_cleaned=np.array(indexes_fills_cleaned)
