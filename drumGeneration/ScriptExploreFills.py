@@ -10,7 +10,7 @@ from utils import numpy_drums_save_to_midi
 # # print(vae[:10])
 # print(genre.shape,vae.shape,genre.sum())
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumDetection/dataset2.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/FillsExtractedRnn.npz')
 data=dict(data)
 for elt in data.keys():
     print(data[elt].shape)
@@ -29,13 +29,15 @@ dec=DrumReducerExpander()
 np.random.shuffle(tr)
 if 1==1:
     for i in range(len(tr)):
-        # track=tr[i+300].reshape((2*16,9))
+        track=tr[i+300].reshape((4*16,9))
 
-        rp=tr[i+300,0,:,:]
-        f=tr[i+300,1,:,:]
-        rp2 = tr[i + 300, 2, :, :]
-        track=np.concatenate((rp,f,rp2,rp,f,rp2),axis=0)
+        # rp=tr[i+300,0,:,:]
+        # f=tr[i+300,1,:,:]
+        # rp2 = tr[i + 300, 2, :, :]
+
+        # track=np.concatenate((rp,f,rp2,rp,f,rp2),axis=0)
         print(track.shape)
+        track=np.concatenate((track,track),axis=0)
         track=dec.decode(batch_pianoroll=track,no_batch=True)
         track=dec.decode_808(batch_pianoroll=track,no_batch=True)
         numpy_drums_save_to_midi(track,'/home/ftamagna/Documents/_AcademiaSinica/dataset/temp/',str(i))

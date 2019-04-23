@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/ScriptRetrieve.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cleanLabeling/Metadata.py" afterPath="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
-      <change beforePath="$PROJECT_DIR$/handlabel/ScriptBuildDatasetGenerationServer_rnn.py" afterPath="$PROJECT_DIR$/handlabel/ScriptBuildDatasetGenerationServer_rnn.py" />
+      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <change beforePath="$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py" afterPath="$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +19,7 @@
       <file leaf-file-name="Labelling_rnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlabel/Labelling_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-417">
+            <state relative-caret-position="414">
               <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -27,42 +28,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RnnNet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handlabel/RnnNet.py">
+      <file leaf-file-name="ScriptRetrieve.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handlabel/ScriptRetrieve.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state relative-caret-position="612">
+              <caret line="138" column="141" lean-forward="false" selection-start-line="138" selection-start-column="141" selection-end-line="138" selection-end-column="141" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptBuildDatasetGenerationServer_rnn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/handlabel/ScriptBuildDatasetGenerationServer_rnn.py">
+      <file leaf-file-name="ScriptConcatenateMultiMidi.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="116" column="78" lean-forward="false" selection-start-line="116" selection-start-column="73" selection-end-line="116" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RnnDataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handlabel/RnnDataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrainingSketchRnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="135" column="17" lean-forward="false" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="864">
+              <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+              <folding>
+                <element signature="e#80#105#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,9 +88,9 @@
       <find>see</find>
       <find>YYY</find>
       <find>resh</find>
-      <find>print</find>
       <find>3</find>
       <find>resha</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>channels_used</replace>
@@ -126,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sketchRnn_double/GeneratorSketchRnn.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v2/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/SketchRnnNet.py" />
         <option value="$PROJECT_DIR$/sketchRnn_clean_v3/ScriptTrainingBeta.py" />
@@ -166,10 +148,8 @@
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff_anti.py" />
         <option value="$PROJECT_DIR$/handlabel/RnnDataset.py" />
-        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/Labelling_diff_anti.py" />
         <option value="$PROJECT_DIR$/sklearn/reglog_notebook.ipynb" />
-        <option value="$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py" />
         <option value="$PROJECT_DIR$/cleanLabeling/ScriptBuildDatasetGenerationServer_diff_anti.py" />
         <option value="$PROJECT_DIR$/handlabel/RnnNet.py" />
         <option value="$PROJECT_DIR$/handlabel/TrainingRnn.py" />
@@ -177,6 +157,9 @@
         <option value="$PROJECT_DIR$/cleanLabeling/Metadata.py" />
         <option value="$PROJECT_DIR$/handlabel/Labelling_rnn.py" />
         <option value="$PROJECT_DIR$/handlabel/ScriptBuildDatasetGenerationServer_rnn.py" />
+        <option value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+        <option value="$PROJECT_DIR$/handlabel/ScriptRetrieve.py" />
+        <option value="$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py" />
       </list>
     </option>
   </component>
@@ -202,8 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,27 +195,14 @@
             <path>
               <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="cleanLabeling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="handlabel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="sklearn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Metadata">
+  <component name="RunManager" selected="Python.ScriptConcatenateMultiMidi">
     <configuration name="Labelling_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,6 +293,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="ScriptExploreFills" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drumGeneration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="ScriptLabelling_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,38 +329,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="TrainingRnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/handlabel" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handlabel/TrainingRnn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ScriptConcatenateMultiMidi" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TrainingRnn" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Labelling_rnn" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ScriptLabelling_rnn" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Metadata" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Labelling_rnn" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ScriptLabelling_rnn" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Metadata" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ScriptConcatenateMultiMidi" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Metadata" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ScriptLabelling_rnn" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Labelling_rnn" />
-        <item index="3" class="java.lang.String" itemvalue="Python.TrainingRnn" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ScriptConcatenateMultiMidi" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ScriptConcatenateMultiMidi" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ScriptExploreFills" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Metadata" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ScriptLabelling_rnn" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Labelling_rnn" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +366,7 @@
     <frame x="91" y="68" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3343582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33358955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -447,20 +415,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/scipy/stats/stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30384">
-          <caret line="1705" column="0" lean-forward="false" selection-start-line="1705" selection-start-column="0" selection-end-line="1705" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/GeneratorSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="174" column="37" lean-forward="false" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PureRnn/ScriptGenerateMagenta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -679,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/Labelling_diff_anti.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -700,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sklearn/reglog_notebook.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -718,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="151" column="8" lean-forward="false" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,15 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="135" column="17" lean-forward="false" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,9 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="322" column="9" lean-forward="false" selection-start-line="322" selection-start-column="4" selection-end-line="322" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,13 +721,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-206">
           <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="99" lean-forward="false" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlabel/ScriptBuildDatasetGenerationServer_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="116" column="78" lean-forward="false" selection-start-line="116" selection-start-column="73" selection-end-line="116" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanLabeling/ComputeMetadataLPD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PureRnn/TrainingSketchRnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="135" column="17" lean-forward="false" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handlabel/Labelling_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
+        <state relative-caret-position="414">
           <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -816,11 +762,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlabel/ScriptBuildDatasetGenerationServer_rnn.py">
+    <entry file="file://$PROJECT_DIR$/handlabel/ScriptRetrieve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="116" column="78" lean-forward="false" selection-start-line="116" selection-start-column="73" selection-end-line="116" selection-end-column="78" />
+        <state relative-caret-position="612">
+          <caret line="138" column="141" lean-forward="false" selection-start-line="138" selection-start-column="141" selection-end-line="138" selection-end-column="141" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+          <folding>
+            <element signature="e#80#105#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
