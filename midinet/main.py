@@ -10,7 +10,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from model import *
 from ops import *
-
+from DrumReducerExpander import DrumReducerExpander
 class get_dataloader(object):
     def __init__(self, data, prev_data):
         self.size = data.shape[0]
@@ -28,14 +28,17 @@ class get_dataloader(object):
 def load_data():
     #######load the data########
     
-    
+    encoder=DrumReducerExpander()
     filepath = '/home/ftamagnan/dataset/48/'
     filename = 'FillsExtractedHand_c.npz'
     raw_data = np.load(filepath + filename)
     raw_data_d = dict(raw_data)
     raw = raw_data_d['track_array']
     X_tr = raw[:, 3, :, :]*1
+
     prev_X_tr = raw[:, 2, :, :]*1
+    X_tr=encoder.encode_808(X_tr)
+    prev_X_tr=encoder.encode_808(prev_X_tr)
     X_tr=np.expand_dims(X_tr,axis=1)
     prev_X_tr=np.expand_dims(prev_X_tr,axis=1)
 
