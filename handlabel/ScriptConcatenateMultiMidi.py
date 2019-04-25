@@ -45,5 +45,5 @@ for elt in l:
 # data_=np.concatenate((data,data2,data_bad))
 #
 # np.savez(filepath+"dataset",X=data_,y=y)
-
-np.save(filepath+'handlabel.npy',data)
+print(data.shape)
+# np.save(filepath+'handlabel.npy',data)

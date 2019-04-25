@@ -10,7 +10,7 @@ from utils import numpy_drums_save_to_midi
 # # print(vae[:10])
 # print(genre.shape,vae.shape,genre.sum())
 
-data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumDetection/FillsExtractedHand.npz')
+data=np.load('/home/ftamagna/Documents/_AcademiaSinica/dataset/drumDetection/FillsExtractedHand_c.npz')
 data=dict(data)
 for elt in data.keys():
     print(data[elt].shape)
