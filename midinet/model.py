@@ -141,7 +141,7 @@ class discriminator(nn.Module):
         self.linear1 = nn.Linear(244,self.dfc_dim)
         self.linear2 = nn.Linear(1037,1)
 
-    def forward(self,x,y,batch_size,pitch_range):        
+    def forward(self,x,batch_size,pitch_range):
 
         # yb = y.view(batch_size,self.y_dim, 1, 1)
         x = conv_cond_concat(x)  #x.shape torch.Size([72, 14, 16, 128])
