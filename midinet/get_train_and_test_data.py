@@ -3,20 +3,9 @@ import random
 import math
 import time
 
-filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/48/'
-filename='FillsExtractedHand_c.npz'
-raw_data=np.load(filepath+filename)
-raw_data_d=dict(raw_data)
-raw=raw_data_d['track_array']
-
-
 #load data
-# data = np.load('octave2_x_T.npy')
-# prev_data = np.load('octave2_prev_x_T.npy')
-
-data=raw[:,3,:,:]
-prev_data=raw[:,2,:,:]
-
+data = np.load('octave2_x_T.npy')
+prev_data = np.load('octave2_prev_x_T.npy')
 print('data shape: {}'.format(data.shape))
 time.sleep(3)
 
@@ -52,7 +41,7 @@ def test_data(data,test_idx):
         stp = (test_idx[i])*8
         edp = stp + 8
         song = data[stp:edp,0,:,:]
-        song = song.reshape((8,1,9,16))
+        song = song.reshape((8,1,128,16))
         X_te.append(song)
         # print('i: {}, test_iex: {}, stp: {}, song.shape: {}, song num: {}'.format(i, test_idx[i], stp, song.shape, len(X_te)))
         
@@ -68,7 +57,7 @@ def train_data(data,train_idx):
         stp = (train_idx[i])*8
         edp = stp + 8
         song = data[stp:edp,0,:,:]
-        song = song.reshape((8,1,9,16))
+        song = song.reshape((8,1,128,16))
         X_tr.append(song)
         # print('i: {}, train_iex: {}, stp: {}, song.shape: {}, song num: {}'.format(i, train_idx[i], stp, song.shape, len(X_tr)))
 

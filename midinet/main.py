@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 import torch.optim as optim
-# import ipdb
+import ipdb
 import torchvision.utils as vutils
 import matplotlib
 matplotlib.use('Agg')
@@ -12,50 +12,28 @@ from model import *
 from ops import *
 
 class get_dataloader(object):
-    # def __init__(self, data, prev_data, y):
-    def __init__(self, data, prev_data):
+    def __init__(self, data, prev_data, y):
         self.size = data.shape[0]
         self.data = torch.from_numpy(data).float()
         self.prev_data = torch.from_numpy(prev_data).float()
-        # self.y   = torch.from_numpy(y).float()
+        self.y   = torch.from_numpy(y).float()
 
          # self.label = np.array(label)
     def __getitem__(self, index):
-        return self.data[index],self.prev_data[index]
+        return self.data[index],self.prev_data[index], self.y[index]
 
     def __len__(self):
         return self.size
 
 def load_data():
     #######load the data########
-
-    filepath = '/home/ftamagnan/dataset/48/'
-    filename = 'FillsExtractedHand_c.npz'
-    raw_data = np.load(filepath + filename)
-    raw_data_d = dict(raw_data)
-    raw = raw_data_d['track_array']
-
-    # load data
-    # data = np.load('octave2_x_T.npy')
-    # prev_data = np.load('octave2_prev_x_T.npy')
-
-    X_tr = raw[:, 3, :, :]*1
-    prev_X_tr = raw[:, 2, :, :]*1
-
-
-    X_tr=np.expand_dims(X_tr,axis=1)
-    prev_X_tr=np.expand_dims(prev_X_tr,axis=1)
-
-
-
-
     check_range_st = 0
-    check_range_ed = 9
+    check_range_ed = 129
     pitch_range = check_range_ed - check_range_st-1
-    print('pitch range: {}'.format(pitch_range))
+    # print('pitch range: {}'.format(pitch_range))
 
-    # X_tr = np.load('your training x')
-    # prev_X_tr = np.load('your training prev x')
+    X_tr = np.load('your training x')
+    prev_X_tr = np.load('your training prev x')
     # y_tr    = np.load('your training chord')
     X_tr = X_tr[:,:,:,check_range_st:check_range_ed]
     prev_X_tr = prev_X_tr[:,:,:,check_range_st:check_range_ed]
@@ -63,10 +41,8 @@ def load_data():
     #test data shape(5048, 1, 16, 128)
     #train data shape(45448, 1, 16, 128)
 
-    # train_iter = get_dataloader(X_tr,prev_X_tr,y_tr)
-    train_iter = get_dataloader(X_tr, prev_X_tr)
-    kwargs = {'num_workers': 4, 'pin_memory': True} #if args.cuda else {}
-    # kwargs={}
+    train_iter = get_dataloader(X_tr,prev_X_tr,y_tr)
+    kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
     train_loader = DataLoader(
                    train_iter, batch_size=72, shuffle=True, **kwargs)
 
@@ -119,7 +95,7 @@ def main():
             sum_lossG = 0
             sum_D_x   = 0
             sum_D_G_z = 0
-            for i, (data,prev_data) in enumerate(train_loader, 0):
+            for i, (data,prev_data,chord) in enumerate(train_loader, 0):
                 
                 ############################
                 # (1) Update D network: maximize log(D(x)) + log(1 - D(G(z)))
@@ -268,9 +244,9 @@ def main():
         X_te = np.load('your testing x')
         prev_X_te = np.load('your testing prev x')
         prev_X_te = prev_X_te[:,:,check_range_st:check_range_ed,:]
-        # y_te    = np.load('yourd chord')
+        y_te    = np.load('yourd chord')
        
-        test_iter = get_dataloader(X_te,prev_X_te)
+        test_iter = get_dataloader(X_te,prev_X_te,y_te)
         kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
         test_loader = DataLoader(test_iter, batch_size=batch_size, shuffle=False, **kwargs)
 
@@ -279,33 +255,32 @@ def main():
 
         output_songs = []
         output_chords = []
-        for i, (data,prev_data) in enumerate(test_loader, 0):
+        for i, (data,prev_data,chord) in enumerate(test_loader, 0):
             list_song = []
             first_bar = data[0].view(1,1,16,128)
             list_song.append(first_bar)
 
-            # list_chord = []
-            # first_chord = chord[0].view(1,13).numpy()
-            # list_chord.append(first_chord)
+            list_chord = []
+            first_chord = chord[0].view(1,13).numpy()
+            list_chord.append(first_chord)
             noise = torch.randn(batch_size, nz)
 
             for bar in range(n_bars):
                 z = noise[bar].view(1,nz)
-                # y = chord[bar].view(1,13)
+                y = chord[bar].view(1,13)
                 if bar == 0:
                     prev = data[0].view(1,1,16,128)
                 else:
                     prev = list_song[bar-1].view(1,1,16,128)
-                # sample = netG(z, prev, y, 1,pitch_range)
-                sample = netG(z, prev, 1, pitch_range)
+                sample = netG(z, prev, y, 1,pitch_range)
                 list_song.append(sample)
-                # list_chord.append(y.numpy())
+                list_chord.append(y.numpy())
 
             print('num of output_songs: {}'.format(len(output_songs)))
             output_songs.append(list_song)
-            # output_chords.append(list_chord)
+            output_chords.append(list_chord)
         np.save('output_songs.npy',np.asarray(output_songs))
-        # np.save('output_chords.npy',np.asarray(output_chords))
+        np.save('output_chords.npy',np.asarray(output_chords))
 
         print('creation completed, check out what I make!')
 
