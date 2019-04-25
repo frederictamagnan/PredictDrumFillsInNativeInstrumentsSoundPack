@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/midinet/main.py" afterPath="$PROJECT_DIR$/midinet/main.py" />
+      <change beforePath="$PROJECT_DIR$/midinet/model.py" afterPath="$PROJECT_DIR$/midinet/model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/midinet/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="103">
+              <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/midinet/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -37,7 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>use_cuda</find>
       <find>cpu</find>
       <find>use</find>
       <find>device</find>
@@ -61,12 +71,13 @@
       <find>genera</find>
       <find>128</find>
       <find>edp</find>
-      <find>pitch</find>
       <find>sha</find>
       <find>cuda</find>
       <find>shape</find>
-      <find>y</find>
       <find>chord</find>
+      <find>pitch</find>
+      <find>self.y_di</find>
+      <find>y</find>
     </findStrings>
     <replaceStrings>
       <replace>channels_used</replace>
@@ -85,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PureRnn/ScriptDistanceVae.py" />
         <option value="$PROJECT_DIR$/PureRnn/ScriptConcatenation3.py" />
         <option value="$PROJECT_DIR$/UserStudy/ScriptProcessing.py" />
         <option value="$PROJECT_DIR$/PureRnn/ScriptChi2.py" />
@@ -136,6 +146,7 @@
         <option value="$PROJECT_DIR$/MidiNet-by-pytorch/get_train_and_test_data.py" />
         <option value="$PROJECT_DIR$/MidiNet-by-pytorch/main.py" />
         <option value="$PROJECT_DIR$/midinet/main.py" />
+        <option value="$PROJECT_DIR$/midinet/model.py" />
       </list>
     </option>
   </component>
@@ -214,25 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="ScriptGenerateTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PureRnn_16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonChangeChannel" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PureRnn_16/ScriptGenerateTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.model">
     <configuration name="ScriptGenerateTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,20 +298,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/midinet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonChangeChannel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/midinet/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ScriptGenerateTest" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ScriptGenerateTest (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.TrainingRnn" />
-      <item index="3" class="java.lang.String" itemvalue="Python.get_train_and_test_data" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.TrainingRnn" />
+      <item index="2" class="java.lang.String" itemvalue="Python.get_train_and_test_data" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main" />
+      <item index="4" class="java.lang.String" itemvalue="Python.model" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.get_train_and_test_data" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TrainingRnn" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ScriptGenerateTest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ScriptGenerateTest (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.model" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_train_and_test_data" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TrainingRnn" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ScriptGenerateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -395,13 +406,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cleanLabeling/ScriptLabelling_diff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanLabeling/Metadata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -762,8 +766,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/midinet/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state relative-caret-position="103">
+          <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/midinet/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
