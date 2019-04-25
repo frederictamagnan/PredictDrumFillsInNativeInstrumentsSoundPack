@@ -41,26 +41,26 @@ class sample_generator(nn.Module):
 
         # yb = y.view(batch_size,  self.y_dim, 1, 1)  #(72,13,1,1)
 
-        z = torch.cat((z),1)         #(72,113)
+        # z = torch.cat((z),1)         #(72,113)
 
         h0 = F.relu(batch_norm_1d_cpu(self.linear1(z)))    #(72,1024)
-        h0 = torch.cat((h0),1)   #(72,1037)
+        # h0 = torch.cat((h0),1)   #(72,1037)
 
         h1 = F.relu(batch_norm_1d_cpu(self.linear2(h0)))   #(72, 256)
         h1 = h1.view(batch_size, self.gf_dim * 2, 2, 1)     #(72,128,2,1)
-        h1 = conv_cond_concat(h1) #(b,141,2,1)
+        # h1 = conv_cond_concat(h1) #(b,141,2,1)
         h1 = conv_prev_concat(h1,h3_prev)  #(72, 157, 2, 1)
 
         h2 = F.relu(batch_norm_2d_cpu(self.h1(h1)))  #(72, 128, 4, 1)
-        h2 = conv_cond_concat(h2) #([72, 141, 4, 1])
+        # h2 = conv_cond_concat(h2) #([72, 141, 4, 1])
         h2 = conv_prev_concat(h2,h2_prev)  #([72, 157, 4, 1])
 
         h3 = F.relu(batch_norm_2d_cpu(self.h2(h2)))  #([72, 128, 8, 1]) 
-        h3 = conv_cond_concat(h3)  #([72, 141, 8, 1])
+        # h3 = conv_cond_concat(h3)  #([72, 141, 8, 1])
         h3 = conv_prev_concat(h3,h1_prev) #([72, 157, 8, 1])
 
         h4 = F.relu(batch_norm_2d_cpu(self.h3(h3)))  #([72, 128, 16, 1])
-        h4 = conv_cond_concat(h4)  #([72, 141, 16, 1])
+        # h4 = conv_cond_concat(h4)  #([72, 141, 16, 1])
         h4 = conv_prev_concat(h4,h0_prev) #([72, 157, 16, 1])
 
         g_x = torch.sigmoid(self.h4(h4)) #([72, 1, 16, 128])
@@ -110,15 +110,15 @@ class generator(nn.Module):
         h1 = conv_prev_concat(h1,h3_prev)  #(72, 157, 2, 1)
 
         h2 = F.relu(batch_norm_2d(self.h1(h1)))  #(72, 128, 4, 1)
-        h2 = conv_cond_concat(h2) #([72, 141, 4, 1])
+        # h2 = conv_cond_concat(h2) #([72, 141, 4, 1])
         h2 = conv_prev_concat(h2,h2_prev)  #([72, 157, 4, 1])
 
         h3 = F.relu(batch_norm_2d(self.h2(h2)))  #([72, 128, 8, 1]) 
-        h3 = conv_cond_concat(h3)  #([72, 141, 8, 1])
+        # h3 = conv_cond_concat(h3)  #([72, 141, 8, 1])
         h3 = conv_prev_concat(h3,h1_prev) #([72, 157, 8, 1])
 
         h4 = F.relu(batch_norm_2d(self.h3(h3)))  #([72, 128, 16, 1])
-        h4 = conv_cond_concat(h4)  #([72, 141, 16, 1])
+        # h4 = conv_cond_concat(h4)  #([72, 141, 16, 1])
         h4 = conv_prev_concat(h4,h0_prev) #([72, 157, 16, 1])
 
         g_x = torch.sigmoid(self.h4(h4)) #([72, 1, 16, 128])
@@ -144,18 +144,18 @@ class discriminator(nn.Module):
     def forward(self,x,batch_size,pitch_range):
 
         # yb = y.view(batch_size,self.y_dim, 1, 1)
-        x = conv_cond_concat(x)  #x.shape torch.Size([72, 14, 16, 128])
+        # x = conv_cond_concat(x)  #x.shape torch.Size([72, 14, 16, 128])
         
         h0 = lrelu(self.h0_prev(x),0.2)
         fm = h0
-        h0 = conv_cond_concat(h0) #torch.Size([72, 27, 8, 1])
+        # h0 = conv_cond_concat(h0) #torch.Size([72, 27, 8, 1])
 
         h1 = lrelu(batch_norm_2d(self.h1_prev(h0)),0.2)  #torch.Size([72, 77, 3, 1])
         h1 = h1.view(batch_size, -1)  #torch.Size([72, 231])
-        h1 = torch.cat((h1),1)  #torch.Size([72, 244])
+        # h1 = torch.cat((h1),1)  #torch.Size([72, 244])
 
         h2 = lrelu(batch_norm_1d(self.linear1(h1)))
-        h2 = torch.cat((h2),1)  #torch.Size([72, 1037])
+        # h2 = torch.cat((h2),1)  #torch.Size([72, 1037])
 
         h3 = self.linear2(h2)
         h3_sigmoid = torch.sigmoid(h3)
