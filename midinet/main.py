@@ -21,7 +21,7 @@ class get_dataloader(object):
 
          # self.label = np.array(label)
     def __getitem__(self, index):
-        return self.data[index],self.prev_data[index], self.y[index]
+        return self.data[index],self.prev_data[index]
 
     def __len__(self):
         return self.size
@@ -268,9 +268,9 @@ def main():
         X_te = np.load('your testing x')
         prev_X_te = np.load('your testing prev x')
         prev_X_te = prev_X_te[:,:,check_range_st:check_range_ed,:]
-        y_te    = np.load('yourd chord')
+        # y_te    = np.load('yourd chord')
        
-        test_iter = get_dataloader(X_te,prev_X_te,y_te)
+        test_iter = get_dataloader(X_te,prev_X_te)
         kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
         test_loader = DataLoader(test_iter, batch_size=batch_size, shuffle=False, **kwargs)
 
@@ -279,14 +279,14 @@ def main():
 
         output_songs = []
         output_chords = []
-        for i, (data,prev_data,chord) in enumerate(test_loader, 0):
+        for i, (data,prev_data) in enumerate(test_loader, 0):
             list_song = []
             first_bar = data[0].view(1,1,16,128)
             list_song.append(first_bar)
 
-            list_chord = []
-            first_chord = chord[0].view(1,13).numpy()
-            list_chord.append(first_chord)
+            # list_chord = []
+            # first_chord = chord[0].view(1,13).numpy()
+            # list_chord.append(first_chord)
             noise = torch.randn(batch_size, nz)
 
             for bar in range(n_bars):
@@ -303,7 +303,7 @@ def main():
 
             print('num of output_songs: {}'.format(len(output_songs)))
             output_songs.append(list_song)
-            output_chords.append(list_chord)
+            # output_chords.append(list_chord)
         np.save('output_songs.npy',np.asarray(output_songs))
         # np.save('output_chords.npy',np.asarray(output_chords))
 
