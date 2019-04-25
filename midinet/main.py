@@ -29,7 +29,7 @@ class get_dataloader(object):
 def load_data():
     #######load the data########
 
-    filepath = '/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/48/'
+    filepath = '/home/ftamagnan/dataset/48/'
     filename = 'FillsExtractedHand_c.npz'
     raw_data = np.load(filepath + filename)
     raw_data_d = dict(raw_data)
@@ -65,7 +65,7 @@ def load_data():
 
     # train_iter = get_dataloader(X_tr,prev_X_tr,y_tr)
     train_iter = get_dataloader(X_tr, prev_X_tr)
-    kwargs = {'num_workers': 4, 'pin_memory': True} if args.cuda else {}
+    kwargs = {'num_workers': 4, 'pin_memory': True} #if args.cuda else {}
     # kwargs={}
     train_loader = DataLoader(
                    train_iter, batch_size=72, shuffle=True, **kwargs)
@@ -119,7 +119,7 @@ def main():
             sum_lossG = 0
             sum_D_x   = 0
             sum_D_G_z = 0
-            for i, (data,prev_data,chord) in enumerate(train_loader, 0):
+            for i, (data,prev_data) in enumerate(train_loader, 0):
                 
                 ############################
                 # (1) Update D network: maximize log(D(x)) + log(1 - D(G(z)))
