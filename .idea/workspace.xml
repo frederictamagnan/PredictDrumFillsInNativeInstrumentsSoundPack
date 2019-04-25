@@ -2,168 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6178bf7-a162-4afc-8f32-1b3f37cf618a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/.ipynb_checkpoints/trainingSketchRnn-checkpoint.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/DrumReducerExpander.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/EvaluateSketchRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/GeneratorSketchRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptBaseline.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptChi2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptCleaning.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptConcatenation3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptDistanceVae.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptDumb.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptGenerateLPDSame.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptGenerateMagenta.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptGenerateSame.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptGenerateTest.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptIntersect.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptSplit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/ScriptTrainingBeta.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/SketchRnnDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/SketchRnnNet.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/TrainingSketchRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/indices_rnn_48.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/indices_sketchrnn_RuleBased_v4.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/indices_sketchrnn_Supervised03_v4.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/indices_sketchrnn_Supervised_v4.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/metrics_training_rnn_48.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/metrics_training_sketchrnn_RuleBased_v4.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/metrics_training_sketchrnn_Supervised03_v4.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/metrics_training_sketchrnn_Supervised_v4.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/.ScriptBuildDatasetGenerationServer.py.swp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ComputeMetadata.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ComputeMetadataLPD.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/DatasetBuilderOddgrooves.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/DnnDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/DnnNet.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/DrumReducerExpander.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ExploreLabelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/Labelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/Labelling_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/Labelling_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/Labelling_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/Labelling_sk.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/Metadata.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/MetadataTraining.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/MetadataVisualization.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptBuildDatasetGenerationServer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptBuildDatasetGenerationServer_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptBuildDatasetGenerationServer_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptBuildDatasetGenerationServer_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptExploreMetricsFIles.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptLabelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptLabelling_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptLabelling_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptLabelling_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/ScriptServer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/TrainingClassifier.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/VaeDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/VaeEncoderDecoder_808_9.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/activity.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/activity.log.1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/fillClassifier" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/clf_fills.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/scaler.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_L1E-02_beta2E+01_beat48_loss4E+01_tanh_gru32_e20_b256_hd16-2_20181212_105409.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_rnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_rnn_2z.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_rnn_batch_size.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/models/vae_rnn_custom_nine_v2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/scaler.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/temp/track_enc_dec.mid" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/temp/track_origin.mid" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/utils.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/utils2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/tools/warmness.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/trainingSketchRnn.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_16/utils.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/.ipynb_checkpoints/trainingSketchRnn-checkpoint.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/DrumReducerExpander.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/EvaluateSketchRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/GeneratorSketchRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptBaseline.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptChi2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptCleaning.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptConcatenation3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptDistanceVae.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptDumb.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptGenerateLPDSame.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptGenerateMagenta.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptGenerateSame.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptGenerateTest.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptIntersect.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptSplit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/ScriptTrainingBeta.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/SketchRnnDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/SketchRnnNet.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/TrainingSketchRnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/indices_sketchrnn_RuleBased_v4.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/indices_sketchrnn_Supervised03_v4.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/indices_sketchrnn_Supervised_v4.pt.npz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/metrics_training_sketchrnn_RuleBased_v4.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/metrics_training_sketchrnn_Supervised03_v4.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/metrics_training_sketchrnn_Supervised_v4.pt.npy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/.ScriptBuildDatasetGenerationServer.py.swp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ComputeMetadata.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ComputeMetadataLPD.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/DatasetBuilderOddgrooves.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/DnnDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/DnnNet.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/DrumReducerExpander.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ExploreLabelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/Labelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/Labelling_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/Labelling_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/Labelling_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/Labelling_sk.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/Metadata.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/MetadataTraining.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/MetadataVisualization.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptBuildDatasetGenerationServer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptBuildDatasetGenerationServer_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptBuildDatasetGenerationServer_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptBuildDatasetGenerationServer_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptExploreMetricsFIles.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptLabelling.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptLabelling_clustering.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptLabelling_diff.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptLabelling_explicit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/ScriptServer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/TrainingClassifier.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/VaeDataset.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/VaeEncoderDecoder_808_9.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/activity.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/activity.log.1" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/fillClassifier" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/clf_fills.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/scaler.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181008_034323.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_L1E-02_beta2E+01_beat48_loss2E+01_tanh_gru32_e100_b256_hd64-32_20181211_134833.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_L1E-02_beta2E+01_beat48_loss4E+01_tanh_gru32_e20_b256_hd16-2_20181212_105409.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_L1E-02_beta2E+01_beat8_loss9E+00_tanh_gru64_e45_b8192_hd64-32_20190201_202012.pt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_rnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_rnn_2z.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_rnn_batch_size.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/models/vae_rnn_custom_nine_v2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/scaler.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/temp/track_enc_dec.mid" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/temp/track_origin.mid" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/utils.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/utils2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/tools/warmness.pkl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/trainingSketchRnn.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PureRnn_48/utils.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/handlabel/ScriptTest.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" afterPath="$PROJECT_DIR$/drumGeneration/ScriptExploreFills.py" />
-      <change beforePath="$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py" afterPath="$PROJECT_DIR$/handlabel/ScriptConcatenateMultiMidi.py" />
-      <change beforePath="$PROJECT_DIR$/handlabel/indices_rnndetection.pt.npz" afterPath="$PROJECT_DIR$/handlabel/indices_rnndetection.pt.npz" />
-      <change beforePath="$PROJECT_DIR$/models/rnndetection.pt" afterPath="$PROJECT_DIR$/models/rnndetection.pt" />
+      <change beforePath="$PROJECT_DIR$/MidiNet-by-pytorch" afterPath="$PROJECT_DIR$/MidiNet-by-pytorch" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -357,12 +196,6 @@
               <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
               <item name="MidiNet-by-pytorch" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DrumFillsNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DrumFillsNI" type="462c0819:PsiDirectoryNode" />
-              <item name="MidiNet-by-pytorch" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -530,14 +363,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="115" y="31" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22982322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22982322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4084084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4084084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
