@@ -12,36 +12,45 @@ from model import *
 from ops import *
 
 class get_dataloader(object):
-    def __init__(self, data, prev_data, y):
+    def __init__(self, data, prev_data):
         self.size = data.shape[0]
         self.data = torch.from_numpy(data).float()
         self.prev_data = torch.from_numpy(prev_data).float()
-        self.y   = torch.from_numpy(y).float()
+        
 
          # self.label = np.array(label)
     def __getitem__(self, index):
-        return self.data[index],self.prev_data[index], self.y[index]
+        return self.data[index],self.prev_data[index]
 
     def __len__(self):
         return self.size
 
 def load_data():
     #######load the data########
-    check_range_st = 0
-    check_range_ed = 129
-    pitch_range = check_range_ed - check_range_st-1
-    # print('pitch range: {}'.format(pitch_range))
+    
+    
+    filepath = '/home/ftamagnan/dataset/48/'
+    filename = 'FillsExtractedHand_c.npz'
+    raw_data = np.load(filepath + filename)
+    raw_data_d = dict(raw_data)
+    raw = raw_data_d['track_array']
+    X_tr = raw[:, 3, :, :]*1
+    prev_X_tr = raw[:, 2, :, :]*1
+    X_tr=np.expand_dims(X_tr,axis=1)
+    prev_X_tr=np.expand_dims(prev_X_tr,axis=1)
 
-    X_tr = np.load('your training x')
-    prev_X_tr = np.load('your training prev x')
-    # y_tr    = np.load('your training chord')
+    check_range_st = 0
+    check_range_ed = 10
+    pitch_range = check_range_ed - check_range_st-1
+    print('pitch range: {}'.format(pitch_range))
+
     X_tr = X_tr[:,:,:,check_range_st:check_range_ed]
     prev_X_tr = prev_X_tr[:,:,:,check_range_st:check_range_ed]
 
     #test data shape(5048, 1, 16, 128)
     #train data shape(45448, 1, 16, 128)
 
-    train_iter = get_dataloader(X_tr,prev_X_tr,y_tr)
+    train_iter = get_dataloader(X_tr,prev_X_tr)
     kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
     train_loader = DataLoader(
                    train_iter, batch_size=72, shuffle=True, **kwargs)
@@ -95,7 +104,7 @@ def main():
             sum_lossG = 0
             sum_D_x   = 0
             sum_D_G_z = 0
-            for i, (data,prev_data,chord) in enumerate(train_loader, 0):
+            for i, (data,prev_data) in enumerate(train_loader, 0):
                 
                 ############################
                 # (1) Update D network: maximize log(D(x)) + log(1 - D(G(z)))
@@ -104,11 +113,10 @@ def main():
                 netD.zero_grad()
                 real_cpu = data.to(device)
                 prev_data_cpu = prev_data.to(device)
-                chord_cpu = chord.to(device)
 
                 batch_size = real_cpu.size(0)
                 label = torch.full((batch_size,), real_label, device=device)
-                D, D_logits, fm = netD(real_cpu,chord_cpu,batch_size,pitch_range)
+                D, D_logits, fm = netD(real_cpu,batch_size,pitch_range)
 
                 #####loss
                 d_loss_real = reduce_mean(sigmoid_cross_entropy_with_logits(D_logits, 0.9*torch.ones_like(D)))
@@ -118,9 +126,9 @@ def main():
 
                 # train with fake
                 noise = torch.randn(batch_size, nz, device=device)
-                fake = netG(noise,prev_data_cpu,chord_cpu,batch_size,pitch_range)
+                fake = netG(noise,prev_data_cpu,batch_size,pitch_range)
                 label.fill_(fake_label)
-                D_, D_logits_, fm_ = netD(fake.detach(),chord_cpu,batch_size,pitch_range)
+                D_, D_logits_, fm_ = netD(fake.detach(),batch_size,pitch_range)
                 d_loss_fake = reduce_mean(sigmoid_cross_entropy_with_logits(D_logits_, torch.zeros_like(D_)))
       
                 d_loss_fake.backward(retain_graph=True)
@@ -136,7 +144,7 @@ def main():
                 ###########################
                 netG.zero_grad()
                 label.fill_(real_label)  # fake labels are real for generator cost
-                D_, D_logits_, fm_= netD(fake,chord_cpu,batch_size,pitch_range)
+                D_, D_logits_, fm_= netD(fake,batch_size,pitch_range)
 
                 ###loss
                 g_loss0 = reduce_mean(sigmoid_cross_entropy_with_logits(D_logits_, torch.ones_like(D_)))
@@ -159,7 +167,7 @@ def main():
                 ###########################
                 netG.zero_grad()
                 label.fill_(real_label)  # fake labels are real for generator cost
-                D_, D_logits_, fm_ = netD(fake,chord_cpu,batch_size,pitch_range)
+                D_, D_logits_, fm_ = netD(fake,batch_size,pitch_range)
 
                 ###loss
                 g_loss0 = reduce_mean(sigmoid_cross_entropy_with_logits(D_logits_, torch.ones_like(D_)))
@@ -192,7 +200,7 @@ def main():
                     vutils.save_image(real_cpu,
                             '%s/real_samples.png' % 'file',
                             normalize=True)
-                    fake = netG(fixed_noise,prev_data_cpu,chord_cpu,batch_size,pitch_range)
+                    fake = netG(fixed_noise,prev_data_cpu,batch_size,pitch_range)
                     vutils.save_image(fake.detach(),
                             '%s/fake_samples_epoch_%03d.png' % ('file', epoch),
                             normalize=True)
