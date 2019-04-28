@@ -155,11 +155,12 @@ class GeneratorSketchRnn:
         new = np.concatenate((rp, y,rp, y),axis=1)
         new_dec=encoder.decode(new)
         new_dec=encoder.decode_808(new_dec)
+        array_merge=encoder.decode(array_merge)
 
         if save==True:
             for i in range(len(array)):
                 numpy_drums_save_to_midi(new_dec[i], self.temp_filepath, "sample_"+str(i) +tag)
-
+                numpy_drums_save_to_midi(array_merge[i],self.temp_filepath,"sample_"+str(i)+tag+'_gt')
     def generate_from_magenta(self, array, tag, save=True, th=0.15):
         n = len(array)
         self.load_model(batch_size=n)

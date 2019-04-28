@@ -6,8 +6,8 @@ from DrumReducerExpander import DrumReducerExpander
 
 # filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/'
 # name_raw=['FillsExtractedSupervised.npz','FillsExtractedSupervised03.npz','FillsExtractedRuleBased.npz']
-filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumDetection/'
-name_raw=['FillsExtractedHand.npz']
+filepath='/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/'
+name_raw=['FillsExtractedAug.npz']
 
 for name in name_raw:
 
@@ -26,11 +26,11 @@ for name in name_raw:
     genre = data['genre'][indices]
     assert track_array.shape[0]==genre.shape[0] ==vae.shape[0]
     print(track_array.shape[0],"after cleaning unique")
-    # regular=track_array[:,0,:,:].reshape((track_array.shape[0],16*9))
-    regular=track_array[:,2,:,:].reshape((track_array.shape[0],16*9))
+    regular=track_array[:,0,:,:].reshape((track_array.shape[0],16*9))
+    # regular=track_array[:,2,:,:].reshape((track_array.shape[0],16*9))
 
-    # fill=track_array[:,1,:,:].reshape((track_array.shape[0],16*9))
-    fill=track_array[:,3,:,:].reshape((track_array.shape[0],16*9))
+    fill=track_array[:,1,:,:].reshape((track_array.shape[0],16*9))
+    # fill=track_array[:,3,:,:].reshape((track_array.shape[0],16*9))
 
     regular_sum=np.sum(regular,axis=1)
     fill_sum=np.sum(fill,axis=1)
@@ -44,8 +44,8 @@ for name in name_raw:
 
 
     #snare
-    # snare=track_array[:,1,:,1]
-    snare = track_array[:, 3, :, 1]
+    snare=track_array[:,1,:,1]
+    # snare = track_array[:, 3, :, 1]
     # print(snare.shape)
     sum_snare=np.sum(snare,axis=1)
     indices = np.argwhere(sum_snare<8)

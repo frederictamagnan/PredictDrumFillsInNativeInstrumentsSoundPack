@@ -37,10 +37,10 @@ class TrainingSketchRnn:
 
 
     def load_data(self,binarize=True):
-        # data = np.load(self.dataset_filepath)
-        # data=dict(data)
-        # track_array=data['track_array']
-        track_array=np.load(self.dataset_filepath)
+        data = np.load(self.dataset_filepath)
+        data=dict(data)
+        track_array=data['track_array']
+        # track_array=np.load(self.dataset_filepath)
         self.dataset=SketchRnnDataset(numpy_array=track_array,use_cuda=self.use_cuda)
         print(len(self.dataset),"LEN DATASET")
 
@@ -163,18 +163,18 @@ class TrainingSketchRnn:
 
 if __name__=="__main__":
 
-    LR=0.01
-    BATCH_SIZE=100
-    N_EPOCHS=100
+    LR=0.1
+    BATCH_SIZE=1024
+    N_EPOCHS=30
     server=False
     if not(server):
-        local_dataset = '/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/48/train.npy'
+        local_dataset = '/home/ftamagna/Documents/_AcademiaSinica/dataset/drumGeneration/48/FillsExtractedRnn_c.npz'
 
         tg=TrainingSketchRnn(lr=LR,batch_size=BATCH_SIZE,n_epochs=N_EPOCHS,dataset_filepath=local_dataset,beta=0.5,linear_hidden_size=[64,32],gru_hidden_size=64)
         tg.load_data()
         tg.split_data()
         tg.train_model()
-        tg.save_model("./../models/",'rnn_16.pt')
+        tg.save_model("./../models/",'rnn_16_rnn.pt')
 
 
 
