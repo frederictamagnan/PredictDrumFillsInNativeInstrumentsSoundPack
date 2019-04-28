@@ -28,15 +28,15 @@ class sample_generator(nn.Module):
         self.h2_prev = nn.Conv2d(in_channels=16, out_channels=16, kernel_size=(2,1), stride=(2,2))
         self.h3_prev = nn.Conv2d(in_channels=16, out_channels=16, kernel_size=(2,1), stride=(2,2))
 
-        self.linear1 = nn.Linear(100,1024)
-        self.linear2 = nn.Linear(1024,self.gf_dim*2*2*1)
+        self.linear1 = nn.Linear(100,1024*2)
+        self.linear2 = nn.Linear(1024*2,self.gf_dim*2*2*1)
 
     def forward(self, z, prev_x ,batch_size,pitch_range):
 
         # h3_prev = F.leaky_relu(self.batch_nor_256(self.h0_prev(prev_x)),0.2)
         h0_prev = lrelu(batch_norm_2d_cpu(self.h0_prev(prev_x)),0.2)   #[72, 16, 16, 1]
         
-        print(h0_prev.size())
+#         print(h0_prev.size())
         h1_prev = lrelu(batch_norm_2d_cpu(self.h1_prev(h0_prev)),0.2)  #[72, 16, 8, 1]
         h2_prev = lrelu(batch_norm_2d_cpu(self.h2_prev(h1_prev)),0.2)  #[72, 16, 4, 1]
         h3_prev = lrelu(batch_norm_2d_cpu(self.h3_prev(h2_prev)),0.2)  #[72, 16, 2, 1])
@@ -77,7 +77,9 @@ class generator(nn.Module):
         self.gf_dim   = 64
         # self.y_dim   = 13
         self.n_channel = 256
-
+        
+        
+        
         self.h1      = nn.ConvTranspose2d(in_channels=144, out_channels=pitch_range, kernel_size=(2,1), stride=(2,2))
         self.h2      = nn.ConvTranspose2d(in_channels=25, out_channels=pitch_range, kernel_size=(2,1), stride=(2,2))
         self.h3      = nn.ConvTranspose2d(in_channels=25, out_channels=pitch_range, kernel_size=(2,1), stride=(2,2))
@@ -88,8 +90,8 @@ class generator(nn.Module):
         self.h2_prev = nn.Conv2d(in_channels=16, out_channels=16, kernel_size=(2,1), stride=(2,2))
         self.h3_prev = nn.Conv2d(in_channels=16, out_channels=16, kernel_size=(2,1), stride=(2,2))
 
-        self.linear1 = nn.Linear(100,1024)
-        self.linear2 = nn.Linear(1024,self.gf_dim*2*2*1)
+        self.linear1 = nn.Linear(100,1024*2)
+        self.linear2 = nn.Linear(1024*2,self.gf_dim*2*2*1)
         
     def forward(self, z, prev_x,batch_size,pitch_range):
 

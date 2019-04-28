@@ -33,16 +33,16 @@ def load_data():
 #     filepath = '/home/ftamagnan/dataset/48/'
 #     filename = 'FillsExtractedHand_c.npz'
     filepath = '/home/ftamagnan/dataset/'
-    filename='FillsExtractedAug.npz'
+    filename='FillsExtractedHand_c.npz'
     raw_data = np.load(filepath + filename)
     raw_data_d = dict(raw_data)
     raw = raw_data_d['track_array']
-    raw=raw[1:]
-    X_tr = raw[:, 1, :, :]*1
-    prev_X_tr = raw[:, 0, :, :]*1
+#     raw=raw[1:]
+    X_tr = raw[:, 2, :, :]*1
+    prev_X_tr = raw[:, 3, :, :]*1
     print(raw.shape,"RAWW SHAPE")
-#     X_tr=encoder.encode_808(X_tr)
-#     prev_X_tr=encoder.encode_808(prev_X_tr)
+    X_tr=encoder.encode_808(X_tr)
+    prev_X_tr=encoder.encode_808(prev_X_tr)
 #     X_tr=encoder.decode(X_tr)
 #     prev_X_tr=encoder.decode(prev_X_tr)
     X_tr=np.expand_dims(X_tr,axis=1)
@@ -53,8 +53,8 @@ def load_data():
     pitch_range = check_range_ed - check_range_st-1
     print('pitch range: {}'.format(pitch_range))
 
-    X_tr = X_tr[:,:,:,check_range_st:check_range_ed]
-    prev_X_tr = prev_X_tr[:,:,:,check_range_st:check_range_ed]
+#     X_tr = X_tr[:,:,:,check_range_st:check_range_ed]
+#     prev_X_tr = prev_X_tr[:,:,:,check_range_st:check_range_ed]
 
     #test data shape(5048, 1, 16, 128)
     #train data shape(45448, 1, 16, 128)
@@ -62,7 +62,7 @@ def load_data():
     train_iter = get_dataloader(X_tr,prev_X_tr)
     kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
     train_loader = DataLoader(
-                   train_iter, batch_size=3000, shuffle=True, **kwargs)
+                   train_iter, batch_size=72, shuffle=True, **kwargs)
 
     print('data preparation is completed')
     #######################################
@@ -70,8 +70,8 @@ def load_data():
 
 def main():
     is_train = 0
-    is_draw = 1
-    is_sample = 0
+    is_draw = 0
+    is_sample = 1
 
     epochs = 100
     lr = 0.01
@@ -92,7 +92,7 @@ def main():
         optimizerD = optim.Adam(netD.parameters(), lr=lr, betas=(0.5, 0.999))
         optimizerG = optim.Adam(netG.parameters(), lr=lr, betas=(0.5, 0.999)) 
              
-        batch_size = 3000
+        batch_size = 72
         nz = 100
         fixed_noise = torch.randn(batch_size, nz, device=device)
         real_label = 1
@@ -185,12 +185,12 @@ def main():
                 features_from_i = reduce_mean_0(fm)
                 loss_ = nn.MSELoss(reduction='sum')
                 feature_l2_loss = loss_(features_from_g, features_from_i)/2
-                fm_g_loss1 =torch.mul(feature_l2_loss, 0.1)
+                fm_g_loss1 =torch.mul(feature_l2_loss, 0.5)
 
                 mean_image_from_g = reduce_mean_0(fake)
                 smean_image_from_i = reduce_mean_0(real_cpu)
                 mean_l2_loss = loss_(mean_image_from_g, smean_image_from_i)/2
-                fm_g_loss2 = torch.mul(mean_l2_loss, 0.01)
+                fm_g_loss2 = torch.mul(mean_l2_loss, 0.5)
                 errG = g_loss0 + fm_g_loss1 + fm_g_loss2
                 sum_lossG +=errG
                 errG.backward()
@@ -262,15 +262,15 @@ def main():
 #         filepath = '/home/ftamagnan/dataset/48/'
 #         filename = 'FillsExtractedHand_c.npz'
         filepath = '/home/ftamagnan/dataset/'
-        filename='FillsExtractedAug.npz'
+        filename='FillsExtractedHand_c.npz'
         raw_data = np.load(filepath + filename)
         raw_data_d = dict(raw_data)
         raw = raw_data_d['track_array']
-        X_te = raw[:, 1, :, :]*1
-        prev_X_te = raw[:, 0, :, :]*1
+        X_te = raw[:, 3, :, :]*1
+        prev_X_te = raw[:, 2, :, :]*1
 
-#         X_te=encoder.encode_808(X_te)
-#         prev_X_te=encoder.encode_808(prev_X_te)
+        X_te=encoder.encode_808(X_te)
+        prev_X_te=encoder.encode_808(prev_X_te)
         print(X_te.shape,"X TE")
         print(prev_X_te.shape,"X prev te")
 #         X_te=encoder.decode(X_te)
