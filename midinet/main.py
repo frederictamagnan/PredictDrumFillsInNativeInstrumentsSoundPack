@@ -73,7 +73,7 @@ def main():
     is_draw = 1
     is_sample = 0
 
-    epochs = 200
+    epochs = 100
     lr = 0.01
 
     check_range_st = 0
