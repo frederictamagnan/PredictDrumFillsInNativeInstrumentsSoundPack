@@ -76,8 +76,8 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 #                             fills = fills[1:]
 #                             np.savez("./fills", fills=fills)
 #                             return 0
-        if track_array.shape[0]>4000*tag_i:
-            break
+                if track_array.shape[0]>4000*tag_i:
+                    break
 #     fills = fills[1:]
 #     genre=genre[1:]
 #     np.savez("./reduced_fills_plus_embeddings", fills=fills,genre=genre)
