@@ -40,7 +40,7 @@ class Labelling:
         data=dict(np.load(path+'/'+npz))
         rdv=(data['reduced_drums_velocity']>0)*1
         rdv=rdv.reshape((rdv.shape[0],-1))
-        diff=np.stack((rdv[0:-1,:],rdv[1:],rdv[2:]),axis=1)
+        diff=np.stack((rdv[0:-1,:],rdv[1:,:]),axis=1)
         diff1=np.sum((diff[:, 1, :] - diff[:, 0, :]>0)*1,axis=1)
 
         y=(diff1>8)*1
