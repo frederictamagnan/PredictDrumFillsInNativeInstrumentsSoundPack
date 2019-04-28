@@ -146,7 +146,7 @@ class discriminator(nn.Module):
         super(discriminator, self).__init__()
 
         self.df_dim = 64
-        self.dfc_dim = 1024
+        self.dfc_dim = 1024*2
         self.y_dim = 13
 
         self.h0_prev = nn.Conv2d(in_channels=1, out_channels=1, kernel_size=(2,pitch_range), stride=(2,2))
@@ -154,7 +154,7 @@ class discriminator(nn.Module):
         self.h1_prev = nn.Conv2d(in_channels=1, out_channels=77, kernel_size=(4,1), stride=(2,2))
         # out channels = df_dim + y_dim
         self.linear1 = nn.Linear(231,self.dfc_dim)
-        self.linear2 = nn.Linear(1024,1)
+        self.linear2 = nn.Linear(self.dfc_dim,1)
 
     def forward(self,x,batch_size,pitch_range):
 
