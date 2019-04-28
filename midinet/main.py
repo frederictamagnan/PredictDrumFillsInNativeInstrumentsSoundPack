@@ -70,11 +70,11 @@ def load_data():
 
 def main():
     is_train = 0
-    is_draw = 0
-    is_sample = 1
+    is_draw = 1
+    is_sample = 0
 
-    epochs = 100
-    lr = 0.01
+    epochs = 30
+    lr = 0.0002
 
     check_range_st = 0
     check_range_ed = 10
@@ -285,7 +285,7 @@ def main():
         test_loader = DataLoader(test_iter, batch_size=batch_size, shuffle=False, **kwargs)
 
         netG = sample_generator()
-        netG.load_state_dict(torch.load('../models/netG_epoch_99.pth'))
+        netG.load_state_dict(torch.load('../models/netG_epoch_29.pth'))
 
         output_songs = []
         output_chords = []
