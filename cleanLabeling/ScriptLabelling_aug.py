@@ -1,5 +1,5 @@
 
-from Labelling_diff import Labelling
+from Labelling_aug import Labelling
 
 path='/home/ftamagnan/dataset/lpd_5/lpd_5_cleansed/'
 path_tags= [
