@@ -28,7 +28,7 @@ def macro_iteration(filepath_dataset, filepath_tags ,max=50000000000000 ,reduced
 
 #     fills = np.zeros((1, 3 ,96, 9))
     vae_array=np.zeros((1,2,32,2))
-    track_array=np.zeros((1,,16,9))
+    track_array=np.zeros((1,2,16,9))
     # real_track_array=np.zeros((1,3,96,128))
 #     vae_array=np.zeros((1,4,32,2))
 #     track_array=np.zeros((1,4,16,9))
