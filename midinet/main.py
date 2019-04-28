@@ -37,9 +37,10 @@ def load_data():
     raw_data = np.load(filepath + filename)
     raw_data_d = dict(raw_data)
     raw = raw_data_d['track_array']
+    raw=raw[1:]
     X_tr = raw[:, 1, :, :]*1
     prev_X_tr = raw[:, 0, :, :]*1
-    
+    print(raw.shape,"RAWW SHAPE")
 #     X_tr=encoder.encode_808(X_tr)
 #     prev_X_tr=encoder.encode_808(prev_X_tr)
 #     X_tr=encoder.decode(X_tr)
@@ -61,7 +62,7 @@ def load_data():
     train_iter = get_dataloader(X_tr,prev_X_tr)
     kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
     train_loader = DataLoader(
-                   train_iter, batch_size=6000, shuffle=True, **kwargs)
+                   train_iter, batch_size=3000, shuffle=True, **kwargs)
 
     print('data preparation is completed')
     #######################################
@@ -91,7 +92,7 @@ def main():
         optimizerD = optim.Adam(netD.parameters(), lr=lr, betas=(0.5, 0.999))
         optimizerG = optim.Adam(netG.parameters(), lr=lr, betas=(0.5, 0.999)) 
              
-        batch_size = 6000
+        batch_size = 3000
         nz = 100
         fixed_noise = torch.randn(batch_size, nz, device=device)
         real_label = 1
@@ -284,7 +285,7 @@ def main():
         test_loader = DataLoader(test_iter, batch_size=batch_size, shuffle=False, **kwargs)
 
         netG = sample_generator()
-        netG.load_state_dict(torch.load('../models/netG_epoch_199.pth'))
+        netG.load_state_dict(torch.load('../models/netG_epoch_99.pth'))
 
         output_songs = []
         output_chords = []
