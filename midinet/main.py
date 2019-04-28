@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from model import *
 from ops import *
 from DrumReducerExpander import DrumReducerExpander
+
 class get_dataloader(object):
     def __init__(self, data, prev_data):
         self.size = data.shape[0]
@@ -35,13 +36,15 @@ def load_data():
     raw_data_d = dict(raw_data)
     raw = raw_data_d['track_array']
     X_tr = raw[:, 3, :, :]*1
-
     prev_X_tr = raw[:, 2, :, :]*1
+    
     X_tr=encoder.encode_808(X_tr)
     prev_X_tr=encoder.encode_808(prev_X_tr)
+#     X_tr=encoder.decode(X_tr)
+#     prev_X_tr=encoder.decode(prev_X_tr)
     X_tr=np.expand_dims(X_tr,axis=1)
     prev_X_tr=np.expand_dims(prev_X_tr,axis=1)
-
+    
     check_range_st = 0
     check_range_ed = 10
     pitch_range = check_range_ed - check_range_st-1
@@ -63,15 +66,15 @@ def load_data():
     return train_loader
 
 def main():
-    is_train = 1
+    is_train = 0
     is_draw = 0
-    is_sample = 0
+    is_sample = 1
 
-    epochs = 20
-    lr = 0.0002
+    epochs = 30
+    lr = 0.1
 
     check_range_st = 0
-    check_range_ed = 129
+    check_range_ed = 10
     pitch_range = check_range_ed - check_range_st-1
     
     device = torch.device('cuda')
@@ -200,13 +203,13 @@ def main():
                              errD, errG, D_x, D_G_z1, D_G_z2))
 
                 if i % 100 == 0:
-                    vutils.save_image(real_cpu,
-                            '%s/real_samples.png' % 'file',
-                            normalize=True)
+#                     vutils.save_image(real_cpu,
+#                             '%s/real_samples.png' % 'file',
+#                             normalize=True)
                     fake = netG(fixed_noise,prev_data_cpu,batch_size,pitch_range)
-                    vutils.save_image(fake.detach(),
-                            '%s/fake_samples_epoch_%03d.png' % ('file', epoch),
-                            normalize=True)
+#                     vutils.save_image(fake.detach(),
+#                             '%s/fake_samples_epoch_%03d.png' % ('file', epoch),
+#                             normalize=True)
 
             average_lossD = (sum_lossD / len(train_loader.dataset))
             average_lossG = (sum_lossG / len(train_loader.dataset))
@@ -252,46 +255,67 @@ def main():
         batch_size = 8
         nz = 100
         n_bars = 7
-        X_te = np.load('your testing x')
-        prev_X_te = np.load('your testing prev x')
+        encoder=DrumReducerExpander()
+        filepath = '/home/ftamagnan/dataset/48/'
+        filename = 'FillsExtractedHand_c.npz'
+        raw_data = np.load(filepath + filename)
+        raw_data_d = dict(raw_data)
+        raw = raw_data_d['track_array']
+        X_te = raw[:, 3, :, :]*1
+        prev_X_te = raw[:, 2, :, :]*1
+
+        X_te=encoder.encode_808(X_te)
+        prev_X_te=encoder.encode_808(prev_X_te)
+        print(X_te.shape,"X TE")
+#         X_te=encoder.decode(X_te)
+#         prev_X_te=encoder.decode(prev_X_te)
+        X_te=np.expand_dims(X_te,axis=1)
+        prev_X_te=np.expand_dims(prev_X_te,axis=1)
         prev_X_te = prev_X_te[:,:,check_range_st:check_range_ed,:]
-        y_te    = np.load('yourd chord')
+#         y_te    = np.load('yourd chord')
        
-        test_iter = get_dataloader(X_te,prev_X_te,y_te)
+        test_iter = get_dataloader(X_te,prev_X_te)
         kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
         test_loader = DataLoader(test_iter, batch_size=batch_size, shuffle=False, **kwargs)
 
         netG = sample_generator()
-        netG.load_state_dict(torch.load('your model'))
+        netG.load_state_dict(torch.load('../models/netG_epoch_29.pth'))
 
         output_songs = []
         output_chords = []
-        for i, (data,prev_data,chord) in enumerate(test_loader, 0):
+        for i, (data,prev_data) in enumerate(test_loader, 0):
             list_song = []
-            first_bar = data[0].view(1,1,16,128)
+            first_bar = data[0].view(1,1,16,pitch_range)
             list_song.append(first_bar)
 
-            list_chord = []
-            first_chord = chord[0].view(1,13).numpy()
-            list_chord.append(first_chord)
+#             list_chord = []
+#             first_chord = chord[0].view(1,13).numpy()
+#             list_chord.append(first_chord)
             noise = torch.randn(batch_size, nz)
 
             for bar in range(n_bars):
                 z = noise[bar].view(1,nz)
-                y = chord[bar].view(1,13)
+#                 y = chord[bar].view(1,13)
                 if bar == 0:
-                    prev = data[0].view(1,1,16,128)
+                    prev = data[0].view(1,1,16,pitch_range)
                 else:
-                    prev = list_song[bar-1].view(1,1,16,128)
-                sample = netG(z, prev, y, 1,pitch_range)
+                    prev = list_song[bar-1].view(1,1,16,pitch_range)
+                sample = netG(z, prev, 1,pitch_range)
+#                 print(sample.shape)
                 list_song.append(sample)
-                list_chord.append(y.numpy())
+#                 list_chord.append(y.numpy())
 
             print('num of output_songs: {}'.format(len(output_songs)))
             output_songs.append(list_song)
-            output_chords.append(list_chord)
+#             output_chords.append(list_chord)
+        print(np.asarray(output_songs).shape)
+        for i in range(len(output_songs)):
+            for j in range(len(output_songs[i])):
+                output_songs[i][j]=output_songs[i][j].cpu().data.numpy()
+                output_songs[i][j]=output_songs[i][j].reshape((16,pitch_range))
+        print(np.asarray(output_songs).shape)
         np.save('output_songs.npy',np.asarray(output_songs))
-        np.save('output_chords.npy',np.asarray(output_chords))
+#         np.save('output_chords.npy',np.asarray(output_chords))
 
         print('creation completed, check out what I make!')
 
