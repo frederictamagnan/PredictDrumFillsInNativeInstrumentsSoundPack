@@ -30,16 +30,18 @@ def load_data():
     #######load the data########
     
     encoder=DrumReducerExpander()
-    filepath = '/home/ftamagnan/dataset/48/'
-    filename = 'FillsExtractedHand_c.npz'
+#     filepath = '/home/ftamagnan/dataset/48/'
+#     filename = 'FillsExtractedHand_c.npz'
+    filepath = '/home/ftamagnan/dataset/'
+    filename='FillsExtractedAug.npz'
     raw_data = np.load(filepath + filename)
     raw_data_d = dict(raw_data)
     raw = raw_data_d['track_array']
-    X_tr = raw[:, 3, :, :]*1
-    prev_X_tr = raw[:, 2, :, :]*1
+    X_tr = raw[:, 1, :, :]*1
+    prev_X_tr = raw[:, 0, :, :]*1
     
-    X_tr=encoder.encode_808(X_tr)
-    prev_X_tr=encoder.encode_808(prev_X_tr)
+#     X_tr=encoder.encode_808(X_tr)
+#     prev_X_tr=encoder.encode_808(prev_X_tr)
 #     X_tr=encoder.decode(X_tr)
 #     prev_X_tr=encoder.decode(prev_X_tr)
     X_tr=np.expand_dims(X_tr,axis=1)
@@ -59,7 +61,7 @@ def load_data():
     train_iter = get_dataloader(X_tr,prev_X_tr)
     kwargs = {'num_workers': 4, 'pin_memory': True}# if args.cuda else {}
     train_loader = DataLoader(
-                   train_iter, batch_size=72, shuffle=True, **kwargs)
+                   train_iter, batch_size=6000, shuffle=True, **kwargs)
 
     print('data preparation is completed')
     #######################################
@@ -67,11 +69,11 @@ def load_data():
 
 def main():
     is_train = 0
-    is_draw = 0
-    is_sample = 1
+    is_draw = 1
+    is_sample = 0
 
-    epochs = 30
-    lr = 0.1
+    epochs = 200
+    lr = 0.01
 
     check_range_st = 0
     check_range_ed = 10
@@ -89,7 +91,7 @@ def main():
         optimizerD = optim.Adam(netD.parameters(), lr=lr, betas=(0.5, 0.999))
         optimizerG = optim.Adam(netG.parameters(), lr=lr, betas=(0.5, 0.999)) 
              
-        batch_size = 72
+        batch_size = 6000
         nz = 100
         fixed_noise = torch.randn(batch_size, nz, device=device)
         real_label = 1
@@ -249,29 +251,32 @@ def main():
         plt.legend(loc='upper right')
         plt.xlabel('data')
         plt.ylabel('loss')
-        plt.savefig('where you want to save/lr='+ str(lr) +'_epoch='+str(epochs)+'.png')
+        plt.savefig('./training_metrics/lr='+ str(lr) +'_epoch='+str(epochs)+'.png')
 
     if is_sample == 1:
         batch_size = 8
         nz = 100
         n_bars = 7
         encoder=DrumReducerExpander()
-        filepath = '/home/ftamagnan/dataset/48/'
-        filename = 'FillsExtractedHand_c.npz'
+#         filepath = '/home/ftamagnan/dataset/48/'
+#         filename = 'FillsExtractedHand_c.npz'
+        filepath = '/home/ftamagnan/dataset/'
+        filename='FillsExtractedAug.npz'
         raw_data = np.load(filepath + filename)
         raw_data_d = dict(raw_data)
         raw = raw_data_d['track_array']
-        X_te = raw[:, 3, :, :]*1
-        prev_X_te = raw[:, 2, :, :]*1
+        X_te = raw[:, 1, :, :]*1
+        prev_X_te = raw[:, 0, :, :]*1
 
-        X_te=encoder.encode_808(X_te)
-        prev_X_te=encoder.encode_808(prev_X_te)
+#         X_te=encoder.encode_808(X_te)
+#         prev_X_te=encoder.encode_808(prev_X_te)
         print(X_te.shape,"X TE")
+        print(prev_X_te.shape,"X prev te")
 #         X_te=encoder.decode(X_te)
 #         prev_X_te=encoder.decode(prev_X_te)
         X_te=np.expand_dims(X_te,axis=1)
         prev_X_te=np.expand_dims(prev_X_te,axis=1)
-        prev_X_te = prev_X_te[:,:,check_range_st:check_range_ed,:]
+#         prev_X_te = prev_X_te[:,:,check_range_st:check_range_ed,:]
 #         y_te    = np.load('yourd chord')
        
         test_iter = get_dataloader(X_te,prev_X_te)
@@ -279,13 +284,14 @@ def main():
         test_loader = DataLoader(test_iter, batch_size=batch_size, shuffle=False, **kwargs)
 
         netG = sample_generator()
-        netG.load_state_dict(torch.load('../models/netG_epoch_29.pth'))
+        netG.load_state_dict(torch.load('../models/netG_epoch_199.pth'))
 
         output_songs = []
         output_chords = []
         for i, (data,prev_data) in enumerate(test_loader, 0):
             list_song = []
-            first_bar = data[0].view(1,1,16,pitch_range)
+            print(prev_data.size(),data.size())
+            first_bar = prev_data[0].view(1,1,16,pitch_range)
             list_song.append(first_bar)
 
 #             list_chord = []
@@ -304,9 +310,11 @@ def main():
 #                 print(sample.shape)
                 list_song.append(sample)
 #                 list_chord.append(y.numpy())
-
+        
             print('num of output_songs: {}'.format(len(output_songs)))
             output_songs.append(list_song)
+            if i>200:
+                break
 #             output_chords.append(list_chord)
         print(np.asarray(output_songs).shape)
         for i in range(len(output_songs)):
